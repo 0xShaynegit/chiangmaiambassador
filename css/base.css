@@ -1,0 +1,62 @@
+/* CHIANG MAI AMBASSADOR - BASE STYLES
+   Focus: Typography & Global Polish
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #0F172A 0%, #1a2a4a 100%);
+    color: var(--color-text-main);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    color: var(--color-ink);
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-fast);
+}
+
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Typography Utility */
+.text-highlight {
+    color: var(--color-primary);
+    position: relative;
+    display: inline-block;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 12px;
+    background: var(--color-ink);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    border-radius: var(--radius-sm);
+}

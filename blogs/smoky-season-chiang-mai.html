@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read about Smoky Season in Chiang Mai - yes it's smoky, so get over it! on Chiang Mai Ambassador.">
+    <meta name="robots" content="index, follow">
+    <title>Smoky Season in Chiang Mai - yes it's smoky, so get over it! | Chiang Mai Ambassador</title>
+
+    <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/sections.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/blog.css">
+
+    <link rel="preload" href="../fonts/outfit-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/outfit-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/plus-jakarta-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/plus-jakarta-500.woff2" as="font" type="font/woff2" crossorigin>
+
+    <style>
+        .blog-content {
+            background-color: white !important;
+            padding: 5rem 0 !important;
+        }
+        .blog-hero {
+            margin-top: 80px;
+        }
+        .img-right-small {
+            float: right;
+            width: 30%;
+            margin: 0 0 1rem 2rem;
+            shape-margin: 1rem;
+        }
+        .img-left-large {
+            float: left;
+            width: 55%;
+            margin: 1rem 2rem 1rem -15%;
+            shape-margin: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        .img-left-large img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .img-fullwidth-break {
+            width: 100%;
+            max-width: 100%;
+            margin: 3rem 0 2rem 0;
+            display: block;
+        }
+        .img-fullwidth-break img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .img-float-right-small {
+            float: right;
+            width: 45%;
+            margin: 0 0 1.5rem 2rem;
+        }
+        figure {
+            margin: 0;
+        }
+        figcaption {
+            display: none;
+        }
+        .article-sidebar {
+            background: #f0d080;
+            padding: 2rem;
+            border-left: 4px solid var(--color-primary);
+            border-radius: 0;
+            margin: 2.5rem 0 3rem 0;
+            border: 1px solid #e5ddd0;
+        }
+        .article-sidebar h4 {
+            font-size: 1rem;
+            color: #1a1a1a;
+            margin: 0 0 1.25rem 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .article-sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .article-sidebar li {
+            color: #333;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+        }
+        .article-sidebar li:last-child {
+            margin-bottom: 0;
+        }
+        .blog-metadata {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem 0 2.5rem;
+            border-bottom: 1px solid #e5ddd0;
+            margin-bottom: 2rem;
+        }
+        .blog-meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        .blog-meta-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #999;
+        }
+        .blog-meta-value {
+            font-size: 0.95rem;
+            color: #333;
+            font-weight: 500;
+        }
+        .blog-meta-divider {
+            width: 1px;
+            height: 24px;
+            background: #e5ddd0;
+        }
+        .blog-options {
+            display: flex;
+            gap: 0.75rem;
+            margin-left: auto;
+        }
+        .blog-body h2 {
+            font-size: 1.875rem;
+            color: #1a1a1a;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .blog-body h3 {
+            font-size: 1.25rem;
+            color: #1a1a1a;
+            margin-top: 1.75rem;
+            margin-bottom: 0.75rem;
+        }
+        .blog-body p {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        .blog-body strong {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        .blog-body img {
+            max-width: 100%;
+            height: auto;
+        }
+        .blog-body .alignright {
+            float: right;
+            margin: 0 0 1rem 2rem;
+            max-width: 40%;
+        }
+        .blog-body .alignleft {
+            float: left;
+            margin: 0 2rem 1rem 0;
+            max-width: 40%;
+        }
+        .blog-body .aligncenter {
+            display: block;
+            margin: 2rem auto;
+        }
+        .key-takeaways {
+            background: #f0d080;
+            padding: 2rem;
+            border-radius: 0;
+            margin: 3rem 0;
+            border: 1px solid #e5ddd0;
+        }
+        .key-takeaways h3 {
+            margin-top: 0;
+            color: #1a1a1a;
+        }
+        .key-takeaways p {
+            color: #333;
+        }
+        .blog-related {
+            background: transparent;
+            padding: 4rem 0 !important;
+        }
+        .blog-related h2 {
+            color: white;
+        }
+        .blog-card {
+            background-color: var(--color-surface) !important;
+        }
+        @media (max-width: 768px) {
+            .img-right-small,
+            .img-left-large,
+            .img-float-right-small,
+            .blog-body .alignright,
+            .blog-body .alignleft {
+                float: none;
+                width: 100%;
+                max-width: 100%;
+                margin: 1.5rem 0;
+            }
+            .article-sidebar {
+                margin: 2rem 0;
+            }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Smoky Season in Chiang Mai - yes it's smoky, so get over it!",
+        "description": "Read about Smoky Season in Chiang Mai - yes it's smoky, so get over it! on Chiang Mai Ambassador.",
+        "datePublished": "2026-05-23",
+        "author": { "@type": "Organization", "name": "Chiang Mai Ambassador" }
+    }
+    </script>
+</head>
+<body style="margin: 0; padding: 0; width: 100%;">
+
+    <div class="progress-bar" id="progress-bar" aria-label="Reading progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+    <nav class="nav-wrapper">
+        <a href="../" class="logo-link">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="-175 -178 350 500" xmlns="http://www.w3.org/2000/svg" width="60" height="80">
+                    <defs>
+                        <linearGradient id="g2gold" x1="20%" y1="0%" x2="80%" y2="100%">
+                            <stop offset="0%" stop-color="#F2D980" />
+                            <stop offset="40%" stop-color="#C49010" />
+                            <stop offset="100%" stop-color="#9A7008" />
+                        </linearGradient>
+                        <linearGradient id="g2ring" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#E4BC50" />
+                            <stop offset="100%" stop-color="#9A7008" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="0" cy="0" r="164" fill="none" stroke="url(#g2ring)" stroke-width="2.5" />
+                    <circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65" />
+                    <circle cx="164" cy="0" r="3.2" fill="#C49010" />
+                    <circle cx="0" cy="-164" r="3.2" fill="#C49010" />
+                    <circle cx="-164" cy="0" r="3.2" fill="#C49010" />
+                    <circle cx="0" cy="164" r="3.2" fill="#C49010" />
+                    <g transform="translate(0, -149.201) scale(1.94980)">
+                        <polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980" />
+                        <rect x="-2" y="4" width="4" height="38" fill="url(#g2gold)" />
+                        <polygon points="0,42 -16,78 16,78" fill="url(#g2gold)" />
+                        <rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008" />
+                        <rect x="-22" y="84" width="44" height="9" fill="url(#g2gold)" />
+                        <rect x="-25" y="93" width="50" height="4" fill="#9A7008" />
+                        <rect x="-30" y="97" width="60" height="9" fill="url(#g2gold)" />
+                        <rect x="-33" y="106" width="66" height="4" fill="#9A7008" />
+                        <rect x="-38" y="110" width="76" height="9" fill="url(#g2gold)" />
+                        <rect x="-44" y="119" width="88" height="11" fill="url(#g2gold)" />
+                        <rect x="-52" y="130" width="104" height="8" fill="#9A7008" />
+                    </g>
+                </svg>
+                <div class="logo-text-wrapper nav-mode">
+                    <div>
+                        <span class="logo-accent">CM</span><span class="logo-text">Ambassador</span>
+                    </div>
+                    <span class="logo-tagline">Connector &middot; Helper &middot; Guru</span>
+                </div>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="../pages/neighbourhoods.html">Neighbourhoods</a>
+            <a href="../pages/cost-of-living.html">Cost of Living</a>
+            <a href="../#start" class="btn-primary magnetic-item">Start Here</a>
+        </div>
+    </nav>
+
+    <main style="width: 100%; margin: 0 auto;">
+
+        <section class="blog-hero">
+            <div class="container" style="max-width: 960px; width: 100%; margin: 0 auto; padding: 0 2rem; box-sizing: border-box;">
+                <div class="blog-header reveal">
+                    <h1>Smoky Season in Chiang Mai - <span class="gold-gradient-text">yes it's smoky, so get over it!</span></h1>
+                    <p class="blog-excerpt">Read about Smoky Season in Chiang Mai - yes it's smoky, so get over it! on Chiang Mai Ambassador.</p>
+                </div>
+            </div>
+        </section>
+
+        <article class="blog-content" style="background-color: white; padding-top: 0.75rem !important;">
+            <div class="container" style="max-width: 960px; width: 100%; margin: 0 auto; padding: 0 2rem; box-sizing: border-box;">
+                <div class="blog-metadata reveal">
+                    <div class="blog-meta-item">
+                        <span class="blog-meta-label">Category</span>
+                        <span class="blog-meta-value"><a href="../">Home</a> / Chiang Mai Daily Life</span>
+                    </div>
+                    <div class="blog-meta-divider"></div>
+                    <div class="blog-meta-item">
+                        <span class="blog-meta-label">Read time</span>
+                        <span class="blog-meta-value">8 min</span>
+                    </div>
+                    <div class="blog-meta-divider"></div>
+                    <div class="blog-meta-item">
+                        <span class="blog-meta-label">Last updated</span>
+                        <span class="blog-meta-value">May 2026</span>
+                    </div>
+                </div>
+
+                <div class="blog-body">
+
+                    <!-- TL;DR IMAGE + SUMMARY -->
+                    <figure class="img-right-small" style="margin-top: -30px; margin-bottom: 1rem; width: calc(100% - 400px); max-width: 280px;">
+                        <img src="../images/chiang-mai-ambassador-chiangmaiambassador-chiangmaiambassador-AQI-157.webp" alt="Smoky Season in Chiang Mai - yes it's smoky, so get over it!" width="280" height="210" loading="lazy">
+                    </figure>
+                    <div class="article-sidebar">
+                        <h4>Quick Summary</h4>
+                        <ul>
+                            <li>Smoky Season in Chiang Mai</li>
+                            <li>I have nearly 7 smoky seasons under my belt and last year posted this in Facebook …</li>
+                            <li>Can we pin a post about the smoke?</li>
+                            <li>https://www.facebook.com/groups/cmnomads/permalink/1558078751111867/</li>
+                            <li>I got some quality traction!</li>
+                            <li>Spending time in other parts of the world will help you survive smokey season in Chiang Mai!</li>
+                        </ul>
+                    </div>
+
+<div><div data-block="true" data-editor="67jdm" data-offset-key="bv9o2-0-0"><h2 data-offset-key="bv9o2-0-0"><span data-offset-key="bv9o2-0-0"><span data-text="true">Smoky Season in Chiang Mai</span></span></h2><h4 data-offset-key="bv9o2-0-0"><span data-offset-key="bv9o2-0-0"><span data-text="true">I AM SORRY, BUT NOTHING IS GOING TO CHANGE.</span></span></h4><p>I have nearly 7 smoky seasons under my belt and last year posted this in Facebook …</p><p>Can we pin a post about the smoke? So that people read about the smoke rather than making another post about the smoke? I think the smoke sucks, but I live here in the smoke and I deal with the smoke. I just don’t want to talk about the smoke every day and hear about people in the smoke whinging about the smoke and the people out of the smoke whinging about people whinging about the smoke and posting pictures with no smoke. You are not going to affect the smoke one single bit, so live with the smoke, do what you have to do to survive the smoke or leave the smoke (and do it quietly). And I know there is no smoke at the beach, I just don’t want to see no smoke. Unfortunately I can’t pay for a pinned post about the smoke.</p><p><a href="https://www.facebook.com/groups/cmnomads/permalink/1558078751111867/" rel="noopener" target="_blank">https://www.facebook.com/groups/cmnomads/permalink/1558078751111867/</a></p><p>I got some quality traction! Plenty of hot smokin’ comments too.</p></div><h4>Dealing with the smoke</h4><div data-block="true" data-editor="67jdm" data-offset-key="bv9o2-0-0"><h5>Don’t whinge about, we all know about it, we all see it and we all deal with it. If you can’t deal with it … LEAVE.</h5><p>Spending time in other parts of the world will help you survive smokey season in Chiang Mai! Go anywhere! Just Go.</p><p>Pretty much get a good mask for outside.</p><p>Limit your exposure. Watch out when exercising.</p><p>Spend time indoors.</p><h4>The Details, the Readings</h4></div><div data-block="true" data-editor="67jdm" data-offset-key="99i38-0-0"><div data-offset-key="99i38-0-0"><span data-offset-key="99i38-0-0"><span data-text="true">9 years ago – 255, in 2007 – <a href="http://www.earthoria.com/air-pollution-levels-in-chiang-mai-rising.html" rel="noopener noreferrer" target="_blank">300(On the PM10 scale)</a> I wonder how high the PM2.5 would have been???????</span></span></div><div data-offset-key="99i38-0-0"></div></div><div data-offset-key="99i38-0-0"></div><div data-offset-key="99i38-0-0">Your AIR today – Today’s PM2.5 AQI is 157<br/>
+(based on PM2.5 data from the Royal Thai Government Pollution Control Department,<a href="http://l.facebook.com/l.php?u=http%3A%2F%2Faqmthai.com%2Fpublic_report.php%3Flang%3Den&amp;h=lAQGU7xGnAQFNFscy41SoDSbe0O53SzL48LMV5MYgXo5VFQ&amp;enc=AZMJH8aiJAr0W8Y5J7Vn9VBNKPNlSFNXnGw-fijccOhpdYm4hZafHcEjwWwdNsnnl4Ej3SbculNNjGr8QZy7bWcCDgl8BeRGnIiQIWEBmq6hAWx0UDkPyZ6l_wUqTcacZwrsC3qp9YX7AjU94S6B9CoXP5FiNs1e2vM228IouA2SVL3zOgD8tTgcsyLrIerovrw&amp;s=1" rel="nofollow noopener noreferrer" target="_blank">http://aqmthai.com/public_report.php?lang=en</a>, reporting station 36t, and the AQI calculator at <a href="http://airnow.gov/index.cfm?action=resources.conc_aqi_calc" rel="nofollow noopener noreferrer" target="_blank">http://airnow.gov/index.cfm?action=resources.conc_aqi_calc</a>).<br/>
+The World Health Organization and U.S. Environmental Protection Agency encourage use of PM2.5 AQI values (rather than PM10 AQI values), to more accurately judge potential health effects from pollution. For more information about PM2.5 health effects and what you can do to protect yourself and your family.</div><div data-block="true" data-editor="67jdm" data-offset-key="889rm-0-0"><div data-offset-key="889rm-0-0"><span data-offset-key="889rm-0-0"><img src="../images/chiang-mai-ambassador-chiangmaiambassador-chiangmaiambassador-Your-Air-Color.webp" alt="chiangmaiambassador Your Air Color.jpg 54671c" width="232" height="300" loading="lazy"></span></div><div data-offset-key="889rm-0-0"></div></div><div data-block="true" data-editor="67jdm" data-offset-key="di8mk-0-0"><div data-offset-key="di8mk-0-0"><span data-offset-key="di8mk-0-0"><span data-text="true">I live here and I deal with it. It has been much worse previous years but again more people jumping on a band wagon. I just wish I could find my post about smoky season, but it is buried in Facebook somewhere. However I did look at previous couple years of comments and posts about the smoky season and this year is nothing compared to others.</span></span></div></div><div data-block="true" data-editor="67jdm" data-offset-key="9nki5-0-0"></div><div data-block="true" data-editor="67jdm" data-offset-key="769hg-0-0"><div data-offset-key="769hg-0-0"><span data-offset-key="769hg-0-0"><span data-text="true">I deal with it, how, by limiting my exposure, well if it was bad, I might even shut my window. I am not a hero, but someone who just gets on with life.</span></span></div><div data-offset-key="769hg-0-0"></div></div><h4 data-offset-key="769hg-0-0">Asian Farming – Thai Farming</h4><div data-block="true" data-editor="67jdm" data-offset-key="88gk8-0-0"><div data-offset-key="88gk8-0-0">You know that no Thai farmer is going to change anything about what he does, because it’s what he has been taught over hundreds of years, because it is what his dad did and it has nothing to do with smoky season in Chiang Mai.</div></div><div data-block="true" data-editor="67jdm" data-offset-key="3aksh-0-0"></div><div data-block="true" data-editor="67jdm" data-offset-key="5cr57-0-0"><div data-offset-key="5cr57-0-0"><span data-offset-key="5cr57-0-0"><span data-text="true">Thai people don’t even change when it comes to rice and the opportunity to double his crop size using half the resources by planting a slightly different formation(SRI).</span></span></div></div><div data-block="true" data-editor="67jdm" data-offset-key="9dhho-0-0"></div><div data-block="true" data-editor="67jdm" data-offset-key="7kigj-0-0"><div data-offset-key="7kigj-0-0"><span data-offset-key="7kigj-0-0"><span data-text="true">YES, you can’t even pay them to grow more with less!!!</span></span></div></div><div data-block="true" data-editor="67jdm" data-offset-key="783a2-0-0"></div><div data-block="true" data-editor="67jdm" data-offset-key="artqn-0-0"><div data-offset-key="artqn-0-0"><span data-offset-key="artqn-0-0"><span data-text="true">I am just saying more and more hoo-ha about this isn’t going to make a tiny bit of difference when it comes to what happens. They don’t even know that rice straw, composting and other things can actually help keep nutrients in their soils. It doesn’t take much and their soils can be better year on year. A friend is into his 3rd Organic Rice season and his crops are killing it. But it’s not how Thai people grow it, so he is a freak, who produces about 3x the former output on the same piece of land with so much less input and no chemicals.</span></span></div></div><div data-block="true" data-editor="67jdm" data-offset-key="3ijkh-0-0"></div><div data-block="true" data-editor="67jdm" data-offset-key="a5u85-0-0"><div data-offset-key="a5u85-0-0"><span data-offset-key="a5u85-0-0"><span data-text="true">I am not an actual farmer’s bootlace or a scientist who knows anything about smoke, but I am someone who knows one thing, THAI people will not change, no matter what SCIENTIFIC PROOF a white face puts in front of them. Here is some proof – <a href="http://chiangmaibuddy.com/how-bad-is-chiang-mai-air-pollution-really/" rel="noopener noreferrer" target="_blank">http://chiangmaibuddy.com/how-bad-is-chiang-mai-air-pollution-really/</a></span></span></div></div><div data-block="true" data-editor="67jdm" data-offset-key="6ftr7-0-0"></div><div data-block="true" data-editor="67jdm" data-offset-key="8v3eo-0-0"><div data-offset-key="8v3eo-0-0"><span data-offset-key="8v3eo-0-0"><span data-text="true">I just wish people would stop talking about the smoky season in Chiang Mai and air pollution!!!</span></span></div></div></div><footer><div>
+<span>
+<span>
+Post Tags:		</span>
+<a href="expat.html" rel="tag" title="Expat"><span>#</span>Expat</a><a href="information.html" rel="tag" title="information"><span>#</span>information</a><a href="smoke.html" rel="tag" title="smoke"><span>#</span>smoke</a><a href="smoky-season.html" rel="tag" title="smoky season"><span>#</span>smoky season</a> </span></div></footer></div>
+                </div>
+            </div>
+        </article>
+
+        <section class="blog-related container">
+            <h2>More from the Ambassador</h2>
+            <div class="blog-grid">
+                <article class="blog-card reveal">
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-13.webp" alt="Related article" width="400" height="200">
+                    <h3>Chiang Mai Walking Street Markets</h3>
+                    <p>The Saturday and Sunday walking street markets are unmissable for bargains and local atmosphere.</p>
+                    <a href="walking-street-markets.html" class="arrow-link">Read more &rarr;</a>
+                </article>
+                <article class="blog-card reveal">
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-116.webp" alt="Related article" width="400" height="200">
+                    <h3>Getting Social in Chiang Mai</h3>
+                    <p>How to meet people, find your community, and build a genuine social life in Chiang Mai.</p>
+                    <a href="getting-social-in-chiang-mai.html" class="arrow-link">Read more &rarr;</a>
+                </article>
+                <article class="blog-card reveal">
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-127.webp" alt="Related article" width="400" height="200">
+                    <h3>Expat Breakfast Club</h3>
+                    <p>A long-running tradition for expats to connect, share stories, and start the week right.</p>
+                    <a href="expat-breakfast-club.html" class="arrow-link">Read more &rarr;</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="../" class="logo-link">
+                        <div class="logo">
+                            <svg class="logo-icon" viewBox="-175 -178 350 500" xmlns="http://www.w3.org/2000/svg" width="60" height="80">
+                                <defs>
+                                    <linearGradient id="g2gold-footer" x1="20%" y1="0%" x2="80%" y2="100%">
+                                        <stop offset="0%" stop-color="#F2D980" />
+                                        <stop offset="40%" stop-color="#C49010" />
+                                        <stop offset="100%" stop-color="#9A7008" />
+                                    </linearGradient>
+                                    <linearGradient id="g2ring-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#E4BC50" />
+                                        <stop offset="100%" stop-color="#9A7008" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="0" cy="0" r="164" fill="none" stroke="url(#g2ring-footer)" stroke-width="2.5" />
+                                <circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65" />
+                                <circle cx="164" cy="0" r="3.2" fill="#C49010" />
+                                <circle cx="0" cy="-164" r="3.2" fill="#C49010" />
+                                <circle cx="-164" cy="0" r="3.2" fill="#C49010" />
+                                <circle cx="0" cy="164" r="3.2" fill="#C49010" />
+                                <g transform="translate(0, -149.201) scale(1.94980)">
+                                    <polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980" />
+                                    <rect x="-2" y="4" width="4" height="38" fill="url(#g2gold-footer)" />
+                                    <polygon points="0,42 -16,78 16,78" fill="url(#g2gold-footer)" />
+                                    <rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008" />
+                                    <rect x="-22" y="84" width="44" height="9" fill="url(#g2gold-footer)" />
+                                    <rect x="-25" y="93" width="50" height="4" fill="#9A7008" />
+                                    <rect x="-30" y="97" width="60" height="9" fill="url(#g2gold-footer)" />
+                                    <rect x="-33" y="106" width="66" height="4" fill="#9A7008" />
+                                    <rect x="-38" y="110" width="76" height="9" fill="url(#g2gold-footer)" />
+                                    <rect x="-44" y="119" width="88" height="11" fill="url(#g2gold-footer)" />
+                                    <rect x="-52" y="130" width="104" height="8" fill="#9A7008" />
+                                </g>
+                            </svg>
+                            <div class="logo-text-wrapper">
+                                <div>
+                                    <span class="logo-accent">CM</span><span class="logo-text">Ambassador</span>
+                                </div>
+                                <span class="logo-tagline">Connector &middot; Helper &middot; Guru</span>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="footer-tagline">Local knowledge. Practical support. The Rose of the North, clearly explained.</p>
+                </div>
+
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <div class="footer-nav-group">
+                        <h4>Guides</h4>
+                        <ul role="list">
+                            <li><a href="../pages/neighbourhoods.html">Neighbourhoods</a></li>
+                            <li><a href="../pages/cost-of-living.html">Cost of living</a></li>
+                            <li><a href="../pages/visas.html">Visas and permits</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>Tools</h4>
+                        <ul role="list">
+                            <li><a href="../#tools">Budget calculator</a></li>
+                            <li><a href="../#tools">Visa planner</a></li>
+                            <li><a href="../#tools">Neighbourhood matcher</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>Community</h4>
+                        <ul role="list">
+                            <li><a href="#">Expats Club</a></li>
+                            <li><a href="#">Ask a local</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-legal">Copyright 2026 Chiang Mai Ambassador. Published with care in Chiang Mai, Thailand.</p>
+                <p class="footer-disclaimer">Information is provided in good faith. Always verify information with qualified professionals and official sources before making decisions.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

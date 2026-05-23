@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yunnan Farmers Market Chiang Mai is the city’s Friday morning favorite, bursting with fresh vegetables, authentic Yunnanese foods. Don’t miss this!">
+    <meta name="robots" content="index, follow">
+    <title>Discover the Yunnan Farmers Market Chiang Mai Every Friday! | Chiang Mai Ambassador</title>
+
+    <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/sections.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/blog.css">
+
+    <link rel="preload" href="../fonts/outfit-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/outfit-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/plus-jakarta-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/plus-jakarta-500.woff2" as="font" type="font/woff2" crossorigin>
+
+    <style>
+        .blog-content {
+            background-color: white !important;
+            padding: 5rem 0 !important;
+        }
+        .blog-hero {
+            margin-top: 80px;
+        }
+        .img-right-small {
+            float: right;
+            width: 30%;
+            margin: 0 0 1rem 2rem;
+            shape-margin: 1rem;
+        }
+        .img-left-large {
+            float: left;
+            width: 55%;
+            margin: 1rem 2rem 1rem -15%;
+            shape-margin: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        .img-left-large img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .img-fullwidth-break {
+            width: 100%;
+            max-width: 100%;
+            margin: 3rem 0 2rem 0;
+            display: block;
+        }
+        .img-fullwidth-break img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .img-float-right-small {
+            float: right;
+            width: 45%;
+            margin: 0 0 1.5rem 2rem;
+        }
+        figure {
+            margin: 0;
+        }
+        figcaption {
+            display: none;
+        }
+        .article-sidebar {
+            background: #f0d080;
+            padding: 2rem;
+            border-left: 4px solid var(--color-primary);
+            border-radius: 0;
+            margin: 2.5rem 0 3rem 0;
+            border: 1px solid #e5ddd0;
+        }
+        .article-sidebar h4 {
+            font-size: 1rem;
+            color: #1a1a1a;
+            margin: 0 0 1.25rem 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .article-sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .article-sidebar li {
+            color: #333;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+        }
+        .article-sidebar li:last-child {
+            margin-bottom: 0;
+        }
+        .blog-metadata {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem 0 2.5rem;
+            border-bottom: 1px solid #e5ddd0;
+            margin-bottom: 2rem;
+        }
+        .blog-meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        .blog-meta-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #999;
+        }
+        .blog-meta-value {
+            font-size: 0.95rem;
+            color: #333;
+            font-weight: 500;
+        }
+        .blog-meta-divider {
+            width: 1px;
+            height: 24px;
+            background: #e5ddd0;
+        }
+        .blog-options {
+            display: flex;
+            gap: 0.75rem;
+            margin-left: auto;
+        }
+        .blog-body h2 {
+            font-size: 1.875rem;
+            color: #1a1a1a;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .blog-body h3 {
+            font-size: 1.25rem;
+            color: #1a1a1a;
+            margin-top: 1.75rem;
+            margin-bottom: 0.75rem;
+        }
+        .blog-body p {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        .blog-body strong {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        .blog-body img {
+            max-width: 100%;
+            height: auto;
+        }
+        .blog-body .alignright {
+            float: right;
+            margin: 0 0 1rem 2rem;
+            max-width: 40%;
+        }
+        .blog-body .alignleft {
+            float: left;
+            margin: 0 2rem 1rem 0;
+            max-width: 40%;
+        }
+        .blog-body .aligncenter {
+            display: block;
+            margin: 2rem auto;
+        }
+        .key-takeaways {
+            background: #f0d080;
+            padding: 2rem;
+            border-radius: 0;
+            margin: 3rem 0;
+            border: 1px solid #e5ddd0;
+        }
+        .key-takeaways h3 {
+            margin-top: 0;
+            color: #1a1a1a;
+        }
+        .key-takeaways p {
+            color: #333;
+        }
+        .blog-related {
+            background: transparent;
+            padding: 4rem 0 !important;
+        }
+        .blog-related h2 {
+            color: white;
+        }
+        .blog-card {
+            background-color: var(--color-surface) !important;
+        }
+        @media (max-width: 768px) {
+            .img-right-small,
+            .img-left-large,
+            .img-float-right-small,
+            .blog-body .alignright,
+            .blog-body .alignleft {
+                float: none;
+                width: 100%;
+                max-width: 100%;
+                margin: 1.5rem 0;
+            }
+            .article-sidebar {
+                margin: 2rem 0;
+            }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Discover the Yunnan Farmers Market Chiang Mai Every Friday!",
+        "description": "Yunnan Farmers Market Chiang Mai is the city’s Friday morning favorite, bursting with fresh vegetables, authentic Yunnanese foods. Don’t miss this!",
+        "datePublished": "2026-05-23",
+        "author": { "@type": "Organization", "name": "Chiang Mai Ambassador" }
+    }
+    </script>
+</head>
+<body style="margin: 0; padding: 0; width: 100%;">
+
+    <div class="progress-bar" id="progress-bar" aria-label="Reading progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+    <nav class="nav-wrapper">
+        <a href="../" class="logo-link">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="-175 -178 350 500" xmlns="http://www.w3.org/2000/svg" width="60" height="80">
+                    <defs>
+                        <linearGradient id="g2gold" x1="20%" y1="0%" x2="80%" y2="100%">
+                            <stop offset="0%" stop-color="#F2D980" />
+                            <stop offset="40%" stop-color="#C49010" />
+                            <stop offset="100%" stop-color="#9A7008" />
+                        </linearGradient>
+                        <linearGradient id="g2ring" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#E4BC50" />
+                            <stop offset="100%" stop-color="#9A7008" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="0" cy="0" r="164" fill="none" stroke="url(#g2ring)" stroke-width="2.5" />
+                    <circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65" />
+                    <circle cx="164" cy="0" r="3.2" fill="#C49010" />
+                    <circle cx="0" cy="-164" r="3.2" fill="#C49010" />
+                    <circle cx="-164" cy="0" r="3.2" fill="#C49010" />
+                    <circle cx="0" cy="164" r="3.2" fill="#C49010" />
+                    <g transform="translate(0, -149.201) scale(1.94980)">
+                        <polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980" />
+                        <rect x="-2" y="4" width="4" height="38" fill="url(#g2gold)" />
+                        <polygon points="0,42 -16,78 16,78" fill="url(#g2gold)" />
+                        <rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008" />
+                        <rect x="-22" y="84" width="44" height="9" fill="url(#g2gold)" />
+                        <rect x="-25" y="93" width="50" height="4" fill="#9A7008" />
+                        <rect x="-30" y="97" width="60" height="9" fill="url(#g2gold)" />
+                        <rect x="-33" y="106" width="66" height="4" fill="#9A7008" />
+                        <rect x="-38" y="110" width="76" height="9" fill="url(#g2gold)" />
+                        <rect x="-44" y="119" width="88" height="11" fill="url(#g2gold)" />
+                        <rect x="-52" y="130" width="104" height="8" fill="#9A7008" />
+                    </g>
+                </svg>
+                <div class="logo-text-wrapper nav-mode">
+                    <div>
+                        <span class="logo-accent">CM</span><span class="logo-text">Ambassador</span>
+                    </div>
+                    <span class="logo-tagline">Connector &middot; Helper &middot; Guru</span>
+                </div>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="../pages/neighbourhoods.html">Neighbourhoods</a>
+            <a href="../pages/cost-of-living.html">Cost of Living</a>
+            <a href="../#start" class="btn-primary magnetic-item">Start Here</a>
+        </div>
+    </nav>
+
+    <main style="width: 100%; margin: 0 auto;">
+
+        <section class="blog-hero">
+            <div class="container" style="max-width: 960px; width: 100%; margin: 0 auto; padding: 0 2rem; box-sizing: border-box;">
+                <div class="blog-header reveal">
+                    <h1>Discover the Yunnan Farmers <span class="gold-gradient-text">Market Chiang Mai Every Friday!</span></h1>
+                    <p class="blog-excerpt">Yunnan Farmers Market Chiang Mai is the city’s Friday morning favorite, bursting with fresh vegetables, authentic Yunnanese foods. Don’t miss this!</p>
+                </div>
+            </div>
+        </section>
+
+        <article class="blog-content" style="background-color: white; padding-top: 0.75rem !important;">
+            <div class="container" style="max-width: 960px; width: 100%; margin: 0 auto; padding: 0 2rem; box-sizing: border-box;">
+                <div class="blog-metadata reveal">
+                    <div class="blog-meta-item">
+                        <span class="blog-meta-label">Category</span>
+                        <span class="blog-meta-value"><a href="../">Home</a> / Attractions</span>
+                    </div>
+                    <div class="blog-meta-divider"></div>
+                    <div class="blog-meta-item">
+                        <span class="blog-meta-label">Read time</span>
+                        <span class="blog-meta-value">20 min</span>
+                    </div>
+                    <div class="blog-meta-divider"></div>
+                    <div class="blog-meta-item">
+                        <span class="blog-meta-label">Last updated</span>
+                        <span class="blog-meta-value">May 2026</span>
+                    </div>
+                </div>
+
+                <div class="blog-body">
+
+                    <!-- TL;DR IMAGE + SUMMARY -->
+                    <figure class="img-right-small" style="margin-top: -30px; margin-bottom: 1rem; width: calc(100% - 400px); max-width: 280px;">
+                        <!-- TL;DR image unmatched - needs human review -->
+                    </figure>
+                    <div class="article-sidebar">
+                        <h4>Quick Summary</h4>
+                        <ul>
+                            <li>Yunnan Farmers Market</li>
+                            <li>A Friday Morning Experience</li>
+                            <li>What Makes Yunnan Farmers Market Special?</li>
+                            <li>Hot Food Court</li>
+                            <li>The heart of Chiang Mai pulses to a different beat every Friday morning.</li>
+                            <li>Unlike the city’s popular night markets, this morning market specializes in fresh, organic vegetables, direct from mountain farms.</li>
+                            <li>The market’s food court is a center of activity and authentic flavor.</li>
+                        </ul>
+                    </div>
+
+<div><div><div><div><div><h2 data-kb-block="kb-adv-heading4003_375b27-ee">Yunnan Farmers Market</h2><div aria-hidden="true"></div></div></div><div></div></div></div><div><div><div><div><div><div><hr/></div></div><h1 data-kb-block="kb-adv-heading4003_710a2c-81">Discover the Yunnan Farmers Market in Chiang Mai</h1><h2 data-kb-block="kb-adv-heading4003_3a8c98-8e">A Friday Morning Experience</h2><p data-kb-block="kb-adv-heading4003_456c25-ea">The heart of Chiang Mai pulses to a different beat every Friday morning. Locals and visitors gather just off Tha Phae Road, behind the famous Night Bazaar, to experience the beloved Yunnan Farmers Market. This vibrant market opens at dawn, welcoming shoppers from 5am until noon. Its roots reach deep into Yunnanese tradition, blending Southern Chinese culinary heritage with the energy of northern Thailand. For foodies, lovers of culture, and market enthusiasts, the Yunnan Farmers Market is an essential Chiang Mai highlight.</p><h2 data-kb-block="kb-adv-heading4003_177821-0b"><strong>What Makes Yunnan Farmers Market Special?</strong></h2><p data-kb-block="kb-adv-heading4003_173cae-31">Unlike the city’s popular night markets, this morning market specializes in fresh, organic vegetables, direct from mountain farms. Vendors offer plump eggplants, fragrant herbs, bright chilies, and mushrooms grown in the cool highlands surrounding Chiang Mai. The produce is impressively varied, with rows of beans, greens, pumpkin, and rare Yunnanese specialties rarely found elsewhere. Everything is as fresh as it comes and priced to please local families.​<br/></p></div></div></div></div><div><div><div><div><h2 data-kb-block="kb-adv-heading4003_543c47-b2"><strong>Hot Food Court</strong></h2><p data-kb-block="kb-adv-heading4003_e841ea-1a">The market’s food court is a center of activity and authentic flavor. Here, the aroma of slow-cooked beef noodle soup mingles with spicy dumplings, “Kao Buk Bing” grilled sticky rice cakes, vinegared pork noodles, and inventive snacks based on handed-down recipes. Try black chicken rice noodles or yellow tofu, traditional hits beloved by the local Chinese community. Street food fans can feast for just a few dollars—the $5 challenge is real, and hearty, with plates of pad thai, roti, samosas, Chinese buns, and crispy snacks waiting at every turn.<br/><br/>But the magic of Yunnan Farmers Market lies in its atmosphere. It’s not just about buying food; it’s about sharing space with Chiang Mai’s diverse communities. Mandarin, Thai, and Shan dialects float through the air as families shop together, and seasoned locals gather for strong market-style coffee (sometimes sold from a modified motorbike). Some stalls specialize in halal snacks, reflecting the region’s multi-ethnic tapestry.​</p></div></div><div><div><figure></figure></div></div></div></div><div><div><div><div><figure></figure></div></div><div><div><h2 data-kb-block="kb-adv-heading4003_42a491-cb"><strong>Friday Morning Rituals</strong></h2><p data-kb-block="kb-adv-heading4003_8be402-08">The early hours are blessedly peaceful compared to the city’s regular market rush. There’s time for conversation, and both buyers and sellers seem in no hurry. You might catch a glimpse of an unusual local treatment, a vendor offering knee massage using “Tok Sen,” a wooden mallet technique famed in these parts for soothing arthritis and joint pain.<br/><br/>By mid-morning, crowds build as shoppers return from the produce section with full bags of vegetables, meats, noodles, Chinese sauces, kitchenware, and even household goods. You’ll discover famed pickles and preserved foods alongside aisles stacked with steamed buns, fried sweets, and handmade sauces.</p></div></div></div></div><div><div><div><div><h2 data-kb-block="kb-adv-heading4003_636aa6-ed"><strong>Local Food Standouts</strong></h2><p data-kb-block="kb-adv-heading4003_bd5584-b3">Kao Buk Bing: grilled sticky rice cakes, unique in the north<br/>Steamed dumplings: served with ginger, vinegar, and chives<br/>Nan bread with chicken soup: popular for dipping<br/>Black chicken rice noodle: exotic and flavorful<br/>Freshly brewed market coffee: robust and always unique<br/>Fermented bean curd: a taste worth seeking out<br/>Beef patties and many unique noodle types: flat, ribbon, glass</p></div></div><div><div><figure></figure></div></div></div></div><div><div><div><div><figure></figure></div></div><div><div><h2 data-kb-block="kb-adv-heading4003_557f29-5d"><strong><strong>Practical Tips for Visiting</strong></strong></h2><p data-kb-block="kb-adv-heading4003_8afb3b-90">Arrive Early: The best selection is available from 5am; by noon, many stalls begin winding down.<br/>Cash Only: Most vendors do not accept cards.<br/>Learn from Locals: Many speak Mandarin for an authentic experience.<br/>Blend In: Dress casually and be ready to sample foods, vendors are friendly.<br/>Location: Just a couple of minutes walk from Chiang Mai Night Bazaar, off Tha Phae Soi 1.</p></div></div></div></div><div><div><div><div><h2 data-kb-block="kb-adv-heading4003_5a13f7-2e"><strong>Why You Should Go</strong></h2><p data-kb-block="kb-adv-heading4003_4975e7-5c">The Yunnan Farmers Market is a living bridge between cultures. It’s a place for fresh, affordable food; a bazaar rich with vibrant produce and homemade delicacies; and a Friday morning escape from the bustle of tourist crowds. Google reviews praise the freshness, variety, and unique finds, especially the array of vegetables and the mood of genuine community. Locals love stopping for noodles and coffee before heading back to work or home with bags full of hard-to-find ingredients. If you’re in Chiang Mai, reserve Friday morning for this hidden gem—you’ll walk away refreshed, full, and a little more connected to the real life of the city.</p></div></div><div><div><figure></figure></div></div></div></div><div><div><div><div><figure></figure></div></div><div><div><figure></figure></div></div></div></div><div><div><div><div><div data-mapid="4003_f91b1125"></div></div></div></div></div><div><div><div><div><div><div data-image-filter="none" data-lightbox-caption="true"><div aria-roledescription="carousel" data-show-pause-button="false" data-slider-anim-speed="400" data-slider-arrows="false" data-slider-auto="1" data-slider-center-mode="true" data-slider-dots="false" data-slider-gap="10px" data-slider-gap-mobile="10px" data-slider-gap-tablet="10px" data-slider-hover-pause="false" data-slider-scroll="1" data-slider-speed="3000" data-slider-type="fluidcarousel" id="splide02" role="region"><div aria-atomic="true" aria-busy="false" aria-live="off" id="splide02-track"><ul id="splide02-list" role="presentation"><li aria-hidden="true" aria-label="1 of 31" aria-roledescription="slide" id="splide02-clone01" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="2 of 31" aria-roledescription="slide" id="splide02-clone02" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="3 of 31" aria-roledescription="slide" id="splide02-clone03" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="4 of 31" aria-roledescription="slide" id="splide02-clone04" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="5 of 31" aria-roledescription="slide" id="splide02-clone05" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="6 of 31" aria-roledescription="slide" id="splide02-clone06" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="7 of 31" aria-roledescription="slide" id="splide02-clone07" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="8 of 31" aria-roledescription="slide" id="splide02-clone08" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="9 of 31" aria-roledescription="slide" id="splide02-clone09" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="10 of 31" aria-roledescription="slide" id="splide02-clone10" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="11 of 31" aria-roledescription="slide" id="splide02-clone11" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="12 of 31" aria-roledescription="slide" id="splide02-clone12" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="13 of 31" aria-roledescription="slide" id="splide02-clone13" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="14 of 31" aria-roledescription="slide" id="splide02-clone14" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="15 of 31" aria-roledescription="slide" id="splide02-clone15" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="16 of 31" aria-roledescription="slide" id="splide02-clone16" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="17 of 31" aria-roledescription="slide" id="splide02-clone17" role="group"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="18 of 31" aria-roledescription="slide" id="splide02-clone18" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="19 of 31" aria-roledescription="slide" id="splide02-clone19" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="20 of 31" aria-roledescription="slide" id="splide02-clone20" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="21 of 31" aria-roledescription="slide" id="splide02-clone21" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="22 of 31" aria-roledescription="slide" id="splide02-clone22" role="group"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="23 of 31" aria-roledescription="slide" id="splide02-clone23" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="24 of 31" aria-roledescription="slide" id="splide02-clone24" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="25 of 31" aria-roledescription="slide" id="splide02-clone25" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="26 of 31" aria-roledescription="slide" id="splide02-clone26" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="27 of 31" aria-roledescription="slide" id="splide02-clone27" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="28 of 31" aria-roledescription="slide" id="splide02-clone28" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="29 of 31" aria-roledescription="slide" id="splide02-clone29" role="group"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="30 of 31" aria-roledescription="slide" id="splide02-clone30" role="group"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="31 of 31" aria-roledescription="slide" id="splide02-clone31" role="group"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="1 of 31" aria-roledescription="slide" id="splide02-slide01" role="group"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="2 of 31" aria-roledescription="slide" id="splide02-slide02" role="group"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="3 of 31" aria-roledescription="slide" id="splide02-slide03" role="group"><div><div><figure><div></div></figure></div></div></li><li aria-label="4 of 31" aria-roledescription="slide" id="splide02-slide04" role="group"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="5 of 31" aria-roledescription="slide" id="splide02-slide05" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="6 of 31" aria-roledescription="slide" id="splide02-slide06" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="7 of 31" aria-roledescription="slide" id="splide02-slide07" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="8 of 31" aria-roledescription="slide" id="splide02-slide08" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="9 of 31" aria-roledescription="slide" id="splide02-slide09" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="10 of 31" aria-roledescription="slide" id="splide02-slide10" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="11 of 31" aria-roledescription="slide" id="splide02-slide11" role="group"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="12 of 31" aria-roledescription="slide" id="splide02-slide12" role="group"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="13 of 31" aria-roledescription="slide" id="splide02-slide13" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="14 of 31" aria-roledescription="slide" id="splide02-slide14" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="15 of 31" aria-roledescription="slide" id="splide02-slide15" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="16 of 31" aria-roledescription="slide" id="splide02-slide16" role="group"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="17 of 31" aria-roledescription="slide" id="splide02-slide17" role="group"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="18 of 31" aria-roledescription="slide" id="splide02-slide18" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="19 of 31" aria-roledescription="slide" id="splide02-slide19" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="20 of 31" aria-roledescription="slide" id="splide02-slide20" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="21 of 31" aria-roledescription="slide" id="splide02-slide21" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="22 of 31" aria-roledescription="slide" id="splide02-slide22" role="group"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="23 of 31" aria-roledescription="slide" id="splide02-slide23" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="24 of 31" aria-roledescription="slide" id="splide02-slide24" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="25 of 31" aria-roledescription="slide" id="splide02-slide25" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="26 of 31" aria-roledescription="slide" id="splide02-slide26" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="27 of 31" aria-roledescription="slide" id="splide02-slide27" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="28 of 31" aria-roledescription="slide" id="splide02-slide28" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="29 of 31" aria-roledescription="slide" id="splide02-slide29" role="group"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="30 of 31" aria-roledescription="slide" id="splide02-slide30" role="group"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="31 of 31" aria-roledescription="slide" id="splide02-slide31" role="group"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="1 of 31" aria-roledescription="slide" id="splide02-clone32" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="2 of 31" aria-roledescription="slide" id="splide02-clone33" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="3 of 31" aria-roledescription="slide" id="splide02-clone34" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="4 of 31" aria-roledescription="slide" id="splide02-clone35" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="5 of 31" aria-roledescription="slide" id="splide02-clone36" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="6 of 31" aria-roledescription="slide" id="splide02-clone37" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="7 of 31" aria-roledescription="slide" id="splide02-clone38" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="8 of 31" aria-roledescription="slide" id="splide02-clone39" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="9 of 31" aria-roledescription="slide" id="splide02-clone40" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="10 of 31" aria-roledescription="slide" id="splide02-clone41" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="11 of 31" aria-roledescription="slide" id="splide02-clone42" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="12 of 31" aria-roledescription="slide" id="splide02-clone43" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="13 of 31" aria-roledescription="slide" id="splide02-clone44" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="14 of 31" aria-roledescription="slide" id="splide02-clone45" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="15 of 31" aria-roledescription="slide" id="splide02-clone46" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="16 of 31" aria-roledescription="slide" id="splide02-clone47" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="17 of 31" aria-roledescription="slide" id="splide02-clone48" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="18 of 31" aria-roledescription="slide" id="splide02-clone49" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="19 of 31" aria-roledescription="slide" id="splide02-clone50" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="20 of 31" aria-roledescription="slide" id="splide02-clone51" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="21 of 31" aria-roledescription="slide" id="splide02-clone52" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="22 of 31" aria-roledescription="slide" id="splide02-clone53" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="23 of 31" aria-roledescription="slide" id="splide02-clone54" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="24 of 31" aria-roledescription="slide" id="splide02-clone55" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="25 of 31" aria-roledescription="slide" id="splide02-clone56" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="26 of 31" aria-roledescription="slide" id="splide02-clone57" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="27 of 31" aria-roledescription="slide" id="splide02-clone58" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="28 of 31" aria-roledescription="slide" id="splide02-clone59" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="29 of 31" aria-roledescription="slide" id="splide02-clone60" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="30 of 31" aria-roledescription="slide" id="splide02-clone61" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li><li aria-hidden="true" aria-label="31 of 31" aria-roledescription="slide" id="splide02-clone62" role="group"><div><div><figure><div><div><span></span></div></div></figure></div></div></li></ul></div></div></div></div></div></div></div></div><div><div><div><div><div><div><div><a data-effect="none" data-popup-auto="true" data-popup-class="kadence-popup-4003_202730-68" data-popup-id="kadence-local-video-4003_202730-68" data-youtube-cookies="true" href="https://www.youtube.com/watch?v=A1ysByUmdhc" role="button"><span><svg fill="currentColor" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><title>Play</title><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg></span></a></div></div></div></div></div></div></div></div><footer><div>
+<span>
+<span>
+Post Tags:		</span>
+<a href="chiang-mai.html" rel="tag" title="Chiang Mai"><span>#</span>Chiang Mai</a><a href="daily-life.html" rel="tag" title="daily life"><span>#</span>daily life</a><a href="good-to-check-out.html" rel="tag" title="good to check out"><span>#</span>good to check out</a><a href="top-tips.html" rel="tag" title="top tips"><span>#</span>top tips</a> </span></div></footer></div>
+                </div>
+            </div>
+        </article>
+
+        <section class="blog-related container">
+            <h2>More from the Ambassador</h2>
+            <div class="blog-grid">
+                <article class="blog-card reveal">
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-13.webp" alt="Related article" width="400" height="200">
+                    <h3>Chiang Mai Walking Street Markets</h3>
+                    <p>The Saturday and Sunday walking street markets are unmissable for bargains and local atmosphere.</p>
+                    <a href="walking-street-markets.html" class="arrow-link">Read more &rarr;</a>
+                </article>
+                <article class="blog-card reveal">
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-116.webp" alt="Related article" width="400" height="200">
+                    <h3>Getting Social in Chiang Mai</h3>
+                    <p>How to meet people, find your community, and build a genuine social life in Chiang Mai.</p>
+                    <a href="getting-social-in-chiang-mai.html" class="arrow-link">Read more &rarr;</a>
+                </article>
+                <article class="blog-card reveal">
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-127.webp" alt="Related article" width="400" height="200">
+                    <h3>Expat Breakfast Club</h3>
+                    <p>A long-running tradition for expats to connect, share stories, and start the week right.</p>
+                    <a href="expat-breakfast-club.html" class="arrow-link">Read more &rarr;</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="../" class="logo-link">
+                        <div class="logo">
+                            <svg class="logo-icon" viewBox="-175 -178 350 500" xmlns="http://www.w3.org/2000/svg" width="60" height="80">
+                                <defs>
+                                    <linearGradient id="g2gold-footer" x1="20%" y1="0%" x2="80%" y2="100%">
+                                        <stop offset="0%" stop-color="#F2D980" />
+                                        <stop offset="40%" stop-color="#C49010" />
+                                        <stop offset="100%" stop-color="#9A7008" />
+                                    </linearGradient>
+                                    <linearGradient id="g2ring-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#E4BC50" />
+                                        <stop offset="100%" stop-color="#9A7008" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="0" cy="0" r="164" fill="none" stroke="url(#g2ring-footer)" stroke-width="2.5" />
+                                <circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65" />
+                                <circle cx="164" cy="0" r="3.2" fill="#C49010" />
+                                <circle cx="0" cy="-164" r="3.2" fill="#C49010" />
+                                <circle cx="-164" cy="0" r="3.2" fill="#C49010" />
+                                <circle cx="0" cy="164" r="3.2" fill="#C49010" />
+                                <g transform="translate(0, -149.201) scale(1.94980)">
+                                    <polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980" />
+                                    <rect x="-2" y="4" width="4" height="38" fill="url(#g2gold-footer)" />
+                                    <polygon points="0,42 -16,78 16,78" fill="url(#g2gold-footer)" />
+                                    <rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008" />
+                                    <rect x="-22" y="84" width="44" height="9" fill="url(#g2gold-footer)" />
+                                    <rect x="-25" y="93" width="50" height="4" fill="#9A7008" />
+                                    <rect x="-30" y="97" width="60" height="9" fill="url(#g2gold-footer)" />
+                                    <rect x="-33" y="106" width="66" height="4" fill="#9A7008" />
+                                    <rect x="-38" y="110" width="76" height="9" fill="url(#g2gold-footer)" />
+                                    <rect x="-44" y="119" width="88" height="11" fill="url(#g2gold-footer)" />
+                                    <rect x="-52" y="130" width="104" height="8" fill="#9A7008" />
+                                </g>
+                            </svg>
+                            <div class="logo-text-wrapper">
+                                <div>
+                                    <span class="logo-accent">CM</span><span class="logo-text">Ambassador</span>
+                                </div>
+                                <span class="logo-tagline">Connector &middot; Helper &middot; Guru</span>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="footer-tagline">Local knowledge. Practical support. The Rose of the North, clearly explained.</p>
+                </div>
+
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <div class="footer-nav-group">
+                        <h4>Guides</h4>
+                        <ul role="list">
+                            <li><a href="../pages/neighbourhoods.html">Neighbourhoods</a></li>
+                            <li><a href="../pages/cost-of-living.html">Cost of living</a></li>
+                            <li><a href="../pages/visas.html">Visas and permits</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>Tools</h4>
+                        <ul role="list">
+                            <li><a href="../#tools">Budget calculator</a></li>
+                            <li><a href="../#tools">Visa planner</a></li>
+                            <li><a href="../#tools">Neighbourhood matcher</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>Community</h4>
+                        <ul role="list">
+                            <li><a href="#">Expats Club</a></li>
+                            <li><a href="#">Ask a local</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-legal">Copyright 2026 Chiang Mai Ambassador. Published with care in Chiang Mai, Thailand.</p>
+                <p class="footer-disclaimer">Information is provided in good faith. Always verify information with qualified professionals and official sources before making decisions.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>
