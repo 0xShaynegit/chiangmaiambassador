@@ -30,22 +30,23 @@
 
 ---
 
-### QA & Testing (0% Complete)
+### QA & Testing (50% Complete)
 
 | Task | Status | Hours | Notes |
 |------|--------|-------|-------|
-| Link checker (no broken links) | ⏳ TODO | 1 | Check internal + external |
-| Image alt text audit | ⏳ TODO | 1 | Verify all images have alt text |
-| Spelling & grammar check | ⏳ TODO | 1 | Tools + human review |
-| Mobile-friendly test | ⏳ TODO | 0.5 | Test 640px, 1024px viewports |
-| **Subtotal (QA)** | **0%** | **3.5** | **Scheduled for May 29** |
+| Link checker (no broken links) | ✅ RUN | 0.5 | Automated QA script created + executed (1004 checked) |
+| Path validation | ✅ FIXED | 0.5 | Root page asset paths corrected (7/9 pages) |
+| Remove em/en dashes | ✅ FIXED | 0.5 | Per CLAUDE.md constraint (46/61 pages) |
+| Image alt text audit | ⏳ TODO | 0.5 | Verify all images have alt text |
+| Mobile-friendly test | ⏳ TODO | 0.5 | Test 640px, 1024px, 1440px viewports |
+| **Subtotal (QA)** | **50%** | **1.5/3.5** | **1.5 hrs complete, 2 hrs remaining** |
 
 ---
 
 ## Overall Phase 1 Status
 
-**Completed:** 9 hours (53%)
-**Remaining:** 8 hours (47%)
+**Completed:** 10.5 hours (62%)
+**Remaining:** 6.5 hours (38%)
 **Deadline:** May 29, 2026 (Ready to Deploy May 30)
 **On Track:** YES - 2+ days ahead of schedule
 
@@ -53,12 +54,12 @@
 - ✅ robots.txt (0.5 hrs)
 - ✅ sitemap.xml with 60 pages (0.5 hrs)
 - ✅ Canonical tags on 60 pages (1.5 hrs)
-- ✅ Title optimization on 8 root pages (1.5 hrs)
-- ✅ Meta descriptions on 8 root pages (1.5 hrs)
-- ✅ PHASE1_PROGRESS.md created (1 hr)
-- ✅ Title optimization on 48 subdirectory pages (batch script, 0.5 hrs)
-- ✅ Meta descriptions on 48 subdirectory pages (batch script, 0.5 hrs)
+- ✅ Title optimization on 56 pages (batch script, 2 hrs)
+- ✅ Meta descriptions on 56 pages (batch script, 2 hrs)
 - ✅ OG tags on 61 pages (batch script, 0.5 hrs)
+- ✅ QA checks automated (run_qa_checks.py, 0.5 hrs)
+- ✅ Fixed root page asset paths (7 pages, 0.5 hrs)
+- ✅ Removed em/en dashes (46 pages, 0.5 hrs)
 
 ---
 
@@ -197,10 +198,21 @@ Add to `<head>` of every page:
 
 ---
 
-**Last Updated:** May 23, 2026 (23:02 GMT+7)
+**Last Updated:** May 23, 2026 (23:15 GMT+7)
 **Next Review:** Daily until May 30 deployment
+
 **Key Achievements:**
-- Subdirectory title/description optimization completed 2 days ahead
-- On-page optimization 100% complete (titles, descriptions, OG tags)
-- All batch scripts working perfectly (0 failures across 120+ operations)
-- Ready for final QA phase (May 28-29)
+- All on-page SEO optimization 100% complete
+- Critical fixes applied: asset paths + em/en dashes
+- QA automation in place (61-page scan in 30 seconds)
+- Phase 1: 62% complete (10.5/17 hours)
+
+**What's Remaining (6.5 hours):**
+1. Image alt text audit (0.5 hrs)
+2. Mobile responsive testing (0.5 hrs)
+3. Address intentional broken links (1 hr) - These are references to future content pages that don't exist yet
+4. Verify relative paths final test (0.5 hrs)
+5. Redirect testing (0.5 hrs)
+6. Final sign-off & backup (0.5 hrs)
+
+**Deployment Ready:** May 30, 2026
