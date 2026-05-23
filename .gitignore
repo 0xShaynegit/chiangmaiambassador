@@ -33,8 +33,10 @@ npm-debug.log*
 *.tmp
 *.temp
 
-# Markdown documentation
+# Markdown documentation (except in MD/ folder)
 *.md
+!MD/
+!MD/*.md
 
 # OS cache
 .cache/
