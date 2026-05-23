@@ -1,0 +1,57 @@
+SEO Optimization Batch Job started at 2026-05-23T22:58:37.638721
+Backup directory: C:\1myguy\projects\chiang-mai-ambassador\backup_seo_20260523_225837
+
+Total pages to optimize: 48
+
+OK: food/auf-der-au-best-buffet-chiang-mai.html
+OK: food/butter-is-better.html
+OK: food/chiang-mai-grandview-lunch.html
+OK: food/dukes.html
+OK: food/food-delivery-services.html
+OK: food/ibis-styles-buffet-lunch.html
+OK: food/le-meridien-dinner-buffet.html
+OK: food/meela-peanut-butter.html
+OK: food/real-thai-restaurant.html
+OK: food/siripanna-lunch.html
+OK: guides/blood-donation-donor-eligibility-red-cross-blood-bank-chiang-mai.html
+OK: guides/blood-donation-procedure.html
+OK: guides/bua-tong-waterfalls.html
+OK: guides/budget-chiang-mai-medical-services.html
+OK: guides/chiang-mai-driving.html
+OK: guides/chiang-mai-football-club.html
+OK: guides/chiang-mai-insurance.html
+OK: guides/flat-tire.html
+OK: guides/license-plates.html
+OK: guides/motorcycle-registration-transfer.html
+OK: guides/motorcycle-rentals.html
+OK: guides/red-cross-blood-bank-chiang-mai.html
+OK: guides/renting-a-motorbike-in-chiang-mai.html
+OK: guides/run-for-relief.html
+OK: guides/tdac-thailand-digital-arrival-card.html
+OK: guides/walking-street-markets.html
+OK: guides/wing-41-pass.html
+OK: guides/work-permit-medical-certificate.html
+OK: lifestyle/alcohol-observations-of-a-non-drinker.html
+OK: lifestyle/chiang-mai-arrival.html
+OK: lifestyle/currency-in-and-out-of-thailand.html
+OK: lifestyle/expat-breakfast-club.html
+OK: lifestyle/learning-languages.html
+OK: lifestyle/life-budget-chiang-mai.html
+OK: lifestyle/life-on-a-budget-in-chiang-mai-covid-2022-update.html
+OK: lifestyle/live-in-chiang-mai.html
+OK: lifestyle/smoky-season-chiang-mai.html
+OK: lifestyle/songkran.html
+OK: lifestyle/thai-visa-advice.html
+OK: lifestyle/top-tips.html
+OK: lifestyle/traveling-alone.html
+OK: lifestyle/traveling-with-friends.html
+OK: lifestyle/us-expat-tax-guide.html
+OK: lifestyle/vientiane-visa-run.html
+OK: pages/about.html
+OK: pages/cost-of-living.html
+OK: pages/neighbourhoods.html
+OK: pages/visas.html
+
+============================================================
+Results: 48 successful, 0 failed
+Completed: 2026-05-23T22:58:37.699318

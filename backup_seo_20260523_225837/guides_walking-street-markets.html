@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="If you are touring Thailand, you must be in Chiang Mai on the weekend to experience the Chiang Mai Walking Street Markets!">
+    <meta name="robots" content="index, follow">
+    <title>Walking Street Markets - the Best thing to do in Chiang Mai | Chiang Mai Ambassador</title>
+
+    <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/sections.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/blog.css">
+
+    <link rel="preload" href="../fonts/outfit-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/outfit-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/plus-jakarta-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/plus-jakarta-500.woff2" as="font" type="font/woff2" crossorigin>
+
+    <style>
+        .blog-content {
+            background-color: white !important;
+            padding: 5rem 0 !important;
+        }
+        .blog-hero {
+            margin-top: 80px;
+        }
+        .img-right-small {
+            float: right;
+            width: 30%;
+            margin: 0 0 1rem 2rem;
+            shape-margin: 1rem;
+        }
+        .img-left-large {
+            float: left;
+            width: 55%;
+            margin: 1rem 2rem 1rem -15%;
+            shape-margin: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        .img-left-large img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .img-fullwidth-break {
+            width: 100%;
+            max-width: 100%;
+            margin: 3rem 0 2rem 0;
+            display: block;
+        }
+        .img-fullwidth-break img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .img-float-right-small {
+            float: right;
+            width: 45%;
+            margin: 0 0 1.5rem 2rem;
+        }
+        figure {
+            margin: 0;
+        }
+        figcaption {
+            display: none;
+        }
+        .article-sidebar {
+            background: #f0d080;
+            padding: 2rem;
+            border-left: 4px solid var(--color-primary);
+            border-radius: 0;
+            margin: 2.5rem 0 3rem 0;
+            border: 1px solid #e5ddd0;
+        }
+        .article-sidebar h4 {
+            font-size: 1rem;
+            color: #1a1a1a;
+            margin: 0 0 1.25rem 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .article-sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .article-sidebar li {
+            color: #333;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+        }
+        .article-sidebar li:last-child {
+            margin-bottom: 0;
+        }
+        .blog-metadata {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem 0 2.5rem;
+            border-bottom: 1px solid #e5ddd0;
+            margin-bottom: 2rem;
+        }
+        .blog-meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        .blog-meta-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #999;
+        }
+        .blog-meta-value {
+            font-size: 0.95rem;
+            color: #333;
+            font-weight: 500;
+        }
+        .blog-meta-divider {
+            width: 1px;
+            height: 24px;
+            background: #e5ddd0;
+        }
+        .blog-options {
+            display: flex;
+            gap: 0.75rem;
+            margin-left: auto;
+        }
+        .blog-body h2 {
+            font-size: 1.875rem;
+            color: #1a1a1a;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .blog-body h3 {
+            font-size: 1.25rem;
+            color: #1a1a1a;
+            margin-top: 1.75rem;
+            margin-bottom: 0.75rem;
+        }
+        .blog-body p {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        .blog-body strong {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        .blog-body img {
+            max-width: 100%;
+            height: auto;
+        }
+        .blog-body .alignright {
+            float: right;
+            margin: 0 0 1rem 2rem;
+            max-width: 40%;
+        }
+        .blog-body .alignleft {
+            float: left;
+            margin: 0 2rem 1rem 0;
+            max-width: 40%;
+        }
+        .blog-body .aligncenter {
+            display: block;
+            margin: 2rem auto;
+        }
+        .key-takeaways {
+            background: #f0d080;
+            padding: 2rem;
+            border-radius: 0;
+            margin: 3rem 0;
+            border: 1px solid #e5ddd0;
+        }
+        .key-takeaways h3 {
+            margin-top: 0;
+            color: #1a1a1a;
+        }
+        .key-takeaways p {
+            color: #333;
+        }
+        .blog-related {
+            background: transparent;
+            padding: 4rem 0 !important;
+        }
+        .blog-related h2 {
+            color: white;
+        }
+        .blog-card {
+            background-color: var(--color-surface) !important;
+        }
+        @media (max-width: 768px) {
+            .img-right-small,
+            .img-left-large,
+            .img-float-right-small,
+            .blog-body .alignright,
+            .blog-body .alignleft {
+                float: none;
+                width: 100%;
+                max-width: 100%;
+                margin: 1.5rem 0;
+            }
+            .article-sidebar {
+                margin: 2rem 0;
+            }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Walking Street Markets - the Best thing to do in Chiang Mai",
+        "description": "If you are touring Thailand, you must be in Chiang Mai on the weekend to experience the Chiang Mai Walking Street Markets!",
+        "datePublished": "2026-05-23",
+        "author": { "@type": "Organization", "name": "Chiang Mai Ambassador" }
+    }
+    </script>
+    <link rel="canonical" href="https://chiangmaiambassador.com/guides/walking-street-markets/">
+</head>
+<body style="margin: 0; padding: 0; width: 100%;">
+
+    <div class="progress-bar" id="progress-bar" aria-label="Reading progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+    <nav class="nav-wrapper">
+        <a href="../" class="logo-link">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="-175 -178 350 500" xmlns="http://www.w3.org/2000/svg" width="60" height="80">
+                    <defs>
+                        <linearGradient id="g2gold" x1="20%" y1="0%" x2="80%" y2="100%">
+                            <stop offset="0%" stop-color="#F2D980" />
+                            <stop offset="40%" stop-color="#C49010" />
+                            <stop offset="100%" stop-color="#9A7008" />
+                        </linearGradient>
+                        <linearGradient id="g2ring" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#E4BC50" />
+                            <stop offset="100%" stop-color="#9A7008" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="0" cy="0" r="164" fill="none" stroke="url(#g2ring)" stroke-width="2.5" />
+                    <circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65" />
+                    <circle cx="164" cy="0" r="3.2" fill="#C49010" />
+                    <circle cx="0" cy="-164" r="3.2" fill="#C49010" />
+                    <circle cx="-164" cy="0" r="3.2" fill="#C49010" />
+                    <circle cx="0" cy="164" r="3.2" fill="#C49010" />
+                    <g transform="translate(0, -149.201) scale(1.94980)">
+                        <polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980" />
+                        <rect x="-2" y="4" width="4" height="38" fill="url(#g2gold)" />
+                        <polygon points="0,42 -16,78 16,78" fill="url(#g2gold)" />
+                        <rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008" />
+                        <rect x="-22" y="84" width="44" height="9" fill="url(#g2gold)" />
+                        <rect x="-25" y="93" width="50" height="4" fill="#9A7008" />
+                        <rect x="-30" y="97" width="60" height="9" fill="url(#g2gold)" />
+                        <rect x="-33" y="106" width="66" height="4" fill="#9A7008" />
+                        <rect x="-38" y="110" width="76" height="9" fill="url(#g2gold)" />
+                        <rect x="-44" y="119" width="88" height="11" fill="url(#g2gold)" />
+                        <rect x="-52" y="130" width="104" height="8" fill="#9A7008" />
+                    </g>
+                </svg>
+                <div class="logo-text-wrapper nav-mode">
+                    <div>
+                        <span class="logo-accent">CM</span><span class="logo-text">Ambassador</span>
+                    </div>
+                    <span class="logo-tagline">Connector &middot; Helper &middot; Guru</span>
+                </div>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="../pages/neighbourhoods.html">Neighbourhoods</a>
+            <a href="../pages/cost-of-living.html">Cost of Living</a>
+            <a href="../#start" class="btn-primary magnetic-item">Start Here</a>
+        </div>
+    </nav>
+
+    <main style="width: 100%; margin: 0 auto;">
+
+        <section class="blog-hero">
+            <div class="container" style="max-width: 960px; width: 100%; margin: 0 auto; padding: 0 2rem; box-sizing: border-box;">
+                <div class="blog-header reveal">
+                    <h1>Walking Street Markets - the Best <span class="gold-gradient-text">thing to do in Chiang Mai</span></h1>
+                    <p class="blog-excerpt">If you are touring Thailand, you must be in Chiang Mai on the weekend to experience the Chiang Mai Walking Street Markets!</p>
+                </div>
+            </div>
+        </section>
+
+        <article class="blog-content" style="background-color: white; padding-top: 0.75rem !important;">
+            <div class="container" style="max-width: 960px; width: 100%; margin: 0 auto; padding: 0 2rem; box-sizing: border-box;">
+                <div class="blog-metadata reveal">
+                    <div class="blog-meta-item">
+                        <span class="blog-meta-label">Category</span>
+                        <span class="blog-meta-value"><a href="../">Home</a> / Shopping</span>
+                    </div>
+                    <div class="blog-meta-divider"></div>
+                    <div class="blog-meta-item">
+                        <span class="blog-meta-label">Read time</span>
+                        <span class="blog-meta-value">6 min</span>
+                    </div>
+                    <div class="blog-meta-divider"></div>
+                    <div class="blog-meta-item">
+                        <span class="blog-meta-label">Last updated</span>
+                        <span class="blog-meta-value">May 2026</span>
+                    </div>
+                </div>
+
+                <div class="blog-body">
+
+                    <!-- TL;DR IMAGE + SUMMARY -->
+                    <figure class="img-right-small" style="margin-top: -30px; margin-bottom: 1rem; width: calc(100% - 400px); max-width: 280px;">
+                        <!-- TL;DR image unmatched - needs human review -->
+                    </figure>
+                    <div class="article-sidebar">
+                        <h4>Quick Summary (TL;DR)</h4>
+                        <ul>
+                            <li>Chiang Mai Walking Street Markets</li>
+                            <li>Saturday Night Walking Street Markets</li>
+                            <li>Sunday Night Walking Street Markets</li>
+                            <li>Eating at the Sunday Night Walking Street Markets</li>
+                            <li>The Chiang Mai Walking Street Markets on Wualai Road on Saturday and Ratchadamnoen Road, starting inside Thapae Gate, on Sunday are much different than the Night Bazaar in the tourist area east of Chiang Mai Old City.</li>
+                            <li>While the Night Bazaar has it’s flashing neon signs advertising the western food chains and merchandise, the weekend walking street markets offer a more relaxing experience.</li>
+                            <li>The Saturday Bazaar walking street markets  on Wualai Road is the old city silver-making district and even today you can still hear the tapping of hammers as the silversmiths sculpt beautiful designs on bowls, cups, bracelets, rings and wall murals.</li>
+                        </ul>
+                    </div>
+
+<div><h2>Chiang Mai Walking Street Markets</h2><p>The Chiang Mai Walking Street Markets on Wualai Road on Saturday and Ratchadamnoen Road, starting inside Thapae Gate, on Sunday are much different than the Night Bazaar in the tourist area east of Chiang Mai Old City. These are the markets for Thai people and tourists alike to get the best bargains for their money!</p><p>While the Night Bazaar has it’s flashing neon signs advertising the western food chains and merchandise, the weekend walking street markets offer a more relaxing experience. Large wide avenues are blocked off from vehicle traffic at 5 pm until 11 pm. Talented craft persons and northern Thai fresh food vendors politely sell their wares along the sidewalks and on colorful temple grounds. Both weekend walking street markets are excellent stop however, each is different in the types of items sold, atmosphere and experiences.</p><h3>Saturday Night Walking Street Markets</h3><p>The Saturday Bazaar walking street markets  on Wualai Road is the old city silver-making district and even today you can still hear the tapping of hammers as the silversmiths sculpt beautiful designs on bowls, cups, bracelets, rings and wall murals. You can watch them make their beautiful creations as they sit on the street in front of their shops.</p><p>There are several silver shops on Wualai Road so look at all of them before deciding on a purchase. There are plenty of food and drink vendors along the street and small restaurants where you can take a rest and take in the surroundings so no need to rush.</p><h3>Sunday Night Walking Street Markets</h3><p>The Sunday Bazaar walking street markets on Ratchadamnoen Road begins at Thapae Gate and ends at the city police station about 6 blocks west. About half way up, at Prapokklao Road, the Bazaar continues south past Wat Chedi Luang for another block. A stage is set up at the south end of Prapokklao Road, where northern Thai musicians and dancers in traditional costumes give live performances starting around 7 pm, and north to the 3 kings statue and the old Provincial Hall, which is now the Chiang Mai City Museum.</p><p></p><p><span>Click on the Facebook logo to view the video.</span></p><p>Ratchadamnoen Road seems to have one temple after another. The temple grounds are where almost all the food stalls are set up. Here they have tables and chairs where you can sit and have everything from French Fries to Papaya Salad, soups and grilled Thai dishes. Lots of different foods and deserts you probably have never seen before are available. Soft Thai musicis usually played on the temple sound system to add to the eating experience.</p><p></p><p><span>Click on the Facebook logo to view the video.</span></p><p>Both walking streets are lots of fun and several hours can be spent here enjoying the culture, food, people and atmosphere. Unlike the Night Bazaar with its copied brand products, fake jewellery and handicrafts made in China or Burma both walking street markets have real hand-craft persons selling their goods.</p><p>The real fun is not the shopping but the ambience. Every block has traditional Thai Music being played by elders and children. Surrounding you are the rich colors of the local temples, the smell of garlic, grilled fish, sausages and chillies being cooked and roasted. People are eating smiling and just having a good time.</p><h2>Eating at the Sunday Night Walking Street Markets</h2><p>I went adventuring to Wat Pun On and took a fantastic video about the magical “food court” of the Sunday night Walking Street Markets. It’s about 17 minutes long but takes you on one full loop around all the food stalls. <a href="https://www.facebook.com/chiangmaiambassador/" rel="noopener" target="_blank">Chiang Mai Ambassador Facebook has more up to date information about Chiang Mai.</a></p><p></p><p><span>Click on the Facebook logo to view the video.</span></p><p>One last tip, stop get your snack and cold drink, then take it to one of the many foot massage operators set up on the side-walk. Sit back in the comfortable cushioned reclining chair, just watch, listen and take it all in. Massages at walking street markets are usually under 200 baht per hour.</p><h2>Walking Street Markets vs The Every Day Night Bazaar</h2><p>The Chiang Mai Walking Street Markets are much more a showcase of the talented Thai people, you can get fantastic crafts, clothes and cool things. But, be very wary as these are quite busy and the crowds are growing regularly due to increased tourism in Chiang Mai and Thailand in general. Plan your Chiang Mai trip to include a weekend, you will love mixing with the locals each weekend.</p><p>The price of just about any item has a value and that value may be different for each of us. Well that is the same as night bazaar and walking street markets! And item will generally go for about a similar price except the starting price varies greatly.</p><p>An example – A simple carved soap for instance may go for about 100 baht in the end, but starting price is maybe 200 baht at the night bazaar and around 130 baht at walking street. At night bazaar you will get most items at 40-60% of the vendor’s first offer.</p><p> N.B. The vendors will not sell for less than cost, the y will always make some money. Don’t you worry!<br/>
+You have to work a little bit more at the night bazaar, but you will get your item for the price you want and not be giving too much profit to the night bazaar vendors. They will happily take your 200 baht.</p><p>To bargain start around 30-40% of their first offer, then slowly go up as they come down to meet you. You don’t want to make it too easy on them. You will get better, when you practice more. So practice on smaller items and for bigger purchases have confidence and good technique. If you buy more there’s always room for lower prices.</p><h3>Specific items available at markets</h3><p>Carved Soaps around 100 baht</p><p>Wooden carved products 100 baht and upwards</p><p>T-shirts around 150 baht, although there are many very thin varieties for even less.<br/>
+Polo shirts are around 200 baht<br/>
+Football jerseys are all over the place. “Replica” kits are available all through night bazaar. There are several levels of “quality”.<br/>
+DVDs 60 baht</p><p>Its another great thing about <a href="live-in-chiang-mai.html">living in Chiang Mai</a>.</p></div><footer><div>
+<span>
+<span>
+Post Tags:		</span>
+<a href="activities.html" rel="tag" title="activities"><span>#</span>activities</a><a href="bargains.html" rel="tag" title="bargains"><span>#</span>bargains</a><a href="chiang-mai-ambassador.html" rel="tag" title="Chiang Mai Ambassador"><span>#</span>Chiang Mai Ambassador</a><a href="must-do.html" rel="tag" title="must do"><span>#</span>must do</a><a href="must-see.html" rel="tag" title="must see"><span>#</span>must see</a><a href="shopping.html" rel="tag" title="shopping"><span>#</span>shopping</a><a href="weekend.html" rel="tag" title="weekend"><span>#</span>weekend</a> </span></div></footer></div>
+                </div>
+            </div>
+        </article>
+
+        <section class="blog-related container">
+            <h2>More from the Ambassador</h2>
+            <div class="blog-grid">
+                <article class="blog-card reveal">
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-13.webp" alt="Related article" width="400" height="200">
+                    <h3>Chiang Mai Walking Street Markets</h3>
+                    <p>The Saturday and Sunday walking street markets are unmissable for bargains and local atmosphere.</p>
+                    <a href="walking-street-markets.html" class="arrow-link">Read more &rarr;</a>
+                </article>
+                <article class="blog-card reveal">
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-116.webp" alt="Related article" width="400" height="200">
+                    <h3>Getting Social in Chiang Mai</h3>
+                    <p>How to meet people, find your community, and build a genuine social life in Chiang Mai.</p>
+                    <a href="getting-social-in-chiang-mai.html" class="arrow-link">Read more &rarr;</a>
+                </article>
+                <article class="blog-card reveal">
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-127.webp" alt="Related article" width="400" height="200">
+                    <h3>Expat Breakfast Club</h3>
+                    <p>A long-running tradition for expats to connect, share stories, and start the week right.</p>
+                    <a href="expat-breakfast-club.html" class="arrow-link">Read more &rarr;</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="../" class="logo-link">
+                        <div class="logo">
+                            <svg class="logo-icon" viewBox="-175 -178 350 500" xmlns="http://www.w3.org/2000/svg" width="60" height="80">
+                                <defs>
+                                    <linearGradient id="g2gold-footer" x1="20%" y1="0%" x2="80%" y2="100%">
+                                        <stop offset="0%" stop-color="#F2D980" />
+                                        <stop offset="40%" stop-color="#C49010" />
+                                        <stop offset="100%" stop-color="#9A7008" />
+                                    </linearGradient>
+                                    <linearGradient id="g2ring-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#E4BC50" />
+                                        <stop offset="100%" stop-color="#9A7008" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="0" cy="0" r="164" fill="none" stroke="url(#g2ring-footer)" stroke-width="2.5" />
+                                <circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65" />
+                                <circle cx="164" cy="0" r="3.2" fill="#C49010" />
+                                <circle cx="0" cy="-164" r="3.2" fill="#C49010" />
+                                <circle cx="-164" cy="0" r="3.2" fill="#C49010" />
+                                <circle cx="0" cy="164" r="3.2" fill="#C49010" />
+                                <g transform="translate(0, -149.201) scale(1.94980)">
+                                    <polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980" />
+                                    <rect x="-2" y="4" width="4" height="38" fill="url(#g2gold-footer)" />
+                                    <polygon points="0,42 -16,78 16,78" fill="url(#g2gold-footer)" />
+                                    <rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008" />
+                                    <rect x="-22" y="84" width="44" height="9" fill="url(#g2gold-footer)" />
+                                    <rect x="-25" y="93" width="50" height="4" fill="#9A7008" />
+                                    <rect x="-30" y="97" width="60" height="9" fill="url(#g2gold-footer)" />
+                                    <rect x="-33" y="106" width="66" height="4" fill="#9A7008" />
+                                    <rect x="-38" y="110" width="76" height="9" fill="url(#g2gold-footer)" />
+                                    <rect x="-44" y="119" width="88" height="11" fill="url(#g2gold-footer)" />
+                                    <rect x="-52" y="130" width="104" height="8" fill="#9A7008" />
+                                </g>
+                            </svg>
+                            <div class="logo-text-wrapper">
+                                <div>
+                                    <span class="logo-accent">CM</span><span class="logo-text">Ambassador</span>
+                                </div>
+                                <span class="logo-tagline">Connector &middot; Helper &middot; Guru</span>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="footer-tagline">Local knowledge. Practical support. The Rose of the North, clearly explained.</p>
+                </div>
+
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <div class="footer-nav-group">
+                        <h4>Guides</h4>
+                        <ul role="list">
+                            <li><a href="../pages/neighbourhoods.html">Neighbourhoods</a></li>
+                            <li><a href="../pages/cost-of-living.html">Cost of living</a></li>
+                            <li><a href="../pages/visas.html">Visas and permits</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>Tools</h4>
+                        <ul role="list">
+                            <li><a href="../#tools">Budget calculator</a></li>
+                            <li><a href="../#tools">Visa planner</a></li>
+                            <li><a href="../#tools">Neighbourhood matcher</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>Community</h4>
+                        <ul role="list">
+                            <li><a href="#">Expats Club</a></li>
+                            <li><a href="#">Ask a local</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-legal">Copyright 2026 Chiang Mai Ambassador. Published with care in Chiang Mai, Thailand.</p>
+                <p class="footer-disclaimer">Information is provided in good faith. Always verify information with qualified professionals and official sources before making decisions.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Auf der Au brings German family-style dining to Chiang Mai near CM Gymkhana. Authentic buffet lunch, quality food, and homemade flavours. Perfect for expat cravings.">
+    <meta name="robots" content="index, follow">
+    <title>Auf der Au Buffet | German Dining in Chiang Mai</title>
+
+    <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/sections.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/blog.css">
+
+    <link rel="preload" href="../fonts/outfit-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/outfit-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/plus-jakarta-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/plus-jakarta-500.woff2" as="font" type="font/woff2" crossorigin>
+
+    <style>
+        .blog-content {
+            background-color: white !important;
+            padding: 5rem 0 !important;
+        }
+        .blog-hero {
+            margin-top: 80px;
+        }
+        .img-right-small {
+            float: right;
+            width: 30%;
+            margin: 0 0 1rem 2rem;
+            shape-margin: 1rem;
+        }
+        .img-left-large {
+            float: left;
+            width: 55%;
+            margin: 1rem 2rem 1rem -15%;
+            shape-margin: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        .img-left-large img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .img-fullwidth-break {
+            width: 100%;
+            max-width: 100%;
+            margin: 3rem 0 2rem 0;
+            display: block;
+        }
+        .img-fullwidth-break img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .img-float-right-small {
+            float: right;
+            width: 45%;
+            margin: 0 0 1.5rem 2rem;
+        }
+        figure {
+            margin: 0;
+        }
+        figcaption {
+            display: none;
+        }
+        .article-sidebar {
+            background: #f0d080;
+            padding: 2rem;
+            border-left: 4px solid var(--color-primary);
+            border-radius: 0;
+            margin: 2.5rem 0 3rem 0;
+            border: 1px solid #e5ddd0;
+        }
+        .article-sidebar h4 {
+            font-size: 1rem;
+            color: #1a1a1a;
+            margin: 0 0 1.25rem 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .article-sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .article-sidebar li {
+            color: #333;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+        }
+        .article-sidebar li:last-child {
+            margin-bottom: 0;
+        }
+        .blog-metadata {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem 0 2.5rem;
+            border-bottom: 1px solid #e5ddd0;
+            margin-bottom: 2rem;
+        }
+        .blog-meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        .blog-meta-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #999;
+        }
+        .blog-meta-value {
+            font-size: 0.95rem;
+            color: #333;
+            font-weight: 500;
+        }
+        .blog-meta-divider {
+            width: 1px;
+            height: 24px;
+            background: #e5ddd0;
+        }
+        .blog-options {
+            display: flex;
+            gap: 0.75rem;
+            margin-left: auto;
+        }
+        .blog-body h2 {
+            font-size: 1.875rem;
+            color: #1a1a1a;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .blog-body h3 {
+            font-size: 1.25rem;
+            color: #1a1a1a;
+            margin-top: 1.75rem;
+            margin-bottom: 0.75rem;
+        }
+        .blog-body p {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        .blog-body strong {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        .blog-body img {
+            max-width: 100%;
+            height: auto;
+        }
+        .blog-body .alignright {
+            float: right;
+            margin: 0 0 1rem 2rem;
+            max-width: 40%;
+        }
+        .blog-body .alignleft {
+            float: left;
+            margin: 0 2rem 1rem 0;
+            max-width: 40%;
+        }
+        .blog-body .aligncenter {
+            display: block;
+            margin: 2rem auto;
+        }
+        .key-takeaways {
+            background: #f0d080;
+            padding: 2rem;
+            border-radius: 0;
+            margin: 3rem 0;
+            border: 1px solid #e5ddd0;
+        }
+        .key-takeaways h3 {
+            margin-top: 0;
+            color: #1a1a1a;
+        }
+        .key-takeaways p {
+            color: #333;
+        }
+        .blog-related {
+            background: transparent;
+            padding: 4rem 0 !important;
+        }
+        .blog-related h2 {
+            color: white;
+        }
+        .blog-card {
+            background-color: var(--color-surface) !important;
+        }
+        @media (max-width: 768px) {
+            .img-right-small,
+            .img-left-large,
+            .img-float-right-small,
+            .blog-body .alignright,
+            .blog-body .alignleft {
+                float: none;
+                width: 100%;
+                max-width: 100%;
+                margin: 1.5rem 0;
+            }
+            .article-sidebar {
+                margin: 2rem 0;
+            }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Auf der Au Best buffet in Chiang Mai Open NEAR CM Gymkhana",
+        "description": "A German Restaurant in Chiang Mai, YES! Auf der Au, a family style restaurant located near CM Gymkhana and all the way home to Bavaria or Munich.",
+        "datePublished": "2026-05-23",
+        "author": { "@type": "Organization", "name": "Chiang Mai Ambassador" }
+    }
+    </script>
+    <link rel="canonical" href="https://chiangmaiambassador.com/food/auf-der-au-best-buffet-chiang-mai/">
+</head>
+<body style="margin: 0; padding: 0; width: 100%;">
+
+    <div class="progress-bar" id="progress-bar" aria-label="Reading progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+    <nav class="nav-wrapper">
+        <a href="../" class="logo-link">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="-175 -178 350 500" xmlns="http://www.w3.org/2000/svg" width="60" height="80">
+                    <defs>
+                        <linearGradient id="g2gold" x1="20%" y1="0%" x2="80%" y2="100%">
+                            <stop offset="0%" stop-color="#F2D980" />
+                            <stop offset="40%" stop-color="#C49010" />
+                            <stop offset="100%" stop-color="#9A7008" />
+                        </linearGradient>
+                        <linearGradient id="g2ring" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#E4BC50" />
+                            <stop offset="100%" stop-color="#9A7008" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="0" cy="0" r="164" fill="none" stroke="url(#g2ring)" stroke-width="2.5" />
+                    <circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65" />
+                    <circle cx="164" cy="0" r="3.2" fill="#C49010" />
+                    <circle cx="0" cy="-164" r="3.2" fill="#C49010" />
+                    <circle cx="-164" cy="0" r="3.2" fill="#C49010" />
+                    <circle cx="0" cy="164" r="3.2" fill="#C49010" />
+                    <g transform="translate(0, -149.201) scale(1.94980)">
+                        <polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980" />
+                        <rect x="-2" y="4" width="4" height="38" fill="url(#g2gold)" />
+                        <polygon points="0,42 -16,78 16,78" fill="url(#g2gold)" />
+                        <rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008" />
+                        <rect x="-22" y="84" width="44" height="9" fill="url(#g2gold)" />
+                        <rect x="-25" y="93" width="50" height="4" fill="#9A7008" />
+                        <rect x="-30" y="97" width="60" height="9" fill="url(#g2gold)" />
+                        <rect x="-33" y="106" width="66" height="4" fill="#9A7008" />
+                        <rect x="-38" y="110" width="76" height="9" fill="url(#g2gold)" />
+                        <rect x="-44" y="119" width="88" height="11" fill="url(#g2gold)" />
+                        <rect x="-52" y="130" width="104" height="8" fill="#9A7008" />
+                    </g>
+                </svg>
+                <div class="logo-text-wrapper nav-mode">
+                    <div>
+                        <span class="logo-accent">CM</span><span class="logo-text">Ambassador</span>
+                    </div>
+                    <span class="logo-tagline">Connector &middot; Helper &middot; Guru</span>
+                </div>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="../pages/neighbourhoods.html">Neighbourhoods</a>
+            <a href="../pages/cost-of-living.html">Cost of Living</a>
+            <a href="../#start" class="btn-primary magnetic-item">Start Here</a>
+        </div>
+    </nav>
+
+    <main style="width: 100%; margin: 0 auto;">
+
+        <section class="blog-hero">
+            <div class="container" style="max-width: 960px; width: 100%; margin: 0 auto; padding: 0 2rem; box-sizing: border-box;">
+                <div class="blog-header reveal">
+                    <h1>Auf der Au Best buffet in <span class="gold-gradient-text">Chiang Mai Open NEAR CM Gymkhana</span></h1>
+                    <p class="blog-excerpt">A German Restaurant in Chiang Mai, YES! Auf der Au, a family style restaurant located near CM Gymkhana and all the way home to Bavaria or Munich.</p>
+                </div>
+            </div>
+        </section>
+
+        <article class="blog-content" style="background-color: white; padding-top: 0.75rem !important;">
+            <div class="container" style="max-width: 960px; width: 100%; margin: 0 auto; padding: 0 2rem; box-sizing: border-box;">
+                <div class="blog-metadata reveal">
+                    <div class="blog-meta-item">
+                        <span class="blog-meta-label">Category</span>
+                        <span class="blog-meta-value"><a href="../">Home</a> / Great Food</span>
+                    </div>
+                    <div class="blog-meta-divider"></div>
+                    <div class="blog-meta-item">
+                        <span class="blog-meta-label">Read time</span>
+                        <span class="blog-meta-value">16 min</span>
+                    </div>
+                    <div class="blog-meta-divider"></div>
+                    <div class="blog-meta-item">
+                        <span class="blog-meta-label">Last updated</span>
+                        <span class="blog-meta-value">May 2026</span>
+                    </div>
+                </div>
+
+                <div class="blog-body">
+
+                    <!-- TL;DR IMAGE + SUMMARY -->
+                    <figure class="img-right-small" style="margin-top: -30px; margin-bottom: 1rem; width: calc(100% - 400px); max-width: 280px;">
+                        <!-- TL;DR image unmatched - needs human review -->
+                    </figure>
+                    <div class="article-sidebar">
+                        <h4>Quick Summary</h4>
+                        <ul>
+                            <li>Open Every Day – 10:30am-2pm 250 baht and 4:30pm-9pm 300 baht ***Sunday Lunch 300 baht</li>
+                            <li>Auf der Au Main Courses</li>
+                            <li>Salads and Cold Meats</li>
+                            <li>Breads</li>
+                            <li>Auf der Au, what is it?</li>
+                            <li>Auf der Au is  located on the Chiang Mai-Lamphun Road (aka Big Tree Road) at the Chiang Mai Gymkhana Club Intersection.</li>
+                            <li>Auf der Au Main CoursesWe start with the meat and main courses, you have to try everything!</li>
+                        </ul>
+                    </div>
+
+<div><div><div><div><div><h1 data-kb-block="kb-adv-heading620_805ed3-b2"><strong>Auf der Au Restaurant </strong></h1><h2>Open Every Day – 10:30am-2pm 250 baht and 4:30pm-9pm 300 baht ***Sunday Lunch 300 baht</h2></div></div></div></div><div><div><div><div><h1 data-kb-block="kb-adv-heading620_113d65-84">Auf der Au</h1><p>Auf der Au, what is it? It’s a big family house and you are not a customer, you are a nephew, uncle or distant cousin coming for lunch 250 baht or dinner 300 baht. You are welcome, everyone is welcome! Auf der Au makes you feel like Sunday lunch at home with all the family. Then there is the food. These pictures are a random selection of food available at Auf der Au, some are premium foods available on at dinner or on Sunday lunch for 300 baht.</p><div></div><div><a href="https://www.facebook.com/aufderaubistro" rel="noopener" target="_blank"><div><div><div><div><span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></span></div></div></div></div><div><p>Come and find us on Facebook</p></div></a></div><div></div><div><a aria-label="Auf der Au Restaurant" href="https://maps.app.goo.gl/suFVsguZC7GsQ5Us9" rel="noopener" target="_blank"><div><div><div><div><span><svg aria-hidden="true" fill="currentColor" viewbox="0 0 8 8" xmlns="http://www.w3.org/2000/svg"><path d="M1.34 0a.5.5 0 0 0 .16 1h.5v2h-1c-.55 0-1 .45-1 1h3v3l.44 1 .56-1v-3h3c0-.55-.45-1-1-1h-1v-2h.5a.5.5 0 1 0 0-1h-4a.5.5 0 0 0-.09 0 .5.5 0 0 0-.06 0z"></path></svg></span></div></div></div></div><div><p>Auf der Au is  located on the Chiang Mai-Lamphun Road (aka Big Tree Road) at the Chiang Mai Gymkhana Club Intersection.</p></div></a></div></div></div><div><div><figure></figure></div></div></div></div><div><div><div></div><div><div><div><div data-image-filter="none" data-lightbox-caption="true"><div aria-label="Photo Gallery Carousel" aria-roledescription="carousel" data-columns-md="2" data-columns-sm="2" data-columns-ss="1" data-columns-xl="2" data-columns-xs="1" data-columns-xxl="2" data-show-pause-button="false" data-slider-anim-speed="400" data-slider-arrows="true" data-slider-auto="1" data-slider-dots="true" data-slider-gap="10px" data-slider-gap-mobile="10px" data-slider-gap-tablet="10px" data-slider-hover-pause="false" data-slider-label="Photo Gallery Carousel" data-slider-scroll="1" data-slider-speed="7000" id="splide01" role="region"><div><button aria-controls="splide01-track" aria-label="Previous slide" type="button"><svg focusable="false" height="40" viewbox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button><button aria-controls="splide01-track" aria-label="Next slide" type="button"><svg focusable="false" height="40" viewbox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button></div><div aria-atomic="true" aria-busy="false" aria-live="off" id="splide01-track"><ul id="splide01-list" role="presentation"><li aria-hidden="true" aria-label="7 of 10" aria-roledescription="slide" id="splide01-clone01" role="tabpanel"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="8 of 10" aria-roledescription="slide" id="splide01-clone02" role="tabpanel"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="9 of 10" aria-roledescription="slide" id="splide01-clone03" role="tabpanel"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="10 of 10" aria-roledescription="slide" id="splide01-clone04" role="tabpanel"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="1 of 10" aria-roledescription="slide" id="splide01-slide01" role="tabpanel"><div><div><figure><div></div></figure></div></div></li><li aria-label="2 of 10" aria-roledescription="slide" id="splide01-slide02" role="tabpanel"><div><div><figure><div></div></figure></div></div></li><li aria-label="3 of 10" aria-roledescription="slide" id="splide01-slide03" role="tabpanel"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="4 of 10" aria-roledescription="slide" id="splide01-slide04" role="tabpanel"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="5 of 10" aria-roledescription="slide" id="splide01-slide05" role="tabpanel"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="6 of 10" aria-roledescription="slide" id="splide01-slide06" role="tabpanel"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="7 of 10" aria-roledescription="slide" id="splide01-slide07" role="tabpanel"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="8 of 10" aria-roledescription="slide" id="splide01-slide08" role="tabpanel"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="9 of 10" aria-roledescription="slide" id="splide01-slide09" role="tabpanel"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="10 of 10" aria-roledescription="slide" id="splide01-slide10" role="tabpanel"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="1 of 10" aria-roledescription="slide" id="splide01-clone05" role="tabpanel"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="2 of 10" aria-roledescription="slide" id="splide01-clone06" role="tabpanel"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="3 of 10" aria-roledescription="slide" id="splide01-clone07" role="tabpanel"><div><div><figure><div></div></figure></div></div></li><li aria-hidden="true" aria-label="4 of 10" aria-roledescription="slide" id="splide01-clone08" role="tabpanel"><div><div><figure><div></div></figure></div></div></li></ul></div><ul aria-label="Select a slide to show" role="tablist"><li role="presentation"><button aria-controls="splide01-slide01" aria-label="Go to slide 1" role="tab" tabindex="-1" type="button"></button></li><li role="presentation"><button aria-controls="splide01-slide02" aria-label="Go to slide 2" aria-selected="true" role="tab" type="button"></button></li><li role="presentation"><button aria-controls="splide01-slide03" aria-label="Go to slide 3" role="tab" tabindex="-1" type="button"></button></li><li role="presentation"><button aria-controls="splide01-slide04" aria-label="Go to slide 4" role="tab" tabindex="-1" type="button"></button></li><li role="presentation"><button aria-controls="splide01-slide05" aria-label="Go to slide 5" role="tab" tabindex="-1" type="button"></button></li><li role="presentation"><button aria-controls="splide01-slide06" aria-label="Go to slide 6" role="tab" tabindex="-1" type="button"></button></li><li role="presentation"><button aria-controls="splide01-slide07" aria-label="Go to slide 7" role="tab" tabindex="-1" type="button"></button></li><li role="presentation"><button aria-controls="splide01-slide08" aria-label="Go to slide 8" role="tab" tabindex="-1" type="button"></button></li><li role="presentation"><button aria-controls="splide01-slide09" aria-label="Go to slide 9" role="tab" tabindex="-1" type="button"></button></li><li role="presentation"><button aria-controls="splide01-slide10" aria-label="Go to slide 10" role="tab" tabindex="-1" type="button"></button></li></ul></div></div></div></div></div><div></div></div></div><div><div><div></div><div><div><h2 data-kb-block="kb-adv-heading620_fc315c-06">Auf der Au Main Courses</h2><p>We start with the meat and main courses, you have to try everything! The tastes and textures are all different and, if you happen to find one thing, you don’t love, you will love the other 20 options. Watch out for the Dijon chicken and the schnitzels and crispy fish! All the rissoles and sausages are hand made and no fillers. The mashed potato and fried bacon potato onion mix are spectacular! (Items may vary from pictures, but orders can be made by contacting Udo).</p></div></div><div></div></div></div><div><ul data-columns-md="3" data-columns-sm="2" data-columns-ss="1" data-columns-xl="3" data-columns-xs="1" data-columns-xxl="3" data-image-filter="none" data-item-selector=".kadence-blocks-gallery-item" data-lightbox-caption="true"><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li></ul></div><div><div><div></div><div><div><h2 data-kb-block="kb-adv-heading620_1b5ab3-ef">Salads and Cold Meats</h2><p>There are options for vegetarians, but seriously it’s all about the meat at Auf der Au. There are all sorts of mixed salads and cold cuts, not my favorite but still great, I have tried them all, but the mains and desserts are my favorites and take my attention and tummy space. (Items may vary from pictures, but orders can be made by contacting Udo).</p></div></div><div></div></div></div><div><ul data-columns-md="3" data-columns-sm="2" data-columns-ss="1" data-columns-xl="3" data-columns-xs="1" data-columns-xxl="3" data-image-filter="none" data-item-selector=".kadence-blocks-gallery-item" data-lightbox-caption="true"><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li></ul></div><div><div><div></div><div><div><h2 data-kb-block="kb-adv-heading620_6d1c57-a2">Breads</h2><p>Auf der Au is also a bakery and has amazing breads and products for sale outside the buffet hours or order as you need it.</p><p>I recommend the pizza style rolls and the sundried tomato filo pastries were also special. (Items may vary from pictures, but orders can be made by contacting Udo).</p></div></div><div></div></div></div><div><ul data-columns-md="3" data-columns-sm="2" data-columns-ss="1" data-columns-xl="3" data-columns-xs="1" data-columns-xxl="3" data-image-filter="none" data-item-selector=".kadence-blocks-gallery-item" data-lightbox-caption="true"><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li></ul></div><div><div><div></div><div><div><h2 data-kb-block="kb-adv-heading620_9363fe-2b">Desserts</h2><p>Nothing more to say……. except don’t eat too much of the mains, salads and breads! (Items may vary from pictures, but orders can be made by contacting Udo).</p></div></div><div></div></div></div><div><ul data-columns-md="3" data-columns-sm="2" data-columns-ss="1" data-columns-xl="3" data-columns-xs="1" data-columns-xxl="3" data-image-filter="none" data-item-selector=".kadence-blocks-gallery-item" data-lightbox-caption="true"><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li><li tabindex="0"><div><figure><div><div></div></div></figure></div></li></ul></div><div><div><div></div><div><div><h2 data-kb-block="kb-adv-heading620_fe6d77-ac">Photos</h2><p>*** All photos used are from my many visits to Auf der Au and I suggest you try for yourself! It tastes better than it looks!!! ***</p></div></div><div></div></div></div><div><div><div><div><h3 data-kb-block="kb-adv-heading620_8d2ae3-df">To Contact Us or Book a Table</h3><p>Hallo, danke für deine Kontaktaufnahme. Wir haben deine Nachricht erhalten und freuen uns, dass du uns kontaktiert hast.</p><p>Saraphi – <a href="https://www.facebook.com/aufderaubistro" rel="noreferrer noopener" target="_blank">https://www.facebook.com/aufderaubistro</a><br/>Question and reservation only by call</p><p><a href="tel:+66 85 623 4366">+66 85 623 4366</a> และ <a href="tel:+66 64 526 4265">+66 64 526 4265</a></p></div></div><div></div></div></div></div><footer><div>
+<span>
+<span>
+Post Tags:		</span>
+<a href="buffet.html" rel="tag" title="buffet"><span>#</span>buffet</a><a href="chiang-mai.html" rel="tag" title="Chiang Mai"><span>#</span>Chiang Mai</a><a href="chiang-mai-ambassador.html" rel="tag" title="Chiang Mai Ambassador"><span>#</span>Chiang Mai Ambassador</a><a href="dinner.html" rel="tag" title="dinner"><span>#</span>dinner</a><a href="food.html" rel="tag" title="food"><span>#</span>food</a><a href="german-food.html" rel="tag" title="german food"><span>#</span>german food</a><a href="germany.html" rel="tag" title="germany"><span>#</span>germany</a><a href="great-food.html" rel="tag" title="great food"><span>#</span>great food</a><a href="lunch.html" rel="tag" title="lunch"><span>#</span>lunch</a> </span></div></footer></div>
+                </div>
+            </div>
+        </article>
+
+        <section class="blog-related container">
+            <h2>More from the Ambassador</h2>
+            <div class="blog-grid">
+                <article class="blog-card reveal">
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-13.webp" alt="Related article" width="400" height="200">
+                    <h3>Chiang Mai Walking Street Markets</h3>
+                    <p>The Saturday and Sunday walking street markets are unmissable for bargains and local atmosphere.</p>
+                    <a href="walking-street-markets.html" class="arrow-link">Read more &rarr;</a>
+                </article>
+                <article class="blog-card reveal">
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-116.webp" alt="Related article" width="400" height="200">
+                    <h3>Getting Social in Chiang Mai</h3>
+                    <p>How to meet people, find your community, and build a genuine social life in Chiang Mai.</p>
+                    <a href="getting-social-in-chiang-mai.html" class="arrow-link">Read more &rarr;</a>
+                </article>
+                <article class="blog-card reveal">
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-127.webp" alt="Related article" width="400" height="200">
+                    <h3>Expat Breakfast Club</h3>
+                    <p>A long-running tradition for expats to connect, share stories, and start the week right.</p>
+                    <a href="expat-breakfast-club.html" class="arrow-link">Read more &rarr;</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="../" class="logo-link">
+                        <div class="logo">
+                            <svg class="logo-icon" viewBox="-175 -178 350 500" xmlns="http://www.w3.org/2000/svg" width="60" height="80">
+                                <defs>
+                                    <linearGradient id="g2gold-footer" x1="20%" y1="0%" x2="80%" y2="100%">
+                                        <stop offset="0%" stop-color="#F2D980" />
+                                        <stop offset="40%" stop-color="#C49010" />
+                                        <stop offset="100%" stop-color="#9A7008" />
+                                    </linearGradient>
+                                    <linearGradient id="g2ring-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#E4BC50" />
+                                        <stop offset="100%" stop-color="#9A7008" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="0" cy="0" r="164" fill="none" stroke="url(#g2ring-footer)" stroke-width="2.5" />
+                                <circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65" />
+                                <circle cx="164" cy="0" r="3.2" fill="#C49010" />
+                                <circle cx="0" cy="-164" r="3.2" fill="#C49010" />
+                                <circle cx="-164" cy="0" r="3.2" fill="#C49010" />
+                                <circle cx="0" cy="164" r="3.2" fill="#C49010" />
+                                <g transform="translate(0, -149.201) scale(1.94980)">
+                                    <polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980" />
+                                    <rect x="-2" y="4" width="4" height="38" fill="url(#g2gold-footer)" />
+                                    <polygon points="0,42 -16,78 16,78" fill="url(#g2gold-footer)" />
+                                    <rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008" />
+                                    <rect x="-22" y="84" width="44" height="9" fill="url(#g2gold-footer)" />
+                                    <rect x="-25" y="93" width="50" height="4" fill="#9A7008" />
+                                    <rect x="-30" y="97" width="60" height="9" fill="url(#g2gold-footer)" />
+                                    <rect x="-33" y="106" width="66" height="4" fill="#9A7008" />
+                                    <rect x="-38" y="110" width="76" height="9" fill="url(#g2gold-footer)" />
+                                    <rect x="-44" y="119" width="88" height="11" fill="url(#g2gold-footer)" />
+                                    <rect x="-52" y="130" width="104" height="8" fill="#9A7008" />
+                                </g>
+                            </svg>
+                            <div class="logo-text-wrapper">
+                                <div>
+                                    <span class="logo-accent">CM</span><span class="logo-text">Ambassador</span>
+                                </div>
+                                <span class="logo-tagline">Connector &middot; Helper &middot; Guru</span>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="footer-tagline">Local knowledge. Practical support. The Rose of the North, clearly explained.</p>
+                </div>
+
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <div class="footer-nav-group">
+                        <h4>Guides</h4>
+                        <ul role="list">
+                            <li><a href="../pages/neighbourhoods.html">Neighbourhoods</a></li>
+                            <li><a href="../pages/cost-of-living.html">Cost of living</a></li>
+                            <li><a href="../pages/visas.html">Visas and permits</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>Tools</h4>
+                        <ul role="list">
+                            <li><a href="../#tools">Budget calculator</a></li>
+                            <li><a href="../#tools">Visa planner</a></li>
+                            <li><a href="../#tools">Neighbourhood matcher</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>Community</h4>
+                        <ul role="list">
+                            <li><a href="#">Expats Club</a></li>
+                            <li><a href="#">Ask a local</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-legal">Copyright 2026 Chiang Mai Ambassador. Published with care in Chiang Mai, Thailand.</p>
+                <p class="footer-disclaimer">Information is provided in good faith. Always verify information with qualified professionals and official sources before making decisions.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

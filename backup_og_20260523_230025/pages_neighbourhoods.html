@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chiang Mai neighbourhoods guide. Each area profile, costs, vibe, expat density, proximity to amenities. Find your perfect neighbourhood.">
+    <meta name="robots" content="index, follow">
+    <title>Chiang Mai Neighbourhoods | Where to Live</title>
+
+    <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/sections.css">
+    <link rel="stylesheet" href="../css/components.css">
+
+    <link rel="preload" href="../fonts/outfit-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/outfit-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/plus-jakarta-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/plus-jakarta-500.woff2" as="font" type="font/woff2" crossorigin>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Chiang Mai Neighbourhoods",
+        "description": "Comprehensive neighbourhood guides for all eight Chiang Mai neighbourhoods",
+        "datePublished": "2026-04-30",
+        "author": { "@type": "Organization", "name": "Chiang Mai Ambassador" }
+    }
+    </script>
+
+    <style>
+        .neighbourhood-section { border-bottom: 2px solid var(--color-primary); padding-bottom: 40px; margin-bottom: 60px; }
+        .neighbourhood-section p { margin-bottom: 1.5rem; }
+        .section-divider { border-top: 2px solid var(--color-primary); padding-top: 1.5rem; margin-bottom: 2rem; margin-top: 2rem; }
+        .best-for-box { background: rgba(242, 217, 128, 0.08); border-left: 4px solid var(--color-primary); padding: 20px; margin-bottom: 2rem; border-radius: 4px; position: relative; }
+        .best-for-box h4 { margin: 0 0 1rem 0; color: var(--color-primary); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        .best-for-box ul { list-style: none; padding: 0; margin: 0; }
+        .best-for-box li { margin-bottom: 0.5rem; color: var(--color-text-main); }
+        .best-for-box li:last-child { margin-bottom: 0; }
+        .best-for-box .back-to-top { position: absolute; bottom: 1rem; right: 1rem; display: flex; align-items: center; cursor: pointer; text-decoration: none; }
+    </style>
+    <link rel="canonical" href="https://chiangmaiambassador.com/pages/neighbourhoods/">
+</head>
+<body>
+
+    <div class="progress-bar" id="progress-bar" aria-label="Reading progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+    <nav class="nav-wrapper">
+        <a href="../" class="logo-link">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="-175 -178 350 500" xmlns="http://www.w3.org/2000/svg" width="60" height="80">
+                <defs>
+                    <linearGradient id="g2gold" x1="20%" y1="0%" x2="80%" y2="100%">
+                        <stop offset="0%" stop-color="#F2D980" />
+                        <stop offset="40%" stop-color="#C49010" />
+                        <stop offset="100%" stop-color="#9A7008" />
+                    </linearGradient>
+                    <linearGradient id="g2ring" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#E4BC50" />
+                        <stop offset="100%" stop-color="#9A7008" />
+                    </linearGradient>
+                </defs>
+                <circle cx="0" cy="0" r="164" fill="none" stroke="url(#g2ring)" stroke-width="2.5" />
+                <circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65" />
+                <circle cx="164" cy="0" r="3.2" fill="#C49010" />
+                <circle cx="0" cy="-164" r="3.2" fill="#C49010" />
+                <circle cx="-164" cy="0" r="3.2" fill="#C49010" />
+                <circle cx="0" cy="164" r="3.2" fill="#C49010" />
+                <g transform="translate(0, -149.201) scale(1.94980)">
+                    <polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980" />
+                    <rect x="-2" y="4" width="4" height="38" fill="url(#g2gold)" />
+                    <polygon points="0,42 -16,78 16,78" fill="url(#g2gold)" />
+                    <rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008" />
+                    <rect x="-22" y="84" width="44" height="9" fill="url(#g2gold)" />
+                    <rect x="-25" y="93" width="50" height="4" fill="#9A7008" />
+                    <rect x="-30" y="97" width="60" height="9" fill="url(#g2gold)" />
+                    <rect x="-33" y="106" width="66" height="4" fill="#9A7008" />
+                    <rect x="-38" y="110" width="76" height="9" fill="url(#g2gold)" />
+                    <rect x="-44" y="119" width="88" height="11" fill="url(#g2gold)" />
+                    <rect x="-52" y="130" width="104" height="8" fill="#9A7008" />
+                </g>
+            </svg>
+            <div class="logo-text-wrapper nav-mode">
+                <div>
+                    <span class="logo-accent">CM</span><span class="logo-text">Ambassador</span>
+                </div>
+                <span class="logo-tagline">Connector · Helper · Guru</span>
+            </div>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="cost-of-living.html">Cost of Living</a>
+            <a href="visas.html">Visas</a>
+            <a href="../#start" class="btn-primary magnetic-item">Start Here</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Page-Wide Floating Lanterns -->
+        <div class="page-float page-float-1"></div>
+        <div class="page-float page-float-2"></div>
+        <div class="page-float page-float-3"></div>
+
+        <section class="hero-split container" aria-labelledby="page-heading">
+            <div class="hero-content">
+                <span class="eyebrow reveal">Where is the best home for you?</span>
+                <h1 id="page-heading" class="reveal">Finding your perfect <span style="display: inline-flex; flex-direction: column; align-items: center; line-height: 0.65; margin: 0 2px; vertical-align: middle;"><span class="gold-gradient-text" style="font-size: 0.5em; font-weight: 800; display: block; line-height: 0.7; transform: translateY(-9px);">PIECE</span><span class="gold-gradient-text" style="font-size: 0.5em; font-weight: 800; display: block; line-height: 0.7; margin-top: -2px; transform: translateY(-3px);">PEACE</span></span> of Chiang Mai</h1>
+                <p class="reveal">Your neighbourhood choice is your life choice. Some areas are built for transient digital nomads. Others suit families seeking stability, retirees wanting peace, or cultural explorers craving authenticity. This guide cuts through the noise to match you with the neighbourhood that fits your actual situation, not someone else's.</p>
+                <div class="hero-actions reveal">
+                    <a href="#navigate-neighbourhoods" class="btn-large-primary">Explore areas</a>
+                    <a href="../#neighbourhoods" class="btn-large-outline">Back to home</a>
+                </div>
+            </div>
+
+            <div class="hero-visual-frame reveal">
+                <img src="../images/chiang-mai-ambassador-chiangmaiambassador-archived-152.webp" alt="Buddha statue in Chiang Mai" width="560" height="700">
+                <div class="floating-stat">
+                    <span class="stat-label">Distinct Areas</span>
+                    <div class="stat-value">
+                        <div>8</div>
+                        <div class="stat-subtext">Neighbourhoods</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="navigate-neighbourhoods" class="container" style="padding: 100px 0;">
+            <article class="pathway-header reveal">
+                <h2 style="margin-bottom: 1.5rem;">Navigate by neighbourhood</h2>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 800px; margin: 0 auto;">
+                    <a href="#nimman" class="text-link" style="text-decoration: none; padding: 12px 16px; border: 1px solid var(--color-border); border-radius: 4px; transition: all 0.2s;">Nimman</a>
+                    <a href="#oldcity" class="text-link" style="text-decoration: none; padding: 12px 16px; border: 1px solid var(--color-border); border-radius: 4px; transition: all 0.2s;">Old City</a>
+                    <a href="#santitham" class="text-link" style="text-decoration: none; padding: 12px 16px; border: 1px solid var(--color-border); border-radius: 4px; transition: all 0.2s;">Santitham</a>
+                    <a href="#hangdong" class="text-link" style="text-decoration: none; padding: 12px 16px; border: 1px solid var(--color-border); border-radius: 4px; transition: all 0.2s;">Hang Dong</a>
+                    <a href="#sansai" class="text-link" style="text-decoration: none; padding: 12px 16px; border: 1px solid var(--color-border); border-radius: 4px; transition: all 0.2s;">San Sai</a>
+                    <a href="#maerim" class="text-link" style="text-decoration: none; padding: 12px 16px; border: 1px solid var(--color-border); border-radius: 4px; transition: all 0.2s;">Mae Rim</a>
+                    <a href="#sankhamphang" class="text-link" style="text-decoration: none; padding: 12px 16px; border: 1px solid var(--color-border); border-radius: 4px; transition: all 0.2s;">San Khamphang</a>
+                    <a href="#saraphi" class="text-link" style="text-decoration: none; padding: 12px 16px; border: 1px solid var(--color-border); border-radius: 4px; transition: all 0.2s;">Saraphi</a>
+                </div>
+            </article>
+
+            <div style="max-width: 800px; margin: 0 auto; display: grid; gap: 60px;">
+                <article id="nimman" class="reveal neighbourhood-section" style="scroll-margin-top: 100px;">
+                    <h2 style="margin-bottom: 0.5rem;">Nimman (นิมมาน)</h2>
+                    <p style="color: var(--color-text-muted); margin-bottom: 2rem; font-weight: 500; font-size: 1.1rem;">Cosmopolitan. Cafés. Walkable.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8; margin-bottom: 1.5rem;">Nimman Road (Thanon Nimmanhaemin) extends northward from the city centre, approximately 3-8 kilometres from the Old City moat. It is the closest Chiang Mai gets to a European quarter. The street itself has transformed dramatically over the past two decades from a quiet suburban road to the primary commercial and social hub for expatriates, digital nomads, and affluent Thai youth seeking contemporary urban culture. Walking Nimman Road at any hour reveals the density of change: specialty coffee roasteries, co-working spaces, modern restaurants, boutique hotels, and international schools. This is Chiang Mai's answer to urban cosmopolitanism.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8; margin-bottom: 1.5rem;">The appeal is straightforward for those seeking modern urban convenience without abandoning Thailand. Everything operates at international standard. Wifi is fast and reliable. Food quality is consistent. Accommodation ranges from budget hostels to luxury serviced apartments. The community is genuinely international. On any given evening, you will hear English, French, German, Swedish, and Italian alongside Thai. This linguistic diversity creates both opportunity (easy social integration for newcomers) and limitation (less exposure to authentic Thai culture). You can live in Nimman and rarely speak Thai unless you deliberately choose to.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8; margin-bottom: 1.5rem;">Nimman is definitively expat-centric. Businesses market to foreigners. Prices reflect expat economics rather than Thai pricing. English is ubiquitous. This means comfort and convenience but also artificial insulation from local reality. For many arriving from Western cities, Nimman feels like a partial return to familiar culture rather than immersion in Thai life. This is both strength and weakness depending on what you seek from your time in Chiang Mai.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8; margin-bottom: 2rem;">The social scene is active. Regular meetups, coworking communities, and networking events exist for digital nomads and remote workers. If you value professional community and social integration with peers facing similar challenges, Nimman provides this infrastructure. If you seek Thai community or quiet neighbourly relationships with locals, Nimman creates barriers to these connections. The transience is notable. Nimman attracts people in transition. Many stay weeks or months, not years. This creates constant social opportunity and constant social flux.</p>
+
+                    <div style="border-top: 2px solid var(--color-primary); padding-top: 1.5rem; margin-bottom: 2rem;"></div>
+
+                    <h3 style="margin-bottom: 0.5rem;">Where to Stay</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8; margin-bottom: 2rem;">Accommodation is abundant and expensive by Chiang Mai standards. Studio rooms in shared houses run 8,000-12,000 baht monthly. Modern serviced apartments start around 15,000 baht and easily reach 35,000+. Short-term rentals dominate. Furnished, flexible lease terms are standard. This reflects the transient nature of the community and makes Nimman convenient for those uncertain about long-term commitment.</p>
+                    <div class="section-divider"></div>
+
+                    <h3 style="margin-bottom: 0.5rem;">Local Highlights</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8; margin-bottom: 2rem;">Sunday Walking Street (near Chiang Mai Gate) is approximately 2 kilometres away and easily reachable by songthaew or motorbike. Maya Shopping Centre sits directly on Nimman Road. The Chiang Mai University Art Museum is nearby. Most "highlights" for tourists involve transport to other areas. Nimman's primary appeal is the street itself. Cafés, restaurants, and social venues are the actual highlights. Treat Nimman as a base for exploring Chiang Mai rather than a destination in itself.</p>
+
+                    <div class="section-divider"></div>
+
+                    <h3 style="margin-bottom: 0.5rem;">Getting Around</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8; margin-bottom: 2rem;">Nimman is walkable for distances up to 2-3 kilometres. A motorbike is unnecessary for daily life but useful for reaching other neighbourhoods. Songthaew services run along Nimman Road to central Chiang Mai. Taxis and Grab apps operate readily. Public transport is convenient. Many residents never purchase motorbikes, which is unusual for Chiang Mai.</p>
+
+                    <div class="section-divider"></div>
+
+                    <h3 style="margin-bottom: 0.5rem;">Cost Profile</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8; margin-bottom: 2rem;">This is the most expensive neighbourhood in Chiang Mai. Housing costs are 3-4 times higher than rural areas. Dining costs are premium, though competitive with other expat markets. A sustainable budget of 2,500+ USD monthly is realistic if you want comfort. This is not budget remote work territory. Nimman suits those with genuine income or those treating Southeast Asia as temporary adventure rather than permanent settlement.</p>
+                    <div class="best-for-box">
+                        <h4>Best For</h4>
+                        <ul>
+                            <li>Digital nomads and remote workers</li>
+                            <li>Short-term stays (weeks to months)</li>
+                            <li>Those seeking international community</li>
+                            <li>Comfortable urban lifestyle without compromise</li>
+                        </ul>
+                        <a href="#" onclick="document.getElementById('navigate-neighbourhoods').scrollIntoView({behavior: 'smooth'}); return false;" class="back-to-top">
+                            <svg width="15mm" height="8mm" viewBox="0 0 100 50" style="display: inline-block;">
+                                <path d="M 15 40 L 50 10 L 85 40" stroke="#F2D980" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article id="oldcity" class="neighbourhood-section" style="scroll-margin-top: 100px;">
+                    <h2 style="margin-bottom: 0.5rem;">Old City (เมืองเก่า)</h2>
+                    <p style="color: var(--color-text-muted); margin-bottom: 2rem; font-weight: 500; font-size: 1.1rem;">Cultural. Temples. Vibrant.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8; margin-bottom: 1.5rem;">The Old City sits within a 700-year-old moat that defines its boundaries. This is Chiang Mai's historical and spiritual centre. The area is genuinely ancient, though its appearance is far more contemporary than the name suggests. Within the moat, approximately 2-3 square kilometres, sits the densest concentration of temples, the primary markets, and the cultural institutions that define Chiang Mai's identity. Walking the Old City means navigating narrow sois lined with temple walls, shop-houses, small businesses, and residential compounds.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8; margin-bottom: 1.5rem;">The Old City attracts first-time arrivals and short-term tourists more than long-term residents. It is the obvious landing place, culturally significant, and provides immediate access to Thai institutions. A week in the Old City gives genuine exposure to Chiang Mai's spiritual and cultural foundation. However, long-term residence here is less common than other areas. The constant tourist presence, narrow sois, noise levels, and density create different living conditions than outer neighbourhoods.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8; margin-bottom: 1.5rem;">Within the moat, you experience Thai culture at authentic scale. Temples function as genuine community spaces, not tourist attractions. Markets serve local residents first, tourists second. Monks walk alms rounds in early morning. Residents maintain multigenerational family compounds. This is genuinely local Thailand, not expat-filtered versions. The trade-off is that you are living in a densely populated area with significant tourism infrastructure and all its complications. Finding authenticity requires navigation rather than default state.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8; margin-bottom: 2rem;">Housing within the moat tends toward modest accommodations. Luxury apartments exist but are limited. Most long-term residents live in traditional Thai houses subdivided into rental units or modest shop-house conversions. The physical texture is distinctly Thai, which appeals to some and confuses others. If you want modern amenities, look elsewhere. If you want genuine geographic immersion in Thai cultural space, the Old City delivers this despite tourist presence.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Where to Stay</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8; margin-bottom: 2rem;">Monthly rents for modest accommodation range from 6,000-12,000 baht. Nicer, renovated spaces command 12,000-20,000 baht. Short-term guesthouses are abundant at 300-800 baht nightly. Long-term rental agreements are less standardised here than in more expat-centric areas. Personal connections and landlord relationships matter significantly.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Local Highlights</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Wat Chedi Luang (the massive ancient chedi dominating the Old City skyline), Wat Phra Singh (one of the most beautiful temples), the Sunday Walking Street market, daily morning alms rounds, the night bazaar nearby, and constant temple activities throughout the year. The Old City is highlight-dense. Almost any walk yields temple encounters and cultural moments that feel significant.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Getting Around</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">The Old City is walkable. Most residents navigate entirely on foot or motorbike. Songthaew services run around the moat. A motorbike within the moat can be frustrating due to narrow sois and parking challenges. Many Old City residents rely on walking and occasional motorbike taxis. The moat creates a natural boundary that compartmentalises movement.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Cost Profile</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8; margin-bottom: 2rem;">Lower-cost housing with authentic Thai character. Food prices reflect local markets. Dining ranges from street food (10-20 baht per meal) to modest restaurants (40-100 baht). This is genuinely affordable living if you embrace local preferences. Tourist-oriented establishments run higher, but these are avoidable.</p>
+
+                    <div class="best-for-box">
+                        <h4>Best For</h4>
+                        <ul>
+                            <li>Cultural immersion seekers</li>
+                            <li>Spiritual explorers</li>
+                            <li>Those on tight budgets</li>
+                            <li>Short-to-medium term visitors</li>
+                        </ul>
+                        <a href="#" onclick="document.getElementById('navigate-neighbourhoods').scrollIntoView({behavior: 'smooth'}); return false;" class="back-to-top">
+                            <svg width="15mm" height="8mm" viewBox="0 0 100 50" style="display: inline-block;">
+                                <path d="M 15 40 L 50 10 L 85 40" stroke="#F2D980" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article id="santitham" class="reveal neighbourhood-section" style="scroll-margin-top: 100px;">
+                    <h2 style="margin-bottom: 0.5rem;">Santitham (สันติธรรม)</h2>
+                    <p style="color: var(--color-text-muted); margin-bottom: 2rem; font-weight: 500; font-size: 1.1rem;">Local, authentic, evolving.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8; margin-bottom: 1.5rem;">Santitham sits north of the Old City moat, adjacent to Nimman but distinctly separate in character. It is primarily a Thai residential neighbourhood with increasing expatriate presence as Nimman has become expensive and saturated. Santitham offers a genuine middle ground. It is close enough to central Chiang Mai for convenience, yet maintains a strong local Thai character with lower costs than Nimman. This positioning has made it increasingly popular with long-term expats seeking reasonable costs and accessible community.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">The primary economic activity is residential, with modest shop-houses, small local restaurants, and services that serve the neighbourhood rather than tourists. There are temples, markets, and local institutions. Internet quality has improved significantly in recent years. Roads are adequate. Basic infrastructure exists without the premium polish of Nimman. This creates a genuinely hybrid space where Thai life continues alongside increasing expatriate settlement.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Santitham attracts different demographics than either Nimman or the Old City. You find established expat residents (2-5 years plus) mixed with Thai families. Some have withdrawn from Nimman's transience to Santitham's stability. Others are in transition, using Santitham as a base while exploring whether long-term Thailand settlement suits them. The result is a somewhat mixed community without the strong identity of more distinct neighbourhoods. This can feel either authentically hybrid or somewhat undefined depending on your perspective.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Housing stock has improved substantially. New developments have emerged alongside older shop-house stock. This provides genuine choice. You can find modest Thai accommodation at very low cost or newer, more comfortable units at moderate prices. The area is in visible transition, with construction ongoing and infrastructure improvements continuing. If you value unchanging character, this evolution is problematic. If you value improving services with cultural continuity, Santitham offers this balance.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Where to Stay</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Monthly rents for modest accommodation start around 6,000 baht. Renovated or newer units range from 8,000-16,000 baht. The breadth of options is growing as the area develops. Furnished and unfurnished rentals are both available. Local landlords are often Thai, making arrangements less standardised than expat-focused areas.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Local Highlights</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Santitham's appeal is neighbourhood authenticity rather than specific attractions. Local markets, modest temples serving community residents, street food culture, and Thai social rhythm are the actual experience. The Sunday Walking Street is a 10-minute songthaew ride. Nimman's restaurants and cafés are accessible but not walking distance. Santitham itself is destination as residential neighbourhood, not as attraction base.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Getting Around</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">A motorbike is useful though not essential. Songthaew services to central Chiang Mai run regularly. The area is compact enough for motorbike navigation. Walking is possible for shorter distances. Public transport is reliable for reaching other neighbourhoods. Personal motorbike provides maximum independence and costs 30,000-50,000 baht used.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Cost Profile</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8; margin-bottom: 2rem;">Moderate affordability. Housing costs are 30-40 percent lower than Nimman but higher than remote rural areas. Dining costs reflect mixture of local and expat-aware pricing. Internet is affordable and increasingly reliable. Overall monthly costs can be quite manageable (1,500-2,000 USD monthly for comfortable living) without extreme penny-counting.</p>
+
+                    <div class="best-for-box">
+                        <h4>Best For</h4>
+                        <ul>
+                            <li>Established expats seeking community</li>
+                            <li>Those balancing culture and convenience</li>
+                            <li>Remote workers wanting local connection</li>
+                            <li>Budget-conscious long-termers</li>
+                        </ul>
+                        <a href="#" onclick="document.getElementById('navigate-neighbourhoods').scrollIntoView({behavior: 'smooth'}); return false;" class="back-to-top">
+                            <svg width="15mm" height="8mm" viewBox="0 0 100 50" style="display: inline-block;">
+                                <path d="M 15 40 L 50 10 L 85 40" stroke="#F2D980" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article id="hangdong" class="reveal neighbourhood-section" style="scroll-margin-top: 100px;">
+                    <h2 style="margin-bottom: 0.5rem;">Hang Dong (หางดง)</h2>
+                    <p style="color: var(--color-text-muted); margin-bottom: 2rem; font-weight: 500; font-size: 1.1rem;">Spacious. Green. Quiet.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Hang Dong extends southwest from central Chiang Mai, approximately 15-20 kilometres from the Old City. It is a substantial district with significant geographic area and low population density. This spaciousness is the defining characteristic. Where Nimman feels crowded and urban, and the Old City feels dense and ancient, Hang Dong offers room to breathe. Land is abundant, properties are larger, and neighbourhoods are genuinely residential rather than commercial or touristic. For families and those seeking genuine quiet, Hang Dong represents a fundamentally different living experience than central areas.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">The district is increasingly popular with affluent Thai families relocating from Bangkok, international families with school-age children, and expat retirees seeking space without sacrificing modern amenities. Several international schools operate in or near Hang Dong, making it the primary neighbourhood choice for expatriate families. This has driven infrastructure development. Shopping centres, decent restaurants, and medical facilities have emerged to serve this demographic. The result is a neighbourhood that feels genuinely developed while maintaining spaciousness that central areas lack entirely.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Hang Dong is not old Chiang Mai. It is new Chiang Mai, developed primarily in the last 15 years to serve middle and upper-middle class residents. Properties are modern, roads are well-maintained, and services are reliable. This comes with a trade-off. The area lacks the cultural depth and character of older neighbourhoods. It is fundamentally suburban in feel, which appeals enormously to some and feels soulless to others. There is nothing authentically "Thai" about modern Hang Dong. It is Thailand built for comfort and convenience, not cultural immersion.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Housing reflects the demographic. Villas and large townhouses are common. Land plots are substantial. Gated communities exist. This is the highest concentration of "expat-style" housing outside Nimman. The trade-off is that costs are higher than agricultural areas, though lower than premium central locations. For families with children, particularly those in international schools, Hang Dong makes pragmatic sense. For those seeking cultural immersion or rural authenticity, Hang Dong is counterintuitive.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Where to Stay</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Monthly rents for villas start around 15,000-20,000 baht and easily reach 50,000+ for larger, modern properties. Townhouses and single-family homes in developments range 12,000-30,000 baht. The area attracts international families, so furnished accommodation with modern amenities is common. Unfurnished options exist but are less standard. Land plots for lease exist for those considering extended settlement.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Local Highlights</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Hang Dong's appeal is lifestyle rather than attractions. International schools (notably Chiang Mai International School and others) serve the community. Shopping centres and restaurants cater to affluent Thai and expat families. Bua Tong Waterfall (Sticky Waterfall) sits within or near Hang Dong and offers a natural attraction. Thai temples exist but serve community residents rather than tourists. Golf courses are nearby. The appeal is suburban comfort and family-focused amenities, not cultural or tourist experiences.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Getting Around</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Hang Dong is genuinely car or motorbike dependent. Public songthaew service is limited. The distances between residential areas and services are too great for comfortable walking. A personal motorbike is essential for independence. The main road to central Chiang Mai is straightforward but the journey is 30-45 minutes depending on starting point and traffic. Commuting to the city daily is possible but tiring. Most residents treat Hang Dong as a home base with occasional city visits rather than as a commuting neighbourhood.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Cost Profile</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Moderate to moderately expensive. Housing is significantly more costly than rural areas but less expensive than premium Nimman locations. The total cost of living is moderate when you account for the necessity of vehicle ownership and the suburban need for shopping centres and modern dining. A realistic monthly budget (1,800-2,500 USD) reflects the comfortable suburban lifestyle. This is not budget travel territory. It is comfortable, stable, middle-class family living.</p>
+                    <div class="best-for-box">
+                        <h4>Best For</h4>
+                        <ul>
+                            <li>Families with school-age children</li>
+                            <li>Retirees seeking comfort and space</li>
+                            <li>Those prioritising modern amenities</li>
+                            <li>Long-term residents wanting stability</li>
+                        </ul>
+                        <a href="#" onclick="document.getElementById('navigate-neighbourhoods').scrollIntoView({behavior: 'smooth'}); return false;" class="back-to-top">
+                            <svg width="15mm" height="8mm" viewBox="0 0 100 50" style="display: inline-block;">
+                                <path d="M 15 40 L 50 10 L 85 40" stroke="#F2D980" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article id="sansai" class="reveal neighbourhood-section" style="scroll-margin-top: 100px;">
+                    <h2 style="margin-bottom: 0.5rem;">San Sai (สันสาย)</h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: 2rem; font-weight: 500; font-size: 1.1rem;">Peaceful. Agricultural. Authentic.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">San Sai lies north of the old city, approximately 15 kilometres from the city centre. It is a genuinely rural area where rice paddies still dominate the landscape and farmers begin their work at dawn. This is Chiang Mai at its most authentic. The northern highway runs through San Sai, making it reasonably accessible, yet the area maintains an unhurried, small-town atmosphere that feels entirely removed from urban bustle.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">For those seeking escape from the tourist infrastructure of Nimman or the density of the old city, San Sai offers genuine rural Thailand. The primary economic activity remains agriculture, with rice farming interspersed with small-scale vegetable cultivation. The community is predominantly Thai, with relatively few expats, which means authentic interactions with locals and exposure to genuine Thai culture. You will not find co-working spaces or specialty coffee here. You will find genuine temples, local markets that serve the community rather than tourists, and a pace of life that aligns with the seasons and the agricultural calendar.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">The landscape transitions between cultivated fields and small residential communities. What urbanisation does exist tends to be low-rise residential developments or small shop-houses rather than high-rise construction. The air quality is significantly cleaner than the city centre, and during the cool season, mornings offer clear views toward the mountains. Sunsets are particularly striking from the flat agricultural plains, with unobstructed views across the rice paddies.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">San Sai is neither developed for tourism nor designed specifically for expat comfort. Water supply is generally reliable, electricity is stable, and internet connectivity exists though not always with the speeds available in central Chiang Mai. You will need a motorbike or car for most activities. The trade-off is significant: lower costs, genuine community, and a lifestyle rhythm that many expats find restorative after years in densely populated urban environments.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Where to Stay</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Most accommodation consists of modest rental homes or shop-house units rather than serviced apartments. Monthly rents for a two-bedroom house start at approximately 6,000 to 8,000 baht. Land is more affordable here than anywhere else in the province, making this a realistic base for those planning longer-term settlement. Homestays and informal rental arrangements with local landlords are common, often arranged through personal networks or local Facebook groups.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Local Highlights</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">The primary appeal is immersion in agricultural Thailand. Visit during rice-planting season (May to June) or harvest (November to December) to witness traditional farming rhythms. Wat San Sai Noi offers a peaceful temple experience without the tourist crowds. Local markets in the morning serve the agricultural community with fresh produce, sticky rice, and prepared food at genuine Thai prices. The absence of tourist infrastructure is precisely the attraction. This is where you experience Chiang Mai as Thais do, not as visitors do.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Getting Around</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">A motorbike is essential. Public songthaew services exist but run on local schedules and routes. The northern highway makes the journey to central Chiang Mai straightforward in good traffic (approximately 30-40 minutes by motorbike). Roads are well-maintained. Commuting to the city centre is possible but not recommended as a daily routine.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Cost Profile</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">This is one of the most affordable areas in Chiang Mai. Monthly rent is 40-50 percent lower than central locations. Dining costs reflect local pricing rather than expat markup. Internet service is affordable though occasionally less reliable than in the city. Motorbike fuel and maintenance are modest expenses.</p>
+                    <div class="best-for-box">
+                        <h4>Best For</h4>
+                        <ul>
+                            <li>Retirees seeking peaceful rural life</li>
+                            <li>Long-term settlers with strong cultural interest</li>
+                            <li>Digital nomads comfortable with slower internet</li>
+                            <li>Families wanting Thai education and community</li>
+                        </ul>
+                        <a href="#" onclick="document.getElementById('navigate-neighbourhoods').scrollIntoView({behavior: 'smooth'}); return false;" class="back-to-top">
+                            <svg width="15mm" height="8mm" viewBox="0 0 100 50" style="display: inline-block;">
+                                <path d="M 15 40 L 50 10 L 85 40" stroke="#F2D980" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article id="maerim" class="reveal neighbourhood-section" style="scroll-margin-top: 100px;">
+                    <h3 style="margin-bottom: 0.5rem;">Mae Rim (แม่ริม)</h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; font-weight: 500;">Green. Mountain-adjacent. Agricultural cool.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Mae Rim sits to the north and slightly east of Chiang Mai, approximately 20-25 kilometres from the city centre. It marks the transition zone between the urban lowlands and the mountainous regions that climb toward the Thai-Burmese border. The elevation is noticeably higher than central Chiang Mai, typically 300-400 metres above the city, which means marginally cooler temperatures year-round. This elevation difference creates a measurably more comfortable climate, particularly during the hot season when Bangkok and lowland Thailand become genuinely unlivable.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Mae Rim has undergone significant transformation in recent years. The area was historically agricultural, and substantial agricultural land remains, but it has become increasingly popular with affluent Thai families seeking weekend retreats and weekend agriculture (strawberry farms, flower cultivation). New housing developments have emerged, ranging from modest residential communities to luxury villas with private pools. The result is a mixed landscape where traditional farms coexist with modern developments, creating a somewhat bifurcated community. There are now restaurants, small shopping centres, and tourist-oriented attractions that did not exist five years ago.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">The primary draw for many expats is the cooler climate combined with developing infrastructure. Mae Rim is modern enough that you have access to decent internet, reasonable shopping, and international-standard accommodations, yet rural enough that you avoid the noise and pollution of central Chiang Mai. This middle-ground positioning appeals to those who appreciate some comforts but value environmental quality above urban convenience. The mountains are genuinely close. Hiking trails exist within 20-30 minutes of most residential areas. The sense of proximity to wilderness is constant.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Mae Rim is transitioning from purely agricultural to semi-suburban. This creates some friction. Older Thai residents who farmed these lands now coexist with new arrivals seeking weekend homes. Tourist attractions have proliferated. The character is evolving rapidly. For those specifically seeking unchanged rural Thailand, Mae Rim is becoming less authentic. For those wanting rural charm with modern amenities, it is increasingly suitable. The presence of a growing expat community means you will find others navigating the same environment, for better or worse.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Where to Stay</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Mae Rim offers the widest accommodation range. Serviced apartments and modern condominiums start around 12,000 baht monthly for a studio. Houses, both new developments and older structures, range from 10,000 baht (modest, rural) to 40,000+ baht (contemporary, well-equipped). This breadth means you can position yourself on the continuum between modern comfort and agricultural simplicity according to preference and budget.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Local Highlights</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Strawberry farms offer seasonal picking and farm-to-table experiences. Doi Suthep temple is accessible via mountain road, with hiking options. Mae Sa valley offers elephant sanctuaries and other tourist attractions, though quality varies significantly. The local Thai community remains substantial and engaged in agriculture. Markets serve both tourists and locals. Coffee culture has emerged, with small roasteries and cafes appearing alongside agricultural operations.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Getting Around</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">A motorbike is advisable. The road to central Chiang Mai is straightforward (30-45 minutes depending on traffic and starting point). Public transport exists but is less convenient than from central areas. The mountains create some road configuration inefficiencies. Within Mae Rim, a motorbike provides freedom. Taxis are available but more expensive than central Chiang Mai.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Cost Profile</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Mid-range for Chiang Mai. Rents are moderate, roughly 20-30 percent cheaper than central neighbourhoods but more expensive than San Sai or San Khamphang. Dining varies by location. Tourist-oriented restaurants run higher. Local Thai restaurants maintain reasonable pricing. Utilities are modest. Internet quality and cost have improved substantially in recent years.</p>
+                    <div class="best-for-box">
+                        <h4>Best For</h4>
+                        <ul>
+                            <li>Nature lovers seeking cooler climate</li>
+                            <li>Expats wanting modern comforts with mountain proximity</li>
+                            <li>Families seeking slightly more developed infrastructure</li>
+                            <li>Remote workers with reliable internet needs</li>
+                        </ul>
+                        <a href="#" onclick="document.getElementById('navigate-neighbourhoods').scrollIntoView({behavior: 'smooth'}); return false;" class="back-to-top">
+                            <svg width="15mm" height="8mm" viewBox="0 0 100 50" style="display: inline-block;">
+                                <path d="M 15 40 L 50 10 L 85 40" stroke="#F2D980" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article id="sankhamphang" class="reveal neighbourhood-section" style="scroll-margin-top: 100px;">
+                    <h3 style="margin-bottom: 0.5rem;">San Khamphang (สันกำแพง)</h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; font-weight: 500;">Rural. Artisanal. Emerging.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">San Khamphang extends east and slightly south from central Chiang Mai, approximately 15-20 kilometres from the old city. Historically, this district was known for woodcarving, umbrella-making (parasol production), and other traditional handicrafts. That heritage remains visible, though commercialisation has steadily transformed the economic foundation. What were once family workshops now operate alongside factories serving both domestic and export markets. The landscape transitions between agricultural land, small towns, and increasingly, modern commercial operations.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">For cultural enthusiasts, San Khamphang offers genuine exposure to traditional Thai crafts. You can observe master craftspeople working with wood, creating umbrella frames, or producing decorative items that sell throughout Thailand and internationally. This represents centuries-old expertise that continues in living form, not as historical recreation for tourists. The district has capitalised on this heritage with workshops open to visitors, though the quality of tourist experience varies considerably. Many operations remain authentically focused on production rather than visitor experience.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">San Khamphang is more developed than San Sai but less touristic than some central areas. The primary population remains Thai workers in agricultural and artisanal production. Housing tends to be modest, reflecting worker communities rather than expatriate concentrations. Roads are generally adequate, and the area is well-connected by songthaew to central Chiang Mai. The atmosphere is one of working community, not tourist destination, yet accessibility and infrastructure are sufficient for expatriate residence.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">This is a transitional area economically. Factory operations are increasingly mechanised. Some traditional crafts are declining as younger generations pursue different livelihoods. Yet the infrastructure and cultural continuity make San Khamphang relevant for those interested in understanding contemporary Thai economic reality. It is neither purely agricultural nor fully urbanised. It is Thailand in genuine transition, which offers both interest and complexity. This makes it compelling for those seeking depth of experience rather than comfort or novelty.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Where to Stay</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Accommodation is predominantly modest rental homes and shop-houses. Monthly rents for adequate two-bedroom dwellings range from 6,000 to 10,000 baht. The area has no luxury developments or serviced apartments. If you require modern amenities or international-standard housing, San Khamphang is not suitable. If you accept local standards and appreciate authenticity, the value is excellent.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Local Highlights</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Visit workshops during production hours to observe traditional craftsmanship. The umbrella factories are most active during cooler months when water-resistant umbrellas are in seasonal demand. Woodcarving demonstrations occur regularly. Local markets serve the working community with fresh food and basic goods. Temples exist but attract fewer tourists. The rhythm follows work schedules rather than tourist convenience.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Getting Around</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">A motorbike is essential for daily independence. Songthaew services to central Chiang Mai run regularly and cost 20-30 baht per person. The journey takes 30-40 minutes depending on traffic and starting point. Roads are adequate but not modern. Navigation can be confusing initially as signs are predominantly Thai-language. Local knowledge helps considerably.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Cost Profile</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">This is one of the most affordable areas in Chiang Mai. Housing costs are among the lowest. Food prices reflect local markets rather than expat adjustment. Internet is affordable though quality can be variable. Motorbike fuel and maintenance are minimal expenses. Overall cost of living can be 30-40 percent lower than central neighbourhoods.</p>
+                    <div class="best-for-box">
+                        <h4>Best For</h4>
+                        <ul>
+                            <li>Budget-conscious long-term residents</li>
+                            <li>Cultural researchers and artisan enthusiasts</li>
+                            <li>Those seeking authentic Thai economic life</li>
+                            <li>Retirees comfortable with minimal amenities</li>
+                        </ul>
+                        <a href="#" onclick="document.getElementById('navigate-neighbourhoods').scrollIntoView({behavior: 'smooth'}); return false;" class="back-to-top">
+                            <svg width="15mm" height="8mm" viewBox="0 0 100 50" style="display: inline-block;">
+                                <path d="M 15 40 L 50 10 L 85 40" stroke="#F2D980" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article id="saraphi" class="reveal neighbourhood-section" style="scroll-margin-top: 100px;">
+                    <h3 style="margin-bottom: 0.5rem;">Saraphi (สารภี)</h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; font-weight: 500;">Blended. Affordable. Accessible.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Saraphi extends south and west from central Chiang Mai, approximately 10-15 kilometres from the old city. Of the four areas discussed here, Saraphi is closest to central Chiang Mai, which has implications for both accessibility and character. The district is more developed than San Sai or San Khamphang, yet less touristic than central Nimman or the old city. This positioning makes it appealing to those seeking a balance between community access and distance from urban density.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Saraphi has experienced significant housing development in recent years. The area is increasingly popular with Thai families seeking affordable housing within commuting distance of central employment. New condominiums and housing projects have emerged, creating somewhat mixed-density neighbourhoods. Older shop-house communities coexist with modern apartment buildings. Infrastructure development has followed housing growth. Better roads, improved electricity distribution, and increasingly reliable internet service reflect the area's attractiveness as a residential zone.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">The primary appeal for expatriates is practical: affordable housing, reliable access to central Chiang Mai via songthaew (10-20 minutes), and developing infrastructure without the premium pricing of more central areas. This is not a rural escape. It is an adjacent residential area with increasingly modern amenities. The trade-off is less dramatic than with San Sai or San Khamphang. You get some rural elements (occasional open land, agricultural remnants) combined with genuine urban convenience. Some find this balance ideal. Others find it lacks the defining character of more distinct neighbourhoods.</p>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Saraphi is popular with middle-income Thai families, which means the community is rooted in Thai life rather than expat concentration. Schools are available. Markets serve local populations. Entertainment options exist without being overwhelming. The area is undergoing continuous development, which means visible progress but also construction noise and changing character. If you value stability and unchanging character, Saraphi may feel in flux. If you appreciate emerging infrastructure and improving services, this dynamism is positive.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Where to Stay</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Accommodation ranges from modest houses (8,000-12,000 baht monthly) to modern condominiums (10,000-20,000 baht). The greatest variety exists here of the four areas. You can find budget-conscious housing or more modern amenities depending on budget and preference. Furnished and unfurnished options are both available, with furnished rentals more common than in less expat-focused areas.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Local Highlights</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Saraphi's primary appeal is accessibility. Central Chiang Mai attractions are reachable within 20 minutes. The Sunday Walking Street market is a songthaew ride away. Temples exist throughout the district and maintain authentic communal functions. Local markets reflect community life rather than tourism. If you seek highlights, Saraphi itself offers modest appeal; its value is primarily as a base for accessing broader Chiang Mai attractions while maintaining a degree of residential separation.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Getting Around</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Songthaew service to central Chiang Mai is frequent and reliable. A motorbike is optional but recommended for independence. The road to the city centre is modern and straightforward. Taxis are available for longer journeys, though local songthaew are typically more cost-effective. Within Saraphi itself, songthaew serve local routes at minimal cost. The area is well-integrated into Chiang Mai's transport network.</p>
+                    <div class="section-divider"></div>
+                    <h3 style="margin-bottom: 0.5rem;">Cost Profile</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Moderate to affordable. Housing costs are roughly 20-30 percent below central neighbourhoods but higher than San Sai or San Khamphang. Dining costs vary by location but tend toward local pricing with some expat-oriented options. Utilities are modest. Internet is increasingly reliable and affordable. Overall costs are genuinely manageable while maintaining good access to urban services.</p>
+                    <div class="best-for-box">
+                        <h4>Best For</h4>
+                        <ul>
+                            <li>Those needing regular city access</li>
+                            <li>Families with school-age children</li>
+                            <li>Remote workers balancing work and community</li>
+                            <li>First-time arrivals seeking familiarity with some separation</li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section style="padding: 100px 40px; background: rgba(234, 179, 8, 0.02);">
+            <div class="container">
+                <h2 class="reveal" style="margin-bottom: 3rem; text-align: center;">Quick Comparison</h2>
+                <style>
+                    table td:nth-child(1) { width: 15%; }
+                    table td:nth-child(2) { width: 18%; }
+                    table td:nth-child(3) { width: 12%; }
+                    table td:nth-child(4) { width: 25%; }
+                    table td:nth-child(5) { width: 30%; }
+                </style>
+                <div class="reveal" style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; color: var(--color-text-main); font-size: 1rem; box-sizing: border-box; line-height: 1.8;">
+                        <thead>
+                            <tr style="border-bottom: 2px solid var(--color-primary);">
+                                <th style="padding: 12px 12px; text-align: left; font-weight: 600; color: var(--color-primary); width: 15%; vertical-align: top; box-sizing: border-box;">Area</th>
+                                <th style="padding: 12px 12px; text-align: left; font-weight: 600; color: var(--color-primary); width: 18%; vertical-align: top; box-sizing: border-box;">Distance</th>
+                                <th style="padding: 12px 12px; text-align: left; font-weight: 600; color: var(--color-primary); width: 12%; vertical-align: top; box-sizing: border-box;">Cost</th>
+                                <th style="padding: 12px 12px; text-align: left; font-weight: 600; color: var(--color-primary); width: 25%; vertical-align: top; box-sizing: border-box;">Character</th>
+                                <th style="padding: 12px 12px; text-align: left; font-weight: 600; color: var(--color-primary); width: 30%; vertical-align: top; box-sizing: border-box;">Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid var(--color-border);">
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box; width: 15%;"><strong>Nimman</strong></td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box; width: 18%;">3-8km north</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box; width: 12%;">Premium</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box; width: 25%;">Cosmopolitan, expat-focused</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box; width: 30%;">Digital nomads, short-term</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--color-border);">
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;"><strong>Old City</strong></td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Centre</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Budget</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Cultural, temples, dense</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">First arrivals, cultural seekers</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--color-border);">
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;"><strong>Santitham</strong></td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">2-5km north</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Affordable</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Local, evolving, hybrid</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Established expats, balanced</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--color-border);">
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;"><strong>Hang Dong</strong></td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">15-20km southwest</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Moderate</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Spacious, suburban, modern</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Families, retirees seeking space</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--color-border);">
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;"><strong>San Sai</strong></td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">15km north</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Budget</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Rural authentic</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Retirees seeking peace</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--color-border);">
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;"><strong>Mae Rim</strong></td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">20km northeast</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Moderate</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Mountain-adjacent modern</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Nature lovers with comfort needs</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--color-border);">
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;"><strong>San Khamphang</strong></td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">18km east</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Budget</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Artisanal, transitional</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Cultural enthusiasts</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;"><strong>Saraphi</strong></td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">12km south</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Affordable</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">Developing residential</td>
+                            <td style="padding: 12px 12px; text-align: left; vertical-align: top; box-sizing: border-box;">City access seekers</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                <p class="reveal" style="margin-top: 2rem; font-size: 0.9rem; color: var(--color-text-muted); text-align: center;">All distances are approximate from the Old City. Travel times depend on traffic, specific location within the area, and time of day. Costs shown are typical monthly rent ranges for modest accommodation. Your actual costs will vary based on housing choice and lifestyle.</p>
+            </div>
+        </section>
+
+        <section class="container" style="padding: 100px 0;">
+            <h2 class="reveal" style="margin-bottom: 3rem; text-align: center;">How to Choose</h2>
+            <div style="display: grid; gap: 30px; grid-template-columns: repeat(2, 1fr); max-width: 1000px; margin: 0 auto;">
+                <a href="#nimman" class="reveal" style="border-left: 4px solid var(--color-primary); padding-left: 2rem; display: block; text-decoration: none; color: inherit; transition: all 0.3s;">
+                    <h3 style="margin-bottom: 1rem;">Arriving short-term (weeks to months)?</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Start with Nimman or Old City. Both are central, have extensive tourist infrastructure, and make exploration easy. Nimman for comfort and Western convenience. Old City for cultural immersion and budget.</p>
+                </a>
+                <a href="#sansai" class="reveal" style="border-left: 4px solid var(--color-primary); padding-left: 2rem; display: block; text-decoration: none; color: inherit; transition: all 0.3s;">
+                    <h3 style="margin-bottom: 1rem;">Seeking authentic rural Thailand?</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">San Sai offers genuine agricultural life with minimal tourist infrastructure. San Khamphang provides cultural depth through artisanal traditions. Neither is comfortable in the Western sense, but both are authentically Thai.</p>
+                </a>
+                <a href="#santitham" class="reveal" style="border-left: 4px solid var(--color-primary); padding-left: 2rem; display: block; text-decoration: none; color: inherit; transition: all 0.3s;">
+                    <h3 style="margin-bottom: 1rem;">Want balance of culture and convenience?</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Santitham offers a middle ground. You get local Thai neighbourhoods with developing amenities, lower costs than Nimman, and regular access to the city centre. Ideal for 1-3 year residents balancing community and practicality.</p>
+                </a>
+                <a href="#hangdong" class="reveal" style="border-left: 4px solid var(--color-primary); padding-left: 2rem; display: block; text-decoration: none; color: inherit; transition: all 0.3s;">
+                    <h3 style="margin-bottom: 1rem;">Seeking space and family amenities?</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Hang Dong is purpose-built for families with children and retirees seeking comfort. Spacious properties, international schools, modern infrastructure, and suburban quiet define the experience. Trade cultural immersion for practical comfort.</p>
+                </a>
+                <a href="#maerim" class="reveal" style="border-left: 4px solid var(--color-primary); padding-left: 2rem; display: block; text-decoration: none; color: inherit; transition: all 0.3s;">
+                    <h3 style="margin-bottom: 1rem;">Need modern comforts with nature nearby?</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Mae Rim combines cooler mountain climate, outdoor recreation, and developing infrastructure. Saraphi offers city access while maintaining residential separation. Both suit those wanting comfort without full urban density.</p>
+                </a>
+                <a href="#saraphi" class="reveal" style="border-left: 4px solid var(--color-primary); padding-left: 2rem; display: block; text-decoration: none; color: inherit; transition: all 0.3s;">
+                    <h3 style="margin-bottom: 1rem;">Undecided on commitment or personality?</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Start in Santitham or Saraphi. Both offer accessibility that allows easy exploration of other areas. Once you understand your preferences after 2-3 months, consider moving to a neighbourhood that better matches your actual needs.</p>
+                </a>
+                <a href="#santitham" class="reveal" style="border-left: 4px solid var(--color-primary); padding-left: 2rem; display: block; text-decoration: none; color: inherit; transition: all 0.3s;">
+                    <h3 style="margin-bottom: 1rem;">Serious long-term settlement (3+ years)?</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Choose based on lifestyle preference: San Sai or San Khamphang for rural immersion, Mae Rim for nature and comfort, Saraphi or Santitham for balanced community living, Hang Dong for family comfort. Avoid Nimman and Old City for stability; both are too transient.</p>
+                </a>
+                <a href="#nimman" class="reveal" style="border-left: 4px solid var(--color-primary); padding-left: 2rem; display: block; text-decoration: none; color: inherit; transition: all 0.3s;">
+                    <h3 style="margin-bottom: 1rem;">Valuing contemporary lifestyle and community?</h3>
+                    <p style="color: var(--color-text-main); line-height: 1.8;">Nimman provides the most developed social infrastructure, coworking spaces, specialty cafes, and international community. Premium costs, but immediate access to professional networks and lifestyle amenities that suit digital professionals and those prioritising modern convenience over cultural immersion.</p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="logo" style="margin-bottom: 1rem;">
+                        <svg class="logo-icon" viewBox="-175 -178 350 500" xmlns="http://www.w3.org/2000/svg" width="60" height="80">
+                            <defs>
+                                <linearGradient id="g2gold-footer" x1="20%" y1="0%" x2="80%" y2="100%">
+                                    <stop offset="0%" stop-color="#F2D980" />
+                                    <stop offset="40%" stop-color="#C49010" />
+                                    <stop offset="100%" stop-color="#9A7008" />
+                                </linearGradient>
+                                <linearGradient id="g2ring-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#E4BC50" />
+                                    <stop offset="100%" stop-color="#9A7008" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="0" cy="0" r="164" fill="none" stroke="url(#g2ring-footer)" stroke-width="2.5" />
+                            <circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65" />
+                            <circle cx="164" cy="0" r="3.2" fill="#C49010" />
+                            <circle cx="0" cy="-164" r="3.2" fill="#C49010" />
+                            <circle cx="-164" cy="0" r="3.2" fill="#C49010" />
+                            <circle cx="0" cy="164" r="3.2" fill="#C49010" />
+                            <g transform="translate(0, -149.201) scale(1.94980)">
+                                <polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980" />
+                                <rect x="-2" y="4" width="4" height="38" fill="url(#g2gold-footer)" />
+                                <polygon points="0,42 -16,78 16,78" fill="url(#g2gold-footer)" />
+                                <rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008" />
+                                <rect x="-22" y="84" width="44" height="9" fill="url(#g2gold-footer)" />
+                                <rect x="-25" y="93" width="50" height="4" fill="#9A7008" />
+                                <rect x="-30" y="97" width="60" height="9" fill="url(#g2gold-footer)" />
+                                <rect x="-33" y="106" width="66" height="4" fill="#9A7008" />
+                                <rect x="-38" y="110" width="76" height="9" fill="url(#g2gold-footer)" />
+                                <rect x="-44" y="119" width="88" height="11" fill="url(#g2gold-footer)" />
+                                <rect x="-52" y="130" width="104" height="8" fill="#9A7008" />
+                            </g>
+                        </svg>
+                        <div class="logo-text-wrapper">
+                            <div>
+                                <span class="logo-accent">CM</span><span class="logo-text">Ambassador</span>
+                            </div>
+                            <span class="logo-tagline">Connector · Helper · Guru</span>
+                        </div>
+                    </div>
+                    <p class="footer-tagline">Local knowledge. Practical support. The Rose of the North, clearly explained.</p>
+                </div>
+                <nav class="footer-nav">
+                    <div class="footer-nav-group">
+                        <h4>Guides</h4>
+                        <ul>
+                            <li><a href="neighbourhoods.html">Neighbourhoods</a></li>
+                            <li><a href="cost-of-living.html">Cost of living</a></li>
+                            <li><a href="visas.html">Visas and permits</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>Tools</h4>
+                        <ul>
+                            <li><a href="../#tools">Budget calculator</a></li>
+                            <li><a href="../#tools">Visa planner</a></li>
+                            <li><a href="../#tools">Neighbourhood matcher</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="#">Expats Club</a></li>
+                            <li><a href="#">Ask a local</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-legal">Copyright 2026 Chiang Mai Ambassador. Published in Chiang Mai, Thailand.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

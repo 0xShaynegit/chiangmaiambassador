@@ -1,0 +1,1254 @@
+QA Checks started at 2026-05-23T23:05:53.081529
+Total pages to check: 61
+
+
+best-chiang-mai.html:
+  - Broken link: ../css/tokens.css -> resolves to ../css/tokens.css
+  - Broken link: ../css/base.css -> resolves to ../css/base.css
+  - Broken link: ../css/sections.css -> resolves to ../css/sections.css
+  - Broken link: ../css/components.css -> resolves to ../css/components.css
+  - Broken link: ../css/blog.css -> resolves to ../css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to ../fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to ../fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to ../fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to ../fonts/plus-jakarta-500.woff2
+  - Broken link: ../ -> resolves to ../
+  - Broken link: ../pages/neighbourhoods.html -> resolves to ../pages/neighbourhoods.html
+  - Broken link: ../pages/cost-of-living.html -> resolves to ../pages/cost-of-living.html
+  - Broken link: ../ -> resolves to ../
+  - Broken link: digital-nomads.html -> resolves to digital-nomads.html
+  - Broken link: motorcycle-rentals.html -> resolves to motorcycle-rentals.html
+  - Broken link: answers-to-questions.html -> resolves to answers-to-questions.html
+  - Broken link: bakery.html -> resolves to bakery.html
+  - Broken link: basics.html -> resolves to basics.html
+  - Broken link: chiang-mai.html -> resolves to chiang-mai.html
+  - Broken link: chiang-mai-ambassador.html -> resolves to chiang-mai-ambassador.html
+  - Broken link: community.html -> resolves to community.html
+  - Broken link: digital-nomads.html -> resolves to digital-nomads.html
+  - Broken link: eating.html -> resolves to eating.html
+  - Broken link: foreigner.html -> resolves to foreigner.html
+  - Broken link: good-info.html -> resolves to good-info.html
+  - Broken link: groups.html -> resolves to groups.html
+  - Broken link: holiday.html -> resolves to holiday.html
+  - Broken link: information.html -> resolves to information.html
+  - Broken link: life-in-chiang-mai.html -> resolves to life-in-chiang-mai.html
+  - Broken link: motorbike.html -> resolves to motorbike.html
+  - Broken link: movies.html -> resolves to movies.html
+  - Broken link: moving.html -> resolves to moving.html
+  - Broken link: networking.html -> resolves to networking.html
+  - Broken link: new-to-chiang-mai.html -> resolves to new-to-chiang-mai.html
+  - Broken link: nomads.html -> resolves to nomads.html
+  - Broken link: organic.html -> resolves to organic.html
+  - Broken link: pat.html -> resolves to pat.html
+  - Broken link: people-to-meet.html -> resolves to people-to-meet.html
+  - Broken link: search-before-asking.html -> resolves to search-before-asking.html
+  - Broken link: tourist.html -> resolves to tourist.html
+  - Broken link: vegetables.html -> resolves to vegetables.html
+  - Broken link: walking-street-markets.html -> resolves to walking-street-markets.html
+  - Broken link: expat-breakfast-club.html -> resolves to expat-breakfast-club.html
+  - Broken link: ../ -> resolves to ../
+  - Broken link: ../pages/neighbourhoods.html -> resolves to ../pages/neighbourhoods.html
+  - Broken link: ../pages/cost-of-living.html -> resolves to ../pages/cost-of-living.html
+  - Broken link: ../pages/visas.html -> resolves to ../pages/visas.html
+  - Non-HTTPS link: http://tiny.cc/stevesemail
+  - Non-HTTPS link: http://www.cmlocals.com/
+  - Non-HTTPS link: http://www.sakyantchiangmai.com/
+  - Non-HTTPS link: http://learnthaifromawhiteguy.com/
+  - Non-HTTPS link: http://yokinter.com/
+  - Non-HTTPS link: http://www.majorcineplex.com/booking/search-results.php?cinemaId_1=92
+  - Non-HTTPS link: http://www.majorcineplex.com/booking/search-results.php?cinemaId_1=91
+  - Non-HTTPS link: http://www.majorcineplex.com/booking/search-results.php?cinemaId_1=40
+  - En dash (–) found
+
+cheapest-border-run-chiang-mai.html:
+  - Broken link: favicon.svg -> resolves to favicon.svg
+  - Broken link: css/tokens.css -> resolves to css/tokens.css
+  - Broken link: css/base.css -> resolves to css/base.css
+  - Broken link: css/sections.css -> resolves to css/sections.css
+  - Broken link: css/components.css -> resolves to css/components.css
+  - Broken link: css/blog.css -> resolves to css/blog.css
+  - Broken link: fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: ./ -> resolves to ./
+  - Broken link: ./ -> resolves to ./
+
+food/auf-der-au-best-buffet-chiang-mai.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: buffet.html -> resolves to food/buffet.html
+  - Broken link: chiang-mai.html -> resolves to food/chiang-mai.html
+  - Broken link: chiang-mai-ambassador.html -> resolves to food/chiang-mai-ambassador.html
+  - Broken link: dinner.html -> resolves to food/dinner.html
+  - Broken link: food.html -> resolves to food/food.html
+  - Broken link: german-food.html -> resolves to food/german-food.html
+  - Broken link: germany.html -> resolves to food/germany.html
+  - Broken link: great-food.html -> resolves to food/great-food.html
+  - Broken link: lunch.html -> resolves to food/lunch.html
+  - Broken link: walking-street-markets.html -> resolves to food/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to food/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to food/expat-breakfast-club.html
+  - En dash (–) found
+
+food/butter-is-better.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: walking-street-markets.html -> resolves to food/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to food/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to food/expat-breakfast-club.html
+
+food/chiang-mai-grandview-lunch.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: walking-street-markets.html -> resolves to food/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to food/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to food/expat-breakfast-club.html
+  - Em dash (—) found
+
+food/dukes.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: walking-street-markets.html -> resolves to food/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to food/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to food/expat-breakfast-club.html
+  - Em dash (—) found
+
+food/food-delivery-services.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: walking-street-markets.html -> resolves to food/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to food/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to food/expat-breakfast-club.html
+
+food/ibis-styles-buffet-lunch.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: walking-street-markets.html -> resolves to food/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to food/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to food/expat-breakfast-club.html
+  - Em dash (—) found
+
+food/le-meridien-dinner-buffet.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: walking-street-markets.html -> resolves to food/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to food/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to food/expat-breakfast-club.html
+  - En dash (–) found
+
+food/meela-peanut-butter.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: all-natural.html -> resolves to food/all-natural.html
+  - Broken link: chiang-mai.html -> resolves to food/chiang-mai.html
+  - Broken link: chiang-mai-ambassador.html -> resolves to food/chiang-mai-ambassador.html
+  - Broken link: food.html -> resolves to food/food.html
+  - Broken link: peanut-butter.html -> resolves to food/peanut-butter.html
+  - Broken link: walking-street-markets.html -> resolves to food/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to food/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to food/expat-breakfast-club.html
+  - Em dash (—) found
+  - En dash (–) found
+
+food/real-thai-restaurant.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: walking-street-markets.html -> resolves to food/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to food/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to food/expat-breakfast-club.html
+  - Em dash (—) found
+
+food/siripanna-lunch.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: live-in-chiang-mai.html -> resolves to food/live-in-chiang-mai.html
+  - Broken link: buffet.html -> resolves to food/buffet.html
+  - Broken link: chiang-mai.html -> resolves to food/chiang-mai.html
+  - Broken link: desserts.html -> resolves to food/desserts.html
+  - Broken link: eating.html -> resolves to food/eating.html
+  - Broken link: experience.html -> resolves to food/experience.html
+  - Broken link: lunch.html -> resolves to food/lunch.html
+  - Broken link: quiet-atmosphere.html -> resolves to food/quiet-atmosphere.html
+  - Broken link: salads.html -> resolves to food/salads.html
+  - Broken link: staying-in-thailand.html -> resolves to food/staying-in-thailand.html
+  - Broken link: very-nice-dinner.html -> resolves to food/very-nice-dinner.html
+  - Broken link: walking-street-markets.html -> resolves to food/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to food/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to food/expat-breakfast-club.html
+  - En dash (–) found
+
+food/sukonta-moograta.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: walking-street-markets.html -> resolves to food/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to food/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to food/expat-breakfast-club.html
+  - Em dash (—) found
+
+food/the-dukes.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: 5-star.html -> resolves to food/5-star.html
+  - Broken link: american-cuisine.html -> resolves to food/american-cuisine.html
+  - Broken link: chiang-mai.html -> resolves to food/chiang-mai.html
+  - Broken link: eating.html -> resolves to food/eating.html
+  - Broken link: expat.html -> resolves to food/expat.html
+  - Broken link: pizza.html -> resolves to food/pizza.html
+  - Broken link: very-nice-dinner.html -> resolves to food/very-nice-dinner.html
+  - Broken link: walking-street-markets.html -> resolves to food/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to food/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to food/expat-breakfast-club.html
+  - Em dash (—) found
+  - En dash (–) found
+
+getting-social-in-chiang-mai.html:
+  - Broken link: ../css/tokens.css -> resolves to ../css/tokens.css
+  - Broken link: ../css/base.css -> resolves to ../css/base.css
+  - Broken link: ../css/sections.css -> resolves to ../css/sections.css
+  - Broken link: ../css/components.css -> resolves to ../css/components.css
+  - Broken link: ../css/blog.css -> resolves to ../css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to ../fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to ../fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to ../fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to ../fonts/plus-jakarta-500.woff2
+  - Broken link: ../ -> resolves to ../
+  - Broken link: ../pages/neighbourhoods.html -> resolves to ../pages/neighbourhoods.html
+  - Broken link: ../pages/cost-of-living.html -> resolves to ../pages/cost-of-living.html
+  - Broken link: ../ -> resolves to ../
+  - Broken link: digital-nomads.html -> resolves to digital-nomads.html
+  - Broken link: great-food.html -> resolves to great-food.html
+  - Broken link: answers-to-questions.html -> resolves to answers-to-questions.html
+  - Broken link: chiang-mai-ambassador.html -> resolves to chiang-mai-ambassador.html
+  - Broken link: coffee.html -> resolves to coffee.html
+  - Broken link: expat.html -> resolves to expat.html
+  - Broken link: food.html -> resolves to food.html
+  - Broken link: good-info.html -> resolves to good-info.html
+  - Broken link: groups.html -> resolves to groups.html
+  - Broken link: information.html -> resolves to information.html
+  - Broken link: life-in-chiang-mai.html -> resolves to life-in-chiang-mai.html
+  - Broken link: networking.html -> resolves to networking.html
+  - Broken link: new-to-chiang-mai.html -> resolves to new-to-chiang-mai.html
+  - Broken link: social.html -> resolves to social.html
+  - Broken link: vegetarian.html -> resolves to vegetarian.html
+  - Broken link: walking-street-markets.html -> resolves to walking-street-markets.html
+  - Broken link: expat-breakfast-club.html -> resolves to expat-breakfast-club.html
+  - Broken link: ../ -> resolves to ../
+  - Broken link: ../pages/neighbourhoods.html -> resolves to ../pages/neighbourhoods.html
+  - Broken link: ../pages/cost-of-living.html -> resolves to ../pages/cost-of-living.html
+  - Broken link: ../pages/visas.html -> resolves to ../pages/visas.html
+  - Non-HTTPS link: http://tiny.cc/stevesemail
+  - Non-HTTPS link: http://learnthaifromawhiteguy.com/
+  - Em dash (—) found
+  - En dash (–) found
+
+guides/blood-donation-donor-eligibility-red-cross-blood-bank-chiang-mai.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: be-a-hero.html -> resolves to guides/be-a-hero.html
+  - Broken link: blood-bank.html -> resolves to guides/blood-bank.html
+  - Broken link: chiang-mai.html -> resolves to guides/chiang-mai.html
+  - Broken link: chiang-mai-ambassador.html -> resolves to guides/chiang-mai-ambassador.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to guides/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to guides/expat-breakfast-club.html
+  - Non-HTTPS link: http://share.here.com/r/mylocation/e-eyJuYW1lIjoiUmVkIENyb3NzIEJsb29kIEJhbmsgQ2hpYW5nIE1haSIsImFkZHJlc3MiOiIxOTYgUmF0Y2hwYWtoaW5haSwgTXVhbmcgQ2hpYW5nIE1haSwgQ2hpYW5nIE1haSwgVGhhaWxhbmQiLCJsYXRpdHVkZSI6MTguNzkxODU2MSwibG9uZ2l0dWRlIjo5OC45OTAyMjc0LCJwcm92aWRlck5hbWUiOiJmYWNlYm9vayIsInByb3ZpZGVySWQiOjk3MDYxMDk0OTY5NjgyOX0=?link=addresses&amp;fb_locale=en_GB&amp;ref=facebook
+  - En dash (–) found
+
+guides/blood-donation-procedure.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to guides/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to guides/expat-breakfast-club.html
+
+guides/bua-tong-waterfalls.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: activities.html -> resolves to guides/activities.html
+  - Broken link: holiday.html -> resolves to guides/holiday.html
+  - Broken link: information.html -> resolves to guides/information.html
+  - Broken link: life-in-chiang-mai.html -> resolves to guides/life-in-chiang-mai.html
+  - Broken link: tourist.html -> resolves to guides/tourist.html
+  - Broken link: waterfalls.html -> resolves to guides/waterfalls.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to guides/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to guides/expat-breakfast-club.html
+  - En dash (–) found
+
+guides/budget-chiang-mai-medical-services.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: answers-to-questions.html -> resolves to guides/answers-to-questions.html
+  - Broken link: budget.html -> resolves to guides/budget.html
+  - Broken link: chiang-mai.html -> resolves to guides/chiang-mai.html
+  - Broken link: expat.html -> resolves to guides/expat.html
+  - Broken link: finances.html -> resolves to guides/finances.html
+  - Broken link: hospital.html -> resolves to guides/hospital.html
+  - Broken link: information.html -> resolves to guides/information.html
+  - Broken link: life-in-chiang-mai.html -> resolves to guides/life-in-chiang-mai.html
+  - Broken link: traveling-tips.html -> resolves to guides/traveling-tips.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to guides/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to guides/expat-breakfast-club.html
+
+guides/chiang-mai-driving.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: chiang-mai-ambassador.html -> resolves to guides/chiang-mai-ambassador.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to guides/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to guides/expat-breakfast-club.html
+  - Non-HTTPS link: http://www.who.int/violence_injury_prevention/road_safety_status/2015/en/
+  - Non-HTTPS link: http://www.who.int/entity/violence_injury_prevention/road_safety_status/2015/Road_Safety_SEAR_3_for_web.pdf?ua=1
+  - Non-HTTPS link: http://www.who.int/entity/violence_injury_prevention/road_safety_status/2015/Road_Safety_SEAR_3_for_web.pdf?ua=1
+  - En dash (–) found
+
+guides/chiang-mai-football-club.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to guides/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to guides/expat-breakfast-club.html
+  - Em dash (—) found
+
+guides/chiang-mai-insurance.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: chiang-mai-ambassador.html -> resolves to guides/chiang-mai-ambassador.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to guides/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to guides/expat-breakfast-club.html
+  - Non-HTTPS link: http://cnxinsure.com/
+  - Non-HTTPS link: http://cnxinsure.com/
+  - Non-HTTPS link: http://cnxinsure.com/
+  - En dash (–) found
+
+guides/flat-tire.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to guides/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to guides/expat-breakfast-club.html
+
+guides/license-plates.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: motorbike-registration-chiang-mai.html -> resolves to guides/motorbike-registration-chiang-mai.html
+  - Broken link: chiang-mai-ambassador.html -> resolves to guides/chiang-mai-ambassador.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to guides/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to guides/expat-breakfast-club.html
+  - En dash (–) found
+
+guides/motorcycle-registration-transfer.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: motorbike-registration-chiang-mai.html -> resolves to guides/motorbike-registration-chiang-mai.html
+  - Broken link: basics.html -> resolves to guides/basics.html
+  - Broken link: chiang-mai-ambassador.html -> resolves to guides/chiang-mai-ambassador.html
+  - Broken link: expat.html -> resolves to guides/expat.html
+  - Broken link: good-info.html -> resolves to guides/good-info.html
+  - Broken link: how-to.html -> resolves to guides/how-to.html
+  - Broken link: information.html -> resolves to guides/information.html
+  - Broken link: life-in-chiang-mai.html -> resolves to guides/life-in-chiang-mai.html
+  - Broken link: motorbike.html -> resolves to guides/motorbike.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to guides/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to guides/expat-breakfast-club.html
+  - En dash (–) found
+
+guides/motorcycle-rentals.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: chiang-mai-motorbike-registration-transfer.html -> resolves to guides/chiang-mai-motorbike-registration-transfer.html
+  - Broken link: chiang-mai-ambassador.html -> resolves to guides/chiang-mai-ambassador.html
+  - Broken link: getting-a-license.html -> resolves to guides/getting-a-license.html
+  - Broken link: license.html -> resolves to guides/license.html
+  - Broken link: motorbikes.html -> resolves to guides/motorbikes.html
+  - Broken link: rentals.html -> resolves to guides/rentals.html
+  - Broken link: riding.html -> resolves to guides/riding.html
+  - Broken link: scams.html -> resolves to guides/scams.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to guides/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to guides/expat-breakfast-club.html
+  - En dash (–) found
+
+guides/red-cross-blood-bank-chiang-mai.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: be-a-hero.html -> resolves to guides/be-a-hero.html
+  - Broken link: blood-bank.html -> resolves to guides/blood-bank.html
+  - Broken link: chiang-mai.html -> resolves to guides/chiang-mai.html
+  - Broken link: chiang-mai-ambassador.html -> resolves to guides/chiang-mai-ambassador.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to guides/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to guides/expat-breakfast-club.html
+  - Non-HTTPS link: http://share.here.com/r/mylocation/e-eyJuYW1lIjoiUmVkIENyb3NzIEJsb29kIEJhbmsgQ2hpYW5nIE1haSIsImFkZHJlc3MiOiIxOTYgUmF0Y2hwYWtoaW5haSwgTXVhbmcgQ2hpYW5nIE1haSwgQ2hpYW5nIE1haSwgVGhhaWxhbmQiLCJsYXRpdHVkZSI6MTguNzkxODU2MSwibG9uZ2l0dWRlIjo5OC45OTAyMjc0LCJwcm92aWRlck5hbWUiOiJmYWNlYm9vayIsInByb3ZpZGVySWQiOjk3MDYxMDk0OTY5NjgyOX0=?link=addresses&amp;fb_locale=en_GB&amp;ref=facebook
+  - En dash (–) found
+
+guides/renting-a-motorbike-in-chiang-mai.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: answers-to-questions.html -> resolves to guides/answers-to-questions.html
+  - Broken link: good-info.html -> resolves to guides/good-info.html
+  - Broken link: motorbike.html -> resolves to guides/motorbike.html
+  - Broken link: motorbike-renting.html -> resolves to guides/motorbike-renting.html
+  - Broken link: problems.html -> resolves to guides/problems.html
+  - Broken link: renting.html -> resolves to guides/renting.html
+  - Broken link: thailand.html -> resolves to guides/thailand.html
+  - Broken link: tourist.html -> resolves to guides/tourist.html
+  - Broken link: traveling-tips.html -> resolves to guides/traveling-tips.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to guides/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to guides/expat-breakfast-club.html
+  - Non-HTTPS link: http://www.chiangmaibuddy.com/how-to-ride-a-motorbike-in-thailand/
+  - Non-HTTPS link: http://www.mangobikesrent.com/
+  - En dash (–) found
+
+guides/run-for-relief.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to guides/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to guides/expat-breakfast-club.html
+  - Em dash (—) found
+
+guides/tdac-thailand-digital-arrival-card.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: cheapest-border-run-chiang-mai.html -> resolves to guides/cheapest-border-run-chiang-mai.html
+  - Broken link: border-run.html -> resolves to guides/border-run.html
+  - Broken link: dtv.html -> resolves to guides/dtv.html
+  - Broken link: laos-border.html -> resolves to guides/laos-border.html
+  - Broken link: tdac.html -> resolves to guides/tdac.html
+  - Broken link: thailand-digital-arrival-card.html -> resolves to guides/thailand-digital-arrival-card.html
+  - Broken link: visa.html -> resolves to guides/visa.html
+  - Broken link: visa-run.html -> resolves to guides/visa-run.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to guides/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to guides/expat-breakfast-club.html
+  - Em dash (—) found
+
+guides/walking-street-markets.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: live-in-chiang-mai.html -> resolves to guides/live-in-chiang-mai.html
+  - Broken link: activities.html -> resolves to guides/activities.html
+  - Broken link: bargains.html -> resolves to guides/bargains.html
+  - Broken link: chiang-mai-ambassador.html -> resolves to guides/chiang-mai-ambassador.html
+  - Broken link: must-do.html -> resolves to guides/must-do.html
+  - Broken link: must-see.html -> resolves to guides/must-see.html
+  - Broken link: shopping.html -> resolves to guides/shopping.html
+  - Broken link: weekend.html -> resolves to guides/weekend.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to guides/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to guides/expat-breakfast-club.html
+  - En dash (–) found
+
+guides/wing-41-pass.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: motorbike-registration-chiang-mai.html -> resolves to guides/motorbike-registration-chiang-mai.html
+  - Broken link: airport.html -> resolves to guides/airport.html
+  - Broken link: chiang-mai.html -> resolves to guides/chiang-mai.html
+  - Broken link: hacks.html -> resolves to guides/hacks.html
+  - Broken link: motorbike.html -> resolves to guides/motorbike.html
+  - Broken link: traveling-tips.html -> resolves to guides/traveling-tips.html
+  - Broken link: vehicles.html -> resolves to guides/vehicles.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to guides/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to guides/expat-breakfast-club.html
+  - En dash (–) found
+
+guides/work-permit-medical-certificate.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to guides/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to guides/expat-breakfast-club.html
+  - Non-HTTPS link: http://www.chiangmairam.com/
+  - Non-HTTPS link: http://www.chiangmairam.com/
+  - En dash (–) found
+
+index.html:
+  - Broken link: favicon.svg -> resolves to favicon.svg
+  - Broken link: css/tokens.css -> resolves to css/tokens.css
+  - Broken link: css/base.css -> resolves to css/base.css
+  - Broken link: css/sections.css -> resolves to css/sections.css
+  - Broken link: css/components.css -> resolves to css/components.css
+  - Broken link: fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: ./ -> resolves to ./
+  - Broken link: pages/arrival.html -> resolves to pages/arrival.html
+  - Broken link: pages/lifestyle.html -> resolves to pages/lifestyle.html
+  - Broken link: ./ -> resolves to ./
+  - En dash (–) found
+
+khun-joe-school.html:
+  - Broken link: ../css/tokens.css -> resolves to ../css/tokens.css
+  - Broken link: ../css/base.css -> resolves to ../css/base.css
+  - Broken link: ../css/sections.css -> resolves to ../css/sections.css
+  - Broken link: ../css/components.css -> resolves to ../css/components.css
+  - Broken link: ../css/blog.css -> resolves to ../css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to ../fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to ../fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to ../fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to ../fonts/plus-jakarta-500.woff2
+  - Broken link: ../ -> resolves to ../
+  - Broken link: ../pages/neighbourhoods.html -> resolves to ../pages/neighbourhoods.html
+  - Broken link: ../pages/cost-of-living.html -> resolves to ../pages/cost-of-living.html
+  - Broken link: ../ -> resolves to ../
+  - Broken link: chiang-mai.html -> resolves to chiang-mai.html
+  - Broken link: daily-life.html -> resolves to daily-life.html
+  - Broken link: good-to-check-out.html -> resolves to good-to-check-out.html
+  - Broken link: top-tips.html -> resolves to top-tips.html
+  - Broken link: walking-street-markets.html -> resolves to walking-street-markets.html
+  - Broken link: expat-breakfast-club.html -> resolves to expat-breakfast-club.html
+  - Broken link: ../ -> resolves to ../
+  - Broken link: ../pages/neighbourhoods.html -> resolves to ../pages/neighbourhoods.html
+  - Broken link: ../pages/cost-of-living.html -> resolves to ../pages/cost-of-living.html
+  - Broken link: ../pages/visas.html -> resolves to ../pages/visas.html
+  - Non-HTTPS link: http://www.khunjoeschool.com
+  - En dash (–) found
+
+lifestyle/alcohol-observations-of-a-non-drinker.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: walking-street-markets.html -> resolves to lifestyle/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+  - En dash (–) found
+
+lifestyle/chiang-mai-arrival.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+  - Broken link: walking-street-markets.html -> resolves to lifestyle/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+  - En dash (–) found
+
+lifestyle/currency-in-and-out-of-thailand.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: money-exchange.html -> resolves to lifestyle/money-exchange.html
+  - Broken link: currency.html -> resolves to lifestyle/currency.html
+  - Broken link: finances.html -> resolves to lifestyle/finances.html
+  - Broken link: money.html -> resolves to lifestyle/money.html
+  - Broken link: walking-street-markets.html -> resolves to lifestyle/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+  - Non-HTTPS link: http://www.customs.go.th
+
+lifestyle/expat-breakfast-club.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: breakfast.html -> resolves to lifestyle/breakfast.html
+  - Broken link: expat-club.html -> resolves to lifestyle/expat-club.html
+  - Broken link: expats.html -> resolves to lifestyle/expats.html
+  - Broken link: friday.html -> resolves to lifestyle/friday.html
+  - Broken link: friends.html -> resolves to lifestyle/friends.html
+  - Broken link: meetings.html -> resolves to lifestyle/meetings.html
+  - Broken link: retirees.html -> resolves to lifestyle/retirees.html
+  - Broken link: walking-street-markets.html -> resolves to lifestyle/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+  - Non-HTTPS link: http://www.chiangmaiexpatsclub.com/
+  - En dash (–) found
+
+lifestyle/learning-languages.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: walking-street-markets.html -> resolves to lifestyle/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+
+lifestyle/life-budget-chiang-mai.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: real-thai-restaurant.html -> resolves to lifestyle/real-thai-restaurant.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+  - Broken link: best-chiang-mai.html -> resolves to lifestyle/best-chiang-mai.html
+  - Broken link: digital-nomads.html -> resolves to lifestyle/digital-nomads.html
+  - Broken link: chiang-mai-insurance.html -> resolves to lifestyle/chiang-mai-insurance.html
+  - Broken link: answers-to-questions.html -> resolves to lifestyle/answers-to-questions.html
+  - Broken link: budget.html -> resolves to lifestyle/budget.html
+  - Broken link: buffet.html -> resolves to lifestyle/buffet.html
+  - Broken link: chiang-mai.html -> resolves to lifestyle/chiang-mai.html
+  - Broken link: digital-nomads.html -> resolves to lifestyle/digital-nomads.html
+  - Broken link: expat.html -> resolves to lifestyle/expat.html
+  - Broken link: finances.html -> resolves to lifestyle/finances.html
+  - Broken link: information.html -> resolves to lifestyle/information.html
+  - Broken link: life-in-chiang-mai.html -> resolves to lifestyle/life-in-chiang-mai.html
+  - Broken link: staying-in-thailand.html -> resolves to lifestyle/staying-in-thailand.html
+  - Broken link: traveling-tips.html -> resolves to lifestyle/traveling-tips.html
+  - Broken link: walking-street-markets.html -> resolves to lifestyle/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+  - Non-HTTPS link: http://www.akhaama.com/
+  - Non-HTTPS link: http://www.bayscafe.com/
+  - Non-HTTPS link: http://www.cmlocals.com
+  - En dash (–) found
+
+lifestyle/life-on-a-budget-in-chiang-mai-covid-2022-update.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: best-chiang-mai.html -> resolves to lifestyle/best-chiang-mai.html
+  - Broken link: real-thai-restaurant.html -> resolves to lifestyle/real-thai-restaurant.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+  - Broken link: best-chiang-mai.html -> resolves to lifestyle/best-chiang-mai.html
+  - Broken link: digital-nomads.html -> resolves to lifestyle/digital-nomads.html
+  - Broken link: chiang-mai-insurance.html -> resolves to lifestyle/chiang-mai-insurance.html
+  - Broken link: answers-to-questions.html -> resolves to lifestyle/answers-to-questions.html
+  - Broken link: budget.html -> resolves to lifestyle/budget.html
+  - Broken link: buffet.html -> resolves to lifestyle/buffet.html
+  - Broken link: chiang-mai.html -> resolves to lifestyle/chiang-mai.html
+  - Broken link: digital-nomads.html -> resolves to lifestyle/digital-nomads.html
+  - Broken link: expat.html -> resolves to lifestyle/expat.html
+  - Broken link: finances.html -> resolves to lifestyle/finances.html
+  - Broken link: information.html -> resolves to lifestyle/information.html
+  - Broken link: life-in-chiang-mai.html -> resolves to lifestyle/life-in-chiang-mai.html
+  - Broken link: staying-in-thailand.html -> resolves to lifestyle/staying-in-thailand.html
+  - Broken link: traveling-tips.html -> resolves to lifestyle/traveling-tips.html
+  - Broken link: walking-street-markets.html -> resolves to lifestyle/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+  - Non-HTTPS link: http://www.chiangmaicoffeeculture.com/
+  - Non-HTTPS link: http://www.akhaama.com/
+  - Non-HTTPS link: http://www.bayscafe.com/
+  - Non-HTTPS link: http://www.cmlocals.com
+  - En dash (–) found
+
+lifestyle/live-in-chiang-mai.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: chiang-mai-ambassador.html -> resolves to lifestyle/chiang-mai-ambassador.html
+  - Broken link: walking-street-markets.html -> resolves to lifestyle/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+  - Non-HTTPS link: http://livinginchiangmai.com/
+  - Non-HTTPS link: http://www.longstayhub.com/
+  - Non-HTTPS link: http://livinginchiangmai.com/
+  - Non-HTTPS link: http://www.longstayhub.com/
+  - En dash (–) found
+
+lifestyle/smoky-season-chiang-mai.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: expat.html -> resolves to lifestyle/expat.html
+  - Broken link: information.html -> resolves to lifestyle/information.html
+  - Broken link: smoke.html -> resolves to lifestyle/smoke.html
+  - Broken link: smoky-season.html -> resolves to lifestyle/smoky-season.html
+  - Broken link: walking-street-markets.html -> resolves to lifestyle/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+  - Non-HTTPS link: http://www.earthoria.com/air-pollution-levels-in-chiang-mai-rising.html
+  - Non-HTTPS link: http://l.facebook.com/l.php?u=http%3A%2F%2Faqmthai.com%2Fpublic_report.php%3Flang%3Den&amp;h=lAQGU7xGnAQFNFscy41SoDSbe0O53SzL48LMV5MYgXo5VFQ&amp;enc=AZMJH8aiJAr0W8Y5J7Vn9VBNKPNlSFNXnGw-fijccOhpdYm4hZafHcEjwWwdNsnnl4Ej3SbculNNjGr8QZy7bWcCDgl8BeRGnIiQIWEBmq6hAWx0UDkPyZ6l_wUqTcacZwrsC3qp9YX7AjU94S6B9CoXP5FiNs1e2vM228IouA2SVL3zOgD8tTgcsyLrIerovrw&amp;s=1
+  - Non-HTTPS link: http://airnow.gov/index.cfm?action=resources.conc_aqi_calc
+  - Non-HTTPS link: http://chiangmaibuddy.com/how-bad-is-chiang-mai-air-pollution-really/
+  - En dash (–) found
+
+lifestyle/songkran.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: walking-street-markets.html -> resolves to lifestyle/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+
+lifestyle/thai-visa-advice.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: best-chiang-mai.html -> resolves to lifestyle/best-chiang-mai.html
+  - Broken link: walking-street-markets.html -> resolves to lifestyle/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+  - Em dash (—) found
+  - En dash (–) found
+
+lifestyle/top-tips.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: food-delivery-services.html -> resolves to lifestyle/food-delivery-services.html
+  - Broken link: chiang-mai-ambassador.html -> resolves to lifestyle/chiang-mai-ambassador.html
+  - Broken link: walking-street-markets.html -> resolves to lifestyle/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+  - Non-HTTPS link: http://www.chiangmairam.com/
+  - Em dash (—) found
+  - En dash (–) found
+
+lifestyle/traveling-alone.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: alone.html -> resolves to lifestyle/alone.html
+  - Broken link: traveling.html -> resolves to lifestyle/traveling.html
+  - Broken link: traveling-tips.html -> resolves to lifestyle/traveling-tips.html
+  - Broken link: walking-street-markets.html -> resolves to lifestyle/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+  - En dash (–) found
+
+lifestyle/traveling-with-friends.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: information.html -> resolves to lifestyle/information.html
+  - Broken link: traveling.html -> resolves to lifestyle/traveling.html
+  - Broken link: traveling-tips.html -> resolves to lifestyle/traveling-tips.html
+  - Broken link: walking-street-markets.html -> resolves to lifestyle/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+  - En dash (–) found
+
+lifestyle/us-expat-tax-guide.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: aitaxadvisers.html -> resolves to lifestyle/aitaxadvisers.html
+  - Broken link: american-international-tax-advisers.html -> resolves to lifestyle/american-international-tax-advisers.html
+  - Broken link: american-tax.html -> resolves to lifestyle/american-tax.html
+  - Broken link: benefits-for-expats.html -> resolves to lifestyle/benefits-for-expats.html
+  - Broken link: business-class-asia.html -> resolves to lifestyle/business-class-asia.html
+  - Broken link: business-formation.html -> resolves to lifestyle/business-formation.html
+  - Broken link: businessclassasia.html -> resolves to lifestyle/businessclassasia.html
+  - Broken link: chiang-mai.html -> resolves to lifestyle/chiang-mai.html
+  - Broken link: company-formation.html -> resolves to lifestyle/company-formation.html
+  - Broken link: expat-tax.html -> resolves to lifestyle/expat-tax.html
+  - Broken link: fatca.html -> resolves to lifestyle/fatca.html
+  - Broken link: fbar.html -> resolves to lifestyle/fbar.html
+  - Broken link: investment-planning.html -> resolves to lifestyle/investment-planning.html
+  - Broken link: payoneer.html -> resolves to lifestyle/payoneer.html
+  - Broken link: stimulus-checks.html -> resolves to lifestyle/stimulus-checks.html
+  - Broken link: streamline-filing-program.html -> resolves to lifestyle/streamline-filing-program.html
+  - Broken link: tax-for-expats.html -> resolves to lifestyle/tax-for-expats.html
+  - Broken link: tax-planning.html -> resolves to lifestyle/tax-planning.html
+  - Broken link: tax-returns.html -> resolves to lifestyle/tax-returns.html
+  - Broken link: thailand.html -> resolves to lifestyle/thailand.html
+  - Broken link: us-tax.html -> resolves to lifestyle/us-tax.html
+  - Broken link: us-tax-treaty.html -> resolves to lifestyle/us-tax-treaty.html
+  - Broken link: walking-street-markets.html -> resolves to lifestyle/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+  - Non-HTTPS link: http://aitaxadvisers.com/
+  - Non-HTTPS link: http://tracking.payoneer.com/SH3G7
+  - Non-HTTPS link: http://send.gov/
+  - Non-HTTPS link: http://finsen.gov/
+
+lifestyle/vientiane-visa-run.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: staying-in-thailand.html -> resolves to lifestyle/staying-in-thailand.html
+  - Broken link: visa.html -> resolves to lifestyle/visa.html
+  - Broken link: visa-run.html -> resolves to lifestyle/visa-run.html
+  - Broken link: walking-street-markets.html -> resolves to lifestyle/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to lifestyle/getting-social-in-chiang-mai.html
+  - Non-HTTPS link: http://vientiane.thaiembassy.org
+  - Non-HTTPS link: http://www.thaisavannakhet.com/vientiane/en/consular/consular_check/
+  - Non-HTTPS link: http://vientiane.thaiembassy.org/en/news/announce/detail.php?ID=642
+  - Non-HTTPS link: http://vientiane.thaiembassy.org/en/news/announce/detail.php?ID=642
+  - Non-HTTPS link: http://www.thaisavannakhet.com/vientiane/en/consular/consular_check/
+  - Non-HTTPS link: http://vientiane.thaiembassy.org/internship032.pdf
+  - Non-HTTPS link: http://vientiane.thaiembassy.org/upload/pdf/PhotoRequirement.pdf
+  - Non-HTTPS link: http://vientiane.thaiembassy.org/upload/pdf/RestrictedCountries2013.pdf
+  - Non-HTTPS link: http://www.ayaservice.com/
+  - En dash (–) found
+
+motorbike-registration-chiang-mai.html:
+  - Broken link: ../css/tokens.css -> resolves to ../css/tokens.css
+  - Broken link: ../css/base.css -> resolves to ../css/base.css
+  - Broken link: ../css/sections.css -> resolves to ../css/sections.css
+  - Broken link: ../css/components.css -> resolves to ../css/components.css
+  - Broken link: ../css/blog.css -> resolves to ../css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to ../fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to ../fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to ../fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to ../fonts/plus-jakarta-500.woff2
+  - Broken link: ../ -> resolves to ../
+  - Broken link: ../pages/neighbourhoods.html -> resolves to ../pages/neighbourhoods.html
+  - Broken link: ../pages/cost-of-living.html -> resolves to ../pages/cost-of-living.html
+  - Broken link: ../ -> resolves to ../
+  - Broken link: motorcycle-registration-transfer.html -> resolves to motorcycle-registration-transfer.html
+  - Broken link: answers-to-questions.html -> resolves to answers-to-questions.html
+  - Broken link: chiang-mai-ambassador.html -> resolves to chiang-mai-ambassador.html
+  - Broken link: digital-nomads.html -> resolves to digital-nomads.html
+  - Broken link: good-info.html -> resolves to good-info.html
+  - Broken link: information.html -> resolves to information.html
+  - Broken link: insurance.html -> resolves to insurance.html
+  - Broken link: life-in-chiang-mai.html -> resolves to life-in-chiang-mai.html
+  - Broken link: motorbike.html -> resolves to motorbike.html
+  - Broken link: motorbike-registration.html -> resolves to motorbike-registration.html
+  - Broken link: vehicle.html -> resolves to vehicle.html
+  - Broken link: vehicle-tax.html -> resolves to vehicle-tax.html
+  - Broken link: walking-street-markets.html -> resolves to walking-street-markets.html
+  - Broken link: expat-breakfast-club.html -> resolves to expat-breakfast-club.html
+  - Broken link: ../ -> resolves to ../
+  - Broken link: ../pages/neighbourhoods.html -> resolves to ../pages/neighbourhoods.html
+  - Broken link: ../pages/cost-of-living.html -> resolves to ../pages/cost-of-living.html
+  - Broken link: ../pages/visas.html -> resolves to ../pages/visas.html
+  - En dash (–) found
+
+pages/about.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../css/blog.css -> resolves to css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+  - Broken link: best-chiang-mai.html -> resolves to pages/best-chiang-mai.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to pages/getting-social-in-chiang-mai.html
+  - Broken link: walking-street-markets.html -> resolves to pages/walking-street-markets.html
+  - Broken link: getting-social-in-chiang-mai.html -> resolves to pages/getting-social-in-chiang-mai.html
+  - Broken link: expat-breakfast-club.html -> resolves to pages/expat-breakfast-club.html
+
+pages/cost-of-living.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+
+pages/neighbourhoods.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+
+pages/template.html:
+  - Missing meta description
+  - Missing canonical tag
+  - Missing OG title
+  - Missing OG description
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+
+pages/visas.html:
+  - Broken link: ../css/tokens.css -> resolves to css/tokens.css
+  - Broken link: ../css/base.css -> resolves to css/base.css
+  - Broken link: ../css/sections.css -> resolves to css/sections.css
+  - Broken link: ../css/components.css -> resolves to css/components.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to fonts/plus-jakarta-500.woff2
+
+thai-eating-etiquette.html:
+  - Broken link: ../css/tokens.css -> resolves to ../css/tokens.css
+  - Broken link: ../css/base.css -> resolves to ../css/base.css
+  - Broken link: ../css/sections.css -> resolves to ../css/sections.css
+  - Broken link: ../css/components.css -> resolves to ../css/components.css
+  - Broken link: ../css/blog.css -> resolves to ../css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to ../fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to ../fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to ../fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to ../fonts/plus-jakarta-500.woff2
+  - Broken link: ../ -> resolves to ../
+  - Broken link: ../pages/neighbourhoods.html -> resolves to ../pages/neighbourhoods.html
+  - Broken link: ../pages/cost-of-living.html -> resolves to ../pages/cost-of-living.html
+  - Broken link: ../ -> resolves to ../
+  - Broken link: eating.html -> resolves to eating.html
+  - Broken link: life.html -> resolves to life.html
+  - Broken link: thai-food.html -> resolves to thai-food.html
+  - Broken link: thailand.html -> resolves to thailand.html
+  - Broken link: walking-street-markets.html -> resolves to walking-street-markets.html
+  - Broken link: expat-breakfast-club.html -> resolves to expat-breakfast-club.html
+  - Broken link: ../ -> resolves to ../
+  - Broken link: ../pages/neighbourhoods.html -> resolves to ../pages/neighbourhoods.html
+  - Broken link: ../pages/cost-of-living.html -> resolves to ../pages/cost-of-living.html
+  - Broken link: ../pages/visas.html -> resolves to ../pages/visas.html
+  - En dash (–) found
+
+understanding-thai-culture.html:
+  - Broken link: ../css/tokens.css -> resolves to ../css/tokens.css
+  - Broken link: ../css/base.css -> resolves to ../css/base.css
+  - Broken link: ../css/sections.css -> resolves to ../css/sections.css
+  - Broken link: ../css/components.css -> resolves to ../css/components.css
+  - Broken link: ../css/blog.css -> resolves to ../css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to ../fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to ../fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to ../fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to ../fonts/plus-jakarta-500.woff2
+  - Broken link: ../ -> resolves to ../
+  - Broken link: ../pages/neighbourhoods.html -> resolves to ../pages/neighbourhoods.html
+  - Broken link: ../pages/cost-of-living.html -> resolves to ../pages/cost-of-living.html
+  - Broken link: ../ -> resolves to ../
+  - Broken link: culture.html -> resolves to culture.html
+  - Broken link: life.html -> resolves to life.html
+  - Broken link: respect.html -> resolves to respect.html
+  - Broken link: thailand.html -> resolves to thailand.html
+  - Broken link: walking-street-markets.html -> resolves to walking-street-markets.html
+  - Broken link: expat-breakfast-club.html -> resolves to expat-breakfast-club.html
+  - Broken link: ../ -> resolves to ../
+  - Broken link: ../pages/neighbourhoods.html -> resolves to ../pages/neighbourhoods.html
+  - Broken link: ../pages/cost-of-living.html -> resolves to ../pages/cost-of-living.html
+  - Broken link: ../pages/visas.html -> resolves to ../pages/visas.html
+  - En dash (–) found
+
+womens-prison-massage.html:
+  - Broken link: ../css/tokens.css -> resolves to ../css/tokens.css
+  - Broken link: ../css/base.css -> resolves to ../css/base.css
+  - Broken link: ../css/sections.css -> resolves to ../css/sections.css
+  - Broken link: ../css/components.css -> resolves to ../css/components.css
+  - Broken link: ../css/blog.css -> resolves to ../css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to ../fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to ../fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to ../fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to ../fonts/plus-jakarta-500.woff2
+  - Broken link: ../ -> resolves to ../
+  - Broken link: ../pages/neighbourhoods.html -> resolves to ../pages/neighbourhoods.html
+  - Broken link: ../pages/cost-of-living.html -> resolves to ../pages/cost-of-living.html
+  - Broken link: ../ -> resolves to ../
+  - Broken link: walking-street-markets.html -> resolves to walking-street-markets.html
+  - Broken link: expat-breakfast-club.html -> resolves to expat-breakfast-club.html
+  - Broken link: ../ -> resolves to ../
+  - Broken link: ../pages/neighbourhoods.html -> resolves to ../pages/neighbourhoods.html
+  - Broken link: ../pages/cost-of-living.html -> resolves to ../pages/cost-of-living.html
+  - Broken link: ../pages/visas.html -> resolves to ../pages/visas.html
+  - En dash (–) found
+
+yunnan-farmers-market.html:
+  - Broken link: ../css/tokens.css -> resolves to ../css/tokens.css
+  - Broken link: ../css/base.css -> resolves to ../css/base.css
+  - Broken link: ../css/sections.css -> resolves to ../css/sections.css
+  - Broken link: ../css/components.css -> resolves to ../css/components.css
+  - Broken link: ../css/blog.css -> resolves to ../css/blog.css
+  - Broken link: ../fonts/outfit-600.woff2 -> resolves to ../fonts/outfit-600.woff2
+  - Broken link: ../fonts/outfit-800.woff2 -> resolves to ../fonts/outfit-800.woff2
+  - Broken link: ../fonts/plus-jakarta-400.woff2 -> resolves to ../fonts/plus-jakarta-400.woff2
+  - Broken link: ../fonts/plus-jakarta-500.woff2 -> resolves to ../fonts/plus-jakarta-500.woff2
+  - Broken link: ../ -> resolves to ../
+  - Broken link: ../pages/neighbourhoods.html -> resolves to ../pages/neighbourhoods.html
+  - Broken link: ../pages/cost-of-living.html -> resolves to ../pages/cost-of-living.html
+  - Broken link: ../ -> resolves to ../
+  - Broken link: chiang-mai.html -> resolves to chiang-mai.html
+  - Broken link: daily-life.html -> resolves to daily-life.html
+  - Broken link: good-to-check-out.html -> resolves to good-to-check-out.html
+  - Broken link: top-tips.html -> resolves to top-tips.html
+  - Broken link: walking-street-markets.html -> resolves to walking-street-markets.html
+  - Broken link: expat-breakfast-club.html -> resolves to expat-breakfast-club.html
+  - Broken link: ../ -> resolves to ../
+  - Broken link: ../pages/neighbourhoods.html -> resolves to ../pages/neighbourhoods.html
+  - Broken link: ../pages/cost-of-living.html -> resolves to ../pages/cost-of-living.html
+  - Broken link: ../pages/visas.html -> resolves to ../pages/visas.html
+  - Em dash (—) found
+
+============================================================
+QA CHECK SUMMARY
+============================================================
+Total files checked: 61
+Pages with issues: 61
+
+Meta tag issues: 1
+Alt text issues: 0
+Broken links: 1004
+External link issues: 54
+Em/en dash issues: 51
+
+⚠️ 61 page(s) need attention
+
+Completed: 2026-05-23T23:05:53.116616

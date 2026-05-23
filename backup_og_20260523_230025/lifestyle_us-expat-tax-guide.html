@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="US expat tax obligations while living in Thailand. FEIE, FATCA, reporting requirements, penalties. Accurate guidance to stay compliant.">
+    <meta name="robots" content="index, follow">
+    <title>US Expat Tax Guide | Thailand Edition</title>
+
+    <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/sections.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/blog.css">
+
+    <link rel="preload" href="../fonts/outfit-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/outfit-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/plus-jakarta-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/plus-jakarta-500.woff2" as="font" type="font/woff2" crossorigin>
+
+    <style>
+        .blog-content {
+            background-color: white !important;
+            padding: 5rem 0 !important;
+        }
+        .blog-hero {
+            margin-top: 80px;
+        }
+        .img-right-small {
+            float: right;
+            width: 30%;
+            margin: 0 0 1rem 2rem;
+            shape-margin: 1rem;
+        }
+        .img-left-large {
+            float: left;
+            width: 55%;
+            margin: 1rem 2rem 1rem -15%;
+            shape-margin: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        .img-left-large img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .img-fullwidth-break {
+            width: 100%;
+            max-width: 100%;
+            margin: 3rem 0 2rem 0;
+            display: block;
+        }
+        .img-fullwidth-break img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .img-float-right-small {
+            float: right;
+            width: 45%;
+            margin: 0 0 1.5rem 2rem;
+        }
+        figure {
+            margin: 0;
+        }
+        figcaption {
+            display: none;
+        }
+        .article-sidebar {
+            background: #f0d080;
+            padding: 2rem;
+            border-left: 4px solid var(--color-primary);
+            border-radius: 0;
+            margin: 2.5rem 0 3rem 0;
+            border: 1px solid #e5ddd0;
+        }
+        .article-sidebar h4 {
+            font-size: 1rem;
+            color: #1a1a1a;
+            margin: 0 0 1.25rem 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .article-sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .article-sidebar li {
+            color: #333;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+        }
+        .article-sidebar li:last-child {
+            margin-bottom: 0;
+        }
+        .blog-metadata {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem 0 2.5rem;
+            border-bottom: 1px solid #e5ddd0;
+            margin-bottom: 2rem;
+        }
+        .blog-meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        .blog-meta-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #999;
+        }
+        .blog-meta-value {
+            font-size: 0.95rem;
+            color: #333;
+            font-weight: 500;
+        }
+        .blog-meta-divider {
+            width: 1px;
+            height: 24px;
+            background: #e5ddd0;
+        }
+        .blog-options {
+            display: flex;
+            gap: 0.75rem;
+            margin-left: auto;
+        }
+        .blog-body h2 {
+            font-size: 1.875rem;
+            color: #1a1a1a;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .blog-body h3 {
+            font-size: 1.25rem;
+            color: #1a1a1a;
+            margin-top: 1.75rem;
+            margin-bottom: 0.75rem;
+        }
+        .blog-body p {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        .blog-body strong {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        .blog-body img {
+            max-width: 100%;
+            height: auto;
+        }
+        .blog-body .alignright {
+            float: right;
+            margin: 0 0 1rem 2rem;
+            max-width: 40%;
+        }
+        .blog-body .alignleft {
+            float: left;
+            margin: 0 2rem 1rem 0;
+            max-width: 40%;
+        }
+        .blog-body .aligncenter {
+            display: block;
+            margin: 2rem auto;
+        }
+        .key-takeaways {
+            background: #f0d080;
+            padding: 2rem;
+            border-radius: 0;
+            margin: 3rem 0;
+            border: 1px solid #e5ddd0;
+        }
+        .key-takeaways h3 {
+            margin-top: 0;
+            color: #1a1a1a;
+        }
+        .key-takeaways p {
+            color: #333;
+        }
+        .blog-related {
+            background: transparent;
+            padding: 4rem 0 !important;
+        }
+        .blog-related h2 {
+            color: white;
+        }
+        .blog-card {
+            background-color: var(--color-surface) !important;
+        }
+        @media (max-width: 768px) {
+            .img-right-small,
+            .img-left-large,
+            .img-float-right-small,
+            .blog-body .alignright,
+            .blog-body .alignleft {
+                float: none;
+                width: 100%;
+                max-width: 100%;
+                margin: 1.5rem 0;
+            }
+            .article-sidebar {
+                margin: 2rem 0;
+            }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "US Expat Tax Guide - with FBAR, Streamline and other advice",
+        "description": "Thomas Carden from American International Tax Advisers shares with us the definitive guide for US Expat Tax including questions and answers.",
+        "datePublished": "2026-05-23",
+        "author": { "@type": "Organization", "name": "Chiang Mai Ambassador" }
+    }
+    </script>
+    <link rel="canonical" href="https://chiangmaiambassador.com/lifestyle/us-expat-tax-guide/">
+</head>
+<body style="margin: 0; padding: 0; width: 100%;">
+
+    <div class="progress-bar" id="progress-bar" aria-label="Reading progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+    <nav class="nav-wrapper">
+        <a href="../" class="logo-link">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="-175 -178 350 500" xmlns="http://www.w3.org/2000/svg" width="60" height="80">
+                    <defs>
+                        <linearGradient id="g2gold" x1="20%" y1="0%" x2="80%" y2="100%">
+                            <stop offset="0%" stop-color="#F2D980" />
+                            <stop offset="40%" stop-color="#C49010" />
+                            <stop offset="100%" stop-color="#9A7008" />
+                        </linearGradient>
+                        <linearGradient id="g2ring" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#E4BC50" />
+                            <stop offset="100%" stop-color="#9A7008" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="0" cy="0" r="164" fill="none" stroke="url(#g2ring)" stroke-width="2.5" />
+                    <circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65" />
+                    <circle cx="164" cy="0" r="3.2" fill="#C49010" />
+                    <circle cx="0" cy="-164" r="3.2" fill="#C49010" />
+                    <circle cx="-164" cy="0" r="3.2" fill="#C49010" />
+                    <circle cx="0" cy="164" r="3.2" fill="#C49010" />
+                    <g transform="translate(0, -149.201) scale(1.94980)">
+                        <polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980" />
+                        <rect x="-2" y="4" width="4" height="38" fill="url(#g2gold)" />
+                        <polygon points="0,42 -16,78 16,78" fill="url(#g2gold)" />
+                        <rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008" />
+                        <rect x="-22" y="84" width="44" height="9" fill="url(#g2gold)" />
+                        <rect x="-25" y="93" width="50" height="4" fill="#9A7008" />
+                        <rect x="-30" y="97" width="60" height="9" fill="url(#g2gold)" />
+                        <rect x="-33" y="106" width="66" height="4" fill="#9A7008" />
+                        <rect x="-38" y="110" width="76" height="9" fill="url(#g2gold)" />
+                        <rect x="-44" y="119" width="88" height="11" fill="url(#g2gold)" />
+                        <rect x="-52" y="130" width="104" height="8" fill="#9A7008" />
+                    </g>
+                </svg>
+                <div class="logo-text-wrapper nav-mode">
+                    <div>
+                        <span class="logo-accent">CM</span><span class="logo-text">Ambassador</span>
+                    </div>
+                    <span class="logo-tagline">Connector &middot; Helper &middot; Guru</span>
+                </div>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="../pages/neighbourhoods.html">Neighbourhoods</a>
+            <a href="../pages/cost-of-living.html">Cost of Living</a>
+            <a href="../#start" class="btn-primary magnetic-item">Start Here</a>
+        </div>
+    </nav>
+
+    <main style="width: 100%; margin: 0 auto;">
+
+        <section class="blog-hero">
+            <div class="container" style="max-width: 960px; width: 100%; margin: 0 auto; padding: 0 2rem; box-sizing: border-box;">
+                <div class="blog-header reveal">
+                    <h1>US Expat Tax Guide - <span class="gold-gradient-text">with FBAR, Streamline and other advice</span></h1>
+                    <p class="blog-excerpt">Thomas Carden from American International Tax Advisers shares with us the definitive guide for US Expat Tax including questions and answers.</p>
+                </div>
+            </div>
+        </section>
+
+        <article class="blog-content" style="background-color: white; padding-top: 0.75rem !important;">
+            <div class="container" style="max-width: 960px; width: 100%; margin: 0 auto; padding: 0 2rem; box-sizing: border-box;">
+                <div class="blog-metadata reveal">
+                    <div class="blog-meta-item">
+                        <span class="blog-meta-label">Category</span>
+                        <span class="blog-meta-value"><a href="../">Home</a> / Chiang Mai Daily Life</span>
+                    </div>
+                    <div class="blog-meta-divider"></div>
+                    <div class="blog-meta-item">
+                        <span class="blog-meta-label">Read time</span>
+                        <span class="blog-meta-value">35 min</span>
+                    </div>
+                    <div class="blog-meta-divider"></div>
+                    <div class="blog-meta-item">
+                        <span class="blog-meta-label">Last updated</span>
+                        <span class="blog-meta-value">May 2026</span>
+                    </div>
+                </div>
+
+                <div class="blog-body">
+
+                    <!-- TL;DR IMAGE + SUMMARY -->
+                    <figure class="img-right-small" style="margin-top: -30px; margin-bottom: 1rem; width: calc(100% - 400px); max-width: 280px;">
+                        <img src="../images/chiang-mai-ambassador-chiangmaiambassador-US-Expat-Tax-Guide-chiang-mai-ambassador-chiangmaiambassador-thai-visa-thaivisa-tax-advice-us-expats-30.webp" alt="US Expat Tax Guide - with FBAR, Streamline and other advice" width="280" height="210" loading="lazy">
+                    </figure>
+                    <div class="article-sidebar">
+                        <h4>Quick Summary (TL;DR)</h4>
+                        <ul>
+                            <li>“The income tax created more criminals than any other single act of government.”</li>
+                            <li>Introduction to the Seminar</li>
+                            <li>Companies, Nomads and Expats</li>
+                            <li>Don’t Try This at Home</li>
+                            <li>We’re lucky enough to have the US Expat Tax Guru, Thomas Carden, from American International Tax Advisers and Ken Brown from Business Class Asia here in Chiang Mai.</li>
+                            <li>These notes are the clip notes from the 42 minute presentation but we will highlight some of the important parts.</li>
+                            <li>Payoneer solution as a PayPal alternative in Thailand.</li>
+                        </ul>
+                    </div>
+
+<div><div><div id="kt-layout-id_0bd0a0-5a"><div><div><div><h2 data-kb-block="kb-adv-heading_d132e5-5e">“The income tax created more criminals than any other single act of government.”</h2><p><em><em><strong>Barry Goldwater</strong></em></em></p></div></div></div></div></div><div><div id="kt-layout-id_5948c8-64"><div><div><div><figure></figure></div></div></div></div></div><div><div id="kt-layout-id_c893d5-25"><div><div><div><h2 id="introduction-to-the-seminar">Introduction to the Seminar</h2><p>We’re lucky enough to have the US Expat Tax Guru, Thomas Carden, from <a href="http://aitaxadvisers.com/" rel="noopener" target="_blank">American International Tax Advisers</a> and Ken Brown from <a href="https://www.businessclassasia.com/" rel="noopener" target="_blank">Business Class Asia</a> here in Chiang Mai. A good team working together to help you create tax efficient services for you in Thailand or wherever you are in the world.</p><p>These notes are the clip notes from the 42 minute presentation but we will highlight some of the important parts.</p><p>Payoneer solution as a PayPal alternative in Thailand. Please contact Payoneer at <a href="mailto:sea-smbsales@payoneer.com" rel="noreferrer noopener" target="_blank">sea-smbsales@payoneer.com</a> for alternative solutions. You can register here at <a href="http://tracking.payoneer.com/SH3G7" rel="noreferrer noopener" target="_blank">Payoneer</a> .</p><p>Payoneer are a different but active alternative if you have business in America or around the world, especially for Amazon or eBay.</p><p>Doing business as a digital nomad really requires setting up a company wherever you feel like incorporating in. Business Class Asia are very flexible and have avenues to setup businesses where you need to. These bank accounts can be suited to your needs in any jurisdiction as well.</p><p>Anyone can do your taxes, but will they be done effectively and efficiently, and will that person be able to explain exactly all the rules affecting your situation? The be able to deal with the IRS to resolve your issues.</p></div></div></div></div></div><div><div id="kt-layout-id_2c44e2-1d"><div><div></div><div><div><figure></figure></div></div><div></div></div></div></div><div><div id="kt-layout-id_3f24ae-3c"><div><div><div><h2 id="introduction-to-the-seminar">Companies, Nomads and Expats</h2><p>In today’s world, if the concept of operating as a digital nomad as just yourself doing a business, either selling products or you know selling services is getting to be much  more difficult. You have to almost now form a company somewhere in the globe to do this. You don’t necessarily want that to be a US Company, it can often be a Hong Kong company. We have a lot of times we’ve sent Hong Kong companies. <br/><br/>Business class Asia has a specialist and that works with Ken who sets up companies that are tailored for your particular needs if you’re in this situation. Okay now, this gets more complex as an American through this when you’re American setting up a company you can go set up the company to see these online services and then they’re going okay where’s your bank account. And if you call up the banks and they’re like no no no we will not deal with you as an American even if you own a foreign company. The systems that Business Class Asia are very specifically able to open up bank accounts in the country is that you are setting up and incorporating into. <br/><br/>This is a huge, huge problem now and oddly goes back to anti-money laundering rules. The mob is used companies and trusts in all these things to ferret money around the world, so the banks have gotten very very tight on their standards  that so if you see you know $199 online to go form a Hong Kong company, you’re not going to get anywhere that you’re literally wasting your money. You need to call Ken at Business Class Asia and look at the entire situation, rather than just as the cheapest option, because it’s literally going to waste money cuz you will not be able to open up an account in Hong Kong unless you use very very specialized services for this. <br/><br/>When I was contacted by Mark Kirkham who is the CEO of Business Class Asia sort of an informal meeting we’d already been in taxes here I’ve been in taxes for about 6 years in Thailand prior to that with it through various offices and I said you know we’ve got a problem to this we can handle taxes we can handle the planning we can help people attach treaty and pensions planning to this we can get tax efficient.<br/><br/>That they have nowhere to go okay if you try to go into a Thai Bank you can open up a checking account at no interest, you can’t do stocks, you can’t do bonds, you can’t do any type of real investment stuff and you will more than likely get a 0% interest. If you try to go outside of Thailand, you’re not going to open up an account for Hong Kong, you’re not going to open up an account in Singapore, you’re not going to open up any account. But most firms have looked at this is too difficult to deal with US compliance! <br/><br/>I will show you how to do this and the laws and rules that have to be done with this and you guys can run and Business Class Asia as a separate company.  Thomas runs American International Tax Advisers, but we’re the two where the two sides of the coin. We do the tax side which is difficult but the tax issues or American reporting affect the investment side and so that’s where Business Class Asia comes in is they’re that other side. Several times a week we get we get the same phone call. <br/><br/>“Help me the time banks won’t open my account or they’re closing my account and or US banks are closing my investment account and they will not let me do it do any investments anymore and there’s going to send me a check here in three weeks!” <br/><br/>“What do I do? <br/><br/>If you’re American trying to pull these accounts or trying to invest overseas, there’s a wide range of alternatives that have been worked on for many years then confirm can help you out with tools you know as an American but you know a lot of cases are the same situation is happening with with the Europeans where do I invest how do I invest it can also have a full range of investments available for you <br/><br/>The world is getting smaller and smaller and smaller and tighter and tighter. You will have to be operating as a business somewhere you know it’s possible operate as a business here in Thailand. Through this if you’re doing some type of business online to this you know it’s going to be tighter and tighter and tighter and you can’t freewheel anymore!<br/><br/>There are some very very big benefits for you especially if you’re retired in Thailand.</p></div></div></div></div></div><div><div id="kt-layout-id_ca717b-96"><div><div></div><div><div><figure><img src="../images/chiang-mai-ambassador-chiangmaiambassador-US-Expat-Tax-Guide-chiang-mai-ambassador-chiangmaiambassador-thai-visa-thaivisa-tax-advice-us-expats-37.webp" alt="US Expat Tax Guide chiang mai ambassador chiangmaiambassador thai visa thaivisa tax advice us expats 37.jpg 54671c" width="571" height="300" loading="lazy"></figure></div></div><div></div></div></div></div><div><div id="kt-layout-id_2a7552-07"><div><div><div><h2 id="introduction-to-the-seminar">Don’t Try This at Home</h2><p>Okay the first of this is and I’m going to I’m going to I’m going to give you a little bit of advice about this do not try this at home is there are some very very legal constructs in this and the ride with the IRS has to be very very specific on how this is done and even then they will ask questions about this on a regular basis like article 19 of the US tax treaty says in in effect that I’m going to paraphrase here pensions are only taxable in the country that you are resident in okay to the United States and Thailand what this means just repeat okay change article 19 of the United States Thailand tax rate states that pensions are only taxable and safe that you are resident unless you’re a US government employee okay US government pension is this all report what this means is if you are taking money out of an IRA 401K sept simple po or a regular pension and even a variable annuity or regular annuity out of the United States only Thailand has the rights to tax that pension I’ll do it okay effectively using some very complex legal forms in this again do not try this on your own because there’s there’s sub clauses in context that you have to go in and address and to do this with a tax treaty you can take all of your pension money out of the United States free of us tax as long as you meet certain residents criteria here in Thailand okay now Thailand has full rights to tax suspension as well that you move the taxation from the United States to Thailand but here’s the kicker of this if the money is outside of the pension for 12 months before it is brought in Thailand it is also free of tax in Thailand so you can effectively using proper planning as an American retire in Thailand free of income tax then consulted very heavy professional in this cuz it’s very very specific work with this do this but we’ve had a very good success rate over the years many many clients have gotten this the IRS will occasionally send a letter back because the math doesn’t match on the tax return and he said an explanation back to this and and the situation is revolved now one of the wackier benefits of this is if you say you’ve been living in Thailand for the last three or four years you’ve been fully retired here this is your place in residence to this you can go back to the United States and use an amend your tax returns to the past 3 years and get refunds we’ve gotten refunds from the United States of hundreds of thousands of dollars for previous amounts that have been taken out you can only go back 3 years which oddly that means for right now this thing January of 2022 you can go back and refile your 20/20 return you’re 2019 and your 2018 return and get a refund on all the taxes you paid in the United States to this can also get the 2021 this is only available up until April 15th of the year when the statue of limitations for the earliest year that goes away so then you would be doing 2021 tax 20 20 tax in 2019 tax but up until April 15th you can go back the extra deal with this and get a reason so again this is where we’re taking this money out but you got to set it outside the the Tyler for a year how do you begin to plan with that that’s where Ken comes in he can help you set up the accounts we can move them and keep them in the US account if you need to you can move them overseas and again get increase your tax referral over a period of time with us so that’s the big benefit of the food’s not bad supposed to let us beautiful and the women are incredible but you know as a retiree here you can really plan and make your retirement savings go a whole lot longer than if this process too it’s kind of a</p></div></div></div></div></div><div><div id="kt-layout-id_144f31-31"><div><div></div><div><div><figure><img src="../images/chiang-mai-ambassador-chiangmaiambassador-US-Expat-Tax-Guide-chiang-mai-ambassador-chiangmaiambassador-thai-visa-thaivisa-tax-advice-us-expats-27.webp" alt="US Expat Tax Guide chiang mai ambassador chiangmaiambassador thai visa thaivisa tax advice us expats 27" width="469" height="300" loading="lazy"></figure></div></div><div></div></div></div></div><div><div id="kt-layout-id_c3d882-15"><div><div><div><h2 id="what-happens-if-you-don-t-file-taxes">What happens if you don’t file taxes</h2><p>They’re very very few countries with a tax treaty is this liberal to it with us so plug it now the final thing I’m going to mention though is on a regular basis we get people who come to us citizens or green card holders for whatever reason somebody told them oh you’re making less than Foreigner inclusion you don’t have to follow us this will get you in very very serious trouble to this if your IRS seems you to owe a certain amount of money and you have not been communicating with them they will they will send it and send a notice to the state department and state department will yank your passport which means one of three things going to happen okay one you decide I’m going to travel back to the United States on my valid passport you get to the United States at the border they yank your passport and you are stuck in the United States until you finish getting all your taxes done they are processed and allowed and then they will they will issue a notice in this process takes many many months and tens of thousands of US Dollars and stuff okay the second thing is this was the actual first passport ever revoked was actually up here in Chiang Mai gentleman had walked into the US embassy to get his tie a son a US passport he goes in they said oh if we see your passport again and they’re like oh yes and so they they took his passport and they gave him a card and said here call this number if they are do this your passport is no longer valid we can only issue a passport for you that says valid travel only to the United States now what that means is he can’t do his nine today check it once he doesn’t do his 90-day check-in he’s got 30 days where you can pay a fee and then he starts getting to where he’s paying for a year after 90 days and on and on with this and so now this gentleman actually was working in Afghanistan for the US government at the time the US government could not even get him out of Thailand to go work in Afghanistan to help out the war until serious this is so one of those things happens he also the third thing of this is you go to renew your passport you send it in dutifully and you don’t get your passport back guys cuz you owe us taxes now if you make more than 12,500 of income you are required to file a US doctor no matter where that money is earned in the world you can exclude her in actually 2022 it’s about 112,000 off of your earned income not retirement industries out wages or business income exclude $112,000 off that but you have to file the tax return and the foreign earn income exclusion form to qualify for that if you’ve got a w if so say you are a US contractor over here or anywhere in the world and you’ve got a W-2 you’re making $60,000 but you’re living overseas you don’t file the tax return the US government thinks you’re UL 15 and 20,000 a year so you’ll do that for 3 years and you never contact the IRS the IRS thanks now you’re a dead text deadbeat because you’ve just never filed the form and suddenly they yank your passport and you’re screwed through this you have to go in file those forms because the file this forms 3 4 5 $600 depending upon your level of complexity to do that in order to get your passport back to deposit is $10,000 on average the fees have been 25 to $30,000 to get a password it’s that big of a bureaucratic nightmare to do this with this so you know and if you know anybody says sooner or later you’re going to get caught because the Thai Banks report the amount of money back to the United States now for the US citizens Janet hide anymore like so you know I had to put the fear of God and the people about filing taxes do it it’s a lot easier for us to sit there cuz then I don’t have to spend hours and hours dealing with the IRS that you are paying just get your taxes done and more than likely your tax bill is going to be zero unless you have children two people can possibly have children free who</p></div></div></div></div></div><div><div id="kt-layout-id_36ab80-bd"><div><div></div><div><div><figure></figure></div></div><div></div></div></div></div><div><div id="kt-layout-id_260199-37"><div><div><div><h2 id="introduction-to-the-seminar">US Expat Tax, Families and the Stimulus Checks</h2><p>Are you going to have two people can possibly have children three anybody children I still speak to her one of the the joys of this is when you have people who do have children to this as long as they’ve got a certain amount of earned income Tax credit which is about $1,200 a year I’m sorry $1,400 a year so to the 12 or 1400 starts very early in the morning for me so what happens is if they meet this particular criteria to this they will not only owe any us tax but they can get attacked they get a refund check just based upon the fact that they have children us children with a US social security number and that’s really changed this so we have a lot of families who could come over here and work to get very very nice checks back from the US government finally and they finally I’m going to go to the stimulus checks on this okay stimulus checks have been the biggest nightmare for us from the logistical standpoint to this but if you are a US citizen you are generally eligible for the first 1200 check the $600 check and the $1,400 check with this now you have unless you are pulling from social security he will have to have filed tax returns to get those checks back with okay now the nightmare issue of this is the IRS is it even if you put direct deposit on at the IRS is tended to mail the checks in the Thailand which takes several months and then of course the time postal system never gets them to the process is arcane at least to try to get these checks done we actually do work on that you can either actual also phone numbers so if we’ve had people who have applied for the check they’ve never gotten and I said no you reset the check then you have to call and do a check Trace through the but there is money sitting out there available for you if you haven’t found your taxes then go a long way towards paying the tax bill to get you caught up under taxes with this finally the last little bit of good news as long as you are not willful in your intent to hide money overseas no you can use what’s called the streamline filing program to get caught up which means 3 years of the last tax returns you have to file and 6 years of reform bank account for informed where you have to report all of your liquid accounts through this that essentially with you do that and all of your income is overseas and key to this the irrespectively says we don’t worry about the few past years to this however you do from that point you get the past once and you can move forward with this you know Ken likes to call us today I think in every time he does say it’s not an AMC it’s a program that you can go into and that allows you to not have to do a huge amount of fixing on the stuff in the past you can get caught up with stuff and be clean with us that’s okay</p></div></div></div></div></div><div><div id="kt-layout-id_db30f4-73"><div><div></div><div><div><figure><img src="../images/chiang-mai-ambassador-chiangmaiambassador-US-Expat-Tax-Guide-chiang-mai-ambassador-chiangmaiambassador-thai-visa-thaivisa-tax-advice-us-expats-35.webp" alt="US Expat Tax Guide chiang mai ambassador chiangmaiambassador thai visa thaivisa tax advice us expats 35.jpg 54671c" width="395" height="300" loading="lazy"></figure></div></div><div></div></div></div></div><div><div id="kt-layout-id_4fbe09-17"><div><div><div><h2 id="introduction-to-the-seminar">US Expat Tax and FBAR</h2><p>It’s on AMC it’s a program that you can go into and it allows you to not have to do a huge amount of fixing on the stuff in the past you can get caught up with stuff and be cleaning with this okay everybody’s familiar with the f bar the foreign bank account reporting system foreign Bank California is actually been here for about 20 years but it really came to Providence about 10 years ago when fat goes fast fact was called the foreign attack foreign account tax compliance act if you tried to go and open up an account anywhere overseas they’ll start wanting all your us information because they have to report that information back to the internal rev insurance. So there’s a paper trail this is to this so on your side is an individual if you have more than $10,000 in accounts overseas and this is this is important it’s not just $10,000 per account it’s $10,000 in accounts overseas so you can have three or four accounts with $3,000 into it you got $12,000 overseas are required now to file the escort this involves the high balance of the account during the year not on December 31st but whatever the peak prevalence was during the year the account number the name of the funniest situation and the bank branch of the financial branch that you have so it’s insurance company privately the headquarters but it’s a bank branch here in chat line here where your account is registered you would use that failure to file an f-bar if not a percentage of the tax due in on the money that’s generally going to be almost nothing but failure to file penalties based upon that high value is the account is hit over the years so and that that penalty is 50% of that high value so let’s put it this way so house for a thousand dollars it moves into an account here into Thailand then for whatever reason you need that accounted through it and you move that money into a different account number to it so 100,000 you’ve not filed your f bar in the IRS to text us the penalty on the first account number of thousand dollars will be $50,000 on the second account number it will be $50,000 per account to us all of your money has just been wiped out by non-filing of this form to this with it and so you know and Thailand here for a deposit that counts that’s required to be reported on your f-bar if you were if the IRS were to come down on you you’d have to pay $400,000 of fine for us it’s rough to this so you know you need to file taxes we can help we do everything from full board planning company would you work with companies doing business in the United States we do a lot of digital Nomads it may not even be American but they’re dealing with Amazon or ebay in the United States we’re able to push those guys in a way to where they get they get to be tax efficient anything like that good probably a different seminar with shame next time too but you know we do a full range of services we are by far the biggest firm here in Thailand and we’re rapidly approaching the to be the largest firm in Southeast Asia for what we did but we’re really specialized we try to work with everybody we also work to make it as affordable for you guys as possible I’m also going to tell you if you can make a change in your life that’s going to be more efficient on just the compliance cost I’m going to tell you you move from 10 accounts down to two because your your f bar cost is going to be a whole lot low into this so you know our goal is to make this list any any questions</p></div></div></div></div></div><div><div id="kt-layout-id_ab8377-65"><div><div></div><div><div><figure></figure></div></div><div></div></div></div></div><div><div id="kt-layout-id_a4e3a9-ad"><div><div><div><h2 id="introduction-to-the-seminar">US Expat Tax Questions and Answers</h2><p>Is it just gross income or gross income after deductions? It’s gross income of $12,500.</p><p>If you make 12500 you need to file a US Tax return.</p><p>what about joint accounts?</p><p>Sign on the account you sign an account you got a report and here’s one that kickers is this you sign up so say you work for a Thai company to this so you work for a tire company and you’re a signature on that company account you don’t have any ownership interest yes what you’ve got to report that account because you have signatory power and effectively this isn’t just bank accounts this is the any type of investment account any type of insurance account if it has a liquid value in it you have to report that on the file so there’s a form of 8938 which is a goes on your actual tax return to this that has higher balances that you have to report to and you don’t have to report business accounts for it but that one doesn’t have the penalty the f bar doesn’t have the penalty thanks anybody know that the name of the US government agency you can report the airport to it’s the financial crime center of the Treasury department is where you report to this warranted. If you don’t think it’s serious, it’s serious.</p><p>That’s the name of the agency you actually reports in your profile as far as through as long as you are not having been doing anything criminal they have been very very very lenient on allowing you to file this and ugly did not know I have to file this is a valid reason for using the program to this okay but you know if you have been hiding money in Swiss accounts overseas that’s a very very different different issue to this that’s his willful contact is where I have been hiding money to cheat on my taxes that’s a separate set of programs you have to go through we do handle those although how to describe this your average bill with that particular point goes north of $1,000 to keep you out of do not hide money overseas anymore because Banks around the globe when fat could pass have to report and here’s why they have to report if they don’t report the bank is subject to a 30% fine on every transaction that goes through the US Treasury banks in New York city so if if they move so a bank is non-complant they move money from Swiss account to a ton account the tide bank or is considered non-reporting of US citizens that time that Thai Bank even though it does not have anything to do with the US will only get seven or 700,000 if it’s a million dollars because the bank will stop it in New York City takes 30% of the money out and only send $700,000 at work every Bank in the world every International transaction has to go through that banking system and you get stuck with 30% so your your accounts are going to be reported to the US you know</p><p>Another question<br/>Being a signatory to a bank account means you have to report that bank account even if you are just a beneficiary, let’s say my wife has me as a beneficiary on the account in case she dies do I have to report that bank account? Generally yes.</p><p>Play my wife just has me as beneficiary if she died? If you are beneficiary of the bank account to this do you have to report the bank that you’re not assuming to her in the bank account with it and the beneficiary rules you get a whole series of other complexity they still especially if this would be qualified as a trust bank account safety sake you have no tax responsibility for that account you are far better off to report it then tonight there’s there’s no tax due on the f-bar 4 this is just an information form if in doubt report every time we generally tell people that you can do this in yourself online do it you’re going to <a href="http://send.gov/" rel="noreferrer noopener" target="_blank">send.gov</a> to this you can file it online with it if you haven’t done a bunch of years you probably need to talk to us first seeing you make sure you’ve got it straight but on the annual basis you can go on and do this online it’s it’s only possible the system has since they became up with the <a href="http://finsen.gov/" rel="noreferrer noopener" target="_blank">finsen.gov</a> the new system about 5 years ago it is settling gotten easier to use at first he was a atrociously hard to use but now it’s better than but you need to make sure you’re doing your US taxes any other questions see a little bit more about the amnesty non amnesty there was something about 6 years of okay to do that</p><p>First he was atrociously hard to use but now it’s better to do but you need to make sure you’re doing your deals taxes say a little bit more about the amnesty non amnesty there was something about 6 years of okay to do that and again streamline filing required you to file 3 years of back tax bill phone and oddly right now until April 15th that means 2020-2019 and 2018 after April 1st April 15th it becomes 2021 2020 2019 okay so you have to file last three years and the last 6 years of f bars now ugly the the website when it rolls over in January only allows you to do 2021 2020 you know you go and do those 6 years at f bars on the website and yeah and then you fill out a separate form as well explaining how you were not willful on this from a US tax standpoint that will absolve you of all penalties but should you owe some tax you’d have to pay the interest on that tax due but as long as your income is overseas you’re generally going to owe no tax you won’t annually report the high balance in those accounts whether it’s been up or down or two that’s all you do it’s literally you go to your bank statements this was the high balance of the account and you put it in free shipping account and taxes based off of whatever the high no no there’s no tax due on an apartment it’s only an information now you need to you know if so say you got 5 million dollars in an account in Thailand you’ve made some interest you can’t put a dollar 30 worth without having some type of explanation you got to go in and report your taxes the income you’ve received overseas in town and again it’s going to make sense you know somebody’s got you know 11,000 yeah they may have $80 worth of interest no big deal but if you’ve got 5 million dollars overseas and you’re not making any interest off at the IRS can look at that and go something here is not making sense you know so that’s and that’s what streamline does somebody physically looks at a streamline file in your term and looks the math and says okay yeah clearly not initially other times you have to deal with some some more detail! I think it’s more complex you know a lot of people have trust foreign companies you know they get much more complex than if you have something in the United States if you own more than 10% of the company overseas you’ve reached you’ve reached you have to file 5471 form controlled for incorporation reporting form I’m trying criteria if you have a trust and stay home call or and Cook Islands there’s 35 20 35 the more complex your life is the much much more difficult your tax reporting yet</p></div></div></div></div></div><div><div id="kt-layout-id_4b74e6-eb"><div><div></div><div><div><figure><img src="../images/chiang-mai-ambassador-chiangmaiambassador-US-Expat-Tax-Guide-chiang-mai-ambassador-chiangmaiambassador-thai-visa-thaivisa-tax-advice-us-expats-17.webp" alt="US Expat Tax Guide chiang mai ambassador chiangmaiambassador thai visa thaivisa tax advice us expats 17.jpg 54671c" width="572" height="300" loading="lazy"></figure></div></div><div></div></div></div></div><div><div id="kt-layout-id_df32bb-94"><div><div><div><h2 id="introduction-to-the-seminar">Closing Comments</h2><p>Pleasant want to add on a little bit Thomas does the US expat tax stuff I do more than count opening and I would say that I can’t stress enough that our Americans if you want to open an account today even as a Thai person he’ll pull out a W-9 form to sign saying I am not American do you understand what I’m saying everywhere in the world now people have to sign off the things are getting people to sign an American form to say that I am you know I am an American this is my social security number or I am not in America it’s a big big deal and again if you haven’t filed taxes I’ll run it to the contractors they think they’re making under the foreign income exclusion they don’t have to do the recording but in order to get that you have to file the taxes to get that credit towards it that that credit towards your taxes so yeah and again if you’re working in Thailand the taxes are higher I think it’s Thailand that is in a state so you’ve been paying a higher tax amount for your income if you’re working here then in the US you get with Thomas he’s going to call your taxes you’re not going to owe any money do your amnesty file I’m joking your streamlined filing you know but everybody understands amnesty that’s all but it is it’s a big deal if you need to come do it now before they find you I don’t know if you understand that some of the legislation now that’s what the what’s the hours of the current administration they’re trying to approve and help the IRS were filing I think they’re asking for 8 billion dollars and is to imp regarding the agents praying and technology things are not going to get you know less intrusive than your life you know you’re not going to be able to hide more so I’m going to talk to us you know meeting and talking to us is free we come to change my we travel wherever you can party with you speak it on at the expat group down there we need to pay really go up you know all over and Thomas and I are located and Pacific place in Bangkok and we’re in separate buildings officers are in different buildings but we’re located right next to Landmark Place in Bangkok and we invite you to message us with any questions about US expat tax or contact us in any way click either link below, please reach out to us thank you very much.</p></div></div></div></div></div><div><div id="kt-layout-id_07ae68-b0"><div><div><div><div id="kt-info-box_9681de-6d"><a href="https://www.facebook.com/Americantax2018" rel="noopener" target="_blank"><div><div><div><div></div></div></div></div><div><h2>Thomas Carden</h2><p>International Tax expert in the taxation of US Expats living in Australia, New Zealand, Thailand and the United Kingdom. </p><div><span>LEARN MORE</span></div></div></a></div></div></div><div><div><div id="kt-info-box_219f64-ea"><a href="https://www.linkedin.com/in/ken-brown-59438192/" rel="noopener" target="_blank"><div><div><div><div><div><img src="../images/chiang-mai-ambassador-chiangmaiambassador-US-Expat-Tax-Guide-chiang-mai-ambassador-chiangmaiambassador-thai-visa-thaivisa-tax-advice-us-expats-21.webp" alt="US Expat Tax Guide chiang mai ambassador chiangmaiambassador thai visa thaivisa tax advice us expats 21.jpg 54671c" width="450" height="300" loading="lazy"><img src="../images/chiang-mai-ambassador-chiangmaiambassador-US-Expat-Tax-Guide-chiang-mai-ambassador-chiangmaiambassador-thai-visa-thaivisa-tax-advice-us-expats-18.webp" alt="US Expat Tax Guide chiang mai ambassador chiangmaiambassador thai visa thaivisa tax advice us expats 18.jpg 54671c" width="545" height="300" loading="lazy"></div></div></div></div></div><div><h2>Ken Brown</h2><p>Helping Expats reach their individual financial goals through safe planning and proactive solutions designed specifically for them.</p><div><span>LEARN MORE</span></div></div></a></div></div></div></div></div></div></div><footer><div>
+<span>
+<span>
+Post Tags:		</span>
+<a href="aitaxadvisers.html" rel="tag" title="aitaxadvisers"><span>#</span>aitaxadvisers</a><a href="american-international-tax-advisers.html" rel="tag" title="American International Tax Advisers"><span>#</span>American International Tax Advisers</a><a href="american-tax.html" rel="tag" title="American Tax"><span>#</span>American Tax</a><a href="benefits-for-expats.html" rel="tag" title="Benefits for Expats"><span>#</span>Benefits for Expats</a><a href="business-class-asia.html" rel="tag" title="Business Class Asia"><span>#</span>Business Class Asia</a><a href="business-formation.html" rel="tag" title="Business Formation"><span>#</span>Business Formation</a><a href="businessclassasia.html" rel="tag" title="businessclassasia"><span>#</span>businessclassasia</a><a href="chiang-mai.html" rel="tag" title="Chiang Mai"><span>#</span>Chiang Mai</a><a href="company-formation.html" rel="tag" title="company formation"><span>#</span>company formation</a><a href="expat-tax.html" rel="tag" title="Expat Tax"><span>#</span>Expat Tax</a><a href="fatca.html" rel="tag" title="FATCA"><span>#</span>FATCA</a><a href="fbar.html" rel="tag" title="FBAR"><span>#</span>FBAR</a><a href="investment-planning.html" rel="tag" title="Investment Planning"><span>#</span>Investment Planning</a><a href="payoneer.html" rel="tag" title="Payoneer"><span>#</span>Payoneer</a><a href="stimulus-checks.html" rel="tag" title="Stimulus Checks"><span>#</span>Stimulus Checks</a><a href="streamline-filing-program.html" rel="tag" title="Streamline Filing Program"><span>#</span>Streamline Filing Program</a><a href="tax-for-expats.html" rel="tag" title="Tax for Expats"><span>#</span>Tax for Expats</a><a href="tax-planning.html" rel="tag" title="Tax Planning"><span>#</span>Tax Planning</a><a href="tax-returns.html" rel="tag" title="tax returns"><span>#</span>tax returns</a><a href="thailand.html" rel="tag" title="Thailand"><span>#</span>Thailand</a><a href="us-tax.html" rel="tag" title="US Tax"><span>#</span>US Tax</a><a href="us-tax-treaty.html" rel="tag" title="US Tax Treaty"><span>#</span>US Tax Treaty</a> </span></div></footer></div>
+                </div>
+            </div>
+        </article>
+
+        <section class="blog-related container">
+            <h2>More from the Ambassador</h2>
+            <div class="blog-grid">
+                <article class="blog-card reveal">
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-13.webp" alt="Related article" width="400" height="200">
+                    <h3>Chiang Mai Walking Street Markets</h3>
+                    <p>The Saturday and Sunday walking street markets are unmissable for bargains and local atmosphere.</p>
+                    <a href="walking-street-markets.html" class="arrow-link">Read more &rarr;</a>
+                </article>
+                <article class="blog-card reveal">
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-116.webp" alt="Related article" width="400" height="200">
+                    <h3>Getting Social in Chiang Mai</h3>
+                    <p>How to meet people, find your community, and build a genuine social life in Chiang Mai.</p>
+                    <a href="getting-social-in-chiang-mai.html" class="arrow-link">Read more &rarr;</a>
+                </article>
+                <article class="blog-card reveal">
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-127.webp" alt="Related article" width="400" height="200">
+                    <h3>Expat Breakfast Club</h3>
+                    <p>A long-running tradition for expats to connect, share stories, and start the week right.</p>
+                    <a href="expat-breakfast-club.html" class="arrow-link">Read more &rarr;</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="../" class="logo-link">
+                        <div class="logo">
+                            <svg class="logo-icon" viewBox="-175 -178 350 500" xmlns="http://www.w3.org/2000/svg" width="60" height="80">
+                                <defs>
+                                    <linearGradient id="g2gold-footer" x1="20%" y1="0%" x2="80%" y2="100%">
+                                        <stop offset="0%" stop-color="#F2D980" />
+                                        <stop offset="40%" stop-color="#C49010" />
+                                        <stop offset="100%" stop-color="#9A7008" />
+                                    </linearGradient>
+                                    <linearGradient id="g2ring-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#E4BC50" />
+                                        <stop offset="100%" stop-color="#9A7008" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="0" cy="0" r="164" fill="none" stroke="url(#g2ring-footer)" stroke-width="2.5" />
+                                <circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65" />
+                                <circle cx="164" cy="0" r="3.2" fill="#C49010" />
+                                <circle cx="0" cy="-164" r="3.2" fill="#C49010" />
+                                <circle cx="-164" cy="0" r="3.2" fill="#C49010" />
+                                <circle cx="0" cy="164" r="3.2" fill="#C49010" />
+                                <g transform="translate(0, -149.201) scale(1.94980)">
+                                    <polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980" />
+                                    <rect x="-2" y="4" width="4" height="38" fill="url(#g2gold-footer)" />
+                                    <polygon points="0,42 -16,78 16,78" fill="url(#g2gold-footer)" />
+                                    <rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008" />
+                                    <rect x="-22" y="84" width="44" height="9" fill="url(#g2gold-footer)" />
+                                    <rect x="-25" y="93" width="50" height="4" fill="#9A7008" />
+                                    <rect x="-30" y="97" width="60" height="9" fill="url(#g2gold-footer)" />
+                                    <rect x="-33" y="106" width="66" height="4" fill="#9A7008" />
+                                    <rect x="-38" y="110" width="76" height="9" fill="url(#g2gold-footer)" />
+                                    <rect x="-44" y="119" width="88" height="11" fill="url(#g2gold-footer)" />
+                                    <rect x="-52" y="130" width="104" height="8" fill="#9A7008" />
+                                </g>
+                            </svg>
+                            <div class="logo-text-wrapper">
+                                <div>
+                                    <span class="logo-accent">CM</span><span class="logo-text">Ambassador</span>
+                                </div>
+                                <span class="logo-tagline">Connector &middot; Helper &middot; Guru</span>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="footer-tagline">Local knowledge. Practical support. The Rose of the North, clearly explained.</p>
+                </div>
+
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <div class="footer-nav-group">
+                        <h4>Guides</h4>
+                        <ul role="list">
+                            <li><a href="../pages/neighbourhoods.html">Neighbourhoods</a></li>
+                            <li><a href="../pages/cost-of-living.html">Cost of living</a></li>
+                            <li><a href="../pages/visas.html">Visas and permits</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>Tools</h4>
+                        <ul role="list">
+                            <li><a href="../#tools">Budget calculator</a></li>
+                            <li><a href="../#tools">Visa planner</a></li>
+                            <li><a href="../#tools">Neighbourhood matcher</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>Community</h4>
+                        <ul role="list">
+                            <li><a href="#">Expats Club</a></li>
+                            <li><a href="#">Ask a local</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-legal">Copyright 2026 Chiang Mai Ambassador. Published with care in Chiang Mai, Thailand.</p>
+                <p class="footer-disclaimer">Information is provided in good faith. Always verify information with qualified professionals and official sources before making decisions.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>
