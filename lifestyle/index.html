@@ -3,17 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chiang Mai football club connects expats for regular games. Skills welcome, fun atmosphere, friendly community. Schedule, contact, and how to join.">
+    <meta name="description" content="Complete guides to the Chiang Mai lifestyle. Cost of living, social life, mobile phones, television, language learning, and practical expat advice.">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Chiang Mai Football Club | Join & Participate">
-    <meta property="og:description" content="Chiang Mai football club connects expats for regular games. Skills welcome, fun atmosphere, friendly community. Schedule, contact, and how to join.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://chiangmaiambassador.com/guides/chiang-mai-football-club/">
-    <meta property="og:site_name" content="Chiang Mai Ambassador">
-    <meta property="og:image" content="https://chiangmaiambassador.com/images/og-image.webp">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <title>Chiang Mai Football Club | Join & Participate</title>
+    <title>Living in Chiang Mai | Lifestyle, Budget & Expat Guides</title>
 
     <link rel="stylesheet" href="../css/tokens.css">
     <link rel="stylesheet" href="../css/base.css">
@@ -27,19 +19,24 @@
     <link rel="preload" href="../fonts/plus-jakarta-500.woff2" as="font" type="font/woff2" crossorigin>
 
     <style>
+        /* White background with dark text */
         .blog-content {
             background-color: white !important;
             padding: 5rem 0 !important;
         }
+
         .blog-hero {
             margin-top: 80px;
         }
+
+        /* Image float utilities */
         .img-right-small {
             float: right;
             width: 30%;
             margin: 0 0 1rem 2rem;
             shape-margin: 1rem;
         }
+
         .img-left-large {
             float: left;
             width: 55%;
@@ -48,33 +45,41 @@
             position: relative;
             z-index: 1;
         }
+
         .img-left-large img {
             width: 100%;
             height: auto;
             display: block;
         }
+
         .img-fullwidth-break {
             width: 100%;
             max-width: 100%;
             margin: 3rem 0 2rem 0;
             display: block;
         }
+
         .img-fullwidth-break img {
             width: 100%;
             height: auto;
             display: block;
         }
+
         .img-float-right-small {
             float: right;
             width: 45%;
             margin: 0 0 1.5rem 2rem;
         }
+
         figure {
             margin: 0;
         }
+
         figcaption {
             display: none;
         }
+
+        /* Quick Summary Box */
         .article-sidebar {
             background: #f0d080;
             padding: 2rem;
@@ -83,28 +88,34 @@
             margin: 2.5rem 0 3rem 0;
             border: 1px solid #e5ddd0;
         }
+
         .article-sidebar h4 {
             font-size: 1rem;
-            color: #1a1a1a;
+            color: #0F172A;
             margin: 0 0 1.25rem 0;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
+
         .article-sidebar ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
+
         .article-sidebar li {
-            color: #333;
+            color: #0F172A;
             font-size: 0.95rem;
             line-height: 1.6;
             margin-bottom: 0.75rem;
         }
+
         .article-sidebar li:last-child {
             margin-bottom: 0;
         }
+
+        /* Blog Metadata */
         .blog-metadata {
             display: flex;
             align-items: center;
@@ -113,11 +124,13 @@
             border-bottom: 1px solid #e5ddd0;
             margin-bottom: 2rem;
         }
+
         .blog-meta-item {
             display: flex;
             flex-direction: column;
             gap: 0.25rem;
         }
+
         .blog-meta-label {
             font-size: 0.75rem;
             font-weight: 600;
@@ -125,61 +138,91 @@
             text-transform: uppercase;
             color: #999;
         }
+
         .blog-meta-value {
             font-size: 0.95rem;
             color: #333;
             font-weight: 500;
         }
+
         .blog-meta-divider {
             width: 1px;
             height: 24px;
             background: #e5ddd0;
         }
+
         .blog-options {
             display: flex;
             gap: 0.75rem;
             margin-left: auto;
         }
+
+        .blog-option-btn {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #e5ddd0;
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0F172A;
+            transition: all 0.2s;
+        }
+
+        .blog-option-btn:hover {
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+            background: rgba(234, 179, 8, 0.05);
+        }
+
+        /* Article Intro */
+        .article-intro {
+            margin-bottom: 2rem;
+        }
+
+        .article-intro h2 {
+            font-size: 2rem;
+            color: #1a1a1a;
+            margin-bottom: 1.25rem;
+        }
+
+        .article-vibe {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.8;
+            font-weight: 500;
+        }
+
+        /* Blog body content */
         .blog-body h2 {
             font-size: 1.875rem;
             color: #1a1a1a;
             margin-top: 2.5rem;
             margin-bottom: 1rem;
         }
+
         .blog-body h3 {
             font-size: 1.25rem;
             color: #1a1a1a;
             margin-top: 1.75rem;
             margin-bottom: 0.75rem;
         }
+
         .blog-body p {
             font-size: 1rem;
             color: #333;
             margin-bottom: 1.5rem;
             line-height: 1.8;
         }
+
         .blog-body strong {
             font-weight: 600;
             color: #1a1a1a;
         }
-        .blog-body img {
-            max-width: 100%;
-            height: auto;
-        }
-        .blog-body .alignright {
-            float: right;
-            margin: 0 0 1rem 2rem;
-            max-width: 40%;
-        }
-        .blog-body .alignleft {
-            float: left;
-            margin: 0 2rem 1rem 0;
-            max-width: 40%;
-        }
-        .blog-body .aligncenter {
-            display: block;
-            margin: 2rem auto;
-        }
+
+        /* Key Takeaways */
         .key-takeaways {
             background: #f0d080;
             padding: 2rem;
@@ -187,51 +230,77 @@
             margin: 3rem 0;
             border: 1px solid #e5ddd0;
         }
+
         .key-takeaways h3 {
             margin-top: 0;
-            color: #1a1a1a;
+            color: #0F172A;
         }
+
         .key-takeaways p {
-            color: #333;
+            color: #0F172A;
         }
+
+        /* Related posts section */
         .blog-related {
             background: transparent;
             padding: 4rem 0 !important;
         }
+
         .blog-related h2 {
             color: white;
         }
+
         .blog-card {
             background-color: var(--color-surface) !important;
         }
+
         @media (max-width: 768px) {
+            .blog-body h2 {
+                font-size: 1.5rem;
+            }
+
             .img-right-small,
             .img-left-large,
-            .img-float-right-small,
-            .blog-body .alignright,
-            .blog-body .alignleft {
+            .img-float-right-small {
                 float: none;
                 width: 100%;
-                max-width: 100%;
                 margin: 1.5rem 0;
             }
+
             .article-sidebar {
                 margin: 2rem 0;
             }
         }
     </style>
 
+    <link rel="canonical" href="https://chiangmaiambassador.com/lifestyle/">
+
+    <meta property="og:title" content="Living in Chiang Mai | Lifestyle, Budget & Expat Guides">
+    <meta property="og:description" content="Complete guides to the Chiang Mai lifestyle. Cost of living, social life, mobile phones, television, language learning, and practical expat advice.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chiangmaiambassador.com/lifestyle/">
+    <meta property="og:image" content="https://chiangmaiambassador.com/images/og-image.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Living in Chiang Mai | Lifestyle, Budget & Expat Guides">
+    <meta name="twitter:description" content="Complete guides to the Chiang Mai lifestyle. Cost of living, social life, mobile phones, television, language learning, and practical expat advice.">
+    <meta name="twitter:image" content="https://chiangmaiambassador.com/images/og-image.webp">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Page not found",
-        "description": "Oops! That page can’t be found.. Chiang Mai Ambassador",
-        "datePublished": "2026-05-23",
-        "author": { "@type": "Organization", "name": "Chiang Mai Ambassador" }
+        "@type": "WebPage",
+        "name": "Living in Chiang Mai | Lifestyle, Budget & Expat Guides",
+        "description": "Complete guides to the Chiang Mai lifestyle. Cost of living, social life, mobile phones, television, language learning, and practical expat advice.",
+        "url": "https://chiangmaiambassador.com/lifestyle/",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Chiang Mai Ambassador",
+            "url": "https://chiangmaiambassador.com"
+        }
     }
     </script>
-    <link rel="canonical" href="https://chiangmaiambassador.com/guides/chiang-mai-football-club/">
 </head>
 <body style="margin: 0; padding: 0; width: 100%;">
 
@@ -281,196 +350,208 @@
             </div>
         </a>
         <div class="nav-links">
-            <a href="../pages/neighbourhoods.html">Neighbourhoods</a>
-            <a href="../pages/cost-of-living.html">Cost of Living</a>
+            <a href="../chiang-mai/">Chiang Mai</a>
+            <a href="../lifestyle/">Lifestyle</a>
+            <a href="../guides/">Guides</a>
+            <a href="../food/">Food & Dining</a>
 
             <div class="nav-dropdown">
                 <button class="nav-dropdown-toggle">Food</button>
                 <div class="nav-dropdown-menu">
-                    <a href="../food/auf-der-au-best-buffet-chiang-mai.html">Auf der Au Buffet</a>
+                    <a href="../food/auf-der-au-best-buffet-chiang-mai.html">Auf der Au Best Buffet</a>
                     <a href="../food/butter-is-better.html">Butter is Better</a>
-                    <a href="../food/chiang-mai-grandview-lunch.html">Chiang Mai Grandview Lunch</a>
-                    <a href="../food/dukes.html">Dukes</a>
-                    <a href="../food/food-delivery-services.html">Food Delivery Services</a>
-                    <a href="../food/ibis-styles-buffet-lunch.html">Ibis Styles Buffet Lunch</a>
-                    <a href="../food/le-meridien-dinner-buffet.html">Le Meridien Dinner Buffet</a>
+<a href="../food/food-delivery-services.html">Food Delivery Services</a>
+<a href="../food/le-meridien-dinner-buffet.html">Le Meridien Dinner Buffet</a>
                     <a href="../food/meela-peanut-butter.html">Meela Peanut Butter</a>
-                    <a href="../food/real-thai-restaurant.html">Real Thai Restaurant</a>
-                    <a href="../food/siripanna-lunch.html">Siripanna Lunch</a>
-                    <a href="../food/the-dukes.html">The Dukes</a>
-                    <a href="../thai-eating-etiquette.html">Thai Eating Etiquette</a>
-                    <a href="../yunnan-farmers-market.html">Yunnan Farmers Market</a>
-                </div>
+<a href="../food/siripanna-lunch.html">Siripanna Lunch</a>
+</div>
             </div>
 
             <div class="nav-dropdown">
-                <button class="nav-dropdown-toggle">Guides</button>
+                <button class="nav-dropdown-toggle">Guides </button>
                 <div class="nav-dropdown-menu">
-                    <a href="../best-chiang-mai.html">Best of Chiang Mai</a>
                     <a href="../guides/blood-donation-donor-eligibility-red-cross-blood-bank-chiang-mai.html">Blood Donation Eligibility</a>
                     <a href="../guides/blood-donation-procedure.html">Blood Donation Procedure</a>
                     <a href="../guides/bua-tong-waterfalls.html">Bua Tong Waterfalls</a>
                     <a href="../guides/budget-chiang-mai-medical-services.html">Budget Medical Services</a>
-                    <a href="../cheapest-border-run-chiang-mai.html">Cheapest Border Run</a>
                     <a href="../guides/chiang-mai-driving.html">Chiang Mai Driving</a>
-                    <a href="../guides/chiang-mai-festivals.html">Chiang Mai Festivals</a>
-                    <a href="../guides/chiang-mai-football-club.html">Chiang Mai Football Club</a>
-                    <a href="../guides/chiang-mai-insurance.html">Chiang Mai Insurance</a>
+<a href="../guides/chiang-mai-insurance.html">Chiang Mai Insurance</a>
                     <a href="../guides/chiang-mai-road-rules.html">Chiang Mai Road Rules</a>
                     <a href="../guides/flat-tire.html">Flat Tire</a>
                     <a href="../guides/license-plates.html">License Plates</a>
-                    <a href="../modern-transport-guide.html">Modern Transport Guide</a>
                     <a href="../guides/motorcycle-registration-transfer.html">Motorcycle Registration</a>
                     <a href="../guides/motorcycle-rentals.html">Motorcycle Rentals</a>
-                    <a href="../motorbike-registration-chiang-mai.html">Motorbike Registration Renewal</a>
                     <a href="../guides/red-cross-blood-bank-chiang-mai.html">Red Cross Blood Bank</a>
                     <a href="../guides/renting-a-motorbike-in-chiang-mai.html">Renting a Motorbike</a>
-                    <a href="../guides/run-for-relief.html">Run for Relief</a>
-                    <a href="../guides/tdac-thailand-digital-arrival-card.html">TDAC Digital Arrival Card</a>
-                    <a href="../guides/thailand-media.html">Thailand Media</a>
+<a href="../guides/tdac-thailand-digital-arrival-card.html">TDAC Thailand Digital Arrival Card</a>
                     <a href="../guides/walking-street-markets.html">Walking Street Markets</a>
-                    <a href="../guides/what-to-do-after-a-vehicle-accident.html">After a Vehicle Accident</a>
                     <a href="../guides/wing-41-pass.html">Wing 41 Pass</a>
                     <a href="../guides/work-permit-medical-certificate.html">Work Permit Medical Certificate</a>
-                    <a href="../guides/yi-peng-lantern-festival.html">Yi Peng Lantern Festival</a>
                 </div>
             </div>
 
             <div class="nav-dropdown">
-                <button class="nav-dropdown-toggle">Lifestyle</button>
+                <button class="nav-dropdown-toggle">Lifestyle </button>
                 <div class="nav-dropdown-menu">
                     <a href="../lifestyle/alcohol-observations-of-a-non-drinker.html">Alcohol Observations</a>
                     <a href="../lifestyle/chiang-mai-arrival.html">Chiang Mai Arrival</a>
                     <a href="../lifestyle/currency-in-and-out-of-thailand.html">Currency In and Out</a>
                     <a href="../lifestyle/expat-breakfast-club.html">Expat Breakfast Club</a>
-                    <a href="../getting-social-in-chiang-mai.html">Getting Social</a>
-                    <a href="../lifestyle/internet.html">Internet in Thailand</a>
                     <a href="../lifestyle/learning-languages.html">Learning Languages</a>
                     <a href="../lifestyle/life-budget-chiang-mai.html">Life Budget Chiang Mai</a>
-                    <a href="../lifestyle/life-on-a-budget-in-chiang-mai-covid-2022-update.html">Life on a Budget (2022)</a>
+                    <a href="../lifestyle/life-on-a-budget-in-chiang-mai-covid-2022-update.html">Life on a Budget (COVID 2022)</a>
                     <a href="../lifestyle/live-in-chiang-mai.html">Live in Chiang Mai</a>
-                    <a href="../lifestyle/mobile-phones.html">Mobile Phones</a>
                     <a href="../lifestyle/smoky-season-chiang-mai.html">Smoky Season</a>
                     <a href="../lifestyle/songkran.html">Songkran</a>
-                    <a href="../lifestyle/television.html">Television in Thailand</a>
                     <a href="../lifestyle/thai-visa-advice.html">Thai Visa Advice</a>
                     <a href="../lifestyle/top-tips.html">Top Tips</a>
                     <a href="../lifestyle/traveling-alone.html">Traveling Alone</a>
                     <a href="../lifestyle/traveling-with-friends.html">Traveling with Friends</a>
-                    <a href="../understanding-thai-culture.html">Understanding Thai Culture</a>
                     <a href="../lifestyle/us-expat-tax-guide.html">US Expat Tax Guide</a>
                     <a href="../lifestyle/vientiane-visa-run.html">Vientiane Visa Run</a>
                 </div>
             </div>
 
-            <div class="nav-dropdown">
-                <button class="nav-dropdown-toggle">Visas</button>
-                <div class="nav-dropdown-menu">
-                    <a href="../visa/ed-visa.html">ED Visa</a>
-                    <a href="../visa/ed-visa-thai-language.html">ED Visa: Thai Language</a>
-                    <a href="../visa/ed-visa-muay-thai.html">ED Visa: Muay Thai</a>
-                    <a href="../visa/ed-visa-combat-training.html">ED Visa: Combat Training</a>
-                    <a href="../visa/dtv-visa.html">DTV Visa</a>
-                    <a href="../visa/business-visa.html">Business Visa</a>
-                    <a href="../visa/retirement-visa.html">Retirement Visa</a>
-                    <a href="../visa/marriage-visa.html">Marriage Visa</a>
-                    <a href="../visa/ltr-visa.html">LTR Visa</a>
-                    <a href="../visa/volunteer-visa.html">Volunteer Visa</a>
-                    <a href="../visa/tourist-visa.html">Tourist Visa</a>
-                    <a href="../visa/visa-exempt-vs-voa.html">Visa Exempt vs VOA</a>
-                    <a href="../visa-exempt-status-2026-returning-to-30-days.html">Visa Exempt 2026 Update</a>
-                    <a href="../visa/border-run-strategy.html">Border Run Strategy</a>
-                    <a href="../pages/visas.html">Visa Hub</a>
-                </div>
-            </div>
-
-            <div class="nav-dropdown">
-                <button class="nav-dropdown-toggle">Community</button>
-                <div class="nav-dropdown-menu">
-                    <a href="../pages/about.html">About Us</a>
-                    <a href="../pages/planning-a-move-to-thailand.html">Planning Your Move</a>
-                    <a href="../pages/just-arriving-in-thailand.html">Just Arrived</a>
-                    <a href="../pages/living-better-in-thailand.html">Living Better</a>
-                    <a href="../khun-joe-school.html">Khun Joe School</a>
-                    <a href="../womens-prison-massage.html">Women's Prison Massage</a>
-                    <a href="../pages/privacy.html">Privacy Policy</a>
-                    <a href="../pages/terms.html">Terms</a>
-                    <a href="../pages/disclaimer.html">Disclaimer</a>
-                </div>
-            </div>
-
         </div>
-        <a href="../index.html#start" class="btn-primary magnetic-item">Start Here</a>
+        <a href="../#start" class="btn-primary magnetic-item">Start Here</a>
     </nav>
 
     <main style="width: 100%; margin: 0 auto;">
 
+        <!-- BLOG HERO -->
         <section class="blog-hero">
             <div class="container" style="max-width: 960px; width: 100%; margin: 0 auto; padding: 0 2rem; box-sizing: border-box;">
                 <div class="blog-header reveal">
-                    <h1>Page <span class="gold-gradient-text">not found</span></h1>
-                    <p class="blog-excerpt">Oops! That page can’t be found.. Chiang Mai Ambassador</p>
+                    <h1>Living in Chiang Mai <span class="gold-gradient-text">Complete Guide</span></h1>
+                    <p class="blog-excerpt">Neighborhoods, cost of living, daily life, and everything you need to know about living in Chiang Mai as an expat.</p>
                 </div>
             </div>
         </section>
 
+        <!-- BLOG CONTENT -->
         <article class="blog-content" style="background-color: white; padding-top: 0.75rem !important;">
             <div class="container" style="max-width: 960px; width: 100%; margin: 0 auto; padding: 0 2rem; box-sizing: border-box;">
+                <!-- BLOG METADATA -->
                 <div class="blog-metadata reveal">
                     <div class="blog-meta-item">
                         <span class="blog-meta-label">Category</span>
-                        <span class="blog-meta-value"><a href="../">Home</a> / Chiang Mai Daily Life</span>
+                        <span class="blog-meta-value"><a href="../">Home</a> / Lifestyle</span>
                     </div>
                     <div class="blog-meta-divider"></div>
                     <div class="blog-meta-item">
                         <span class="blog-meta-label">Read time</span>
-                        <span class="blog-meta-value">3 min</span>
+                        <span class="blog-meta-value">12 min</span>
                     </div>
                     <div class="blog-meta-divider"></div>
                     <div class="blog-meta-item">
                         <span class="blog-meta-label">Last updated</span>
-                        <span class="blog-meta-value">May 2026</span>
+                        <span class="blog-meta-value">May 24, 2026</span>
                     </div>
                 </div>
 
                 <div class="blog-body">
 
-                    <!-- TL;DR IMAGE + SUMMARY -->
-                    <figure class="img-right-small" style="margin-top: -30px; margin-bottom: 1rem; width: calc(100% - 400px); max-width: 280px;">
-                        <!-- TL;DR image unmatched - needs human review -->
-                    </figure>
+                    <!-- ARTICLE INTRO -->
+                    <div class="article-intro">
+                        <h2>Your Guide to Living Better in Chiang Mai</h2>
+                        <p class="article-vibe">Chiang Mai is affordable, culturally rich, and expat-friendly. But it's not one-size-fits-all. Your neighborhood, budget, and integration goals determine your experience. This guide helps you make informed decisions.</p>
+                    </div>
+
+                    <!-- TL;DR -->
                     <div class="article-sidebar">
-                        <h4>Quick Summary (TL;DR)</h4>
+                        <h4>Chiang Mai Essentials</h4>
                         <ul>
-                            <li>Practical information for living in or visiting Chiang Mai.</li>
+                            <li>Population: ~1.2 million</li>
+                            <li>Cost of living: 40-50% cheaper than Bangkok</li>
+                            <li>Climate: Tropical, cool season Nov-Feb</li>
+                            <li>Expat communities: Nimman, Old City, Riverside</li>
+                            <li>Healthcare: Modern clinics and hospitals</li>
+                            <li>Visas: Tourist, ED, DTV, Retirement available</li>
+                            <li>Transport: Motorbikes, taxis, Grab, songthaews</li>
+                            <li>Language: Thai, but English widely spoken</li>
                         </ul>
                     </div>
 
-<p>Content for Page not found.</p>
+                    <h3>Neighborhoods: Choose Your Vibe</h3>
+                    <p>Chiang Mai is divided into distinct neighborhoods. Each has its own culture, cost, and community.</p>
+
+                    <p><strong>Nimman:</strong> Trendy, young, expat-heavy. Digital nomads, freelancers, social scene. Rent 6,000-15,000 THB. Best for: solo travelers, remote workers seeking community.</p>
+
+                    <p><strong>Old City:</strong> Historic, authentic, Thai-centric. Temples, markets, local life. Rent 7,000-11,000 THB. Best for: culture seekers, retirees, families wanting Thai integration.</p>
+
+                    <p><strong>Riverside:</strong> Suburban, peaceful, spacious. Gardens, quiet, family-oriented. Rent 5,000-10,000 THB. Best for: families, those seeking space and calm.</p>
+
+                    <h3>Cost of Living</h3>
+                    <p><strong>Housing:</strong> 5,000-15,000 THB/month depending on neighborhood and size.</p>
+
+                    <p><strong>Food:</strong> Thai meals 30-80 THB. Western restaurants 150-400 THB. Budget 300-500 THB daily for food if you eat Thai.</p>
+
+                    <p><strong>Transport:</strong> Motorbike rental 2,000-3,000 THB/month. Grab rides 20-100 THB. Songthaews 20 THB across city.</p>
+
+                    <p><strong>Healthcare:</strong> Clinic visits 300-500 THB. Hospitalisation costs 60-80% cheaper than Western prices. Expat health insurance 15,000-30,000 THB/year.</p>
+
+                    <p><strong>Total monthly budget:</strong> 15,000-25,000 THB (comfortable living with housing).</p>
+
+                    <h3>Visas and Legal Status</h3>
+                    <p><strong>Tourist Visa:</strong> 60 days. Extendable once for 30 days. Best for short-term visits.</p>
+
+                    <p><strong>ED Visa:</strong> Education. Study Thai, massage, muay thai. 90-day cycles, renewable. Popular with digital nomads.</p>
+
+                    <p><strong>DTV (Destination Thailand Visa):</strong> New (2024). Long-term stay for remote workers, wealthy retirees. 180 days, renewable. Easiest for extended stays.</p>
+
+                    <p><strong>Retirement Visa:</strong> Age 50+. 1 million THB in Thai bank account or 800,000 THB monthly income. 1-year renewable.</p>
+
+                    <p>Legal registration (TM.30) required within 24 hours of arrival. Required for bank account opening. Free at local immigration office.</p>
+
+                    <h3>Healthcare and Insurance</h3>
+                    <p>Chiang Mai has modern hospitals: Chiang Mai Ram, Bangkok Hospital Chiang Mai, Samitivej. Costs are 60-80% cheaper than US/Australia.</p>
+
+                    <p>Expat health insurance covers hospitalisation, outpatient, dental, and evacuation. Cost: 15,000-30,000 THB/year depending on coverage.</p>
+
+                    <p>Register with a clinic or doctor. Many expat doctors speak English. Check recommendations in Facebook expat groups.</p>
+
+                    <h3>Daily Life and Integration</h3>
+                    <p><strong>Banking:</strong> Open Thai bank account (Bangkok Bank, Krungsri, Siam Commercial). Need passport, TM.30, proof of residence.</p>
+
+                    <p><strong>Internet:</strong> Fiber and cable available. 30-50 Mbps, 500-800 THB/month. Coworking spaces as backup.</p>
+
+                    <p><strong>Shopping:</strong> Central Festival (mall), markets (Warorot for locals, Chiang Mai Night Bazaar for tourists), 7-Elevens everywhere.</p>
+
+                    <p><strong>Social scene:</strong> Facebook expat groups are hub of activity. Meetups, coworking, language exchanges, hiking, sports.</p>
+
+                    <p><strong>Language:</strong> English widely spoken in Nimman and tourist areas. Outside that, Thai is necessary. Learning Thai opens doors and builds relationships.</p>
+
+                    <!-- KEY TAKEAWAYS -->
+                    <div class="key-takeaways">
+                        <h3>Key Takeaways</h3>
+                        <p>Chiang Mai is affordable, accessible, and culturally engaging. Choose your neighborhood based on values (social vs authentic, young vs retired). Budget 15,000-25,000 THB monthly for comfortable living. Handle visas and legal registration properly. Embrace learning Thai. Build relationships beyond the expat bubble. Chiang Mai rewards those who commit to understanding it.</p>
+                    </div>
+
                 </div>
             </div>
         </article>
 
+        <!-- RELATED CONTENT SECTION -->
         <section class="blog-related container">
             <h2>More from the Ambassador</h2>
             <div class="blog-grid">
                 <article class="blog-card reveal">
-                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-13.webp" alt="Related article" width="400" height="200">
-                    <h3>Chiang Mai Walking Street Markets</h3>
-                    <p>The Saturday and Sunday walking street markets are unmissable for bargains and local atmosphere.</p>
-                    <a href="walking-street-markets.html" class="arrow-link">Read more &rarr;</a>
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-13.webp" alt="Neighborhoods guide" width="400" height="200">
+                    <h3>Neighborhoods Guide</h3>
+                    <p>Compare Nimman, Old City, and Riverside. Find your perfect area to live.</p>
+                    <a href="neighborhoods/nimman.html" class="arrow-link">Read more →</a>
                 </article>
                 <article class="blog-card reveal">
-                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-116.webp" alt="Related article" width="400" height="200">
-                    <h3>Getting Social in Chiang Mai</h3>
-                    <p>How to meet people, find your community, and build a genuine social life in Chiang Mai.</p>
-                    <a href="getting-social-in-chiang-mai.html" class="arrow-link">Read more &rarr;</a>
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-116.webp" alt="Moving checklist" width="400" height="200">
+                    <h3>Moving Checklist</h3>
+                    <p>Pre-departure, arrival, and settlement steps for moving to Chiang Mai.</p>
+                    <a href="moving-checklist.html" class="arrow-link">Read more →</a>
                 </article>
                 <article class="blog-card reveal">
-                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-127.webp" alt="Related article" width="400" height="200">
-                    <h3>Expat Breakfast Club</h3>
-                    <p>A long-running tradition for expats to connect, share stories, and start the week right.</p>
-                    <a href="expat-breakfast-club.html" class="arrow-link">Read more &rarr;</a>
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-152.webp" alt="Cost of living guide" width="400" height="200">
+                    <h3>Cost of Living Details</h3>
+                    <p>Budget breakdown for housing, food, transport, and daily expenses.</p>
+                    <a href="chiang-mai-arrival.html" class="arrow-link">Read more →</a>
                 </article>
             </div>
         </section>
