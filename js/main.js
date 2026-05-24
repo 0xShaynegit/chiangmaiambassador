@@ -208,7 +208,8 @@ function spawnLanternBatch() {
         el.style.width = size.w + 'px'
         el.style.height = size.h + 'px'
         el.style.left = (Math.random() * 85 + 5) + '%'
-        el.style.bottom = '-100px'
+        el.style.bottom = '0'
+        el.style.transform = 'translateY(100px)'
         el.style.animation = 'none'
 
         main.appendChild(el)
