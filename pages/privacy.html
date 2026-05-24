@@ -25,11 +25,122 @@
     <link rel="preload" href="../fonts/outfit-800.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/plus-jakarta-400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/plus-jakarta-500.woff2" as="font" type="font/woff2" crossorigin>
+
+    <style>
+        .legal-hero {
+            background: linear-gradient(135deg, #1a2a4a 0%, #0F172A 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .legal-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .legal-hero p {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .legal-content {
+            background-color: #c9c0b7;
+            padding: 4rem 2rem;
+        }
+
+        .legal-content h2 {
+            font-size: 1.75rem;
+            color: #1a1a1a;
+            margin-top: 2.5rem;
+            margin-bottom: 1.25rem;
+            padding-left: 1.25rem;
+            border-left: 4px solid #F2D980;
+            position: relative;
+        }
+
+        .legal-content h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .legal-content h3 {
+            font-size: 1.25rem;
+            color: #1a1a1a;
+            margin-top: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .legal-content p {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .legal-content ul,
+        .legal-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        .legal-content li {
+            color: #333;
+            line-height: 1.8;
+            margin-bottom: 0.75rem;
+        }
+
+        .legal-content ol li {
+            list-style-type: decimal;
+        }
+
+        .legal-content ol li::marker {
+            color: #f0d080;
+            font-weight: 700;
+        }
+
+        .legal-content strong {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .legal-footer-note {
+            background: #f0d080;
+            padding: 2rem;
+            margin-top: 3rem;
+            border: 1px solid #e5ddd0;
+            border-radius: 0;
+            text-align: center;
+        }
+
+        .legal-footer-note p {
+            margin: 0;
+            color: #1a1a1a;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .legal-hero h1 {
+                font-size: 2rem;
+            }
+
+            .legal-hero p {
+                font-size: 1rem;
+            }
+
+            .legal-content h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
-<body>
+<body style="margin: 0; padding: 0; width: 100%;">
     <div class="progress-bar" id="progress-bar" aria-label="Reading progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
-<nav class="nav-wrapper">
+    <nav class="nav-wrapper">
         <a href="../" class="logo-link">
             <div class="logo">
                 <svg class="logo-icon" viewBox="-175 -178 350 500" xmlns="http://www.w3.org/2000/svg" width="60" height="80">
@@ -79,7 +190,7 @@
             <div class="nav-dropdown">
                 <button class="nav-dropdown-toggle">Food</button>
                 <div class="nav-dropdown-menu">
-                    <a href="../food/auf-der-au-best-buffet-chiang-mai.html">Auf der Au Best Buffet</a>
+                    <a href="../food/auf-der-au-best-buffet-chiang-mai.html">Auf der Au Buffet</a>
                     <a href="../food/butter-is-better.html">Butter is Better</a>
                     <a href="../food/chiang-mai-grandview-lunch.html">Chiang Mai Grandview Lunch</a>
                     <a href="../food/dukes.html">Dukes</a>
@@ -90,131 +201,192 @@
                     <a href="../food/real-thai-restaurant.html">Real Thai Restaurant</a>
                     <a href="../food/siripanna-lunch.html">Siripanna Lunch</a>
                     <a href="../food/the-dukes.html">The Dukes</a>
+                    <a href="../thai-eating-etiquette.html">Thai Eating Etiquette</a>
+                    <a href="../yunnan-farmers-market.html">Yunnan Farmers Market</a>
                 </div>
             </div>
 
             <div class="nav-dropdown">
-                <button class="nav-dropdown-toggle">Guides </button>
+                <button class="nav-dropdown-toggle">Guides</button>
                 <div class="nav-dropdown-menu">
+                    <a href="../best-chiang-mai.html">Best of Chiang Mai</a>
                     <a href="../guides/blood-donation-donor-eligibility-red-cross-blood-bank-chiang-mai.html">Blood Donation Eligibility</a>
                     <a href="../guides/blood-donation-procedure.html">Blood Donation Procedure</a>
                     <a href="../guides/bua-tong-waterfalls.html">Bua Tong Waterfalls</a>
                     <a href="../guides/budget-chiang-mai-medical-services.html">Budget Medical Services</a>
+                    <a href="../cheapest-border-run-chiang-mai.html">Cheapest Border Run</a>
                     <a href="../guides/chiang-mai-driving.html">Chiang Mai Driving</a>
+                    <a href="../guides/chiang-mai-festivals.html">Chiang Mai Festivals</a>
                     <a href="../guides/chiang-mai-football-club.html">Chiang Mai Football Club</a>
                     <a href="../guides/chiang-mai-insurance.html">Chiang Mai Insurance</a>
+                    <a href="../guides/chiang-mai-road-rules.html">Chiang Mai Road Rules</a>
                     <a href="../guides/flat-tire.html">Flat Tire</a>
                     <a href="../guides/license-plates.html">License Plates</a>
+                    <a href="../modern-transport-guide.html">Modern Transport Guide</a>
                     <a href="../guides/motorcycle-registration-transfer.html">Motorcycle Registration</a>
                     <a href="../guides/motorcycle-rentals.html">Motorcycle Rentals</a>
+                    <a href="../motorbike-registration-chiang-mai.html">Motorbike Registration Renewal</a>
                     <a href="../guides/red-cross-blood-bank-chiang-mai.html">Red Cross Blood Bank</a>
                     <a href="../guides/renting-a-motorbike-in-chiang-mai.html">Renting a Motorbike</a>
                     <a href="../guides/run-for-relief.html">Run for Relief</a>
-                    <a href="../guides/tdac-thailand-digital-arrival-card.html">TDAC Thailand Digital Arrival Card</a>
+                    <a href="../guides/tdac-thailand-digital-arrival-card.html">TDAC Digital Arrival Card</a>
+                    <a href="../guides/thailand-media.html">Thailand Media</a>
                     <a href="../guides/walking-street-markets.html">Walking Street Markets</a>
+                    <a href="../guides/what-to-do-after-a-vehicle-accident.html">After a Vehicle Accident</a>
                     <a href="../guides/wing-41-pass.html">Wing 41 Pass</a>
                     <a href="../guides/work-permit-medical-certificate.html">Work Permit Medical Certificate</a>
+                    <a href="../guides/yi-peng-lantern-festival.html">Yi Peng Lantern Festival</a>
                 </div>
             </div>
 
             <div class="nav-dropdown">
-                <button class="nav-dropdown-toggle">Lifestyle </button>
+                <button class="nav-dropdown-toggle">Lifestyle</button>
                 <div class="nav-dropdown-menu">
                     <a href="../lifestyle/alcohol-observations-of-a-non-drinker.html">Alcohol Observations</a>
                     <a href="../lifestyle/chiang-mai-arrival.html">Chiang Mai Arrival</a>
                     <a href="../lifestyle/currency-in-and-out-of-thailand.html">Currency In and Out</a>
                     <a href="../lifestyle/expat-breakfast-club.html">Expat Breakfast Club</a>
+                    <a href="../getting-social-in-chiang-mai.html">Getting Social</a>
+                    <a href="../lifestyle/internet.html">Internet in Thailand</a>
                     <a href="../lifestyle/learning-languages.html">Learning Languages</a>
                     <a href="../lifestyle/life-budget-chiang-mai.html">Life Budget Chiang Mai</a>
-                    <a href="../lifestyle/life-on-a-budget-in-chiang-mai-covid-2022-update.html">Life on a Budget (COVID 2022)</a>
+                    <a href="../lifestyle/life-on-a-budget-in-chiang-mai-covid-2022-update.html">Life on a Budget (2022)</a>
                     <a href="../lifestyle/live-in-chiang-mai.html">Live in Chiang Mai</a>
+                    <a href="../lifestyle/mobile-phones.html">Mobile Phones</a>
                     <a href="../lifestyle/smoky-season-chiang-mai.html">Smoky Season</a>
                     <a href="../lifestyle/songkran.html">Songkran</a>
+                    <a href="../lifestyle/television.html">Television in Thailand</a>
                     <a href="../lifestyle/thai-visa-advice.html">Thai Visa Advice</a>
                     <a href="../lifestyle/top-tips.html">Top Tips</a>
                     <a href="../lifestyle/traveling-alone.html">Traveling Alone</a>
                     <a href="../lifestyle/traveling-with-friends.html">Traveling with Friends</a>
+                    <a href="../understanding-thai-culture.html">Understanding Thai Culture</a>
                     <a href="../lifestyle/us-expat-tax-guide.html">US Expat Tax Guide</a>
                     <a href="../lifestyle/vientiane-visa-run.html">Vientiane Visa Run</a>
                 </div>
             </div>
 
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle">Visas</button>
+                <div class="nav-dropdown-menu">
+                    <a href="../visa/ed-visa.html">ED Visa</a>
+                    <a href="../visa/ed-visa-thai-language.html">ED Visa: Thai Language</a>
+                    <a href="../visa/ed-visa-muay-thai.html">ED Visa: Muay Thai</a>
+                    <a href="../visa/ed-visa-combat-training.html">ED Visa: Combat Training</a>
+                    <a href="../visa/dtv-visa.html">DTV Visa</a>
+                    <a href="../visa/business-visa.html">Business Visa</a>
+                    <a href="../visa/retirement-visa.html">Retirement Visa</a>
+                    <a href="../visa/marriage-visa.html">Marriage Visa</a>
+                    <a href="../visa/ltr-visa.html">LTR Visa</a>
+                    <a href="../visa/volunteer-visa.html">Volunteer Visa</a>
+                    <a href="../visa/tourist-visa.html">Tourist Visa</a>
+                    <a href="../visa/visa-exempt-vs-voa.html">Visa Exempt vs VOA</a>
+                    <a href="../visa-exempt-status-2026-returning-to-30-days.html">Visa Exempt 2026 Update</a>
+                    <a href="../visa/border-run-strategy.html">Border Run Strategy</a>
+                    <a href="../pages/visas.html">Visa Hub</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle">Community</button>
+                <div class="nav-dropdown-menu">
+                    <a href="../pages/about.html">About Us</a>
+                    <a href="../pages/planning-a-move-to-thailand.html">Planning Your Move</a>
+                    <a href="../pages/just-arriving-in-thailand.html">Just Arrived</a>
+                    <a href="../pages/living-better-in-thailand.html">Living Better</a>
+                    <a href="../khun-joe-school.html">Khun Joe School</a>
+                    <a href="../womens-prison-massage.html">Women's Prison Massage</a>
+                    <a href="../pages/privacy.html">Privacy Policy</a>
+                    <a href="../pages/terms.html">Terms</a>
+                    <a href="../pages/disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+
         </div>
-        <a href="../#start" class="btn-primary magnetic-item">Start Here</a>
+        <a href="../index.html#start" class="btn-primary magnetic-item">Start Here</a>
     </nav>
 
-    <main>
-        <section class="content-section" style="padding: 4rem 2rem; max-width: 900px; margin: 0 auto;">
+    <main style="width: 100%; margin: 0 auto;">
+        <!-- LEGAL HERO -->
+        <section class="legal-hero">
             <h1>Privacy Policy</h1>
-            <p><strong>Last Updated:</strong> May 2026</p>
-
-            <h2>Introduction</h2>
-            <p>Chiang Mai Ambassador ("we," "us," "our," or "Site") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p>
-
-            <h2>1. Information We Collect</h2>
-
-            <h3>Information You Provide Directly</h3>
-            <ul>
-                <li><strong>Contact Forms:</strong> If you contact us, we collect your name, email address, and message content.</li>
-                <li><strong>Comments:</strong> Any comments or submissions you make may be collected and stored.</li>
-                <li><strong>Subscriptions:</strong> If you subscribe to our mailing list, we collect your email address.</li>
-            </ul>
-
-            <h3>Information Collected Automatically</h3>
-            <ul>
-                <li><strong>Analytics:</strong> We use Cloudflare Web Analytics to understand how visitors use our site. This includes pages visited, time spent, referral sources, and general location (country-level only).</li>
-                <li><strong>Cookies:</strong> Our site uses minimal cookies. You can disable cookies in your browser settings.</li>
-                <li><strong>Server Logs:</strong> Standard web server logs record IP addresses, browser type, and access times.</li>
-            </ul>
-
-            <h2>2. How We Use Your Information</h2>
-            <p>We use collected information for:</p>
-            <ul>
-                <li>Responding to your inquiries and providing customer support</li>
-                <li>Improving our website and content</li>
-                <li>Monitoring site performance and analytics</li>
-                <li>Detecting and preventing fraud or abuse</li>
-                <li>Complying with legal obligations</li>
-            </ul>
-
-            <h2>3. Data Sharing & Third Parties</h2>
-            <p>We do not sell, trade, or rent your personal information to third parties. We may share information with:</p>
-            <ul>
-                <li><strong>Service Providers:</strong> Cloudflare (analytics), email service providers (if you subscribe)</li>
-                <li><strong>Legal Compliance:</strong> If required by law or legal process</li>
-            </ul>
-
-            <h2>4. Data Protection & Security</h2>
-            <p>We implement reasonable security measures to protect your information. However, no internet transmission is 100% secure. We encourage you to use strong passwords and keep your information confidential.</p>
-
-            <h2>5. Your Rights</h2>
-            <p>Depending on your location, you may have rights including:</p>
-            <ul>
-                <li>Right to access your personal data</li>
-                <li>Right to correct inaccurate data</li>
-                <li>Right to delete your data</li>
-                <li>Right to opt-out of marketing communications</li>
-            </ul>
-            <p>To exercise these rights, contact us with your request.</p>
-
-            <h2>6. Children's Privacy</h2>
-            <p>Our site is not intended for children under 13. We do not knowingly collect information from children under 13. If we become aware of such collection, we will delete the information immediately.</p>
-
-            <h2>7. International Data Transfers</h2>
-            <p>Chiang Mai Ambassador is based in Thailand. If you access our site from outside Thailand, your information may be transferred to, stored in, and processed in Thailand and other countries. By using our site, you consent to these transfers.</p>
-
-            <h2>8. Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy periodically. We will notify you of significant changes by posting the new version on this page with an updated "Last Updated" date.</p>
-
-            <h2>9. Contact Us</h2>
-            <p>If you have questions about this Privacy Policy, please contact us through our website contact form.</p>
-
-            <hr style="margin: 3rem 0;">
-            <p style="font-size: 0.9rem; color: #666;">This Privacy Policy is effective as of May 2026. It complies with Australian Privacy Principles and Thailand Personal Data Protection Act requirements.</p>
+            <p>How we collect, use, and protect your personal information.</p>
         </section>
+
+        <!-- LEGAL CONTENT -->
+        <article class="legal-content">
+            <div class="container" style="max-width: 960px; width: 100%; margin: 0 auto; padding: 0 2rem; box-sizing: border-box;">
+
+                <h2>Introduction</h2>
+                <p>Chiang Mai Ambassador ("we," "us," "our," or "Site") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p>
+
+                <h2>1. Information We Collect</h2>
+
+                <h3>Information You Provide Directly</h3>
+                <ul>
+                    <li><strong>Contact Forms:</strong> If you contact us, we collect your name, email address, and message content.</li>
+                    <li><strong>Comments:</strong> Any comments or submissions you make may be collected and stored.</li>
+                    <li><strong>Subscriptions:</strong> If you subscribe to our mailing list, we collect your email address.</li>
+                </ul>
+
+                <h3>Information Collected Automatically</h3>
+                <ul>
+                    <li><strong>Analytics:</strong> We use Cloudflare Web Analytics to understand how visitors use our site. This includes pages visited, time spent, referral sources, and general location (country-level only).</li>
+                    <li><strong>Cookies:</strong> Our site uses minimal cookies. You can disable cookies in your browser settings.</li>
+                    <li><strong>Server Logs:</strong> Standard web server logs record IP addresses, browser type, and access times.</li>
+                </ul>
+
+                <h2>2. How We Use Your Information</h2>
+                <p>We use collected information for:</p>
+                <ul>
+                    <li>Responding to your inquiries and providing customer support</li>
+                    <li>Improving our website and content</li>
+                    <li>Monitoring site performance and analytics</li>
+                    <li>Detecting and preventing fraud or abuse</li>
+                    <li>Complying with legal obligations</li>
+                </ul>
+
+                <h2>3. Data Sharing & Third Parties</h2>
+                <p>We do not sell, trade, or rent your personal information to third parties. We may share information with:</p>
+                <ul>
+                    <li><strong>Service Providers:</strong> Cloudflare (analytics), email service providers (if you subscribe)</li>
+                    <li><strong>Legal Compliance:</strong> If required by law or legal process</li>
+                </ul>
+
+                <h2>4. Data Protection & Security</h2>
+                <p>We implement reasonable security measures to protect your information. However, no internet transmission is 100% secure. We encourage you to use strong passwords and keep your information confidential.</p>
+
+                <h2>5. Your Rights</h2>
+                <p>Depending on your location, you may have rights including:</p>
+                <ul>
+                    <li>Right to access your personal data</li>
+                    <li>Right to correct inaccurate data</li>
+                    <li>Right to delete your data</li>
+                    <li>Right to opt-out of marketing communications</li>
+                </ul>
+                <p>To exercise these rights, contact us with your request.</p>
+
+                <h2>6. Children's Privacy</h2>
+                <p>Our site is not intended for children under 13. We do not knowingly collect information from children under 13. If we become aware of such collection, we will delete the information immediately.</p>
+
+                <h2>7. International Data Transfers</h2>
+                <p>Chiang Mai Ambassador is based in Thailand. If you access our site from outside Thailand, your information may be transferred to, stored in, and processed in Thailand and other countries. By using our site, you consent to these transfers.</p>
+
+                <h2>8. Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy periodically. We will notify you of significant changes by posting the new version on this page with an updated "Last Updated" date.</p>
+
+                <h2>9. Contact Us</h2>
+                <p>If you have questions about this Privacy Policy, please contact us through our website contact form.</p>
+
+                <div class="legal-footer-note">
+                    <p>This Privacy Policy is effective as of May 2026. It complies with Australian Privacy Principles and Thailand Personal Data Protection Act requirements.</p>
+                </div>
+
+            </div>
+        </article>
     </main>
 
-<footer class="site-footer" role="contentinfo">
+    <footer class="site-footer" role="contentinfo">
         <div class="container">
             <div class="footer-inner">
                 <div class="footer-brand">
@@ -293,7 +465,7 @@
 
             <div class="footer-bottom">
                 <p class="footer-legal">Copyright 2026 Chiang Mai Ambassador. Published with care in Chiang Mai, Thailand.</p>
-                <p class="footer-disclaimer">Information is provided in good faith. Always verify visa and legal information with official Thai government sources before making decisions. <a href="../pages/privacy.html">Privacy</a> · <a href="../pages/terms.html">Terms</a> · <a href="#">Contact</a></p>
+                <p class="footer-disclaimer">Information is provided in good faith. Always verify visa and legal information with official Thai government sources before making decisions. <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="disclaimer.html">Disclaimer</a></p>
             </div>
         </div>
     </footer>
