@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMagneticElements()
     initProgressBar()
     initNumberCountUp()
-    randomizePageFloats()
+    initPageLanterns()
 })
 
 // Utility: Check device type
@@ -87,9 +87,33 @@ function initMagneticElements() {
     })
 }
 
-// NAVIGATION: Fixed at top, always visible
+// NAVIGATION: Fixed at top, always visible + dropdown menus
 function initNavigation() {
-    // Nav is positioned fixed at top via CSS, no scroll behavior needed
+    const dropdowns = document.querySelectorAll('.nav-dropdown')
+
+    dropdowns.forEach(dropdown => {
+        let closeTimer = null
+
+        dropdown.addEventListener('mouseenter', () => {
+            clearTimeout(closeTimer)
+            // Close all other dropdowns immediately
+            dropdowns.forEach(d => { if (d !== dropdown) d.classList.remove('open') })
+            dropdown.classList.add('open')
+        })
+
+        dropdown.addEventListener('mouseleave', () => {
+            closeTimer = setTimeout(() => {
+                dropdown.classList.remove('open')
+            }, 120)
+        })
+    })
+
+    // Close all when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.nav-dropdown')) {
+            dropdowns.forEach(d => d.classList.remove('open'))
+        }
+    })
 }
 
 // PROGRESS BAR: Track scroll position
@@ -157,22 +181,59 @@ function animateCountUp(element, finalValue) {
     requestAnimationFrame(animate)
 }
 
-// RANDOMIZE: Page-wide floating lanterns get random positions and delays
-function randomizePageFloats() {
-    const pageFloats = document.querySelectorAll('.page-float')
+// PAGE LANTERNS: Spawn batches of 4 every 20 seconds, rising to hero bottom
+function initPageLanterns() {
+    spawnLanternBatch()
+    setInterval(spawnLanternBatch, 20000)
+}
 
-    pageFloats.forEach((el, index) => {
-        const randomLeft = Math.random() * 85 + 5
-        const randomDelay = Math.random() * 4
-        const randomDuration = 14 + Math.random() * 2
+function spawnLanternBatch() {
+    const main = document.querySelector('main')
+    const hero = document.querySelector('.hero-split')
+    if (!main || !hero) return
 
-        el.style.left = randomLeft + '%'
-        el.style.setProperty('--animation-delay', randomDelay + 's')
-        el.style.setProperty('--animation-duration', randomDuration + 's')
+    // Target = bottom of main minus bottom of hero = where hero ends, relative to main bottom
+    const targetBottom = main.offsetHeight - (hero.offsetTop + hero.offsetHeight)
 
-        const animationString = `float-page linear ${randomDuration}s infinite, sway-page-${(index % 3) + 1} ${5 + Math.random() * 1.5}s ease-in-out infinite`
-        el.style.animation = animationString
-        el.style.animationDelay = randomDelay + 's'
+    const sizes = [
+        { w: 22, h: 30 },
+        { w: 24, h: 32 },
+        { w: 23, h: 31 },
+        { w: 25, h: 33 }
+    ]
+
+    sizes.forEach((size, i) => {
+        const el = document.createElement('div')
+        el.className = 'page-float'
+        el.style.width = size.w + 'px'
+        el.style.height = size.h + 'px'
+        el.style.left = (Math.random() * 85 + 5) + '%'
+        el.style.bottom = '-100px'
+        el.style.animation = 'none'
+
+        main.appendChild(el)
+
+        const duration = (70 + Math.random() * 10) * 1000
+        const delay = i * (800 + Math.random() * 1500)
+        const swayX = Math.random() * 40 - 20
+        const totalRise = targetBottom + 100
+
+        const keyframes = [
+            { opacity: 0,   transform: `translateX(0px) translateY(0px)` },
+            { opacity: 0.6, transform: `translateX(${swayX * 0.2}px) translateY(-${totalRise * 0.06}px)`, offset: 0.06 },
+            { opacity: 0.6, transform: `translateX(${swayX}px) translateY(-${totalRise * 0.5}px)`,        offset: 0.5  },
+            { opacity: 0.6, transform: `translateX(${swayX * 0.4}px) translateY(-${totalRise * 0.9}px)`,  offset: 0.9  },
+            { opacity: 0,   transform: `translateX(0px) translateY(-${totalRise}px)` }
+        ]
+
+        const anim = el.animate(keyframes, {
+            duration,
+            delay,
+            easing: 'linear',
+            fill: 'none'
+        })
+
+        anim.onfinish = () => el.remove()
     })
 }
 

@@ -22,6 +22,10 @@ body {
     min-height: 100vh;
 }
 
+main {
+    position: relative;
+}
+
 h1, h2, h3, h4 {
     font-family: var(--font-heading);
     color: var(--color-ink);

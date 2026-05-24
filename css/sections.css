@@ -7,7 +7,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.25rem 40px;
+    padding: 0 40px;
+    height: 70px;
     background: linear-gradient(180deg, #1a2a4a 0%, #0F172A 100%);
     position: fixed;
     top: 0;
@@ -18,6 +19,7 @@
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
+    overflow: visible;
 }
 
 .logo-link {
@@ -25,6 +27,8 @@
     align-items: center;
     text-decoration: none;
     transition: opacity var(--transition-fast);
+    align-self: flex-end;
+    margin-bottom: -14px;
 }
 
 .logo-link:hover {
@@ -85,19 +89,137 @@
 
 .nav-links {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     align-items: center;
+    flex: 1;
+    justify-content: center;
+    padding: 0 2rem;
 }
 
 .nav-links a {
     color: #fff;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     transition: color var(--transition-fast);
+    white-space: nowrap;
+}
+
+.nav-links > a {
+    position: relative;
+}
+
+.nav-links > a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--color-primary);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease;
+}
+
+.nav-links > a:hover::after {
+    transform: scaleX(1);
 }
 
 .nav-links a:hover {
     color: var(--color-primary);
+}
+
+/* Dropdown Menu Styling */
+.nav-dropdown {
+    position: relative;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-dropdown-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color var(--transition-fast);
+    font-family: inherit;
+    position: relative;
+}
+
+.nav-dropdown-toggle::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--color-primary);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease;
+}
+
+.nav-dropdown:hover .nav-dropdown-toggle::after,
+.nav-dropdown.open .nav-dropdown-toggle::after {
+    transform: scaleX(1);
+}
+
+.nav-dropdown-toggle:hover {
+    color: var(--color-primary);
+}
+
+
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-6px);
+    background: linear-gradient(180deg, #1a2a4a 0%, #0F172A 100%);
+    border: 1px solid rgba(234, 179, 8, 0.2);
+    border-radius: 8px;
+    min-width: 500px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    column-count: 2;
+    column-gap: 1.5rem;
+    padding: 0.75rem 1.5rem;
+}
+
+.nav-dropdown.open .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+
+.nav-dropdown-menu a {
+    display: block;
+    padding: 0.5rem 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 400;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+    border-left: 3px solid transparent;
+    padding-left: 0;
+}
+
+.nav-dropdown-menu a:hover {
+    background-color: rgba(234, 179, 8, 0.1);
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
 }
 
 /* Eyebrow / Label */
@@ -683,7 +805,7 @@
         font-size: 0.9rem;
     }
 
-    .nav-links .btn-primary {
+    .nav-wrapper > .btn-primary {
         padding: 8px 16px;
         font-size: 0.85rem;
     }
