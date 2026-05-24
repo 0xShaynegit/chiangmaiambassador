@@ -37,6 +37,11 @@ npm-debug.log*
 *.md
 MD/
 
+# Python and config files
+*.py
+*.jsonc
+_redirects
+
 # OS cache
 .cache/
 __pycache__/
