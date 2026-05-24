@@ -47,3 +47,7 @@ __pycache__/
 
 # Claude Code project files
 claude.*
+
+# Template files in any directory
+**/template.html
+template.html
