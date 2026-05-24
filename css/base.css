@@ -64,3 +64,10 @@ a {
     margin-bottom: 1.5rem;
     border-radius: var(--radius-sm);
 }
+
+/* Image Sizing */
+img {
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}
