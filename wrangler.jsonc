@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+
+  "name": "chiangmaiambassador",
+  "compatibility_date": "2026-05-24",
+
+  "assets": {
+    "directory": "./"
+  }
+}

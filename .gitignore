@@ -39,7 +39,6 @@ MD/
 
 # Python and config files
 *.py
-*.jsonc
 _redirects
 
 # OS cache
