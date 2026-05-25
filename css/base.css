@@ -35,8 +35,16 @@ h1, h2, h3, h4 {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #0066CC;
     transition: var(--transition-fast);
+}
+
+a:visited {
+    color: #0066CC;
+}
+
+a:hover {
+    color: #0052A3;
 }
 
 .container {

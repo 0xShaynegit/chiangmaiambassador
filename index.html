@@ -21,6 +21,21 @@
     <link rel="preload" href="fonts/plus-jakarta-400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/plus-jakarta-500.woff2" as="font" type="font/woff2" crossorigin>
 
+    <style>
+        /* Home page: links stay gold */
+        a {
+            color: var(--color-primary);
+        }
+
+        a:visited {
+            color: var(--color-primary);
+        }
+
+        a:hover {
+            color: var(--color-secondary);
+        }
+    </style>
+
     <script>
         function randomizeLanterns() {
             const ranges = [

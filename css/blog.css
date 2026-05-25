@@ -133,12 +133,12 @@
 }
 
 .blog-body a {
-    color: var(--color-primary);
+    color: #0066CC;
     text-decoration: underline;
 }
 
 .blog-body a:hover {
-    color: var(--color-secondary);
+    color: #0052A3;
 }
 
 /* BLOG FIGURES */
