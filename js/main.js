@@ -263,10 +263,12 @@ function spawnLanternBatch() {
 
         main.appendChild(el)
 
-        const duration = (70 + Math.random() * 10) * 1000
+        const totalRise = targetBottom + 100
+        // Target ~16px/s with 5-10% variation between lanterns so all float slowly
+        const baseDuration = totalRise / 16
+        const duration = baseDuration * (0.95 + Math.random() * 0.1) * 1000
         const delay = i * (800 + Math.random() * 1500)
         const swayX = Math.random() * 40 - 20
-        const totalRise = targetBottom + 100
 
         const keyframes = [
             { opacity: 0,   transform: `translateX(0px) translateY(0px)` },
