@@ -474,8 +474,7 @@
         bottom: -100px;
         opacity: 0;
     }
-    8% {
-        bottom: 20vh;
+    5% {
         opacity: 0.3;
     }
     25% {
@@ -500,102 +499,22 @@
     }
 }
 
-.page-float-1 {
-    width: 24px;
-    height: 30px;
-    animation: float-page linear 120s infinite;
-    animation-delay: 0s;
-    --glow: rgba(234, 179, 8, 0.3);
-}
-
-.page-float-2 {
-    width: 20px;
-    height: 26px;
-    animation: float-page linear 120s infinite;
-    animation-delay: 0s;
-    --glow: rgba(234, 179, 8, 0.3);
-}
-
-.page-float-3 {
-    width: 22px;
-    height: 28px;
-    animation: float-page linear 120s infinite;
-    animation-delay: 4s;
-    --glow: rgba(234, 179, 8, 0.3);
-}
-
-.page-float-4 {
-    width: 26px;
-    height: 32px;
-    animation: float-page linear 120s infinite;
-    animation-delay: 4s;
-    --glow: rgba(234, 179, 8, 0.3);
-}
-
-/* Footer Set (1-4) */
-.floating-lantern-1 {
-    width: 24px;
-    height: 30px;
-    animation: float-page linear 120s infinite;
-    animation-delay: 0s;
-    --glow: rgba(234, 179, 8, 0.3);
-}
-
-.floating-lantern-2 {
-    width: 20px;
-    height: 26px;
-    animation: float-page linear 120s infinite;
-    animation-delay: 0s;
-    --glow: rgba(234, 179, 8, 0.3);
-}
-
-.floating-lantern-3 {
-    width: 22px;
-    height: 28px;
-    animation: float-page linear 120s infinite;
-    animation-delay: 4s;
-    --glow: rgba(234, 179, 8, 0.3);
-}
-
-.floating-lantern-4 {
-    width: 26px;
-    height: 32px;
-    animation: float-page linear 120s infinite;
-    animation-delay: 4s;
-    --glow: rgba(234, 179, 8, 0.3);
-}
-
-/* Tools Section Set (5-8) */
-.floating-lantern-5 {
-    width: 24px;
-    height: 30px;
-    animation: float-page linear 120s infinite;
-    animation-delay: 0s;
-    --glow: rgba(234, 179, 8, 0.3);
-}
-
-.floating-lantern-6 {
-    width: 20px;
-    height: 26px;
-    animation: float-page linear 120s infinite;
-    animation-delay: 0s;
-    --glow: rgba(234, 179, 8, 0.3);
-}
-
-.floating-lantern-7 {
-    width: 22px;
-    height: 28px;
-    animation: float-page linear 120s infinite;
-    animation-delay: 4s;
-    --glow: rgba(234, 179, 8, 0.3);
-}
-
+/* Numbered HTML lanterns: CSS animation disabled. JS spawner handles all movement. */
+.page-float-1,
+.page-float-2,
+.page-float-3,
+.page-float-4,
+.floating-lantern-1,
+.floating-lantern-2,
+.floating-lantern-3,
+.floating-lantern-4,
+.floating-lantern-5,
+.floating-lantern-6,
+.floating-lantern-7,
 .floating-lantern-8 {
-    width: 26px;
-    height: 32px;
-    animation: float-page linear 120s infinite;
-    animation-delay: 4s;
-    --glow: rgba(234, 179, 8, 0.3);
+    animation: none !important;
+    opacity: 0 !important;
+    pointer-events: none;
 }
 
 @keyframes sway-page-1 {
