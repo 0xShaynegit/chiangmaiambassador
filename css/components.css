@@ -340,7 +340,7 @@
     width: 31px;
     height: 43px;
     left: 8%;
-    animation: float-up linear 58s infinite, sway-1 3.2s linear infinite;
+    animation: float-up linear 83s infinite, sway-1 3.2s linear infinite;
     animation-delay: 0s, 0s;
     --glow: rgba(234, 179, 8, 0.45);
 }
@@ -349,7 +349,7 @@
     width: 35px;
     height: 40px;
     left: 22%;
-    animation: float-up linear 62s infinite, sway-2 4.1s linear infinite;
+    animation: float-up linear 89s infinite, sway-2 4.1s linear infinite;
     animation-delay: 8s, 8s;
     --glow: rgba(234, 179, 8, 0.52);
 }
@@ -358,7 +358,7 @@
     width: 39px;
     height: 37px;
     left: 42%;
-    animation: float-up linear 55s infinite, sway-3 4.8s linear infinite;
+    animation: float-up linear 79s infinite, sway-3 4.8s linear infinite;
     animation-delay: 16s, 16s;
     --glow: rgba(234, 179, 8, 0.58);
 }
@@ -367,7 +367,7 @@
     width: 43px;
     height: 35px;
     left: 64%;
-    animation: float-up linear 60s infinite, sway-4 4.4s linear infinite;
+    animation: float-up linear 86s infinite, sway-4 4.4s linear infinite;
     animation-delay: 24s, 24s;
     --glow: rgba(234, 179, 8, 0.55);
 }
@@ -376,7 +376,7 @@
     width: 46px;
     height: 34px;
     left: 80%;
-    animation: float-up linear 64s infinite, sway-5 5.2s linear infinite;
+    animation: float-up linear 92s infinite, sway-5 5.2s linear infinite;
     animation-delay: 32s, 32s;
     --glow: rgba(234, 179, 8, 0.60);
 }

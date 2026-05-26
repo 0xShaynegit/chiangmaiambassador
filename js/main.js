@@ -264,8 +264,8 @@ function spawnLanternBatch() {
         main.appendChild(el)
 
         const totalRise = targetBottom + 100
-        // Target ~16px/s with 5-10% variation between lanterns so all float slowly
-        const baseDuration = totalRise / 16
+        // Target ~11px/s with 5-10% variation between lanterns so all float slowly
+        const baseDuration = totalRise / 11
         const duration = baseDuration * (0.95 + Math.random() * 0.1) * 1000
         const delay = i * (800 + Math.random() * 1500)
         const swayX = Math.random() * 40 - 20
