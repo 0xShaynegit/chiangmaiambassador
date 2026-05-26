@@ -830,11 +830,20 @@
         grid-template-columns: 1fr;
         gap: 40px;
         min-height: auto;
-        padding: 60px 0;
+        padding: 100px 0 60px;
+        overflow: hidden;
+    }
+
+    .hero-content {
+        padding-left: 24px;
+        padding-right: 24px;
+        transform: none;
     }
 
     .hero-visual-frame {
         min-height: 400px;
+        padding-right: 0;
+        transform: none;
     }
 
     .hero-visual-frame img {
@@ -908,7 +917,12 @@
     .hero-split {
         grid-template-columns: 1fr;
         gap: 30px;
-        padding: 40px 0;
+        padding: 90px 0 40px;
+    }
+
+    .hero-content {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .hero-content h1 {
@@ -920,7 +934,7 @@
     }
 
     .hero-visual-frame img {
-        height: 300px;
+        height: 260px;
     }
 
     .floating-stat {
