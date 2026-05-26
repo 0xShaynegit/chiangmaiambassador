@@ -319,29 +319,63 @@
         0 0 40px rgba(234, 179, 8, 0.2);
 }
 
-@keyframes float-up {
-    0% {
-        transform: translateY(60px);
-        opacity: 0;
-    }
-    5% {
-        opacity: 0.6;
-    }
-    95% {
-        opacity: 0.6;
-    }
-    100% {
-        transform: translateY(-100vh);
-        opacity: 0;
-    }
+/* Combined rise+sway keyframes per lantern — avoids transform property conflict */
+@keyframes float-rise-1 {
+    0%   { transform: translate(0px, 60px);    opacity: 0; }
+    5%   { opacity: 0.6; }
+    25%  { transform: translate(8px, -25vh); }
+    50%  { transform: translate(0px, -50vh); }
+    75%  { transform: translate(-8px, -75vh); }
+    95%  { opacity: 0.6; }
+    100% { transform: translate(0px, -100vh);  opacity: 0; }
+}
+
+@keyframes float-rise-2 {
+    0%   { transform: translate(0px, 60px);    opacity: 0; }
+    5%   { opacity: 0.6; }
+    25%  { transform: translate(-12px, -25vh); }
+    50%  { transform: translate(0px, -50vh); }
+    75%  { transform: translate(12px, -75vh); }
+    95%  { opacity: 0.6; }
+    100% { transform: translate(0px, -100vh);  opacity: 0; }
+}
+
+@keyframes float-rise-3 {
+    0%   { transform: translate(0px, 60px);    opacity: 0; }
+    5%   { opacity: 0.6; }
+    25%  { transform: translate(15px, -25vh); }
+    50%  { transform: translate(0px, -50vh); }
+    75%  { transform: translate(-15px, -75vh); }
+    95%  { opacity: 0.6; }
+    100% { transform: translate(0px, -100vh);  opacity: 0; }
+}
+
+@keyframes float-rise-4 {
+    0%   { transform: translate(0px, 60px);    opacity: 0; }
+    5%   { opacity: 0.6; }
+    25%  { transform: translate(-18px, -25vh); }
+    50%  { transform: translate(0px, -50vh); }
+    75%  { transform: translate(18px, -75vh); }
+    95%  { opacity: 0.6; }
+    100% { transform: translate(0px, -100vh);  opacity: 0; }
+}
+
+@keyframes float-rise-5 {
+    0%   { transform: translate(0px, 60px);    opacity: 0; }
+    5%   { opacity: 0.6; }
+    25%  { transform: translate(12px, -25vh); }
+    50%  { transform: translate(0px, -50vh); }
+    75%  { transform: translate(-12px, -75vh); }
+    95%  { opacity: 0.6; }
+    100% { transform: translate(0px, -100vh);  opacity: 0; }
 }
 
 .float-1 {
     width: 31px;
     height: 43px;
     left: 8%;
-    animation: float-up linear 83s infinite, sway-1 3.2s linear infinite;
-    animation-delay: 0s, 0s;
+    animation: float-rise-1 linear 83s infinite;
+    animation-delay: 0s;
     --glow: rgba(234, 179, 8, 0.45);
 }
 
@@ -349,8 +383,8 @@
     width: 35px;
     height: 40px;
     left: 22%;
-    animation: float-up linear 89s infinite, sway-2 4.1s linear infinite;
-    animation-delay: 8s, 8s;
+    animation: float-rise-2 linear 89s infinite;
+    animation-delay: 8s;
     --glow: rgba(234, 179, 8, 0.52);
 }
 
@@ -358,8 +392,8 @@
     width: 39px;
     height: 37px;
     left: 42%;
-    animation: float-up linear 79s infinite, sway-3 4.8s linear infinite;
-    animation-delay: 16s, 16s;
+    animation: float-rise-3 linear 79s infinite;
+    animation-delay: 16s;
     --glow: rgba(234, 179, 8, 0.58);
 }
 
@@ -367,8 +401,8 @@
     width: 43px;
     height: 35px;
     left: 64%;
-    animation: float-up linear 86s infinite, sway-4 4.4s linear infinite;
-    animation-delay: 24s, 24s;
+    animation: float-rise-4 linear 86s infinite;
+    animation-delay: 24s;
     --glow: rgba(234, 179, 8, 0.55);
 }
 
@@ -376,34 +410,9 @@
     width: 46px;
     height: 34px;
     left: 80%;
-    animation: float-up linear 92s infinite, sway-5 5.2s linear infinite;
-    animation-delay: 32s, 32s;
+    animation: float-rise-5 linear 92s infinite;
+    animation-delay: 32s;
     --glow: rgba(234, 179, 8, 0.60);
-}
-
-@keyframes sway-1 {
-    0%, 100% { transform: translateX(0px); }
-    50% { transform: translateX(8px); }
-}
-
-@keyframes sway-2 {
-    0%, 100% { transform: translateX(0px); }
-    50% { transform: translateX(-12px); }
-}
-
-@keyframes sway-3 {
-    0%, 100% { transform: translateX(0px); }
-    50% { transform: translateX(15px); }
-}
-
-@keyframes sway-4 {
-    0%, 100% { transform: translateX(0px); }
-    50% { transform: translateX(-18px); }
-}
-
-@keyframes sway-5 {
-    0%, 100% { transform: translateX(0px); }
-    50% { transform: translateX(12px); }
 }
 
 /* Page-Wide Floating Lanterns */
