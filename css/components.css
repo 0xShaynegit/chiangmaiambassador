@@ -418,6 +418,7 @@
     will-change: bottom, opacity;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: 50%;
 }
 
 .page-float::before {
@@ -448,6 +449,7 @@
     will-change: bottom, opacity;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: 50%;
 }
 
 .floating-lantern::before {
@@ -472,8 +474,8 @@
         bottom: -100px;
         opacity: 0;
     }
-    5% {
-        bottom: 35vh;
+    8% {
+        bottom: 20vh;
         opacity: 0.3;
     }
     25% {
@@ -500,31 +502,31 @@
 
 .page-float-1 {
     width: 24px;
-    height: 32px;
-    animation: float-page linear 120s infinite;
-    animation-delay: 0s;
-    --glow: rgba(234, 179, 8, 0.3);
-}
-
-.page-float-2 {
-    width: 22px;
     height: 30px;
     animation: float-page linear 120s infinite;
     animation-delay: 0s;
     --glow: rgba(234, 179, 8, 0.3);
 }
 
+.page-float-2 {
+    width: 20px;
+    height: 26px;
+    animation: float-page linear 120s infinite;
+    animation-delay: 0s;
+    --glow: rgba(234, 179, 8, 0.3);
+}
+
 .page-float-3 {
-    width: 23px;
-    height: 31px;
+    width: 22px;
+    height: 28px;
     animation: float-page linear 120s infinite;
     animation-delay: 4s;
     --glow: rgba(234, 179, 8, 0.3);
 }
 
 .page-float-4 {
-    width: 25px;
-    height: 33px;
+    width: 26px;
+    height: 32px;
     animation: float-page linear 120s infinite;
     animation-delay: 4s;
     --glow: rgba(234, 179, 8, 0.3);
@@ -533,31 +535,31 @@
 /* Footer Set (1-4) */
 .floating-lantern-1 {
     width: 24px;
-    height: 32px;
-    animation: float-page linear 120s infinite;
-    animation-delay: 0s;
-    --glow: rgba(234, 179, 8, 0.3);
-}
-
-.floating-lantern-2 {
-    width: 22px;
     height: 30px;
     animation: float-page linear 120s infinite;
     animation-delay: 0s;
     --glow: rgba(234, 179, 8, 0.3);
 }
 
+.floating-lantern-2 {
+    width: 20px;
+    height: 26px;
+    animation: float-page linear 120s infinite;
+    animation-delay: 0s;
+    --glow: rgba(234, 179, 8, 0.3);
+}
+
 .floating-lantern-3 {
-    width: 23px;
-    height: 31px;
+    width: 22px;
+    height: 28px;
     animation: float-page linear 120s infinite;
     animation-delay: 4s;
     --glow: rgba(234, 179, 8, 0.3);
 }
 
 .floating-lantern-4 {
-    width: 25px;
-    height: 33px;
+    width: 26px;
+    height: 32px;
     animation: float-page linear 120s infinite;
     animation-delay: 4s;
     --glow: rgba(234, 179, 8, 0.3);
@@ -566,31 +568,31 @@
 /* Tools Section Set (5-8) */
 .floating-lantern-5 {
     width: 24px;
-    height: 32px;
-    animation: float-page linear 120s infinite;
-    animation-delay: 0s;
-    --glow: rgba(234, 179, 8, 0.3);
-}
-
-.floating-lantern-6 {
-    width: 22px;
     height: 30px;
     animation: float-page linear 120s infinite;
     animation-delay: 0s;
     --glow: rgba(234, 179, 8, 0.3);
 }
 
+.floating-lantern-6 {
+    width: 20px;
+    height: 26px;
+    animation: float-page linear 120s infinite;
+    animation-delay: 0s;
+    --glow: rgba(234, 179, 8, 0.3);
+}
+
 .floating-lantern-7 {
-    width: 23px;
-    height: 31px;
+    width: 22px;
+    height: 28px;
     animation: float-page linear 120s infinite;
     animation-delay: 4s;
     --glow: rgba(234, 179, 8, 0.3);
 }
 
 .floating-lantern-8 {
-    width: 25px;
-    height: 33px;
+    width: 26px;
+    height: 32px;
     animation: float-page linear 120s infinite;
     animation-delay: 4s;
     --glow: rgba(234, 179, 8, 0.3);

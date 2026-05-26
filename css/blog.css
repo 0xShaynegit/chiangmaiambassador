@@ -105,6 +105,27 @@
     .blog-sidebar {
         gap: 1.5rem;
     }
+
+    /* Float images stack on mobile */
+    .img-right-small,
+    .img-left-large,
+    .img-float-right-small,
+    figure.img-right-small {
+        float: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 1rem 0 !important;
+        position: static !important;
+    }
+
+    .blog-body {
+        overflow-x: hidden;
+    }
+
+    .article-sidebar {
+        width: 100% !important;
+        margin-right: 0 !important;
+    }
 }
 
 /* BLOG BODY: Editorial typography */

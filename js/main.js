@@ -89,28 +89,75 @@ function initMagneticElements() {
 
 // NAVIGATION: Fixed at top, always visible + dropdown menus
 function initNavigation() {
+    const nav = document.querySelector('.nav-wrapper')
+    const navLinks = document.querySelector('.nav-links')
     const dropdowns = document.querySelectorAll('.nav-dropdown')
 
+    // Inject hamburger button
+    if (nav && navLinks) {
+        const hamburger = document.createElement('button')
+        hamburger.className = 'nav-hamburger'
+        hamburger.setAttribute('aria-label', 'Toggle menu')
+        hamburger.innerHTML = '<span></span><span></span><span></span>'
+        nav.appendChild(hamburger)
+
+        hamburger.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('mobile-open')
+            hamburger.classList.toggle('open', isOpen)
+            document.body.style.overflow = isOpen ? 'hidden' : ''
+        })
+
+        // Close menu when a nav link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('mobile-open')
+                hamburger.classList.remove('open')
+                document.body.style.overflow = ''
+            })
+        })
+
+        // Close on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-wrapper')) {
+                navLinks.classList.remove('mobile-open')
+                hamburger.classList.remove('open')
+                document.body.style.overflow = ''
+            }
+        })
+    }
+
+    // Desktop dropdown hover
     dropdowns.forEach(dropdown => {
         let closeTimer = null
 
         dropdown.addEventListener('mouseenter', () => {
-            clearTimeout(closeTimer)
-            // Close all other dropdowns immediately
-            dropdowns.forEach(d => { if (d !== dropdown) d.classList.remove('open') })
-            dropdown.classList.add('open')
+            if (window.innerWidth > 640) {
+                clearTimeout(closeTimer)
+                dropdowns.forEach(d => { if (d !== dropdown) d.classList.remove('open') })
+                dropdown.classList.add('open')
+            }
         })
 
         dropdown.addEventListener('mouseleave', () => {
-            closeTimer = setTimeout(() => {
-                dropdown.classList.remove('open')
-            }, 120)
+            if (window.innerWidth > 640) {
+                closeTimer = setTimeout(() => dropdown.classList.remove('open'), 120)
+            }
         })
+
+        // Mobile: tap toggle
+        const toggle = dropdown.querySelector('.nav-dropdown-toggle')
+        if (toggle) {
+            toggle.addEventListener('click', (e) => {
+                if (window.innerWidth <= 640) {
+                    e.preventDefault()
+                    dropdown.classList.toggle('open')
+                }
+            })
+        }
     })
 
-    // Close all when clicking outside
     document.addEventListener('click', (e) => {
-        if (!e.target.closest('.nav-dropdown')) {
+        if (!e.target.closest('.nav-dropdown') && window.innerWidth > 640) {
             dropdowns.forEach(d => d.classList.remove('open'))
         }
     })
@@ -195,12 +242,14 @@ function spawnLanternBatch() {
     // Target = bottom of main minus bottom of hero = where hero ends, relative to main bottom
     const targetBottom = main.offsetHeight - (hero.offsetTop + hero.offsetHeight)
 
-    const sizes = [
-        { w: 22, h: 30 },
-        { w: 24, h: 32 },
-        { w: 23, h: 31 },
-        { w: 25, h: 33 }
+    const isMobile = window.innerWidth < 768
+    const allSizes = [
+        { w: 20, h: 26 },
+        { w: 24, h: 30 },
+        { w: 22, h: 28 },
+        { w: 26, h: 32 }
     ]
+    const sizes = isMobile ? allSizes.slice(0, 2) : allSizes
 
     sizes.forEach((size, i) => {
         const el = document.createElement('div')

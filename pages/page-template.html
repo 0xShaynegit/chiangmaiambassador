@@ -3,237 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Everything you need to know about living in Chiang Mai as an expat. Visas, housing, costs, social life, and how to make the move work long-term.">
+    <!-- EDIT: Meta description (155 chars max, value prop focused) -->
+    <meta name="description" content="">
     <meta name="robots" content="index, follow">
-    <title>Live in Chiang Mai | Complete Expat Living Guide 2026</title>
+    <!-- EDIT: Page title (60 chars max, keyword first) -->
+    <title></title>
 
     <link rel="stylesheet" href="../css/tokens.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/sections.css">
     <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/blog.css">
 
     <link rel="preload" href="../fonts/outfit-600.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/outfit-800.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/plus-jakarta-400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/plus-jakarta-500.woff2" as="font" type="font/woff2" crossorigin>
 
-    <style>
-        .blog-content {
-            background-color: white !important;
-            padding: 5rem 0 !important;
-        }
-        .blog-hero {
-            margin-top: 80px;
-        }
-        .img-right-small {
-            float: right;
-            width: 25%;
-            margin: 0 0 1rem 1.5rem;
-            shape-margin: 1rem;
-        }
-        .img-left-large {
-            float: left;
-            width: 55%;
-            margin: 1rem 2rem 1rem -15%;
-            shape-margin: 1rem;
-            position: relative;
-            z-index: 1;
-        }
-        .img-left-large img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .img-fullwidth-break {
-            width: 100%;
-            max-width: 100%;
-            margin: 3rem 0 2rem 0;
-            display: block;
-        }
-        .img-fullwidth-break img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .img-float-right-small {
-            float: right;
-            width: 45%;
-            margin: 0 0 1.5rem 2rem;
-        }
-        figure {
-            margin: 0;
-        }
-        figcaption {
-            display: none;
-        }
-        .article-sidebar {
-            background: #f0d080;
-            padding: 2rem;
-            border-left: 4px solid var(--color-primary);
-            border-radius: 0;
-            margin: 2.5rem 0 3rem 0;
-            border: 1px solid #e5ddd0;
-        }
-        .article-sidebar h4 {
-            font-size: 1rem;
-            color: #1a1a1a;
-            margin: 0 0 1.25rem 0;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        .article-sidebar ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .article-sidebar li {
-            color: #0F172A;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 0.75rem;
-        }
-        .article-sidebar li:last-child {
-            margin-bottom: 0;
-        }
-        .blog-metadata {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-            padding: 2rem 0 2.5rem;
-            border-bottom: 1px solid #e5ddd0;
-            margin-bottom: 2rem;
-        }
-        .blog-meta-item {
-            display: flex;
-            flex-direction: column;
-            gap: 0.25rem;
-        }
-        .blog-meta-label {
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: #999;
-        }
-        .blog-meta-value {
-            font-size: 0.95rem;
-            color: #0F172A;
-            font-weight: 500;
-        }
-        .blog-meta-divider {
-            width: 1px;
-            height: 24px;
-            background: #e5ddd0;
-        }
-        .blog-options {
-            display: flex;
-            gap: 0.75rem;
-            margin-left: auto;
-        }
-        .blog-body h2 {
-            font-size: 1.875rem;
-            color: #1a1a1a;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        .blog-body h3 {
-            font-size: 1.25rem;
-            color: #1a1a1a;
-            margin-top: 1.75rem;
-            margin-bottom: 0.75rem;
-        }
-        .blog-body p {
-            font-size: 1rem;
-            color: #0F172A;
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-        .blog-body strong {
-            font-weight: 600;
-            color: #1a1a1a;
-        }
-        .blog-body img {
-            max-width: 100%;
-            height: auto;
-        }
-        .blog-body .alignright {
-            float: right;
-            margin: 0 0 1rem 2rem;
-            max-width: 40%;
-        }
-        .blog-body .alignleft {
-            float: left;
-            margin: 0 2rem 1rem 0;
-            max-width: 40%;
-        }
-        .blog-body .aligncenter {
-            display: block;
-            margin: 2rem auto;
-        }
-        .key-takeaways {
-            background: #f0d080;
-            padding: 2rem;
-            border-radius: 0;
-            margin: 3rem 0;
-            border: 1px solid #e5ddd0;
-        }
-        .key-takeaways h3 {
-            margin-top: 0;
-            color: #1a1a1a;
-        }
-        .key-takeaways p {
-            color: #0F172A;
-        }
-        .blog-related {
-            background: transparent;
-            padding: 4rem 0 !important;
-        }
-        .blog-related h2 {
-            color: white;
-        }
-        .blog-card {
-            background-color: var(--color-surface) !important;
-        }
-        @media (max-width: 768px) {
-            .img-right-small,
-            .img-left-large,
-            .img-float-right-small,
-            .blog-body .alignright,
-            .blog-body .alignleft {
-                float: none;
-                width: 100%;
-                max-width: 100%;
-                margin: 1.5rem 0;
-            }
-            .article-sidebar {
-                margin: 2rem 0;
-            }
-        }
-    </style>
+    <!-- EDIT: Canonical URL (production domain only) -->
+    <link rel="canonical" href="https://chiangmaiambassador.com/pages/[PAGE-SLUG]/">
 
-    <link rel="canonical" href="https://chiangmaiambassador.com/lifestyle/live-in-chiang-mai/">
-
-    <meta property="og:title" content="Live in Chiang Mai | Complete Expat Living Guide 2026">
-    <meta property="og:description" content="Everything you need to know about living in Chiang Mai as an expat. Visas, housing, costs, social life, and how to make the move work long-term.">
+    <!-- EDIT: OG tags (same title/description as meta tags above) -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://chiangmaiambassador.com/lifestyle/live-in-chiang-mai/">
+    <meta property="og:url" content="https://chiangmaiambassador.com/pages/[PAGE-SLUG]/">
     <meta property="og:image" content="https://chiangmaiambassador.com/images/og-image.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
+    <!-- EDIT: Twitter tags (same as OG) -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Live in Chiang Mai | Complete Expat Living Guide 2026">
-    <meta name="twitter:description" content="Everything you need to know about living in Chiang Mai as an expat. Visas, housing, costs, social life, and how to make the move work long-term.">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://chiangmaiambassador.com/images/og-image.webp">
+
+    <style>
+        .article-sidebar { background: #f0d080; padding: 2rem; border-left: 4px solid var(--color-primary); border-radius: 0; margin: 2.5rem 0 3rem 0; border: 1px solid #e5ddd0; }
+        .article-sidebar h4 { font-size: 1rem; color: #1a1a1a; margin: 0 0 1.25rem 0; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+        .article-sidebar ul { list-style: none; padding: 0; margin: 0; }
+        .article-sidebar li { color: #0F172A; font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.75rem; }
+        .article-sidebar li:last-child { margin-bottom: 0; }
+    </style>
+
+    <!-- EDIT: JSON-LD Schema. Choose from: Article, HowTo, BlogPosting, FAQPage, BreadcrumbList -->
+    <!-- Reference: check template library for schema pattern matching this page type -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Live in Chiang Mai | Complete Expat Living Guide 2026",
-        "description": "Everything you need to know about living in Chiang Mai as an expat. Visas, housing, costs, social life, and how to make the move work long-term.",
-        "url": "https://chiangmaiambassador.com/lifestyle/live-in-chiang-mai/",
+        "headline": "",
+        "description": "",
+        "url": "https://chiangmaiambassador.com/pages/[PAGE-SLUG]/",
         "dateModified": "2026-05-25",
         "author": {
             "@type": "Organization",
@@ -248,10 +68,11 @@
     }
     </script>
 </head>
-<body style="margin: 0; padding: 0; width: 100%;">
+<body>
 
     <div class="progress-bar" id="progress-bar" aria-label="Reading progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
+    <!-- NAV BLOCK: Copy nav from any current page, adjust paths if in subdirectory -->
     <nav class="nav-wrapper">
         <a href="../" class="logo-link">
             <div class="logo">
@@ -328,7 +149,6 @@
                     <a href="../guides/chiang-mai-road-rules.html">Chiang Mai Road Rules</a>
                     <a href="../guides/flat-tire.html">Flat Tire</a>
                     <a href="../guides/license-plates.html">License Plates</a>
-                    <a href="../modern-transport-guide.html">Modern Transport Guide</a>
                     <a href="../guides/motorcycle-registration-transfer.html">Motorcycle Registration</a>
                     <a href="../guides/motorcycle-rentals.html">Motorcycle Rentals</a>
                     <a href="../motorbike-registration-chiang-mai.html">Motorbike Registration Renewal</a>
@@ -355,7 +175,6 @@
                     <a href="../lifestyle/internet.html">Internet in Thailand</a>
                     <a href="../lifestyle/learning-languages.html">Learning Languages</a>
                     <a href="../lifestyle/life-budget-chiang-mai.html">Life Budget Chiang Mai</a>
-                    <a href="../lifestyle/life-on-a-budget-in-chiang-mai-covid-2022-update.html">Life on a Budget (2022)</a>
                     <a href="../lifestyle/live-in-chiang-mai.html">Live in Chiang Mai</a>
                     <a href="../lifestyle/mobile-phones.html">Mobile Phones</a>
                     <a href="../lifestyle/smoky-season-chiang-mai.html">Smoky Season</a>
@@ -386,7 +205,6 @@
                     <a href="../visa/volunteer-visa.html">Volunteer Visa</a>
                     <a href="../visa/tourist-visa.html">Tourist Visa</a>
                     <a href="../visa/visa-exempt-vs-voa.html">Visa Exempt vs VOA</a>
-                    <a href="../visa-exempt-status-2026-returning-to-30-days.html">Visa Exempt 2026 Update</a>
                     <a href="../visa/border-run-strategy.html">Border Run Strategy</a>
                     <a href="../pages/visas.html">Visa Hub</a>
                 </div>
@@ -408,89 +226,148 @@
         <a href="../index.html#start" class="btn-primary magnetic-item">Start Here</a>
     </nav>
 
-    <main style="width: 100%; margin: 0 auto;">
+    <main>
+        <!-- Page-Wide Floating Lanterns -->
+        <div class="page-float page-float-1"></div>
+        <div class="page-float page-float-2"></div>
+        <div class="page-float page-float-3"></div>
 
-        <section class="blog-hero">
-            <div class="container" style="max-width: 960px; width: 100%; margin: 0 auto; padding: 0 2rem; box-sizing: border-box;">
-                <div class="blog-header reveal">
-                    <h1>Live in Chiang Mai, the most <span class="gold-gradient-text">amazing place to spend your time</span></h1>
-                    <p class="blog-excerpt">The whole thing about life is how to enjoy it to the full while working or doing whatever you have to do, that's why to live in Chiang Mai is so special.</p>
+        <!-- HERO SECTION: Hero split (left text + right image) -->
+        <section class="hero-split container" aria-labelledby="page-heading">
+            <div class="hero-content">
+                <!-- EDIT: Eyebrow (4-6 words, sets tone) -->
+                <span class="eyebrow reveal">Eyebrow text</span>
+                <!-- EDIT: Main heading (use gold-gradient-text span for emphasis word) -->
+                <h1 id="page-heading" class="reveal">Page headline with <span class="gold-gradient-text">emphasis word</span></h1>
+                <!-- EDIT: Hero paragraph (40-60 words, value prop only) -->
+                <p class="reveal">Subheading text. Value proposition in clear, direct language.</p>
+                <!-- EDIT: Hero CTAs (adjust href="#section" for local anchor or full URL for external) -->
+                <div class="hero-actions reveal">
+                    <a href="#main-content" class="btn-large-primary">Primary CTA</a>
+                    <a href="../index.html" class="btn-large-outline">Secondary CTA</a>
+                </div>
+            </div>
+
+            <!-- EDIT: Hero image (560x700 ratio, 280x210 for TL;DR thumbnail variant) -->
+            <div class="hero-visual-frame reveal">
+                <img src="../images/[SEMANTIC-FILENAME].webp" alt="Hero image description" width="560" height="700">
+                <!-- OPTIONAL: Floating stat box (remove if page doesn't need one) -->
+                <div class="floating-stat">
+                    <span class="stat-label">Stat Label</span>
+                    <div class="stat-value">
+                        <div>Value</div>
+                        <div class="stat-subtext">Subtext</div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <article class="blog-content" style="background-color: white; padding-top: 0.75rem !important;">
-            <div class="container" style="max-width: 960px; width: 100%; margin: 0 auto; padding: 0 2rem; box-sizing: border-box;">
-                <div class="blog-metadata reveal">
-                    <div class="blog-meta-item">
-                        <span class="blog-meta-label">Category</span>
-                        <span class="blog-meta-value"><a href="../">Home</a> / Real Estate</span>
-                    </div>
-                    <div class="blog-meta-divider"></div>
-                    <div class="blog-meta-item">
-                        <span class="blog-meta-label">Read time</span>
-                        <span class="blog-meta-value">3 min</span>
-                    </div>
-                    <div class="blog-meta-divider"></div>
-                    <div class="blog-meta-item">
-                        <span class="blog-meta-label">Last updated</span>
-                        <span class="blog-meta-value">May 2026</span>
-                    </div>
+        <section class="container" style="padding: 100px 0;">
+            <div style="max-width: 800px; margin: 0 auto;">
+
+                <!-- TL;DR SIDEBAR (Gold box with bullet points) -->
+                <div class="article-sidebar reveal" style="margin-bottom: 3rem;">
+                    <!-- EDIT: Optional TL;DR thumbnail (280x210, semantic filename) -->
+                    <figure class="img-right-small" style="margin-top: -30px; margin-bottom: 1rem; width: calc(100% - 400px); max-width: 280px;">
+                        <img src="../images/[SEMANTIC-FILENAME].webp" alt="Quick summary image" width="280" height="210" style="width:100%;height:auto;border-radius:8px;">
+                    </figure>
+                    <!-- LOCKED: Always "Quick Summary (TL;DR)" -->
+                    <h4>Quick Summary (TL;DR)</h4>
+                    <!-- EDIT: 3-5 bullet points (key insights for scanners) -->
+                    <ul>
+                        <li>First key point here.</li>
+                        <li>Second key point here.</li>
+                        <li>Third key point here.</li>
+                        <li>Fourth key point here (optional).</li>
+                    </ul>
                 </div>
 
-                <div class="blog-body">
+                <!-- PATHWAY HEADER (Intro section) -->
+                <article class="pathway-header reveal">
+                    <!-- EDIT: Main section heading (h2) -->
+                    <h2>Main Section Heading</h2>
+                    <!-- EDIT: Subheading (40-60 chars, value prop focus) -->
+                    <p style="font-size: 1.125rem; color: var(--color-text-main); max-width: 600px;">Section intro text explaining what's below.</p>
+                </article>
 
-                    <!-- TL;DR IMAGE + SUMMARY -->
-                    <figure class="img-right-small" style="margin-top: -30px; margin-bottom: 1rem; width: calc(100% - 400px); max-width: 280px;">
-                        <img src="../images/chiang-mai-ambassador-living.webp" alt="Live in Chiang Mai" width="280" height="210" loading="lazy">
-                    </figure>
-                    <div class="article-sidebar">
-                        <h4>Quick Summary</h4>
-                        <ul>
-                            <li>Live in Chiang Mai</li>
-                            <li>Chiang Mai is a fantastic place to visit, but to live in Chiang Mai is so much better.</li>
-                            <li>The lifestyle, Chiang Mai is know for being an easy going place with most of the modern creature comforts, just around the corner and everything else available, even a little bit further away.</li>
-                            <li>The weather in Chiang Mai is great most of the time, with usually a week of cold(10 degrees Celsius. 40-50s F), a month of smog(at an above average level) and the rest of the year being 30- high 30s Celcius and around 80s+ F), June to October are the rainy season with similar temperatures, but a lot more rain.</li>
-                            <li>The people of Chiang Mai are amazing, their willingness to look after and help you in anyway they can is legendary.</li>
-                            <li>There is a fantastic resource for people wanting to come and live here long term, it’s called LIVING IN CHIANG MAI .</li>
-                            <li>Personal services include airport welcome and orientation, real estate assistance and property viewings, insurance solutions, general networking and friendship groups as well as peace of mind.</li>
+                <!-- MAIN CONTENT AREA (800px max width, centered) -->
+                <div style="margin-top: 80px; max-width: 800px; margin-left: auto; margin-right: auto;">
+
+                    <!-- EDIT: Opening paragraph (why this page matters) -->
+                    <p class="reveal" style="font-size: 1.05rem; line-height: 1.8; color: var(--color-text-main); margin-bottom: 2rem;">
+                        Opening paragraph establishing context and reader relevance.
+                    </p>
+
+                    <!-- EDIT: Second paragraph (bridge to main content) -->
+                    <p class="reveal" style="font-size: 1.05rem; line-height: 1.8; color: var(--color-text-main); margin-bottom: 5rem;">
+                        Supporting paragraph building toward sections below.
+                    </p>
+
+                    <!-- MAIN SECTIONS: Use pattern below, repeat as needed -->
+                    <div id="main-content" style="display: grid; gap: 50px;">
+
+                        <!-- SECTION PATTERN: Gold border left + h3 + description + list -->
+                        <article class="reveal" style="border-left: 4px solid var(--color-primary); padding-left: 2rem;">
+                            <!-- EDIT: Section subheading (h3) -->
+                            <h3 style="margin-bottom: 0.5rem;">Section Heading One</h3>
+                            <!-- EDIT: Section descriptor (60 chars max) -->
+                            <p style="color: var(--color-text-muted); margin-bottom: 1.5rem;">Short description of section topic.</p>
+                            <!-- EDIT: Section body (200-400 words) -->
+                            <p style="color: var(--color-text-main); line-height: 1.8; margin-bottom: 1.5rem;">
+                                Main content paragraph explaining section topic with specific, actionable information.
+                            </p>
+                            <!-- EDIT: Bullet points (3-6 items) or remove ul if not needed -->
+                            <ul style="list-style: none; padding: 0; color: var(--color-text-muted); font-size: 0.95rem;">
+                                <li style="margin-bottom: 0.5rem;">Bullet point one</li>
+                                <li style="margin-bottom: 0.5rem;">Bullet point two</li>
+                                <li style="margin-bottom: 0.5rem;">Bullet point three</li>
+                            </ul>
+                        </article>
+
+                        <!-- Repeat above pattern for Section Two, Three, etc. -->
+                        <article class="reveal" style="border-left: 4px solid var(--color-primary); padding-left: 2rem;">
+                            <h3 style="margin-bottom: 0.5rem;">Section Heading Two</h3>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1.5rem;">Short description of section topic.</p>
+                            <p style="color: var(--color-text-main); line-height: 1.8; margin-bottom: 1.5rem;">
+                                Main content paragraph.
+                            </p>
+                            <ul style="list-style: none; padding: 0; color: var(--color-text-muted); font-size: 0.95rem;">
+                                <li style="margin-bottom: 0.5rem;">Bullet point one</li>
+                                <li style="margin-bottom: 0.5rem;">Bullet point two</li>
+                            </ul>
+                        </article>
+
+                    </div>
+
+                    <!-- CALLOUT BOX (Gold background, used for key insights) -->
+                    <div class="reveal" style="background: rgba(234, 179, 8, 0.08); padding: 2.5rem; border-left: 4px solid var(--color-primary); border-radius: 4px; margin: 5rem 0 4rem 0; border: 1px solid rgba(234, 179, 8, 0.2);">
+                        <!-- EDIT: Callout heading (h3) -->
+                        <h3 style="margin-top: 0; margin-bottom: 1.5rem;">Key Insight Heading</h3>
+                        <!-- EDIT: Callout body (100-200 words, highest value info) -->
+                        <p style="color: var(--color-text-main); margin-bottom: 2rem; line-height: 1.7;">Callout paragraph with key insight or actionable takeaway. This should be the most memorable point on the page.</p>
+                        <!-- EDIT: Callout bullets (3-5 items) or remove if not needed -->
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 1rem;"><strong>Bold item one.</strong> Supporting explanation</li>
+                            <li style="margin-bottom: 1rem;"><strong>Bold item two.</strong> Supporting explanation</li>
+                            <li><strong>Bold item three.</strong> Supporting explanation</li>
                         </ul>
                     </div>
 
-<div><h2>Live in Chiang Mai</h2><p>Chiang Mai is a fantastic place to visit, but to live in Chiang Mai is so much better. Why? Well there are just so many reasons -</p><p>The lifestyle, Chiang Mai is know for being an easy going place with most of the modern creature comforts, just around the corner and everything else available, even a little bit further away. In most cases, you do’t even need to leave your house if you don’t want to.</p><p>The weather in Chiang Mai is great most of the time, with usually a week of cold(10 degrees Celsius. 40-50s F), a month of smog(at an above average level) and the rest of the year being 30- high 30s Celcius and around 80s+ F), June to October are the rainy season with similar temperatures, but a lot more rain.</p><p>The people of Chiang Mai are amazing, their willingness to look after and help you in anyway they can is legendary. They love to host the world in Chiang Mai and make everyone feel most at home. Sometimes too much at home and the tourists just never want to leave. Yes, that’s probably why you are reading this. You have visited, but you don’t want to visit any more.</p><p>There is a fantastic resource for people wanting to come and live here long term, it’s called <a href="http://livinginchiangmai.com/" rel="noopener" target="_blank">LIVING IN CHIANG MAI</a> . Well that was easy! Or if you are looking to <a href="http://www.longstayhub.com/" rel="noopener" target="_blank">retire in Chiang Mai</a> is your best option.</p><p><a href="http://livinginchiangmai.com/" rel="noopener" target="_blank"></a> <a href="http://www.longstayhub.com/" rel="noopener" target="_blank"></a></p><p><strong><span>The team will take care of you!!!</span></strong></p><p>Personal services include airport welcome and orientation, real estate assistance and property viewings, insurance solutions, general networking and friendship groups as well as peace of mind.</p><p>You may have been to Chiang Mai previously, but our team will be able to assist you with all your Chiang Mai requirements to live in Chiang Mai successfully.</p></div><footer><div>
-<span>
-<span>
-Post Tags:		</span>
-<a href="#" rel="tag" title="Chiang Mai Ambassador"><span>#</span>Chiang Mai Ambassador</a> </span></div></footer></div>
+                    <!-- OPTIONAL: Additional section (if page needs more structure) -->
+                    <h3 class="reveal" style="margin-top: 4rem; margin-bottom: 2rem;">Additional Subheading</h3>
+                    <ul class="reveal" style="color: var(--color-text-main); line-height: 1.8; list-style-position: inside; padding-left: 0;">
+                        <li style="margin-bottom: 1.75rem;"><strong>First item.</strong> Explanation of item</li>
+                        <li style="margin-bottom: 1.75rem;"><strong>Second item.</strong> Explanation of item</li>
+                        <li style="margin-bottom: 1.75rem;"><strong>Third item.</strong> Explanation of item</li>
+                    </ul>
+
                 </div>
             </div>
-        </article>
-
-                <section class="blog-related container">
-            <h2>More from the Ambassador</h2>
-            <div class="blog-grid">
-                <article class="blog-card reveal">
-                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-23.webp" alt="Women's Prison Massage Chiang Mai" width="400" height="200">
-                    <h3>Women's Prison Massage Chiang Mai</h3>
-                    <p>The famous women's prison massage in Chiang Mai. Prices, what to expect, and how to get there.</p>
-                    <a href="../womens-prison-massage.html" class="arrow-link">Read more &rarr;</a>
-                </article>
-                <article class="blog-card reveal">
-                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-109.webp" alt="Chiang Mai Road Rules" width="400" height="200">
-                    <h3>Chiang Mai Road Rules</h3>
-                    <p>Traffic laws, road rules, and practical driving knowledge for Chiang Mai.</p>
-                    <a href="../guides/chiang-mai-road-rules.html" class="arrow-link">Read more &rarr;</a>
-                </article>
-                <article class="blog-card reveal">
-                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-Visa.webp" alt="ED Visa via Muay Thai" width="400" height="200">
-                    <h3>ED Visa via Muay Thai</h3>
-                    <p>How to get a Thai ED visa through a registered Muay Thai gym in Chiang Mai.</p>
-                    <a href="../visa/ed-visa-muay-thai.html" class="arrow-link">Read more &rarr;</a>
-                </article>
-            </div>
         </section>
+
     </main>
 
+    <!-- FOOTER BLOCK: Copy footer from any current page -->
     <footer class="site-footer" role="contentinfo">
         <div class="container">
             <div class="footer-inner">
@@ -576,6 +453,5 @@ Post Tags:		</span>
     </footer>
 
     <script src="../js/main.js"></script>
-
 </body>
 </html>

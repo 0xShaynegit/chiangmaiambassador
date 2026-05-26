@@ -75,7 +75,27 @@ a:hover {
 
 /* Image Sizing */
 img {
-    max-height: 300px;
-    width: auto;
+    max-width: 100%;
     height: auto;
+}
+
+/* Prevent horizontal overflow everywhere */
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
 }
