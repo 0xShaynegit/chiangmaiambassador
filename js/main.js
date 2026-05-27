@@ -266,22 +266,26 @@ function spawnLanternBatch() {
         // Cap rise to 1.5x viewport height so speed stays slow on any page length
         const maxRise = window.innerHeight * 1.5
         const totalRise = Math.min(targetBottom + 100, maxRise)
-        const duration = (60 + Math.random() * 10) * 1000
+        const duration = (totalRise / 35) * (0.95 + Math.random() * 0.1) * 1000
         const delay = i * (800 + Math.random() * 1500)
-        const swayX = Math.random() * 40 - 20
+        const s = (Math.random() * 14 + 8) * (Math.random() < 0.5 ? 1 : -1)
 
         const keyframes = [
             { opacity: 0,   transform: `translateX(0px) translateY(0px)` },
-            { opacity: 0.6, transform: `translateX(${swayX * 0.2}px) translateY(-${totalRise * 0.06}px)`, offset: 0.06 },
-            { opacity: 0.6, transform: `translateX(${swayX}px) translateY(-${totalRise * 0.5}px)`,        offset: 0.5  },
-            { opacity: 0.6, transform: `translateX(${swayX * 0.4}px) translateY(-${totalRise * 0.9}px)`,  offset: 0.9  },
-            { opacity: 0,   transform: `translateX(0px) translateY(-${totalRise}px)` }
+            { opacity: 0.6, transform: `translateX(${s * 0.4}px)  translateY(-${totalRise * 0.08}px)`, offset: 0.08 },
+            { opacity: 0.6, transform: `translateX(${s}px)         translateY(-${totalRise * 0.22}px)`, offset: 0.22 },
+            { opacity: 0.6, transform: `translateX(${s * 0.1}px)  translateY(-${totalRise * 0.35}px)`, offset: 0.35 },
+            { opacity: 0.6, transform: `translateX(${-s}px)        translateY(-${totalRise * 0.50}px)`, offset: 0.50 },
+            { opacity: 0.6, transform: `translateX(${-s * 0.2}px) translateY(-${totalRise * 0.64}px)`, offset: 0.64 },
+            { opacity: 0.6, transform: `translateX(${s * 0.7}px)  translateY(-${totalRise * 0.78}px)`, offset: 0.78 },
+            { opacity: 0.6, transform: `translateX(${s * 0.2}px)  translateY(-${totalRise * 0.92}px)`, offset: 0.92 },
+            { opacity: 0,   transform: `translateX(0px)            translateY(-${totalRise}px)` }
         ]
 
         const anim = el.animate(keyframes, {
             duration,
             delay,
-            easing: 'linear',
+            easing: 'ease-in-out',
             fill: 'none'
         })
 
