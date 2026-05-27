@@ -228,15 +228,29 @@ function animateCountUp(element, finalValue) {
     requestAnimationFrame(animate)
 }
 
-// PAGE LANTERNS: Spawn batches of 4 every 20 seconds, rising to hero bottom
+// HERO LANTERNS: Inject float elements into any dark hero that doesn't already have them
+function initHeroLanterns() {
+    const hero = document.querySelector('.hero-split, .blog-hero')
+    if (!hero) return
+    if (hero.querySelector('.float-element')) return  // already present in HTML
+
+    for (let i = 1; i <= 5; i++) {
+        const el = document.createElement('div')
+        el.className = `float-element float-${i}`
+        hero.insertBefore(el, hero.firstChild)
+    }
+}
+
+// PAGE LANTERNS: Spawn batches every 20 seconds, rising from page bottom to hero bottom
 function initPageLanterns() {
+    initHeroLanterns()
     spawnLanternBatch()
     setInterval(spawnLanternBatch, 20000)
 }
 
 function spawnLanternBatch() {
     const main = document.querySelector('main')
-    const hero = document.querySelector('.hero-split')
+    const hero = document.querySelector('.hero-split, .blog-hero')
     if (!main || !hero) return
 
     // Target = bottom of main minus bottom of hero = where hero ends, relative to main bottom
@@ -266,7 +280,7 @@ function spawnLanternBatch() {
         // Cap rise to 1.5x viewport height so speed stays slow on any page length
         const maxRise = window.innerHeight * 1.5
         const totalRise = Math.min(targetBottom + 100, maxRise)
-        const duration = (totalRise / 35) * (0.95 + Math.random() * 0.1) * 1000
+        const duration = (totalRise / 45) * (0.95 + Math.random() * 0.1) * 1000
         const delay = i * (800 + Math.random() * 1500)
         const s = (Math.random() * 14 + 8) * (Math.random() < 0.5 ? 1 : -1)
 
