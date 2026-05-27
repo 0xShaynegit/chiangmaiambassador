@@ -374,7 +374,7 @@
     width: 31px;
     height: 43px;
     left: 8%;
-    animation: float-rise-1 linear 17s infinite;
+    animation: float-rise-1 linear 17s infinite both;
     animation-delay: 0s;
     --glow: rgba(234, 179, 8, 0.45);
 }
@@ -383,7 +383,7 @@
     width: 35px;
     height: 40px;
     left: 22%;
-    animation: float-rise-2 linear 18s infinite;
+    animation: float-rise-2 linear 18s infinite both;
     animation-delay: 3s;
     --glow: rgba(234, 179, 8, 0.52);
 }
@@ -392,7 +392,7 @@
     width: 39px;
     height: 37px;
     left: 42%;
-    animation: float-rise-3 linear 16s infinite;
+    animation: float-rise-3 linear 16s infinite both;
     animation-delay: 6s;
     --glow: rgba(234, 179, 8, 0.58);
 }
@@ -401,7 +401,7 @@
     width: 43px;
     height: 35px;
     left: 64%;
-    animation: float-rise-4 linear 17.5s infinite;
+    animation: float-rise-4 linear 17.5s infinite both;
     animation-delay: 9s;
     --glow: rgba(234, 179, 8, 0.55);
 }
@@ -410,7 +410,7 @@
     width: 46px;
     height: 34px;
     left: 80%;
-    animation: float-rise-5 linear 18.5s infinite;
+    animation: float-rise-5 linear 18.5s infinite both;
     animation-delay: 12s;
     --glow: rgba(234, 179, 8, 0.60);
 }
