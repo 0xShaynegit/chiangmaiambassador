@@ -911,6 +911,24 @@
     section, div, article, aside {
         max-width: 100vw;
     }
+
+    .neighbourhood-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .neighbourhood-card:nth-child(1),
+    .neighbourhood-card:nth-child(2),
+    .neighbourhood-card:nth-child(n+3) {
+        grid-column: span 1;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pathway-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 640px) {
