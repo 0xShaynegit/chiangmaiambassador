@@ -266,7 +266,7 @@ function spawnLanternBatch() {
         // Cap rise to 1.5x viewport height so speed stays slow on any page length
         const maxRise = window.innerHeight * 1.5
         const totalRise = Math.min(targetBottom + 100, maxRise)
-        const duration = (100 + Math.random() * 15) * 1000
+        const duration = (60 + Math.random() * 10) * 1000
         const delay = i * (800 + Math.random() * 1500)
         const swayX = Math.random() * 40 - 20
 
