@@ -283,7 +283,7 @@ function spawnLanternBatch() {
         const speed = 35 + Math.random() * 20
         const duration = (totalRise / speed) * 1000
         const delay = i * (600 + Math.random() * 800)
-        const s = (Math.random() * 14 + 8) * (Math.random() < 0.5 ? 1 : -1)
+        const s = (Math.random() * 20 + 45) * (Math.random() < 0.5 ? 1 : -1)
 
         const keyframes = [
             { opacity: 0,   transform: `translateX(0px) translateY(0px)` },
