@@ -277,9 +277,8 @@ function spawnLanternBatch() {
 
         main.appendChild(el)
 
-        // Cap rise to 1.5x viewport height so speed stays slow on any page length
-        const maxRise = window.innerHeight * 1.5
-        const totalRise = Math.min(targetBottom + 100, maxRise)
+        // Rise the full distance from page bottom to hero bottom
+        const totalRise = targetBottom + 100
         const duration = (totalRise / 45) * (0.95 + Math.random() * 0.1) * 1000
         const delay = i * (800 + Math.random() * 1500)
         const s = (Math.random() * 14 + 8) * (Math.random() < 0.5 ? 1 : -1)
