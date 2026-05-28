@@ -278,9 +278,10 @@ function spawnLanternBatch() {
 
         main.appendChild(el)
 
-        // Fixed duration regardless of page length — same speed on every page
+        // 45px/s ±10px/s — consistent speed on every page regardless of length
         const totalRise = targetBottom + 100
-        const duration = 7000 + Math.random() * 2000
+        const speed = 35 + Math.random() * 20
+        const duration = (totalRise / speed) * 1000
         const delay = i * (600 + Math.random() * 800)
         const s = (Math.random() * 14 + 8) * (Math.random() < 0.5 ? 1 : -1)
 
