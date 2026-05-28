@@ -272,15 +272,16 @@ function spawnLanternBatch() {
         el.style.height = size.h + 'px'
         el.style.left = (Math.random() * 85 + 5) + '%'
         el.style.bottom = '0'
+        el.style.opacity = '0'
         el.style.transform = 'translateY(100px)'
         el.style.animation = 'none'
 
         main.appendChild(el)
 
-        // Rise the full distance from page bottom to hero bottom
+        // Fixed duration regardless of page length — same speed on every page
         const totalRise = targetBottom + 100
-        const duration = (totalRise / 45) * (0.95 + Math.random() * 0.1) * 1000
-        const delay = i * (800 + Math.random() * 1500)
+        const duration = 7000 + Math.random() * 2000
+        const delay = i * (600 + Math.random() * 800)
         const s = (Math.random() * 14 + 8) * (Math.random() < 0.5 ? 1 : -1)
 
         const keyframes = [
