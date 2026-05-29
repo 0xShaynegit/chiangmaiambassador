@@ -101,27 +101,50 @@ function initNavigation() {
         hamburger.innerHTML = '<span></span><span></span><span></span>'
         nav.appendChild(hamburger)
 
+        // Inject close button into nav-links
+        const closeBtn = document.createElement('button')
+        closeBtn.className = 'nav-close-btn'
+        closeBtn.setAttribute('aria-label', 'Close menu')
+        navLinks.insertBefore(closeBtn, navLinks.firstChild)
+
+        function openMenu() {
+            navLinks.classList.add('mobile-open')
+            hamburger.classList.add('open')
+            document.body.style.overflow = 'hidden'
+        }
+
+        function closeMenu() {
+            navLinks.classList.remove('mobile-open')
+            hamburger.classList.remove('open')
+            document.body.style.overflow = ''
+        }
+
         hamburger.addEventListener('click', () => {
-            const isOpen = navLinks.classList.toggle('mobile-open')
-            hamburger.classList.toggle('open', isOpen)
-            document.body.style.overflow = isOpen ? 'hidden' : ''
+            if (navLinks.classList.contains('mobile-open')) {
+                closeMenu()
+            } else {
+                openMenu()
+            }
         })
 
-        // Close menu when a nav link is clicked
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('mobile-open')
-                hamburger.classList.remove('open')
-                document.body.style.overflow = ''
-            })
+        closeBtn.addEventListener('click', closeMenu)
+
+        // Close menu when a nav link is clicked (but not dropdown toggles)
+        navLinks.querySelectorAll('a:not(.nav-dropdown-toggle)').forEach(link => {
+            link.addEventListener('click', closeMenu)
         })
 
         // Close on outside click
         document.addEventListener('click', (e) => {
-            if (!e.target.closest('.nav-wrapper')) {
-                navLinks.classList.remove('mobile-open')
-                hamburger.classList.remove('open')
-                document.body.style.overflow = ''
+            if (!e.target.closest('.nav-wrapper') && navLinks.classList.contains('mobile-open')) {
+                closeMenu()
+            }
+        })
+
+        // Close on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navLinks.classList.contains('mobile-open')) {
+                closeMenu()
             }
         })
     }
@@ -144,13 +167,21 @@ function initNavigation() {
             }
         })
 
-        // Mobile: tap toggle
+        // Mobile: accordion - only one dropdown open at a time
         const toggle = dropdown.querySelector('.nav-dropdown-toggle')
         if (toggle) {
             toggle.addEventListener('click', (e) => {
                 if (window.innerWidth <= 640) {
                     e.preventDefault()
-                    dropdown.classList.toggle('open')
+                    const isOpen = dropdown.classList.contains('open')
+
+                    // Close all dropdowns
+                    dropdowns.forEach(d => d.classList.remove('open'))
+
+                    // Open this one if it wasn't already open
+                    if (!isOpen) {
+                        dropdown.classList.add('open')
+                    }
                 }
             })
         }
