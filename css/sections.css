@@ -213,7 +213,12 @@
     font-weight: 400;
     transition: background-color var(--transition-fast), color var(--transition-fast);
     border-left: 3px solid transparent;
+    border-bottom: 1px solid rgba(234, 179, 8, 0.2);
     padding-left: 0;
+}
+
+.nav-dropdown-menu a:last-child {
+    border-bottom: none;
 }
 
 .nav-dropdown-menu a:hover {
@@ -1229,7 +1234,7 @@
         font-size: 0.9rem;
         color: rgba(255,255,255,0.7);
         border-left: none;
-        border-bottom: 1px solid rgba(255,255,255,0.04);
+        border-bottom: 1px solid rgba(234, 179, 8, 0.2);
     }
 
     .nav-dropdown-menu a:hover {
