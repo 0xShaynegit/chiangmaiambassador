@@ -119,13 +119,7 @@ function initNavigation() {
         const searchResults = searchBar.querySelector('.mobile-search-results')
         const searchForm = searchBar.querySelector('.mobile-search-form')
 
-        // Resolve pagefind path: works at any depth
         function getPagefindRoot() {
-            const scripts = document.querySelectorAll('script[src*="main.js"]')
-            if (scripts.length) {
-                const src = scripts[0].getAttribute('src')
-                return src.replace(/js\/main\.js$/, '') + 'pagefind/pagefind.js'
-            }
             return '/pagefind/pagefind.js'
         }
 

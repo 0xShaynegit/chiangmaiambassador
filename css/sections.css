@@ -796,6 +796,11 @@
     color: white;
 }
 
+/* Mobile search bar hidden on desktop */
+.mobile-search-bar {
+    display: none;
+}
+
 /* Search icon in nav */
 .nav-search-icon {
     display: flex;
@@ -1025,6 +1030,7 @@
 
     /* Mobile inline search bar */
     .mobile-search-bar {
+        display: block;
         padding: 12px 24px 4px;
         border-bottom: 1px solid rgba(255,255,255,0.08);
     }
