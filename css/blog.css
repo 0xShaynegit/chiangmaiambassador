@@ -128,6 +128,52 @@
     }
 }
 
+/* BLOG METADATA BAR */
+.blog-metadata {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0 2.5rem;
+    border-bottom: 1px solid #e5ddd0;
+    margin-bottom: 2rem;
+}
+
+.blog-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.blog-meta-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.blog-meta-value {
+    font-size: 0.95rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.blog-meta-value a {
+    color: #333;
+    text-decoration: none;
+}
+
+.blog-meta-value a:hover {
+    color: var(--color-primary);
+}
+
+.blog-meta-divider {
+    width: 1px;
+    height: 24px;
+    background: #e5ddd0;
+    flex-shrink: 0;
+}
+
 /* BLOG BODY: Editorial typography */
 .blog-body {
     line-height: 1.8;
