@@ -69,7 +69,7 @@
 
 /* BLOG CONTENT: White editorial layout */
 .blog-content {
-    background-color: var(--color-bg);
+    background-color: #ffffff;
     padding: 5rem 0;
     position: relative;
     z-index: 2;
@@ -135,21 +135,21 @@
 
 .blog-body h2 {
     font-size: 1.875rem;
-    color: var(--color-ink);
+    color: #1a1a1a;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
 }
 
 .blog-body h3 {
     font-size: 1.25rem;
-    color: var(--color-ink);
+    color: #1a1a1a;
     margin-top: 1.75rem;
     margin-bottom: 0.75rem;
 }
 
 .blog-body p {
     font-size: 1rem;
-    color: var(--color-text-main);
+    color: #333333;
     margin-bottom: 1.5rem;
 }
 
@@ -196,12 +196,12 @@
 
 .blog-cta h3 {
     margin: 0 0 0.5rem 0;
-    color: var(--color-ink);
+    color: #1a1a1a;
 }
 
 .blog-cta p {
     margin-bottom: 1.5rem;
-    color: var(--color-text-main);
+    color: #333333;
 }
 
 /* SIDEBAR */
@@ -315,7 +315,7 @@
 }
 
 .blog-related h2 {
-    color: var(--color-ink);
+    color: #ffffff;
     margin-bottom: 2rem;
 }
 
@@ -361,14 +361,14 @@
 
 .blog-card h3 {
     padding: 1.5rem 1.5rem 0.5rem 1.5rem;
-    color: var(--color-ink);
+    color: #1a1a1a;
     font-size: 1.125rem;
     margin: 0;
 }
 
 .blog-card p {
     padding: 0 1.5rem;
-    color: var(--color-text-main);
+    color: #333333;
     font-size: 0.95rem;
     margin-bottom: 1rem;
 }
