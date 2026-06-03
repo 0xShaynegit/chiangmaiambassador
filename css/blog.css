@@ -68,6 +68,20 @@
 }
 
 /* BLOG CONTENT: White editorial layout */
+.blog-content a {
+    color: #0066CC;
+    border-bottom-color: rgba(0, 102, 204, 0.3);
+}
+
+.blog-content a:visited {
+    color: #0066CC;
+}
+
+.blog-content a:hover {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+}
+
 .blog-content {
     background-color: #ffffff;
     padding: 5rem 0;

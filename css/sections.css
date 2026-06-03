@@ -2,6 +2,18 @@
    Focus: Asymmetry & Visual Momentum
 */
 
+/* Strip decorative border-bottom from interface links */
+.nav-wrapper a,
+.site-footer a,
+.btn-primary,
+.btn-large-primary,
+.btn-large-outline,
+a.btn-primary,
+a.btn-large-primary,
+a.btn-large-outline {
+    border-bottom: none;
+}
+
 /* Navigation */
 .nav-wrapper {
     display: flex;
