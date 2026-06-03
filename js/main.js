@@ -101,12 +101,6 @@ function initNavigation() {
         hamburger.innerHTML = '<span></span><span></span><span></span>'
         nav.appendChild(hamburger)
 
-        // Inject close button into nav-links
-        const closeBtn = document.createElement('button')
-        closeBtn.className = 'nav-close-btn'
-        closeBtn.setAttribute('aria-label', 'Close menu')
-        navLinks.insertBefore(closeBtn, navLinks.firstChild)
-
         function openMenu() {
             navLinks.classList.add('mobile-open')
             hamburger.classList.add('open')
@@ -126,8 +120,6 @@ function initNavigation() {
                 openMenu()
             }
         })
-
-        closeBtn.addEventListener('click', closeMenu)
 
         // Close menu when a nav link is clicked (but not dropdown toggles)
         navLinks.querySelectorAll('a:not(.nav-dropdown-toggle)').forEach(link => {
@@ -309,7 +301,7 @@ function spawnLanternBatch() {
 
         main.appendChild(el)
 
-        // 45px/s ±10px/s — consistent speed on every page regardless of length
+        // 45px/s ±10px/s   consistent speed on every page regardless of length
         const totalRise = targetBottom + 100
         const speed = 45 + Math.random() * 20
         const duration = (totalRise / speed) * 1000
