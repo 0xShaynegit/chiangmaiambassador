@@ -20,6 +20,9 @@ node_modules/
 package-lock.json
 yarn.lock
 
+# Pagefind index is committed (no CI build step)
+# Re-run: npx pagefind --site . --output-path pagefind
+
 # Build outputs
 dist/
 build/

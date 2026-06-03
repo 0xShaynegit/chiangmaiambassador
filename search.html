@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search Chiang Mai Ambassador. Find guides, neighbourhood breakdowns, visa advice, and local tips for living in Chiang Mai.">
+    <meta name="robots" content="noindex, follow">
+
+    <title>Search | Chiang Mai Ambassador</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/blog.css">
+
+    <link rel="preload" href="fonts/outfit-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/outfit-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/plus-jakarta-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/plus-jakarta-500.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link href="pagefind/pagefind-ui.css" rel="stylesheet">
+
+    <style>
+        .search-page {
+            min-height: 100vh;
+            padding: 120px 0 6rem;
+        }
+
+        .search-hero {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .search-hero h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: #fff;
+            margin-bottom: 0.75rem;
+        }
+
+        .search-hero p {
+            color: rgba(255,255,255,0.6);
+            font-size: 1.05rem;
+        }
+
+        #search-box {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        /* Pagefind UI overrides to match CMA design */
+        .pagefind-ui {
+            --pagefind-ui-scale: 1;
+            --pagefind-ui-primary: #EAB308;
+            --pagefind-ui-text: #fff;
+            --pagefind-ui-background: rgba(255,255,255,0.05);
+            --pagefind-ui-border: rgba(255,255,255,0.15);
+            --pagefind-ui-tag: rgba(234,179,8,0.15);
+            --pagefind-ui-border-width: 1px;
+            --pagefind-ui-border-radius: 4px;
+            --pagefind-ui-image-border-radius: 4px;
+            --pagefind-ui-image-box-ratio: 3/2;
+            --pagefind-ui-font: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .pagefind-ui__search-input {
+            background: rgba(255,255,255,0.08) !important;
+            color: #fff !important;
+            border-color: rgba(255,255,255,0.2) !important;
+            font-size: 1.1rem !important;
+            padding: 1rem 1.25rem !important;
+        }
+
+        .pagefind-ui__search-input::placeholder {
+            color: rgba(255,255,255,0.4) !important;
+        }
+
+        .pagefind-ui__search-input:focus {
+            border-color: #EAB308 !important;
+            outline: none !important;
+        }
+
+        .pagefind-ui__result {
+            border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+            padding: 1.5rem 0 !important;
+        }
+
+        .pagefind-ui__result-title {
+            color: #EAB308 !important;
+            font-family: 'Outfit', sans-serif !important;
+            font-weight: 700 !important;
+        }
+
+        .pagefind-ui__result-excerpt {
+            color: rgba(255,255,255,0.7) !important;
+        }
+
+        .pagefind-ui__button {
+            background: #EAB308 !important;
+            color: #0F172A !important;
+            border: none !important;
+            font-weight: 600 !important;
+        }
+
+        .pagefind-ui__button:hover {
+            background: #F5C430 !important;
+        }
+
+        .pagefind-ui__message {
+            color: rgba(255,255,255,0.5) !important;
+        }
+
+        .search-tips {
+            max-width: 720px;
+            margin: 3rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .search-tips h3 {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .search-tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .search-tip-link {
+            padding: 0.75rem 1rem;
+            border: 1px solid rgba(255,255,255,0.08);
+            color: rgba(255,255,255,0.6);
+            font-size: 0.875rem;
+            display: block;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .search-tip-link:hover {
+            border-color: #EAB308;
+            color: #EAB308;
+        }
+
+        .search-tip-link:visited {
+            color: rgba(255,255,255,0.6);
+        }
+
+        .search-tip-link:visited:hover {
+            color: #EAB308;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav-wrapper">
+        <a href="./" class="logo-link">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="-175 -178 350 500" xmlns="http://www.w3.org/2000/svg" width="60" height="80">
+                <defs>
+                    <linearGradient id="g2gold" x1="20%" y1="0%" x2="80%" y2="100%">
+                        <stop offset="0%" stop-color="#F2D980" />
+                        <stop offset="40%" stop-color="#C49010" />
+                        <stop offset="100%" stop-color="#9A7008" />
+                    </linearGradient>
+                    <linearGradient id="g2ring" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#E4BC50" />
+                        <stop offset="100%" stop-color="#9A7008" />
+                    </linearGradient>
+                </defs>
+                <circle cx="0" cy="0" r="164" fill="none" stroke="url(#g2ring)" stroke-width="2.5" />
+                <circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65" />
+                <circle cx="164" cy="0" r="3.2" fill="#C49010" />
+                <circle cx="0" cy="-164" r="3.2" fill="#C49010" />
+                <circle cx="-164" cy="0" r="3.2" fill="#C49010" />
+                <circle cx="0" cy="164" r="3.2" fill="#C49010" />
+                <g transform="translate(0, -149.201) scale(1.94980)">
+                    <polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980" />
+                    <rect x="-2" y="4" width="4" height="38" fill="url(#g2gold)" />
+                    <polygon points="0,42 -16,78 16,78" fill="url(#g2gold)" />
+                    <rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008" />
+                    <rect x="-22" y="84" width="44" height="9" fill="url(#g2gold)" />
+                    <rect x="-25" y="93" width="50" height="4" fill="#9A7008" />
+                    <rect x="-30" y="97" width="60" height="9" fill="url(#g2gold)" />
+                    <rect x="-33" y="106" width="66" height="4" fill="#9A7008" />
+                    <rect x="-38" y="110" width="76" height="9" fill="url(#g2gold)" />
+                    <rect x="-44" y="119" width="88" height="11" fill="url(#g2gold)" />
+                    <rect x="-52" y="130" width="104" height="8" fill="#9A7008" />
+                </g>
+            </svg>
+                <div class="logo-text-wrapper nav-mode">
+                    <div>
+                        <span class="logo-accent">CM</span><span class="logo-text">Ambassador</span>
+                    </div>
+                    <span class="logo-tagline">Connector · Helper · Guru</span>
+                </div>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="pages/just-arriving-in-thailand.html">Arriving</a>
+
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle">Living Here</button>
+                <div class="nav-dropdown-menu">
+                    <a href="pages/living-better-in-thailand.html">Living Better in Chiang Mai</a>
+                    <a href="pages/neighbourhoods.html">Neighbourhoods</a>
+                    <a href="lifestyle/neighborhoods/santitham.html">Santitham</a>
+                    <a href="lifestyle/neighborhoods/jed-yod.html">Jed Yod</a>
+                    <a href="lifestyle/neighborhoods/hang-dong.html">Hang Dong</a>
+                    <a href="lifestyle/neighborhoods/wat-ket-riverside.html">Wat Ket &amp; Riverside</a>
+                    <a href="pages/cost-of-living.html">Cost of Living</a>
+                    <a href="lifestyle/smoky-season-chiang-mai.html">Smoky Season</a>
+                    <a href="lifestyle/live-in-chiang-mai.html">Live in Chiang Mai</a>
+                    <a href="lifestyle/moving-checklist.html">Moving Checklist</a>
+                    <a href="pages/planning-a-move-to-thailand.html">Planning Your Move</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle">Food</button>
+                <div class="nav-dropdown-menu">
+                    <a href="food/food-delivery-apps-chiang-mai.html">Food Delivery Apps</a>
+                    <a href="food/late-night-eating-chiang-mai.html">Late Night Eating</a>
+                    <a href="food/auf-der-au-best-buffet-chiang-mai.html">Auf der Au Buffet</a>
+                    <a href="food/butter-is-better.html">Butter is Better</a>
+                    <a href="food/le-meridien-dinner-buffet.html">Le Meridien Dinner Buffet</a>
+                    <a href="food/meela-peanut-butter.html">Meela Peanut Butter</a>
+                    <a href="food/siripanna-lunch.html">Siripanna Lunch</a>
+                    <a href="thai-eating-etiquette.html">Thai Eating Etiquette</a>
+                    <a href="yunnan-farmers-market.html">Yunnan Farmers Market</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle">Guides</button>
+                <div class="nav-dropdown-menu">
+                    <a href="guides/90-day-reporting-tm30-chiang-mai.html">90-Day Reporting &amp; TM30</a>
+                    <a href="guides/residency-certificate-chiang-mai.html">Residency Certificate</a>
+                    <a href="guides/language-schools-ed-visa-chiang-mai.html">Language Schools &amp; ED Visa</a>
+                    <a href="guides/lazada-shopee-foreigners-chiang-mai.html">Lazada &amp; Shopee Guide</a>
+                    <a href="guides/travelling-to-thailand-with-pets.html">Travelling with Pets</a>
+                    <a href="guides/finding-pet-friendly-home-chiang-mai.html">Pet-Friendly Housing</a>
+                    <a href="guides/vets-pet-care-chiang-mai.html">Vets &amp; Pet Care</a>
+                    <a href="best-chiang-mai.html">Best of Chiang Mai</a>
+                    <a href="guides/budget-chiang-mai-medical-services.html">Budget Medical Services</a>
+                    <a href="cheapest-border-run-chiang-mai.html">Cheapest Border Run</a>
+                    <a href="guides/chiang-mai-driving-licence.html">Driving Licence</a>
+                    <a href="guides/chiang-mai-festivals.html">Chiang Mai Festivals</a>
+                    <a href="guides/chiang-mai-insurance.html">Chiang Mai Insurance</a>
+                    <a href="guides/chiang-mai-road-rules.html">Road Rules</a>
+                    <a href="modern-transport-guide.html">Transport Guide</a>
+                    <a href="guides/renting-a-motorbike-in-chiang-mai.html">Renting a Motorbike</a>
+                    <a href="guides/tdac-thailand-digital-arrival-card.html">TDAC Digital Arrival Card</a>
+                    <a href="guides/walking-street-markets.html">Walking Street Markets</a>
+                    <a href="guides/yi-peng-lantern-festival.html">Yi Peng Lantern Festival</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle">Lifestyle</button>
+                <div class="nav-dropdown-menu">
+                    <a href="lifestyle/chiang-mai-arrival.html">Chiang Mai Arrival</a>
+                    <a href="lifestyle/currency-in-and-out-of-thailand.html">Currency In and Out</a>
+                    <a href="lifestyle/expat-breakfast-club.html">Expat Breakfast Club</a>
+                    <a href="getting-social-in-chiang-mai.html">Getting Social</a>
+                    <a href="lifestyle/internet.html">Internet in Thailand</a>
+                    <a href="lifestyle/learning-languages.html">Learning Languages</a>
+                    <a href="lifestyle/mobile-phones.html">Mobile Phones</a>
+                    <a href="lifestyle/songkran.html">Songkran</a>
+                    <a href="lifestyle/television.html">Television in Thailand</a>
+                    <a href="lifestyle/thai-visa-advice.html">Thai Visa Advice</a>
+                    <a href="lifestyle/top-tips.html">Top Tips</a>
+                    <a href="understanding-thai-culture.html">Understanding Thai Culture</a>
+                    <a href="lifestyle/us-expat-tax-guide.html">US Expat Tax Guide</a>
+                    <a href="lifestyle/vientiane-visa-run.html">Vientiane Visa Run</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle">Visas</button>
+                <div class="nav-dropdown-menu">
+                    <a href="visa/ed-visa.html">ED Visa</a>
+                    <a href="visa/ed-visa-thai-language.html">ED Visa: Thai Language</a>
+                    <a href="visa/ed-visa-muay-thai.html">ED Visa: Muay Thai</a>
+                    <a href="visa/ed-visa-combat-training.html">ED Visa: Combat Training</a>
+                    <a href="visa/dtv-visa.html">DTV Visa</a>
+                    <a href="visa/business-visa.html">Business Visa</a>
+                    <a href="visa/retirement-visa.html">Retirement Visa</a>
+                    <a href="visa/marriage-visa.html">Marriage Visa</a>
+                    <a href="visa/ltr-visa.html">LTR Visa</a>
+                    <a href="visa/volunteer-visa.html">Volunteer Visa</a>
+                    <a href="visa/tourist-visa.html">Tourist Visa</a>
+                    <a href="visa/visa-exempt-vs-voa.html">Visa Exempt vs VOA</a>
+                    <a href="visa-exempt-status-2026-returning-to-30-days.html">Visa Exempt 2026 Update</a>
+                    <a href="visa/border-run-strategy.html">Border Run Strategy</a>
+                    <a href="pages/visas.html">Visa Hub</a>
+                </div>
+            </div>
+
+        </div>
+        <a href="./#start" class="btn-primary magnetic-item">Start Here</a>
+    </nav>
+
+    <main>
+        <section class="search-page">
+            <div class="container" style="max-width: 800px;">
+
+                <div class="search-hero">
+                    <h1>Search <span class="gold-gradient-text">Chiang Mai Ambassador</span></h1>
+                    <p>111 pages covering visas, neighbourhoods, food, transport, and expat life.</p>
+                </div>
+
+                <div id="search-box"></div>
+
+                <div class="search-tips">
+                    <h3>Popular starting points</h3>
+                    <div class="search-tips-grid">
+                        <a href="visa/dtv-visa.html" class="search-tip-link">DTV Visa</a>
+                        <a href="visa/retirement-visa.html" class="search-tip-link">Retirement Visa</a>
+                        <a href="pages/cost-of-living.html" class="search-tip-link">Cost of Living</a>
+                        <a href="lifestyle/neighborhoods/santitham.html" class="search-tip-link">Santitham</a>
+                        <a href="lifestyle/neighborhoods/nimman.html" class="search-tip-link">Nimman</a>
+                        <a href="lifestyle/neighborhoods/hang-dong.html" class="search-tip-link">Hang Dong</a>
+                        <a href="lifestyle/smoky-season-chiang-mai.html" class="search-tip-link">Smoky Season</a>
+                        <a href="cheapest-border-run-chiang-mai.html" class="search-tip-link">Border Runs</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="pagefind/pagefind-ui.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            new PagefindUI({
+                element: '#search-box',
+                showSubResults: false,
+                showImages: false,
+                excerptLength: 30,
+                resetStyles: false
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "your-token-here"}'></script>
+
+</body>
+</html>
