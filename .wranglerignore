@@ -1,7 +1,13 @@
 node_modules/
 node_modules/**
 .git/
+.git/**
 _scripts/
 package.json
 package-lock.json
+bun.lock
 bun.lockb
+.gitignore
+.wranglerignore
+wrangler.jsonc
+seo_fix.py
