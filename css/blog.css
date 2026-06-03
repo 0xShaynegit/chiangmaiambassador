@@ -352,6 +352,12 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+.blog-card:hover h3,
+.blog-card:hover p,
+.blog-card:hover .arrow-link {
+    color: #ffffff;
+}
+
 .blog-card img {
     width: 100%;
     height: 200px;
