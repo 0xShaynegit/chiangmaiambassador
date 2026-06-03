@@ -11,3 +11,6 @@ bun.lockb
 .wranglerignore
 wrangler.jsonc
 seo_fix.py
+template.html
+**/template.html
+pages/page-template.html
