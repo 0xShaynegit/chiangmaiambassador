@@ -1069,7 +1069,9 @@
 
     /* Sub-items */
     .nav-dropdown-menu {
-        position: static;
+        position: static !important;
+        left: auto !important;
+        transform: none !important;
         box-shadow: none;
         background: rgba(0,0,0,0.2);
         border-radius: 0;
@@ -1079,7 +1081,6 @@
         display: none;
         opacity: 1;
         visibility: visible;
-        transform: none;
         min-width: unset;
         width: 100%;
         column-count: 1;
@@ -1091,6 +1092,8 @@
     .nav-dropdown.open .nav-dropdown-menu {
         display: block;
         max-height: 2000px;
+        transform: none;
+        left: auto;
     }
 
     .nav-dropdown-menu a {
