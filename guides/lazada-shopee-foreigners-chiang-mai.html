@@ -64,11 +64,20 @@
             margin-top: 80px;
         }
 
+        .img-right-small {
+            float: right;
+            width: 25%;
+            margin: 0 0 1rem 1.5rem;
+            shape-margin: 1rem;
+        }
+
+        figure { margin: 0; }
+        figcaption { display: none; }
+
         .article-sidebar {
             background: #f0d080;
             padding: 2rem;
             border-left: 4px solid var(--color-primary);
-            border-radius: 0;
             margin: 2.5rem 0 3rem 0;
             border: 1px solid #e5ddd0;
         }
@@ -82,11 +91,7 @@
             letter-spacing: 0.05em;
         }
 
-        .article-sidebar ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+        .article-sidebar ul { list-style: none; padding: 0; margin: 0; }
 
         .article-sidebar li {
             color: #0F172A;
@@ -95,86 +100,44 @@
             border-bottom: 1px solid rgba(0,0,0,0.08);
         }
 
-        .article-sidebar li:last-child {
-            border-bottom: none;
+        .article-sidebar li:last-child { border-bottom: none; }
+        .article-sidebar strong { color: #0F172A; }
+
+        .callout-box {
+            background: #f0d080;
+            border-left: 4px solid #F2D980;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border: 1px solid #e5ddd0;
         }
 
-        .article-sidebar strong {
-            color: #0F172A;
-        }
+        .callout-box p { margin: 0; font-weight: 500; color: #1a1a1a; font-size: 0.95rem; }
 
         .key-takeaways {
-            background: #fffbeb;
-            border: 1px solid #f0d080;
-            border-left: 4px solid #d4a017;
-            padding: 1.5rem 2rem;
-            margin: 2rem 0;
-            border-radius: 2px;
+            background: #f0d080;
+            padding: 2rem;
+            margin: 3rem 0;
+            border: 1px solid #e5ddd0;
         }
 
-        .key-takeaways h4 {
-            margin: 0 0 1rem 0;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: #92400e;
-        }
+        .key-takeaways h3, .key-takeaways h4 { margin-top: 0; color: #0F172A; }
+        .key-takeaways ul { padding-left: 1.25rem; margin: 0; }
+        .key-takeaways li { margin-bottom: 0.5rem; font-size: 0.95rem; color: #1a1a1a; }
 
-        .key-takeaways ul {
-            margin: 0;
-            padding-left: 1.25rem;
-        }
+        .blog-related { background: transparent; padding: 4rem 0 !important; }
+        .blog-related h2 { color: white; }
+        .blog-card { background-color: var(--color-surface) !important; }
 
-        .key-takeaways li {
-            margin-bottom: 0.5rem;
-            font-size: 0.95rem;
-            color: #1a1a1a;
-        }
+        table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.9rem; }
+        th { background: #0F172A; color: white; padding: 0.75rem 1rem; text-align: left; font-weight: 600; }
+        td { padding: 0.7rem 1rem; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
+        tr:nth-child(even) td { background: #f9fafb; }
+        tr:hover td { background: #f0f4ff; }
 
-        .callout-warning {
-            background: #fffbeb;
-            border-left: 4px solid #f59e0b;
-            padding: 1.25rem 1.5rem;
-            margin: 2rem 0;
-            border-radius: 2px;
-        }
-
-        .callout-info {
-            background: #eff6ff;
-            border-left: 4px solid #3b82f6;
-            padding: 1.25rem 1.5rem;
-            margin: 2rem 0;
-            border-radius: 2px;
-        }
-
-        .callout-info p, .callout-warning p {
-            margin: 0;
-            font-size: 0.95rem;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
-            font-size: 0.9rem;
-        }
-
-        th {
-            background: #0F172A;
-            color: white;
-            padding: 0.75rem 1rem;
-            text-align: left;
-            font-weight: 600;
-        }
-
-        td {
-            padding: 0.7rem 1rem;
-            border-bottom: 1px solid #e5e7eb;
-            vertical-align: top;
-        }
-
-        tr:nth-child(even) td {
-            background: #f9fafb;
+        @media (max-width: 768px) {
+            .img-right-small { float: none; width: 100%; margin: 1.5rem 0; }
+            table { font-size: 0.8rem; }
+            th, td { padding: 0.5rem; }
         }
     </style>
 </head>
@@ -332,27 +295,38 @@
         <a href="../#start" class="btn-primary magnetic-item">Start Here</a>
     </nav>
 
+
     <section class="blog-hero">
-        <div class="container">
-            <div class="blog-hero-content">
-                <div class="blog-breadcrumb">
-                    <a href="../index.html">Home</a> &rsaquo;
-                    <a href="../guides/index.html">Guides</a> &rsaquo;
-                    Lazada and Shopee Guide
-                </div>
-                <h1 class="blog-title">Lazada and Shopee for Foreigners in Chiang Mai: The Practical Guide (2026)</h1>
-                <div class="blog-metadata">
-                    <span>Updated May 2026</span>
-                    <span>9 min read</span>
-                    <span>Chiang Mai Ambassador</span>
-                </div>
+        <div class="container" style="max-width: 960px; width: 100%; margin: 0 auto; padding: 0 2rem; box-sizing: border-box;">
+            <div class="blog-header reveal">
+                <h1>Lazada and Shopee for Foreigners in Chiang Mai: <span class="gold-gradient-text">The Practical Guide</span></h1>
+                <p class="blog-excerpt">How to use Lazada and Shopee in Thailand without a Thai bank account. Payment options, delivery, returns, and what to buy.</p>
             </div>
         </div>
     </section>
 
-    <section class="blog-content">
-        <div class="container">
-            <article class="blog-article">
+    <main style="width: 100%; margin: 0 auto;">
+
+        <article class="blog-content" style="background-color: white; padding-top: 0.75rem !important;">
+            <div class="container" style="max-width: 960px; width: 100%; margin: 0 auto; padding: 0 2rem; box-sizing: border-box;">
+
+                <div class="blog-metadata reveal">
+                    <div class="blog-meta-item">
+                        <span class="blog-meta-label">Category</span>
+                        <span class="blog-meta-value"><a href="../">Home</a> / Guides & Living</span>
+                    </div>
+                    <div class="blog-meta-divider"></div>
+                    <div class="blog-meta-item">
+                        <span class="blog-meta-label">Read time</span>
+                        <span class="blog-meta-value">9 min</span>
+                    </div>
+                    <div class="blog-meta-divider"></div>
+                    <div class="blog-meta-item">
+                        <span class="blog-meta-label">Last updated</span>
+                        <span class="blog-meta-value">May 2026</span>
+                    </div>
+                </div>
+
                 <div class="blog-body">
 
                     <div class="article-sidebar">
@@ -468,7 +442,7 @@
 
                     <p>Delivery address: use GPS pin or your full Thai address. If you live in a moo baan or condo, include the building/village name in Thai in the notes field. Kerry Express, J&T Express, Flash Express, and Thailand Post are the main carriers. All deliver to residential addresses Monday-Saturday. Most leave packages with building security or a front desk if you are not home.</p>
 
-                    <div class="callout-warning">
+                    <div class="callout-box">
                         <p><strong>Watch for:</strong> "Ships from overseas" listings on both platforms. These look like normal Thai sellers but the product ships from China. Delivery takes 10-21 days and returns are effectively impossible. Check the seller's location before ordering. It is listed on each product page.</p>
                     </div>
 
@@ -531,7 +505,7 @@
                         <li>Anything described as "imported" with no brand or certification details</li>
                     </ul>
 
-                    <div class="callout-info">
+                    <div class="callout-box">
                         <p><strong>Guru Tip:</strong> When searching for a Thai-market product with no English name, use Google Lens on a photo from another website, get the Thai characters, paste into the search bar. Works far better than trying to transliterate or describe the item in English. Thai sellers list in Thai; searching in Thai finds everything.</p>
                     </div>
 
@@ -549,43 +523,121 @@
                     <p>Related guides: <a href="../pages/living-better-in-thailand.html">Living Better in Thailand</a> hub and <a href="../guides/residency-certificate-chiang-mai.html">Residency Certificate</a> (needed for some bank account applications that unlock all payment options).</p>
 
                 </div>
-            </article>
-        </div>
-    </section>
+            </div>
+        </article>
 
-    <footer class="footer">
+
+        <section class="blog-related container">
+            <h2>More from the Ambassador</h2>
+            <div class="blog-grid">
+                <article class="blog-card reveal">
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-13.webp" alt="Residency certificate Chiang Mai" width="400" height="200">
+                    <h3>Residency Certificate</h3>
+                    <p>How to get your residency certificate for a Thai bank account and driving licence.</p>
+                    <a href="../guides/residency-certificate-chiang-mai.html" class="arrow-link">Read more</a>
+                </article>
+                <article class="blog-card reveal">
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-116.webp" alt="Language schools ED visa Chiang Mai" width="400" height="200">
+                    <h3>Language Schools & ED Visa</h3>
+                    <p>Which language schools handle ED visa paperwork reliably.</p>
+                    <a href="../guides/language-schools-ed-visa-chiang-mai.html" class="arrow-link">Read more</a>
+                </article>
+                <article class="blog-card reveal">
+                    <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Chiang-Mai-Ambassador-152.webp" alt="Living better in Chiang Mai" width="400" height="200">
+                    <h3>Living Better in Chiang Mai</h3>
+                    <p>The full guide to daily expat life in Chiang Mai.</p>
+                    <a href="../pages/living-better-in-thailand.html" class="arrow-link">Read more</a>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
         <div class="container">
-            <div class="footer-grid">
+            <div class="footer-inner">
                 <div class="footer-brand">
-                    <a href="../index.html">
-                        <img src="../images/chiang-mai-ambassador-logo.webp" alt="Chiang Mai Ambassador" width="160" height="36">
+                    <a href="../" class="logo-link" style="display: inline-flex;">
+                        <div class="logo" style="margin-bottom: 1rem;">
+                            <svg class="logo-icon" viewBox="-175 -178 350 500" xmlns="http://www.w3.org/2000/svg" width="60" height="80">
+                            <defs>
+                                <linearGradient id="g2gold-footer" x1="20%" y1="0%" x2="80%" y2="100%">
+                                    <stop offset="0%" stop-color="#F2D980" />
+                                    <stop offset="40%" stop-color="#C49010" />
+                                    <stop offset="100%" stop-color="#9A7008" />
+                                </linearGradient>
+                                <linearGradient id="g2ring-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#E4BC50" />
+                                    <stop offset="100%" stop-color="#9A7008" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="0" cy="0" r="164" fill="none" stroke="url(#g2ring-footer)" stroke-width="2.5" />
+                            <circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65" />
+                            <circle cx="164" cy="0" r="3.2" fill="#C49010" />
+                            <circle cx="0" cy="-164" r="3.2" fill="#C49010" />
+                            <circle cx="-164" cy="0" r="3.2" fill="#C49010" />
+                            <circle cx="0" cy="164" r="3.2" fill="#C49010" />
+                            <g transform="translate(0, -149.201) scale(1.94980)">
+                                <polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980" />
+                                <rect x="-2" y="4" width="4" height="38" fill="url(#g2gold-footer)" />
+                                <polygon points="0,42 -16,78 16,78" fill="url(#g2gold-footer)" />
+                                <rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008" />
+                                <rect x="-22" y="84" width="44" height="9" fill="url(#g2gold-footer)" />
+                                <rect x="-25" y="93" width="50" height="4" fill="#9A7008" />
+                                <rect x="-30" y="97" width="60" height="9" fill="url(#g2gold-footer)" />
+                                <rect x="-33" y="106" width="66" height="4" fill="#9A7008" />
+                                <rect x="-38" y="110" width="76" height="9" fill="url(#g2gold-footer)" />
+                                <rect x="-44" y="119" width="88" height="11" fill="url(#g2gold-footer)" />
+                                <rect x="-52" y="130" width="104" height="8" fill="#9A7008" />
+                            </g>
+                        </svg>
+                            <div class="logo-text-wrapper">
+                                <div>
+                                    <span class="logo-accent">CM</span><span class="logo-text">Ambassador</span>
+                                </div>
+                                <span class="logo-tagline">Connector &middot; Helper &middot; Guru</span>
+                            </div>
+                        </div>
                     </a>
-                    <p>Honest guides for expats and long-stay visitors in Chiang Mai.</p>
+                    <p class="footer-tagline">16+ years of real experience. Honest guidance for settling into Chiang Mai or simply where to get random stuff.</p>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="../pages/just-arriving-in-thailand.html">Just Arriving</a></li>
-                        <li><a href="../pages/living-better-in-thailand.html">Living Better</a></li>
-                        <li><a href="../visa/index.html">Visa Guide</a></li>
-                        <li><a href="../guides/90-day-reporting-tm30-chiang-mai.html">90-Day Reporting</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Guides</h4>
-                    <ul>
-                        <li><a href="../guides/residency-certificate-chiang-mai.html">Residency Certificate</a></li>
-                        <li><a href="../guides/travelling-to-thailand-with-pets.html">Travelling with Pets</a></li>
-                        <li><a href="../guides/language-schools-ed-visa-chiang-mai.html">Language Schools</a></li>
-                    </ul>
-                </div>
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <div class="footer-nav-group">
+                        <h4>Guides</h4>
+                        <ul role="list">
+                            <li><a href="../pages/neighbourhoods.html">Neighbourhoods</a></li>
+                            <li><a href="../pages/cost-of-living.html">Cost of living</a></li>
+                            <li><a href="../pages/visas.html">Visas and permits</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>Tools</h4>
+                        <ul role="list">
+                            <li><a href="#tools">Budget calculator</a></li>
+                            <li><a href="#tools">Visa planner</a></li>
+                            <li><a href="#tools">Neighbourhood matcher</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>Community</h4>
+                        <ul role="list">
+                            <li><a href="#">Expats Club</a></li>
+                            <li><a href="#">Ask a local</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Chiang Mai Ambassador. All rights reserved.</p>
+                <p class="footer-legal">Copyright 2026 Chiang Mai Ambassador. Published with care in Chiang Mai, Thailand.</p>
+                <p class="footer-disclaimer">Information is provided in good faith. Always verify visa and legal information with official Thai government sources before making decisions. <a href="../pages/privacy.html">Privacy</a> &middot; <a href="../pages/terms.html">Terms</a> &middot; <a href="../pages/disclaimer.html">Disclaimer</a></p>
             </div>
         </div>
     </footer>
 
+
+
     <script src="../js/main.js"></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "your-token-here"}'></script>
 </body>
 </html>
