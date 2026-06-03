@@ -101,10 +101,88 @@ function initNavigation() {
         hamburger.innerHTML = '<span></span><span></span><span></span>'
         nav.appendChild(hamburger)
 
+        // Inject inline mobile search bar at top of drawer
+        const searchBar = document.createElement('div')
+        searchBar.className = 'mobile-search-bar'
+        searchBar.innerHTML = `
+            <form class="mobile-search-form" role="search">
+                <input class="mobile-search-input" type="search" placeholder="Search guides, visas, neighbourhoods..." autocomplete="off" aria-label="Search site">
+                <button class="mobile-search-btn" type="submit" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                </button>
+            </form>
+            <div class="mobile-search-results" aria-live="polite"></div>
+        `
+        navLinks.insertBefore(searchBar, navLinks.firstChild)
+
+        const searchInput = searchBar.querySelector('.mobile-search-input')
+        const searchResults = searchBar.querySelector('.mobile-search-results')
+        const searchForm = searchBar.querySelector('.mobile-search-form')
+
+        // Resolve pagefind path: works at any depth
+        function getPagefindRoot() {
+            const scripts = document.querySelectorAll('script[src*="main.js"]')
+            if (scripts.length) {
+                const src = scripts[0].getAttribute('src')
+                return src.replace(/js\/main\.js$/, '') + 'pagefind/pagefind.js'
+            }
+            return '/pagefind/pagefind.js'
+        }
+
+        let pagefindLoaded = false
+        let pagefindModule = null
+
+        async function loadPagefind() {
+            if (pagefindLoaded) return pagefindModule
+            try {
+                pagefindModule = await import(getPagefindRoot())
+                await pagefindModule.options({ excerptLength: 12 })
+                pagefindLoaded = true
+                return pagefindModule
+            } catch (e) {
+                return null
+            }
+        }
+
+        let searchTimeout = null
+
+        searchInput.addEventListener('input', () => {
+            clearTimeout(searchTimeout)
+            const q = searchInput.value.trim()
+            if (!q) { searchResults.innerHTML = ''; return }
+            searchTimeout = setTimeout(() => runSearch(q), 220)
+        })
+
+        searchForm.addEventListener('submit', (e) => {
+            e.preventDefault()
+            const q = searchInput.value.trim()
+            if (q) runSearch(q)
+        })
+
+        async function runSearch(q) {
+            const pf = await loadPagefind()
+            if (!pf) { searchResults.innerHTML = '<p class="mobile-search-empty">Search unavailable</p>'; return }
+            const result = await pf.search(q)
+            if (!result.results.length) {
+                searchResults.innerHTML = '<p class="mobile-search-empty">No results found</p>'
+                return
+            }
+            const top = await Promise.all(result.results.slice(0, 6).map(r => r.data()))
+            searchResults.innerHTML = top.map(r => `
+                <a href="${r.url}" class="mobile-search-result">
+                    <span class="mobile-search-result-title">${r.meta.title || 'Page'}</span>
+                    <span class="mobile-search-result-excerpt">${r.excerpt.replace(/<[^>]+>/g, '')}</span>
+                </a>
+            `).join('')
+        }
+
+        // Pre-load pagefind when menu opens
         function openMenu() {
             navLinks.classList.add('mobile-open')
             hamburger.classList.add('open')
             document.body.style.overflow = 'hidden'
+            loadPagefind()
+            setTimeout(() => searchInput.focus(), 80)
         }
 
         function closeMenu() {

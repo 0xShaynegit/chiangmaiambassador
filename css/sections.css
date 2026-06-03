@@ -818,6 +818,13 @@
     background: rgba(234,179,8,0.08);
 }
 
+/* On mobile, search icon becomes a toggle - hide the link behaviour */
+@media (max-width: 640px) {
+    .nav-search-icon {
+        display: none; /* hidden in nav bar on mobile - inline search is in the drawer */
+    }
+}
+
 .nav-search-icon svg {
     display: block;
     pointer-events: none;
@@ -1014,6 +1021,93 @@
 
     .tools-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Mobile inline search bar */
+    .mobile-search-bar {
+        padding: 12px 24px 4px;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .mobile-search-form {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        background: rgba(255,255,255,0.07);
+        border: 1px solid rgba(255,255,255,0.15);
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .mobile-search-input {
+        flex: 1;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 0.95rem;
+        padding: 10px 14px;
+        font-family: inherit;
+        outline: none;
+    }
+
+    .mobile-search-input::placeholder {
+        color: rgba(255,255,255,0.35);
+    }
+
+    .mobile-search-btn {
+        background: none;
+        border: none;
+        color: rgba(255,255,255,0.5);
+        padding: 10px 12px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        transition: color 0.2s;
+    }
+
+    .mobile-search-btn:hover {
+        color: var(--color-primary);
+    }
+
+    .mobile-search-results {
+        padding: 0 24px;
+        max-height: 280px;
+        overflow-y: auto;
+    }
+
+    .mobile-search-result {
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+        text-decoration: none;
+    }
+
+    .mobile-search-result:last-child {
+        border-bottom: none;
+    }
+
+    .mobile-search-result-title {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--color-primary);
+        display: block;
+        margin-bottom: 2px;
+    }
+
+    .mobile-search-result-excerpt {
+        font-size: 0.8rem;
+        color: rgba(255,255,255,0.5);
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .mobile-search-empty {
+        font-size: 0.85rem;
+        color: rgba(255,255,255,0.35);
+        padding: 10px 0;
+        text-align: center;
     }
 
     /* Mobile Menu Drawer */
