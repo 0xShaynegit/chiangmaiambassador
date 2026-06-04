@@ -403,6 +403,32 @@ function spawnLanternBatch() {
     })
 }
 
+// --- DARK CARDS: Make entire card clickable ---
+function initDarkCards() {
+    const cards = document.querySelectorAll('.dark-card')
+
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            const link = card.querySelector('.card-link')
+            if (!link) return
+
+            // Check for data-url attribute first, fallback to link href
+            const url = card.getAttribute('data-url') || link.getAttribute('href') || '#'
+            window.location.href = url
+        })
+
+        // Add cursor pointer for better UX
+        card.style.cursor = 'pointer'
+
+        // Allow keyboard navigation (Enter key)
+        card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                card.click()
+            }
+        })
+    })
+}
+
 // Inject CSS animations
 const styleSheet = document.createElement('style')
 styleSheet.textContent = `
@@ -412,3 +438,8 @@ styleSheet.textContent = `
     }
 `
 document.head.appendChild(styleSheet)
+
+// Initialize dark cards on page load
+document.addEventListener('DOMContentLoaded', () => {
+    initDarkCards()
+})

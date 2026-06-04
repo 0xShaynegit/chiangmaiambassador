@@ -319,7 +319,7 @@
         0 0 40px rgba(234, 179, 8, 0.2);
 }
 
-/* Combined rise+sway keyframes per lantern — avoids transform property conflict */
+/* Combined rise+sway keyframes per lantern   avoids transform property conflict */
 @keyframes float-rise-1 {
     0%   { transform: translate(0px, 60px);    opacity: 0; }
     5%   { opacity: 0.6; }
@@ -673,6 +673,60 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* --- The "Ambassador" Dark Card --- */
+.dark-card {
+    background-color: var(--card-dark-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Typography inside the card */
+.dark-card h3 {
+    color: var(--text-white);
+    margin: 0;
+    font-size: 1.5rem;
+    transition: color var(--transition-fast);
+}
+
+.dark-card p {
+    color: var(--text-light-grey);
+    line-height: 1.6;
+    margin: 0;
+    transition: color var(--transition-fast);
+}
+
+.dark-card .card-link {
+    color: var(--link-gold);
+    font-weight: bold;
+    margin-top: auto;
+    transition: color var(--transition-fast);
+}
+
+/* --- Hover States (The Magic) --- */
+
+/* Whole card hover effect */
+.dark-card:hover {
+    background-color: var(--card-dark-hover);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Text brightens to pure white on card hover */
+.dark-card:hover h3,
+.dark-card:hover p {
+    color: var(--text-white);
+}
+
+/* Link specifically turns green on card hover */
+.dark-card:hover .card-link {
+    color: var(--hover-green);
+}
+
 @media (max-width: 640px) {
     .hero-actions {
         flex-direction: column;
@@ -691,5 +745,13 @@
         font-size: 2.5rem;
         top: 10px;
         right: 15px;
+    }
+
+    .dark-card {
+        padding: 1.5rem;
+    }
+
+    .dark-card h3 {
+        font-size: 1.25rem;
     }
 }

@@ -33,20 +33,36 @@ h1, h2, h3, h4 {
     font-weight: 800;
 }
 
+/* --- Standard Links on Light/Default Backgrounds --- */
 a {
     text-decoration: none;
-    color: var(--color-primary);
+    color: var(--link-gold);
     border-bottom: 1px solid rgba(234, 179, 8, 0.3);
     transition: color var(--transition-fast), border-bottom-color var(--transition-fast);
 }
 
 a:visited {
-    color: var(--color-primary);
+    color: var(--link-gold);
 }
 
 a:hover {
-    color: var(--color-accent);
-    border-bottom-color: var(--color-accent);
+    color: var(--hover-green);
+    border-bottom-color: var(--hover-green);
+}
+
+/* --- Dark Background / Footer Links --- */
+.dark-section a,
+footer a,
+.site-footer a {
+    color: var(--link-gold);
+    border-bottom-color: rgba(234, 179, 8, 0.3);
+}
+
+.dark-section a:hover,
+footer a:hover,
+.site-footer a:hover {
+    color: var(--hover-green);
+    border-bottom-color: var(--hover-green);
 }
 
 .container {

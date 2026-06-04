@@ -33,6 +33,18 @@
 
     /* Typography Levels */
     --color-text-muted: #94A3B8;
+
+    /* --- Link & Card Consistency System --- */
+    /* Brand Colors for Links */
+    --link-gold: #EAB308;          /* Primary gold links */
+    --link-blue: #0066cc;          /* Blue links (light backgrounds) */
+    --hover-green: #10B981;        /* Hover state (emerald) */
+
+    /* Dark Card Specifics */
+    --card-dark-bg: #1a1a1a;       /* Card background */
+    --card-dark-hover: #222222;    /* Card hover background */
+    --text-light-grey: #e0e0e0;    /* Secondary text in cards */
+    --text-white: #ffffff;         /* Primary text in cards */
 }
 
 [data-theme="dark"] {
