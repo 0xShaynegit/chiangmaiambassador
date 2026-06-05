@@ -689,6 +689,8 @@ a.btn-large-outline {
 
 .footer-nav-group ul {
     list-style: none;
+    margin-left: 0;
+    margin-bottom: 0;
 }
 
 .footer-nav-group li {
