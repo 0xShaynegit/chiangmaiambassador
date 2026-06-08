@@ -268,7 +268,7 @@ a.btn-large-outline {
     grid-template-columns: 1.2fr 1fr;
     align-items: center;
     gap: 30px;
-    padding: 80px 0;
+    padding: 120px 0;
     padding-top: 170px;
     min-height: 80vh;
     position: relative;
@@ -896,8 +896,7 @@ a.btn-large-outline {
         grid-template-columns: 1fr;
         gap: 40px;
         min-height: auto;
-        padding: 100px 0 60px;
-        overflow: hidden;
+        padding: 100px 0 80px;
     }
 
     .hero-content {
