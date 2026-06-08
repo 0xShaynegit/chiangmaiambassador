@@ -250,9 +250,44 @@
     color: #333333;
 }
 
-.blog-body td,
+.blog-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.9rem;
+}
+
 .blog-body th {
+    background: #0F172A;
+    color: white;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.blog-body td {
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: top;
     color: #333333;
+}
+
+.blog-body tr:nth-child(even) td {
+    background: #f9fafb;
+}
+
+.blog-body tr:hover td {
+    background: #f0f4ff;
+}
+
+@media (max-width: 768px) {
+    .blog-body table {
+        font-size: 0.8rem;
+    }
+    .blog-body th,
+    .blog-body td {
+        padding: 0.5rem;
+    }
 }
 
 .blog-body a {
@@ -455,9 +490,12 @@
 }
 
 .blog-card:hover h3,
-.blog-card:hover p,
-.blog-card:hover .arrow-link {
+.blog-card:hover p {
     color: #ffffff;
+}
+
+.blog-card:hover .arrow-link {
+    color: var(--color-accent);
 }
 
 .blog-card img {
@@ -486,10 +524,11 @@
     padding: 0 1.5rem 1.5rem 1.5rem;
     color: var(--color-primary);
     font-weight: 600;
+    border-bottom: none;
 }
 
 .blog-card .arrow-link:hover {
-    color: var(--color-secondary);
+    border-bottom: none;
 }
 
 /* Stretch the arrow-link to cover the entire card */
