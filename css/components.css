@@ -38,6 +38,15 @@
     color: var(--color-primary);
 }
 
+/* Restore border-bottom on outline buttons (sections.css border-bottom:none strips it via higher specificity) */
+a.btn-large-outline {
+    border-bottom: 2px solid var(--color-ink);
+}
+
+a.btn-large-outline:hover {
+    border-bottom: 2px solid var(--color-primary);
+}
+
 /* Dark background variant for hero */
 .hero-content .btn-large-primary {
     background: var(--color-primary);
@@ -52,10 +61,12 @@
 .hero-content .btn-large-outline {
     color: white;
     border-color: white;
+    border-bottom-color: white;
 }
 
 .hero-content .btn-large-outline:hover {
     border-color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
     color: var(--color-primary);
 }
 
