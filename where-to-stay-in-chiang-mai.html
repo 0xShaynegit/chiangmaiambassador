@@ -48,15 +48,9 @@
 
         .img-right-small {
             float: right;
-            width: 280px;
-            margin: 0 0 1rem 2rem;
+            width: 25%;
+            margin: 0 0 1rem 1.5rem;
             shape-margin: 1rem;
-        }
-
-        .img-right-small img {
-            width: 100%;
-            height: auto;
-            display: block;
         }
 
         .img-left-large {
@@ -113,6 +107,7 @@
             background: #f0d080;
             padding: 2rem;
             border-left: 4px solid var(--color-primary);
+            border-radius: 0;
             margin: 2.5rem 0 3rem 0;
             border: 1px solid #e5ddd0;
         }
@@ -260,9 +255,26 @@
             background: #f9f7f4;
         }
 
+        .faq-item {
+            border-bottom: 1px solid #e5ddd0;
+            padding: 1.25rem 0;
+        }
+
+        .faq-item h3 {
+            font-size: 1.05rem;
+            color: #1a1a1a;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .faq-item p {
+            margin: 0;
+            color: #0F172A;
+        }
+
         .key-takeaways {
             background: #f0d080;
             padding: 2rem;
+            border-radius: 0;
             margin: 3rem 0;
             border: 1px solid #e5ddd0;
         }
@@ -418,7 +430,7 @@
     }
     </script>
 </head>
-<body>
+<body style="margin: 0; padding: 0; width: 100%;">
 
     <div class="progress-bar" id="progress-bar" aria-label="Reading progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
@@ -582,13 +594,13 @@
             </div>
         </section>
 
-        <section class="blog-content">
+        <article class="blog-content" style="background-color: white; padding-top: 0.75rem !important;">
             <div class="container" style="max-width: 960px; width: 100%; margin: 0 auto; padding: 0 2rem; box-sizing: border-box;">
 
                 <div class="blog-metadata">
                     <div class="blog-meta-item">
                         <span class="blog-meta-label">Category</span>
-                        <span class="blog-meta-value">Living in Chiang Mai</span>
+                        <span class="blog-meta-value"><a href="./">Home</a> / Living in Chiang Mai</span>
                     </div>
                     <div class="blog-meta-divider"></div>
                     <div class="blog-meta-item">
@@ -602,6 +614,9 @@
                     </div>
                 </div>
 
+                <figure class="img-right-small" style="margin-top: -30px; margin-bottom: 1rem; width: calc(100% - 400px); max-width: 280px;">
+                    <img src="images/chiang-mai-ambassador-chiangmaiambassador-old-city-moat-sunset-songthaew-palm-trees.webp" alt="Chiang Mai Old City moat with songthaew at sunset" width="280" height="210" loading="lazy">
+                </figure>
                 <div class="article-sidebar">
                     <h4>TL;DR: The Core Strategy</h4>
                     <ul>
@@ -614,12 +629,10 @@
                     </ul>
                 </div>
 
-                <div class="article-intro">
+                <div class="blog-body">
+
                     <h2>The Most Expensive Mistake You Can Make Before You Arrive</h2>
                     <p class="article-vibe">I have watched people arrive in Chiang Mai having pre-paid three months' rent on a condo they found on Airbnb, only to discover the unit is directly above a bar with live music until 1 AM, or that the listed "5-minute walk to Nimman" is actually a 25-minute walk in June heat. The Chiang Mai rental market punishes remote decision-making. It rewards people who are physically present. This guide is the framework I would give any friend arriving for the first time.</p>
-                </div>
-
-                <div class="blog-body">
 
                     <h2>The 6-Day Landing Pad: Your First Week in Chiang Mai</h2>
 
@@ -865,6 +878,38 @@
                         <p>If you are planning your move in full, do not miss our <a href="lifestyle/moving-checklist.html">complete Chiang Mai moving checklist</a> or the <a href="pages/planning-a-move-to-thailand.html">planning your move to Thailand guide</a>.</p>
                     </div>
 
+                    <h2>Frequently Asked Questions</h2>
+
+                    <div class="faq-item">
+                        <h3>How much is rent in Chiang Mai in 2026?</h3>
+                        <p>It depends entirely on the neighbourhood and unit type. Budget studios in Santitham or Jed Yod start from 6,000-8,000 THB per month. A comfortable 1-bedroom in Nimman runs 15,000-22,000 THB. A 3-bedroom family house in Hang Dong is 25,000-45,000 THB. All prices are for direct landlord deals. Add 15-20% if booking through platforms.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Which neighbourhood in Chiang Mai is best for digital nomads?</h3>
+                        <p>Nimman is the default answer and it earns it. The Wi-Fi infrastructure is built for remote work, co-working spaces are abundant, and the social scene is active. Santitham is the better-value alternative: quieter, cheaper, good street food, and close enough to Nimman by scooter that you get both worlds.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Can foreigners rent apartments in Chiang Mai without issue?</h3>
+                        <p>Yes. Most landlords are experienced with foreign tenants and handle TM30 immigration reporting routinely. You will need your passport, your visa documentation, and ideally a TDAC QR code from your arrival. Some landlords ask for a 1-2 month deposit. Contracts are typically in Thai; ask for an English version or have it translated before signing.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How long should I stay in a landing pad before signing a lease?</h3>
+                        <p>Four to six days is enough if you are focused. Use days 1-2 to orient, days 3-4 to walk sois and view properties, days 5-6 to revisit your top choices and negotiate. Do not rush the process. A wrong decision costs you three months of misery and the hassle of moving again.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Is Airbnb good for finding long-term rentals in Chiang Mai?</h3>
+                        <p>It is useful for landing pad stays of 1-2 weeks while you search. It is a poor tool for finding your actual long-term rental. The best units never appear on Airbnb. They are found by walking the sois in your target neighbourhood and knocking on gates. The savings from cutting out the platform are significant.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What is a TM30 and does my landlord need to file it?</h3>
+                        <p>TM30 is an immigration form that property owners are legally required to file within 24 hours of a foreign national staying at their property. Most landlords in Chiang Mai handle this online and are familiar with the process. They will ask for your TDAC (Thailand Digital Arrival Card) QR code on arrival. If your landlord does not know what TM30 is, that is a red flag for how they handle their legal obligations generally.</p>
+                    </div>
+
                     <div class="tips-box">
                         <h2>Guru Tip</h2>
                         <ol>
@@ -877,83 +922,114 @@
                 </div>
 
             </div>
-        </section>
+        </article>
 
-        <section class="blog-related" style="padding: 4rem 0; background: linear-gradient(180deg, #0F172A 0%, #1a2a4a 100%);">
-            <div class="container" style="max-width: 960px; margin: 0 auto; padding: 0 2rem;">
-                <h2 style="color: white; margin-bottom: 2rem; font-size: 1.75rem;">Related Guides</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
-
-                    <a href="lifestyle/moving-checklist.html" class="blog-card" style="display: block; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.1); text-decoration: none; transition: border-color 0.2s;">
-                        <div style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #EAB308; margin-bottom: 0.5rem;">Moving</div>
-                        <h3 style="color: white; font-size: 1.05rem; margin: 0 0 0.5rem 0;">Chiang Mai Moving Checklist</h3>
-                        <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem; margin: 0; line-height: 1.6;">Everything you need to do before, during, and after your move to Chiang Mai.</p>
-                    </a>
-
-                    <a href="pages/cost-of-living.html" class="blog-card" style="display: block; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.1); text-decoration: none; transition: border-color 0.2s;">
-                        <div style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #EAB308; margin-bottom: 0.5rem;">Finances</div>
-                        <h3 style="color: white; font-size: 1.05rem; margin: 0 0 0.5rem 0;">Cost of Living in Chiang Mai</h3>
-                        <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem; margin: 0; line-height: 1.6;">The real numbers for rent, food, transport, health insurance, and lifestyle in 2026.</p>
-                    </a>
-
-                    <a href="visa/dtv-visa.html" class="blog-card" style="display: block; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.1); text-decoration: none; transition: border-color 0.2s;">
-                        <div style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #EAB308; margin-bottom: 0.5rem;">Visas</div>
-                        <h3 style="color: white; font-size: 1.05rem; margin: 0 0 0.5rem 0;">DTV Visa Guide</h3>
-                        <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem; margin: 0; line-height: 1.6;">The 5-year Destination Thailand Visa. Requirements, process, and rental negotiation leverage.</p>
-                    </a>
-
-                </div>
+        <section class="blog-related container">
+            <h2>More from the Ambassador</h2>
+            <div class="blog-grid">
+                <article class="blog-card reveal">
+                    <img src="images/chiang-mai-ambassador-chiangmaiambassador-Accommodation-Map.webp" alt="Chiang Mai Moving Checklist" width="400" height="200">
+                    <h3>Chiang Mai Moving Checklist</h3>
+                    <p>Everything you need to do before, during, and after your move to Chiang Mai.</p>
+                    <a href="lifestyle/moving-checklist.html" class="arrow-link">Read more &rarr;</a>
+                </article>
+                <article class="blog-card reveal">
+                    <img src="images/chiang-mai-ambassador-chiangmaiambassador-maya-mall-nimman-exterior-chiang-mai.webp" alt="Cost of Living in Chiang Mai" width="400" height="200">
+                    <h3>Cost of Living in Chiang Mai</h3>
+                    <p>The real numbers for rent, food, transport, health insurance, and lifestyle in 2026.</p>
+                    <a href="pages/cost-of-living.html" class="arrow-link">Read more &rarr;</a>
+                </article>
+                <article class="blog-card reveal">
+                    <img src="images/chiang-mai-ambassador-chiangmaiambassador-visa-exempt-thailand-2026.webp" alt="DTV Visa Guide" width="400" height="200">
+                    <h3>DTV Visa Guide</h3>
+                    <p>The 5-year Destination Thailand Visa. Requirements, process, and rental negotiation leverage.</p>
+                    <a href="visa/dtv-visa.html" class="arrow-link">Read more &rarr;</a>
+                </article>
             </div>
         </section>
 
     </main>
 
-    <footer style="background: #0a1628; padding: 4rem 0 2rem; border-top: 1px solid rgba(255,255,255,0.08);">
-        <div class="container" style="max-width: 1280px;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2.5rem; margin-bottom: 3rem;">
-                <div>
-                    <div style="font-family: var(--font-heading); font-weight: 800; font-size: 1.1rem; color: #EAB308; margin-bottom: 1rem;">CM Ambassador</div>
-                    <p style="color: rgba(255,255,255,0.5); font-size: 0.875rem; line-height: 1.7;">The ground-level guide to living in Chiang Mai. Written by long-term residents, not travel bloggers.</p>
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="./" class="logo-link" style="display: inline-flex;">
+                        <div class="logo" style="margin-bottom: 1rem;">
+                            <svg class="logo-icon" viewBox="-175 -178 350 500" xmlns="http://www.w3.org/2000/svg" width="60" height="80">
+                            <defs>
+                                <linearGradient id="g2gold-footer" x1="20%" y1="0%" x2="80%" y2="100%">
+                                    <stop offset="0%" stop-color="#F2D980" />
+                                    <stop offset="40%" stop-color="#C49010" />
+                                    <stop offset="100%" stop-color="#9A7008" />
+                                </linearGradient>
+                                <linearGradient id="g2ring-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#E4BC50" />
+                                    <stop offset="100%" stop-color="#9A7008" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="0" cy="0" r="164" fill="none" stroke="url(#g2ring-footer)" stroke-width="2.5" />
+                            <circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65" />
+                            <circle cx="164" cy="0" r="3.2" fill="#C49010" />
+                            <circle cx="0" cy="-164" r="3.2" fill="#C49010" />
+                            <circle cx="-164" cy="0" r="3.2" fill="#C49010" />
+                            <circle cx="0" cy="164" r="3.2" fill="#C49010" />
+                            <g transform="translate(0, -149.201) scale(1.94980)">
+                                <polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980" />
+                                <rect x="-2" y="4" width="4" height="38" fill="url(#g2gold-footer)" />
+                                <polygon points="0,42 -16,78 16,78" fill="url(#g2gold-footer)" />
+                                <rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008" />
+                                <rect x="-22" y="84" width="44" height="9" fill="url(#g2gold-footer)" />
+                                <rect x="-25" y="93" width="50" height="4" fill="#9A7008" />
+                                <rect x="-30" y="97" width="60" height="9" fill="url(#g2gold-footer)" />
+                                <rect x="-33" y="106" width="66" height="4" fill="#9A7008" />
+                                <rect x="-38" y="110" width="76" height="9" fill="url(#g2gold-footer)" />
+                                <rect x="-44" y="119" width="88" height="11" fill="url(#g2gold-footer)" />
+                                <rect x="-52" y="130" width="104" height="8" fill="#9A7008" />
+                            </g>
+                        </svg>
+                            <div class="logo-text-wrapper">
+                                <div>
+                                    <span class="logo-accent">CM</span><span class="logo-text">Ambassador</span>
+                                </div>
+                                <span class="logo-tagline">Connector · Helper · Guru</span>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="footer-tagline">16+ years of real experience. Honest guidance for settling into Chiang Mai or simply where to get random stuff.</p>
                 </div>
-                <div>
+
+                <nav class="footer-nav" aria-label="Footer navigation">
                     <div class="footer-nav-group">
-                        <h4>Living Here</h4>
-                        <ul>
-                            <li><a href="lifestyle/neighborhoods/santitham.html">Santitham</a></li>
-                            <li><a href="lifestyle/neighborhoods/nimman.html">Nimman</a></li>
-                            <li><a href="lifestyle/neighborhoods/old-city.html">Old City</a></li>
-                            <li><a href="lifestyle/neighborhoods/hang-dong.html">Hang Dong</a></li>
-                            <li><a href="pages/cost-of-living.html">Cost of Living</a></li>
+                        <h3>Guides</h3>
+                        <ul role="list">
+                            <li><a href="pages/neighbourhoods.html">Neighbourhoods</a></li>
+                            <li><a href="pages/cost-of-living.html">Cost of living</a></li>
+                            <li><a href="pages/visas.html">Visas and permits</a></li>
                         </ul>
                     </div>
-                </div>
-                <div>
                     <div class="footer-nav-group">
-                        <h4>Visas</h4>
-                        <ul>
-                            <li><a href="visa/dtv-visa.html">DTV Visa</a></li>
-                            <li><a href="visa/retirement-visa.html">Retirement Visa</a></li>
-                            <li><a href="visa/ed-visa.html">ED Visa</a></li>
-                            <li><a href="visa/ltr-visa.html">LTR Visa</a></li>
-                            <li><a href="pages/visas.html">All Visas</a></li>
+                        <h3>Tools</h3>
+                        <ul role="list">
+                            <li><a href="#tools">Budget calculator</a></li>
+                            <li><a href="#tools">Visa planner</a></li>
+                            <li><a href="#tools">Neighbourhood matcher</a></li>
                         </ul>
                     </div>
-                </div>
-                <div>
                     <div class="footer-nav-group">
-                        <h4>Guides</h4>
-                        <ul>
-                            <li><a href="lifestyle/moving-checklist.html">Moving Checklist</a></li>
-                            <li><a href="modern-transport-guide.html">Transport Guide</a></li>
-                            <li><a href="guides/budget-chiang-mai-medical-services.html">Medical Services</a></li>
-                            <li><a href="lifestyle/smoky-season-chiang-mai.html">Smoky Season</a></li>
+                        <h3>Community</h3>
+                        <ul role="list">
+                            <li><a href="#">Expats Club</a></li>
+                            <li><a href="#">Ask a local</a></li>
+                            <li><a href="#">Newsletter</a></li>
                         </ul>
                     </div>
-                </div>
+                </nav>
             </div>
-            <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-                <p style="color: rgba(255,255,255,0.35); font-size: 0.8rem; margin: 0;">2026 Chiang Mai Ambassador. For residents, by residents.</p>
-                <p style="color: rgba(255,255,255,0.35); font-size: 0.8rem; margin: 0;">All prices and rules stated as of 2026. Verify current conditions before making decisions.</p>
+
+            <div class="footer-bottom">
+                <p class="footer-legal">Copyright 2026 Chiang Mai Ambassador. Published with care in Chiang Mai, Thailand.</p>
+                <p class="footer-disclaimer">Information is provided in good faith. Always verify visa and legal information with official Thai government sources before making decisions. <a href="pages/privacy.html">Privacy</a> · <a href="pages/terms.html">Terms</a> · <a href="pages/disclaimer.html">Disclaimer</a></p>
             </div>
         </div>
     </footer>
