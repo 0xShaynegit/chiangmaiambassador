@@ -34,8 +34,8 @@ function initReveals() {
     }, { threshold: 0.15 })
 
     reveals.forEach(el => {
-        // Never hide hero-visual-frame or any element that is/contains the LCP image
-        if (el.closest('.hero-split') && el.classList.contains('hero-visual-frame')) return
+        // Never hide any element inside the hero   hides LCP text/image and inflates render delay
+        if (el.closest('.hero-split')) return
         el.style.opacity = '0'
         el.style.transform = 'translateY(40px)'
         el.style.transition = 'opacity 1.2s ease-out, transform 1.2s ease-out'
