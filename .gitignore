@@ -57,3 +57,9 @@ claude.*
 template.html
 
 _archive/
+
+# Build/inject scripts (one-off tooling, not part of site)
+_faq_snippets/
+_faqdata.ps1
+_inject_faq.ps1
+_inject_faq2.ps1

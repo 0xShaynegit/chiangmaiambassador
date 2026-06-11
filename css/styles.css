@@ -2765,3 +2765,36 @@ a.btn-large-outline:hover {
 [data-theme="dark"] .blog-card {
     background-color: var(--color-surface);
 }
+
+/* FAQ and Tips blocks (used across blog pages) */
+.faq-item {
+    border-left: 4px solid var(--color-primary);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+    background: #faf8f4;
+}
+.faq-item h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.05rem;
+    color: #1a1a1a;
+}
+.faq-item p {
+    margin: 0;
+    color: #0F172A;
+    line-height: 1.6;
+}
+.tips-box {
+    background: #f0d080;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 4px;
+    border: 1px solid #e5ddd0;
+}
+.tips-box h2 {
+    margin-top: 0;
+    color: #1a1a1a;
+}
+.tips-box p {
+    color: #0F172A;
+    line-height: 1.6;
+}
