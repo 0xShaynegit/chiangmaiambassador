@@ -19,6 +19,7 @@ Site is clean, fully linked, and analytics-enabled. Six commits this session.
 | `ed274fd` | LCP fix: hero image excluded from reveal animation + preload in head |
 | `b898251` | CSS consolidated into single styles.css + 3 homepage images resized |
 | `bfde895` | Cloudflare Analytics token rolled out to all 111 pages |
+| `8389c37` | FAQ (5 items) + Guru Tip added to 18 light-background blog pages |
 
 ---
 
@@ -64,10 +65,9 @@ Three files (chiang-mai-festivals, vets-pet-care, smoky-season) had every "h" re
 
 ## Still NOT Done (needs decision)
 
-1. **FAQ/tips for out-of-scope pages** (~17 pages: root-level blogs, neighborhoods, food-delivery-apps, late-night-eating). Adding FAQ blocks is a visual format change, needs authorisation.
-2. **guides/what-to-do-after-a-vehicle-accident.html**   different internal layout (no blog-content wrapper, no TL;DR figure). Restructuring needs visual confirmation.
-3. **pages/visas.html**   TL;DR figure sits after article-sidebar. pages/ uses page-template so rule may not apply. Left alone.
-4. **Substituted images** needing human eyes: finding-pet-friendly-home cards, internet/TV/mobile-phones related cards use generic fallback images.
+1. **guides/what-to-do-after-a-vehicle-accident.html** -- different internal layout (no blog-content wrapper, no TL;DR figure). Restructuring needs visual confirmation.
+2. **pages/visas.html** -- TL;DR figure sits after article-sidebar. pages/ uses page-template so rule may not apply. Left alone.
+3. **Substituted images** needing human eyes: finding-pet-friendly-home cards, internet/TV/mobile-phones related cards use generic fallback images.
 
 ---
 
