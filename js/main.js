@@ -170,7 +170,17 @@ function initNavigation() {
             `).join('')
         }
 
-        // Pre-load pagefind when menu opens
+        // Pre-load pagefind on first interaction hint so it's ready before menu opens
+        let prefetchDone = false
+        function prefetchPagefind() {
+            if (prefetchDone) return
+            prefetchDone = true
+            loadPagefind()
+        }
+        hamburger.addEventListener('mouseover', prefetchPagefind, { once: true })
+        hamburger.addEventListener('touchstart', prefetchPagefind, { once: true, passive: true })
+        window.addEventListener('scroll', prefetchPagefind, { once: true, passive: true })
+
         function openMenu() {
             navLinks.classList.add('mobile-open')
             hamburger.classList.add('open')
