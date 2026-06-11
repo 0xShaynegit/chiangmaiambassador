@@ -356,6 +356,11 @@ function initPageLanterns() {
 }
 
 function spawnLanternBatch() {
+    // Defer geometry reads to avoid forced reflow during page load
+    requestAnimationFrame(() => _spawnLanterns())
+}
+
+function _spawnLanterns() {
     const main = document.querySelector('main')
     const hero = document.querySelector('.hero-split, .blog-hero')
     if (!main || !hero) return
