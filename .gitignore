@@ -55,3 +55,5 @@ claude.*
 # Template files in any directory
 **/template.html
 template.html
+
+_archive/
