@@ -284,7 +284,6 @@ a.btn-large-outline {
     z-index: 10;
     color: white;
     padding-left: 40px;
-    transform: translateX(50px);
 }
 
 .hero-content h1 {
@@ -307,7 +306,6 @@ a.btn-large-outline {
     overflow: visible;
     z-index: 10;
     padding-right: 40px;
-    transform: translateX(-50px);
 }
 
 .hero-visual-frame img {
