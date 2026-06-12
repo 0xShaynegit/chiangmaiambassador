@@ -239,13 +239,6 @@ a.btn-large-outline {
     border-left-color: var(--color-primary);
 }
 
-a.nav-search-icon,
-a.nav-search-icon:hover,
-a.nav-search-icon:visited,
-a.nav-search-icon:visited:hover {
-    border-bottom-color: var(--color-primary);
-}
-
 /* Eyebrow / Label */
 .eyebrow {
     display: block;
@@ -829,6 +822,10 @@ a.btn-breaking-news:visited:hover {
 }
 
 /* Search icon in nav */
+.nav-links > a.nav-search-icon::after {
+    display: none;
+}
+
 .nav-search-icon {
     display: flex;
     align-items: center;
