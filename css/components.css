@@ -70,11 +70,14 @@ a.btn-large-outline:hover {
     color: var(--color-primary);
 }
 
-.btn-primary {
+.btn-primary,
+a.btn-primary,
+a.btn-primary:visited {
     padding: 10px 20px;
     background: var(--color-primary);
     color: #ffffff;
     border: none;
+    border-bottom: none;
     font-family: var(--font-heading);
     font-weight: 600;
     font-size: 0.875rem;
@@ -85,10 +88,13 @@ a.btn-large-outline:hover {
     display: inline-block;
 }
 
-.btn-primary:hover {
-    background: #F5C430;
-    color: #000000;
+.btn-primary:hover,
+a.btn-primary:hover,
+a.btn-primary:visited:hover {
+    background: #000000;
+    color: #ffffff;
     transform: translateY(-2px);
+    border-bottom: none;
 }
 
 /* The Pathway Cards */
