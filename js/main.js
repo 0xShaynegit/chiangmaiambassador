@@ -9,12 +9,26 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize UI behaviors
     initNavigation()
     initReveals()
+    initBlogCards()
     initFloatingElements()
     initMagneticElements()
     initProgressBar()
     initNumberCountUp()
     initPageLanterns()
 })
+
+// BLOG CARDS: Make entire card clickable via the arrow-link href
+function initBlogCards() {
+    document.querySelectorAll('.blog-card').forEach(card => {
+        const link = card.querySelector('.arrow-link')
+        if (!link || !link.href || link.getAttribute('href') === '#') return
+        card.style.cursor = 'pointer'
+        card.addEventListener('click', e => {
+            if (e.target.tagName === 'A') return
+            window.location.href = link.href
+        })
+    })
+}
 
 // Utility: Check device type
 const isMobile = window.innerWidth < 768
