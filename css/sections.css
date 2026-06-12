@@ -240,11 +240,11 @@ a.btn-large-outline {
 }
 
 .nav-links a.nav-search-icon {
-    border-bottom: 2px solid rgba(255,255,255,0.1);
+    border-bottom: none;
 }
 
 .nav-links a.nav-search-icon:hover {
-    border-bottom-color: var(--color-primary);
+    border-bottom: none;
 }
 
 /* Eyebrow / Label */
@@ -816,9 +816,12 @@ a.btn-large-outline {
     cursor: pointer;
 }
 
-.btn-breaking-news:hover {
+a.btn-breaking-news:hover,
+a.btn-breaking-news:visited:hover {
     background: transparent;
-    color: white;
+    color: #000000;
+    border-color: white;
+    border-bottom-color: white;
 }
 
 /* Mobile search bar hidden on desktop */

@@ -112,6 +112,7 @@ a.btn-large-outline:hover {
 .path-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    color: var(--color-text-main);
 }
 
 .path-card-image {

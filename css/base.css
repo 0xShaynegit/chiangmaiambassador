@@ -45,7 +45,8 @@ a:visited {
     color: var(--link-gold);
 }
 
-a:hover {
+a:hover,
+a:visited:hover {
     color: var(--hover-green);
     border-bottom-color: var(--hover-green);
 }
