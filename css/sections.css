@@ -405,8 +405,8 @@ a.btn-large-outline {
 }
 
 .neighbourhood-card {
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm);
+    border: none;
+    border-radius: 0.75rem;
     overflow: hidden;
     transition: transform var(--transition-slow), box-shadow var(--transition-slow);
     display: flex;
@@ -420,8 +420,13 @@ a.btn-large-outline {
 }
 
 .neighbourhood-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.neighbourhood-card:hover h3,
+.neighbourhood-card:hover p {
+    color: #ffffff;
 }
 
 .neighbourhood-card img {
@@ -478,16 +483,16 @@ a.btn-large-outline {
 }
 
 .price-card {
-    border: 1px solid var(--color-border);
+    border: none;
     padding: 40px;
-    border-radius: var(--radius-sm);
-    transition: all var(--transition-slow);
+    border-radius: 0.75rem;
+    background: var(--color-surface);
+    transition: transform var(--transition-slow), box-shadow var(--transition-slow);
 }
 
 .price-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--color-ink);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .price-header {
@@ -577,15 +582,21 @@ a.btn-large-outline {
 }
 
 .tool-card {
-    border: 1px solid var(--color-border);
+    border: none;
     padding: 30px;
-    border-radius: var(--radius-sm);
-    transition: all var(--transition-slow);
+    border-radius: 0.75rem;
+    background: var(--color-surface);
+    transition: transform var(--transition-slow), box-shadow var(--transition-slow);
 }
 
 .tool-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--color-primary);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.tool-card:hover h3,
+.tool-card:hover p {
+    color: #ffffff;
 }
 
 .tool-card h3 {

@@ -93,8 +93,8 @@ a.btn-large-outline:hover {
 
 /* The Pathway Cards */
 .path-card {
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm);
+    border: none;
+    border-radius: 0.75rem;
     overflow: hidden;
     transition: var(--transition-slow);
     position: relative;
@@ -110,9 +110,14 @@ a.btn-large-outline:hover {
 }
 
 .path-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     color: var(--color-text-main);
+}
+
+.path-card:hover h3,
+.path-card:hover p {
+    color: #ffffff;
 }
 
 .path-card-image {
@@ -163,31 +168,16 @@ a.btn-large-outline:hover {
 .path-gold {
     background: var(--color-primary);
     color: var(--color-ink);
-    border-color: var(--color-primary);
-}
-
-.path-gold:hover {
-    border-bottom: 6px solid var(--color-ink);
 }
 
 .path-purple {
     background: var(--color-secondary);
     color: white;
-    border-color: var(--color-secondary);
-}
-
-.path-purple:hover {
-    border-bottom: 6px solid white;
 }
 
 .path-ink {
     background: var(--color-ink);
     color: white;
-    border-color: var(--color-ink);
-}
-
-.path-ink:hover {
-    border-bottom: 6px solid white;
 }
 
 .path-card a {
