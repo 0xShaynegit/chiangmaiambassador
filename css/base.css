@@ -2,6 +2,45 @@
    Focus: Typography & Global Polish
 */
 
+/* ============================================
+   CSS VARIABLES - Must be first in styles.css
+   These were originally only in compiled output.
+   ============================================ */
+:root {
+    --color-bg: #0F172A;
+    --color-surface: #1E293B;
+    --color-ink: #FFFFFF;
+    --color-primary: #EAB308;
+    --color-secondary: #7E22CE;
+    --color-accent: #10B981;
+    --color-text-main: #F1F5F9;
+    --color-border: #334155;
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-fast: 0.3s var(--ease-out-expo);
+    --transition-slow: 0.8s var(--ease-out-expo);
+    --container-max: 1280px;
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    --color-text-muted: #94A3B8;
+    --link-gold: #EAB308;
+    --link-blue: #0066cc;
+    --hover-green: #10B981;
+    --card-dark-bg: #1a1a1a;
+    --card-dark-hover: #222222;
+    --text-light-grey: #e0e0e0;
+    --text-white: #ffffff;
+}
+
+[data-theme="dark"] {
+    --color-bg: #0F172A;
+    --color-surface: #1E293B;
+    --color-text-main: #F1F5F9;
+    --color-ink: #FFFFFF;
+    --color-border: #334155;
+}
+
 * {
     margin: 0;
     padding: 0;
