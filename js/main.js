@@ -364,8 +364,11 @@ function initHeroLanterns() {
 // PAGE LANTERNS: Spawn batches every 20 seconds, rising from page bottom to hero bottom
 function initPageLanterns() {
     initHeroLanterns()
-    spawnLanternBatch()
-    setInterval(spawnLanternBatch, 20000)
+    // Defer first spawn to avoid forced reflow competing with LCP paint
+    setTimeout(() => {
+        spawnLanternBatch()
+        setInterval(spawnLanternBatch, 20000)
+    }, 3000)
 }
 
 function spawnLanternBatch() {
