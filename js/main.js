@@ -14,8 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
     initFloatingElements()
     initProgressBar()
     initNumberCountUp()
-    initPageLanterns()
     initDarkCards()
+
+    // Lanterns are cosmetic   defer well past LCP window
+    setTimeout(() => initPageLanterns(), 3000)
 
     // Desktop-only: skip on mobile to avoid unnecessary layout reads
     if (isDesktop) initMagneticElements()
