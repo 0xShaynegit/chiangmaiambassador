@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://chiangmaiambassador.com/sitemap.xml
+Sitemap: https://chiangmaiambassador.com/sitemapv2.xml
