@@ -7,20 +7,22 @@ document.addEventListener('DOMContentLoaded', () => {
     // Read layout values BEFORE any DOM mutations to avoid forced reflow
     const isDesktop = window.innerWidth >= 768
 
-    // DOM mutations
-    initNavigation()
+    // Critical path: runs immediately
     initReveals()
-    initBlogCards()
-    initFloatingElements()
     initProgressBar()
-    initNumberCountUp()
-    initDarkCards()
+
+    // Deferred: DOM-heavy inits that cause layout recalc   run after paint
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+        initNavigation()
+        initBlogCards()
+        initFloatingElements()
+        initNumberCountUp()
+        initDarkCards()
+        if (isDesktop) initMagneticElements()
+    }))
 
     // Lanterns are cosmetic   defer well past LCP window
     setTimeout(() => initPageLanterns(), 3000)
-
-    // Desktop-only: skip on mobile to avoid unnecessary layout reads
-    if (isDesktop) initMagneticElements()
 })
 
 // BLOG CARDS: Make entire card clickable via the arrow-link href
