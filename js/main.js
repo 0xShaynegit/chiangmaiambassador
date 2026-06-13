@@ -4,23 +4,21 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("Chiang Mai Ambassador Engine: Online")
+    // Read layout values BEFORE any DOM mutations to avoid forced reflow
+    const isDesktop = window.innerWidth >= 768
 
-    // Inject animation keyframes
-    const styleSheet = document.createElement('style')
-    styleSheet.textContent = `@keyframes float{0%,100%{transform:translateY(0px)}50%{transform:translateY(15px)}}`
-    document.head.appendChild(styleSheet)
-
-    // Initialize UI behaviors
+    // DOM mutations
     initNavigation()
     initReveals()
     initBlogCards()
     initFloatingElements()
-    initMagneticElements()
     initProgressBar()
     initNumberCountUp()
     initPageLanterns()
     initDarkCards()
+
+    // Desktop-only: skip on mobile to avoid unnecessary layout reads
+    if (isDesktop) initMagneticElements()
 })
 
 // BLOG CARDS: Make entire card clickable via the arrow-link href
@@ -71,8 +69,6 @@ function initFloatingElements() {
 
 // MAGNETIC: CTA buttons follow cursor with subtle pull
 function initMagneticElements() {
-    if (window.innerWidth < 768) return
-
     const magnets = document.querySelectorAll('.magnetic-item')
 
     magnets.forEach(el => {
