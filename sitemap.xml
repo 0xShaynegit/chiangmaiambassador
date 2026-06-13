@@ -76,22 +76,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chiangmaiambassador.com/food/chiang-mai-grandview-lunch/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://chiangmaiambassador.com/food/dukes/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://chiangmaiambassador.com/food/food-delivery-services/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://chiangmaiambassador.com/food/ibis-styles-buffet-lunch/</loc>
     <lastmod>2026-05-25</lastmod>
     <priority>0.7</priority>
   </url>
@@ -102,11 +87,6 @@
   </url>
   <url>
     <loc>https://chiangmaiambassador.com/food/meela-peanut-butter/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://chiangmaiambassador.com/food/real-thai-restaurant/</loc>
     <lastmod>2026-05-25</lastmod>
     <priority>0.7</priority>
   </url>
@@ -156,11 +136,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chiangmaiambassador.com/guides/chiang-mai-football-club/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://chiangmaiambassador.com/guides/chiang-mai-insurance/</loc>
     <lastmod>2026-05-25</lastmod>
     <priority>0.7</priority>
@@ -197,11 +172,6 @@
   </url>
   <url>
     <loc>https://chiangmaiambassador.com/guides/renting-a-motorbike-in-chiang-mai/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://chiangmaiambassador.com/guides/run-for-relief/</loc>
     <lastmod>2026-05-25</lastmod>
     <priority>0.7</priority>
   </url>
@@ -448,6 +418,111 @@
   <url>
     <loc>https://chiangmaiambassador.com/pages/visas/</loc>
     <lastmod>2026-05-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/chiang-mai/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/food/chiang-mai-marriott-hotel-dining/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/food/food-delivery-apps-chiang-mai/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/food/late-night-eating-chiang-mai/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/guides/90-day-reporting-tm30-chiang-mai/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/guides/chiang-mai-driving-licence/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/guides/chiang-mai-vs-da-nang/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/guides/finding-pet-friendly-home-chiang-mai/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/guides/language-schools-ed-visa-chiang-mai/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/guides/lazada-shopee-foreigners-chiang-mai/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/guides/residency-certificate-chiang-mai/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/guides/travelling-to-thailand-with-pets/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/guides/vets-pet-care-chiang-mai/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/lifestyle/neighborhoods/hang-dong/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/lifestyle/neighborhoods/jed-yod/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/lifestyle/neighborhoods/nimman/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/lifestyle/neighborhoods/old-city/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/lifestyle/neighborhoods/riverside/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/lifestyle/neighborhoods/santitham/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/lifestyle/neighborhoods/wat-ket-riverside/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/lifestyle/vip-concierge-chiang-mai/</loc>
+    <lastmod>2026-06-14</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>
