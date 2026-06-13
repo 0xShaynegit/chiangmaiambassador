@@ -212,4 +212,4 @@ a.service-card,a.service-card:visited,a.service-card:hover{border-bottom:none;co
 .blog-content .tips-box,.blog-content .tldr-box,.blog-content .faq-section{color:#1e293b;}
 .blog-content .tldr-box h3,.blog-content .faq-section h3,.blog-content .tips-box h3{color:#0f172a;}
 #guides-nav-menu{column-count:3!important;min-width:720px!important;}
-.hero-actions{margin-left:auto}
+.hero-actions{justify-content:flex-end}
