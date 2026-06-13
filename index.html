@@ -15,7 +15,8 @@
     <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
 
     <!-- LCP image preload -->
-    <link rel="preload" href="images/chiang-mai-hero.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="images/chiang-mai-hero-mobile.webp" as="image" fetchpriority="high" media="(max-width: 767px)">
+    <link rel="preload" href="images/chiang-mai-hero.webp" as="image" fetchpriority="high" media="(min-width: 768px)">
 
     <!-- Font preloads (local files) -->
     <link rel="preload" href="fonts/outfit-600.woff2" as="font" type="font/woff2" crossorigin>
@@ -286,7 +287,10 @@
             </div>
 
             <div class="hero-visual-frame reveal">
-                <img src="images/chiang-mai-hero.webp" alt="Chiang Mai premium expat living" width="560" height="700" fetchpriority="high">
+                <picture>
+                    <source srcset="images/chiang-mai-hero-mobile.webp" media="(max-width: 767px)">
+                    <img src="images/chiang-mai-hero.webp" alt="Chiang Mai premium expat living" width="560" height="700" fetchpriority="high">
+                </picture>
                 <div class="floating-stat">
                     <span class="stat-label">Experience</span>
                     <div class="stat-value">
