@@ -787,6 +787,49 @@
 
 
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "38ebf6cb1000449b961756de0ca25576"}'></script><!-- End Cloudflare Web Analytics -->
+
+<!-- CHAT WIDGET -->
+<script>
+window.addEventListener('load', function() {
+    var css = '#cma-zone{position:fixed;bottom:0;left:0;width:40vw;height:30vh;z-index:9998;pointer-events:all}#cma-widget{position:fixed;bottom:20px;left:20px;z-index:9999;display:flex;flex-direction:column;align-items:flex-start;gap:8px;pointer-events:none}#cma-widget.active{pointer-events:all}#cma-channels{display:flex;flex-direction:column;gap:7px;opacity:0;transform:translateY(8px);pointer-events:none;transition:opacity .22s ease,transform .22s ease}#cma-channels.show{opacity:1;transform:translateY(0);pointer-events:all}.cma-ch{display:flex;align-items:center;gap:10px;text-decoration:none;background:#fff;border-radius:50px;padding:7px 15px 7px 7px;box-shadow:0 2px 14px rgba(0,0,0,.16);transition:transform .14s ease,box-shadow .14s ease;white-space:nowrap}.cma-ch:hover{transform:translateX(4px);box-shadow:0 4px 18px rgba(0,0,0,.22)}.cma-ch svg{width:28px;height:28px;flex-shrink:0}.cma-ch span{font-size:13px;font-weight:600;color:#1a1a1a}#cma-foot{display:flex;align-items:center;gap:0}#cma-btn{width:54px;height:54px;border-radius:50%;border:none;background:#0F172A;box-shadow:0 3px 16px rgba(0,0,0,.22);cursor:pointer;padding:4px;flex-shrink:0;transition:transform .14s ease,box-shadow .14s ease;display:flex;align-items:center;justify-content:center}#cma-btn:hover{transform:scale(1.08);box-shadow:0 5px 22px rgba(0,0,0,.28)}#cma-btn svg{width:44px;height:44px}#cma-label{background:#0F172A;color:#fff;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:5px 13px;border-radius:50px;margin-left:9px;white-space:nowrap;opacity:0;transform:translateX(-6px);transition:opacity .18s ease,transform .18s ease;pointer-events:none}#cma-widget.active #cma-label{opacity:1;transform:translateX(0)}';
+    var st = document.createElement('style');
+    st.textContent = css;
+    document.head.appendChild(st);
+
+    document.body.insertAdjacentHTML('beforeend', '<div id="cma-zone"></div><div id="cma-widget"><div id="cma-channels"><a class="cma-ch" id="cma-wa" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#25D366"/><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="#fff"/></svg><span>WhatsApp</span></a><a class="cma-ch" href="https://m.me/chiangmaiambassador" target="_blank" rel="noopener" aria-label="Messenger"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#0084FF"/><path d="M12 4C7.582 4 4 7.292 4 11.333c0 2.126 1.01 4.03 2.6 5.337V19l2.453-1.348A8.548 8.548 0 0012 17.667c4.418 0 8-3.293 8-7.334C20 7.292 16.418 4 12 4zm.8 9.867l-2.036-2.174-3.972 2.174 4.37-4.64 2.085 2.173 3.923-2.173-4.37 4.64z" fill="#fff"/></svg><span>Messenger</span></a><a class="cma-ch" href="mailto:info@chiangmaiambassador.com" aria-label="Email"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#EA4335"/><path d="M6 8.5A1.5 1.5 0 017.5 7h9A1.5 1.5 0 0118 8.5v7a1.5 1.5 0 01-1.5 1.5h-9A1.5 1.5 0 016 15.5v-7zm1.5 0L12 11.75 16.5 8.5h-9zM7.5 15.5h9v-5.75L12 13l-4.5-3.25v5.75z" fill="#fff"/></svg><span>Email</span></a><a class="cma-ch" href="https://www.linkedin.com/in/shayneinthailand/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#0A66C2"/><path d="M8.5 10H7v7h1.5v-7zM7.75 9a.875.875 0 100-1.75A.875.875 0 007.75 9zM17 12.5c0-1.5-.75-2.5-2.25-2.5-.75 0-1.5.5-1.75 1V10H11.5v7H13v-3.75c0-.75.375-1.5 1.25-1.5.875 0 1.25.625 1.25 1.5V17H17v-4.5z" fill="#fff"/></svg><span>LinkedIn</span></a></div><div id="cma-foot"><button id="cma-btn" aria-label="Chat options"><svg viewBox="-175 -178 350 390" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="cw-gold" x1="20%" y1="0%" x2="80%" y2="100%"><stop offset="0%" stop-color="#F2D980"/><stop offset="40%" stop-color="#C49010"/><stop offset="100%" stop-color="#9A7008"/></linearGradient><linearGradient id="cw-ring" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#E4BC50"/><stop offset="100%" stop-color="#9A7008"/></linearGradient></defs><circle cx="0" cy="0" r="164" fill="none" stroke="url(#cw-ring)" stroke-width="2.5"/><circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65"/><circle cx="164" cy="0" r="3.2" fill="#C49010"/><circle cx="0" cy="-164" r="3.2" fill="#C49010"/><circle cx="-164" cy="0" r="3.2" fill="#C49010"/><circle cx="0" cy="164" r="3.2" fill="#C49010"/><g transform="translate(0,-149.201) scale(1.94980)"><polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980"/><rect x="-2" y="4" width="4" height="38" fill="url(#cw-gold)"/><polygon points="0,42 -16,78 16,78" fill="url(#cw-gold)"/><rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008"/><rect x="-22" y="84" width="44" height="9" fill="url(#cw-gold)"/><rect x="-25" y="93" width="50" height="4" fill="#9A7008"/><rect x="-30" y="97" width="60" height="9" fill="url(#cw-gold)"/><rect x="-33" y="106" width="66" height="4" fill="#9A7008"/><rect x="-38" y="110" width="76" height="9" fill="url(#cw-gold)"/><rect x="-44" y="119" width="88" height="11" fill="url(#cw-gold)"/><rect x="-52" y="130" width="104" height="8" fill="#9A7008"/></g></svg></button><span id="cma-label">Chat now</span></div></div>');
+
+    var zone = document.getElementById('cma-zone');
+    var widget = document.getElementById('cma-widget');
+    var channels = document.getElementById('cma-channels');
+    var btn = document.getElementById('cma-btn');
+    var scrollTimer = null;
+    var inZone = false;
+
+    document.getElementById('cma-wa').style.cursor = 'pointer';
+    document.getElementById('cma-wa').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.open(['https://wa', '.me/', '668', '012', '020', '74'].join(''), '_blank', 'noopener');
+    });
+
+    function clearScrollTimer() { if (scrollTimer) { clearTimeout(scrollTimer); scrollTimer = null; } }
+
+    function showLabel() { inZone = true; widget.classList.add('active'); clearScrollTimer(); }
+
+    function hideAll() { inZone = false; widget.classList.remove('active'); channels.classList.remove('show'); clearScrollTimer(); }
+
+    zone.addEventListener('mouseenter', showLabel);
+    widget.addEventListener('mouseenter', showLabel);
+    zone.addEventListener('mouseleave', function(e) { if (!widget.contains(e.relatedTarget)) hideAll(); });
+    widget.addEventListener('mouseleave', function(e) { if (!zone.contains(e.relatedTarget)) hideAll(); });
+    btn.addEventListener('mouseenter', function() { channels.classList.add('show'); });
+
+    window.addEventListener('scroll', function() {
+        if (inZone) { clearScrollTimer(); scrollTimer = setTimeout(hideAll, 10000); }
+    }, { passive: true });
+});
+</script>
+<!-- END CHAT WIDGET -->
+
 </body>
 </html>
 
