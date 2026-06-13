@@ -39,6 +39,7 @@ npm-debug.log*
 # Markdown documentation
 *.md
 MD/
+.md/
 
 # Python and config files
 *.py
@@ -60,9 +61,6 @@ _archive/
 
 # Build/inject scripts (one-off tooling, not part of site)
 _faq_snippets/
-_faqdata.ps1
-_inject_faq.ps1
-_inject_faq2.ps1
 
 # Reference templates (used locally, not deployed)
 blog-template.html
