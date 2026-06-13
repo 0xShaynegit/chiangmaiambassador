@@ -6,6 +6,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Chiang Mai Ambassador Engine: Online")
 
+    // Inject animation keyframes
+    const styleSheet = document.createElement('style')
+    styleSheet.textContent = `@keyframes float{0%,100%{transform:translateY(0px)}50%{transform:translateY(15px)}}`
+    document.head.appendChild(styleSheet)
+
     // Initialize UI behaviors
     initNavigation()
     initReveals()
@@ -15,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initProgressBar()
     initNumberCountUp()
     initPageLanterns()
+    initDarkCards()
 })
 
 // BLOG CARDS: Make entire card clickable via the arrow-link href
@@ -29,9 +35,6 @@ function initBlogCards() {
         })
     })
 }
-
-// Utility: Check device type
-const isMobile = window.innerWidth < 768
 
 // REVEAL: Elements fade in as they scroll into view
 function initReveals() {
@@ -68,7 +71,7 @@ function initFloatingElements() {
 
 // MAGNETIC: CTA buttons follow cursor with subtle pull
 function initMagneticElements() {
-    if (isMobile) return
+    if (window.innerWidth < 768) return
 
     const magnets = document.querySelectorAll('.magnetic-item')
 
@@ -460,17 +463,3 @@ function initDarkCards() {
     })
 }
 
-// Inject CSS animations
-const styleSheet = document.createElement('style')
-styleSheet.textContent = `
-    @keyframes float {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(15px); }
-    }
-`
-document.head.appendChild(styleSheet)
-
-// Initialize dark cards on page load
-document.addEventListener('DOMContentLoaded', () => {
-    initDarkCards()
-})
