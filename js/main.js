@@ -7,15 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Read layout values BEFORE any DOM mutations to avoid forced reflow
     const isDesktop = window.innerWidth >= 768
 
-    // Critical path: runs immediately
-    initReveals()
-    initProgressBar()
-
-    // Deferred: DOM-heavy inits that cause layout recalc   run after paint
+    // Everything deferred past paint   nothing blocks LCP
     requestAnimationFrame(() => requestAnimationFrame(() => {
         initNavigation()
+        initReveals()
         initBlogCards()
         initFloatingElements()
+        initProgressBar()
         initNumberCountUp()
         initDarkCards()
         if (isDesktop) initMagneticElements()
@@ -112,13 +110,9 @@ function initNavigation() {
     const navLinks = document.querySelector('.nav-links')
     const dropdowns = document.querySelectorAll('.nav-dropdown')
 
-    // Inject hamburger button
+    // Hamburger is already in the HTML to avoid CLS   just grab it
     if (nav && navLinks) {
-        const hamburger = document.createElement('button')
-        hamburger.className = 'nav-hamburger'
-        hamburger.setAttribute('aria-label', 'Toggle menu')
-        hamburger.innerHTML = '<span></span><span></span><span></span>'
-        nav.appendChild(hamburger)
+        const hamburger = document.getElementById('nav-hamburger')
 
         // Inject inline mobile search bar at top of drawer
         const searchBar = document.createElement('div')
