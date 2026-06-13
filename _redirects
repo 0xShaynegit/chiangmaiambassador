@@ -1,0 +1,65 @@
+# Cloudflare Pages Redirects for CMA Restructure
+# Format: /old-url /new-url 301
+
+# Guides redirects (16 pages)
+/flat-tire/ /guides/flat-tire/ 301
+/motorcycle-registration-transfer/ /guides/motorcycle-registration-transfer/ 301
+/motorcycle-rentals/ /guides/motorcycle-rentals/ 301
+/renting-a-motorbike-in-chiang-mai/ /guides/renting-a-motorbike-in-chiang-mai/ 301
+/work-permit-medical-certificate/ /guides/work-permit-medical-certificate/ 301
+/budget-chiang-mai-medical-services/ /guides/budget-chiang-mai-medical-services/ 301
+/chiang-mai-insurance/ /guides/chiang-mai-insurance/ 301
+/chiang-mai-driving/ /guides/chiang-mai-driving/ 301
+/tdac-thailand-digital-arrival-card/ /guides/tdac-thailand-digital-arrival-card/ 301
+/license-plates/ /guides/license-plates/ 301
+/walking-street-markets/ /guides/walking-street-markets/ 301
+/bua-tong-waterfalls/ /guides/bua-tong-waterfalls/ 301
+/blood-donation-procedure/ /guides/blood-donation-procedure/ 301
+/red-cross-blood-bank-chiang-mai/ /guides/red-cross-blood-bank-chiang-mai/ 301
+/blood-donation-donor-eligibility-red-cross-blood-bank-chiang-mai/ /guides/blood-donation-donor-eligibility-red-cross-blood-bank-chiang-mai/ 301
+/run-for-relief/ / 301
+
+# Lifestyle redirects (16 pages)
+/songkran/ /lifestyle/songkran/ 301
+/smoky-season-chiang-mai/ /lifestyle/smoky-season-chiang-mai/ 301
+/alcohol-observations-of-a-non-drinker/ /lifestyle/alcohol-observations-of-a-non-drinker/ 301
+/learning-languages/ /lifestyle/learning-languages/ 301
+/traveling-alone/ /lifestyle/traveling-alone/ 301
+/traveling-with-friends/ /lifestyle/traveling-with-friends/ 301
+/expat-breakfast-club/ /lifestyle/expat-breakfast-club/ 301
+/vientiane-visa-run/ /lifestyle/vientiane-visa-run/ 301
+/thai-visa-advice/ /lifestyle/thai-visa-advice/ 301
+/us-expat-tax-guide/ /lifestyle/us-expat-tax-guide/ 301
+/chiang-mai-arrival/ /lifestyle/chiang-mai-arrival/ 301
+/live-in-chiang-mai/ /lifestyle/live-in-chiang-mai/ 301
+/life-budget-chiang-mai/ /lifestyle/life-budget-chiang-mai/ 301
+/life-on-a-budget-in-chiang-mai-covid-2022-update/ /lifestyle/life-on-a-budget-in-chiang-mai-covid-2022-update/ 301
+/currency-in-and-out-of-thailand/ /lifestyle/currency-in-and-out-of-thailand/ 301
+/top-tips/ /lifestyle/top-tips/ 301
+
+# Food redirects (12 pages)
+/le-meridien-dinner-buffet/ /food/chiang-mai-marriott-hotel-dining/ 301
+/food/le-meridien-dinner-buffet/ /food/chiang-mai-marriott-hotel-dining/ 301
+/the-dukes/ /food/the-dukes/ 301
+/butter-is-better/ /food/butter-is-better/ 301
+/meela-peanut-butter/ /food/meela-peanut-butter/ 301
+/food-delivery-services/ /food/food-delivery-services/ 301
+/siripanna-lunch/ /food/siripanna-lunch/ 301
+/real-thai-restaurant/ / 301
+/auf-der-au-best-buffet-chiang-mai/ /food/auf-der-au-best-buffet-chiang-mai/ 301
+/ibis-styles-buffet-lunch/ / 301
+/chiang-mai-grandview-lunch/ / 301
+# Root pages (12) - NO REDIRECTS NEEDED
+# These stay at root level and keep existing URLs:
+# /cheapest-border-run-chiang-mai/
+# /womens-prison-massage/
+# /thai-eating-etiquette/
+# /yunnan-farmers-market/
+# /understanding-thai-culture/
+# /khun-joe-school/
+# /getting-social-in-chiang-mai/
+# /motorbike-registration-chiang-mai/
+# /best-chiang-mai/
+# /index.html
+# /hero-effects-test.html
+# /template.html

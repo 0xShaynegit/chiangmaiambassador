@@ -44,7 +44,6 @@ MD/
 # Python and config files
 *.py
 _scripts/
-_redirects
 
 # OS cache
 .cache/
