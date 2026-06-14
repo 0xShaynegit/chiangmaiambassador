@@ -1,7 +1,7 @@
 # Chiang Mai Ambassador - Handover
 
-**Last updated:** 14/06/2026
-**Session:** Site-wide structural audit + traveling-alone rebuild
+**Last updated:** 14/06/2026 (end of session)
+**Session:** Structural audit, rebuilds, PDF compression, TL;DR image work
 
 ---
 
@@ -9,6 +9,7 @@
 
 Site is clean. 112 pages. Full structural audit completed and all issues resolved. Zero placeholder links, zero double footers, consistent hero treatment across all blog pages.
 
+| `33acdeb` | Fixed TL;DR image float on dying-in-thailand.html - float:right inline on figure. |
 | Commit | What |
 |--------|------|
 | `25ab57d` | Site-wide hero standardisation: eyebrow + gold-gradient-text on all blog pages. |
