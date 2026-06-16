@@ -1,92 +1,112 @@
-# Chiang Mai Ambassador - Handover
+# CMA Handover: Hamburger Menu Restoration
 
-**Last updated:** 15/06/2026 (end of session)
-**Session:** Nav restructure, dying-in-thailand improvements, broken image fix, content research
-
----
-
-## Current Position
-
-Site is clean. Last commit `4eda329`. Nav fully restructured on index.html only   other pages retain old nav until next session approves rollout.
-
-| Commit | What |
-|--------|------|
-| `4eda329` | Nav restructured to journey model (1.Planning / 2.Arriving / 3.Living Here / Explore / Visas). dying-in-thailand executor/POA section rewritten, two location-based death process sections added. live-in-chiang-mai broken Women's Prison Massage image fixed. |
-| `33acdeb` | Fixed TL;DR image float on dying-in-thailand.html. |
-| `25ab57d` | Site-wide hero standardisation: eyebrow + gold-gradient-text on all blog pages. |
-| `971067b` | Rebuilt lifestyle/traveling-alone.html. |
-| `c12df47` | Fixed double footer on 16 pages. |
-| `a68ca16` | Full audit fixes: placeholder footer nav replaced on 17 pages. |
-| `0eab3ee` | Button links fixed. |
-| `69e9fcd` | Orphaned content links fixed. |
+**Date:** 16 June 2026
+**Status:** Hamburger menu REMOVED - Desktop dropdowns only
+**Next Step:** Restore mobile hamburger menu when issues are resolved
 
 ---
 
-## Audit: Current Clean State
+## What Was Removed
 
-Run this PowerShell scan at start of any session to check structural health:
+On 16 June 2026, the entire hamburger mobile menu system was removed due to non-functioning click handlers. This included:
 
-```powershell
-$base = "C:\ZZZWebsites\chiangmaiambassador"
-$files = Get-ChildItem -Path $base -Recurse -Filter "*.html" | Where-Object { $_.FullName -notlike "*_archive*" -and $_.FullName -notlike "*\.md*" -and $_.FullName -notlike "*_scripts*" -and $_.Name -ne "404.html" }
-$issues = @()
-foreach ($f in $files) {
-    $c = [System.IO.File]::ReadAllText($f.FullName)
-    $rel = $f.FullName.Replace("$base\", "")
-    if ($c -match 'meta http-equiv="refresh"') { continue }
-    if ($rel -eq "search.html") { continue }
-    if (([regex]::Matches($c, '<footer class="site-footer"')).Count -gt 1) { $issues += "DOUBLE_FOOTER | $rel" }
-    if (-not ($c -match '38ebf6cb1000449b961756de0ca25576')) { $issues += "NO_ANALYTICS | $rel" }
-    if ($c -match 'href="#tools"') { $issues += "PLACEHOLDER_LINKS | $rel" }
-    if ($c -match 'class="blog-hero"' -and -not ($c -match 'class="eyebrow"')) { $issues += "NO_EYEBROW | $rel" }
-}
-$issues | Group-Object { $_.Split(' | ')[0] } | ForEach-Object { Write-Host "=== $($_.Name) ($($_.Count)) ==="; $_.Group | ForEach-Object { Write-Host "  $($_.Split(' | ')[1])" } }
+1. Hamburger button element from HTML templates
+2. Mobile menu open/close handlers
+3. Mobile search bar (was appearing as duplicate at bottom of menu)
+4. Auto-focus prevention on search input
+5. Menu close triggers (click outside, Escape key)
+
+**Files affected:**
+- `index.html` - hamburger button removed
+- `blog-template.html` - hamburger button removed  
+- `pages/page-template.html` - hamburger button removed
+- `js/main.js` - 150+ lines of mobile menu code removed
+
+**Desktop navigation still works:** Dropdown menus function on desktop/tablet (>640px).
+
+---
+
+## To Restore: Step-by-Step
+
+### 1. Add Hamburger Button to HTML Templates
+
+Add this button **inside `<nav class="nav-wrapper">` AFTER the closing `</div>` of nav-links, BEFORE the closing `</nav>`:**
+
+```html
+<button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
 ```
 
-Known acceptable non-issues: pages/about.html (no eyebrow, uses page-template), chiang-mai/index.html and guides/index.html (no TL;DR, hub pages), pages/neighbourhoods.html (href="#nimman" etc. are valid anchors).
+**Add to all three files:**
+- `index.html` (around line 327, before `</nav>`)
+- `blog-template.html` (around line 591, before `</nav>`)
+- `pages/page-template.html` (around line 258, before `</nav>`)
 
 ---
 
-## Blog Backlog
+### 2. Restore Mobile Menu JavaScript
 
-Full content gap list at: `blog-backlog.md` in site root.
-Top 10 missing topics: dental care, cafes/coffee, vegan dining, buying property, temples/Buddhism, scams/fraud, northern Thailand travel, street food guide, tattoos, Sak Yant.
-Work from this list when there is nothing else pressing.
+Replace the `initNavigation()` function in `js/main.js` with the complete version from the git history (commit 7cc881a or earlier).
 
----
-
-## Still NOT Done (carried)
-
-1. **guides/what-to-do-after-a-vehicle-accident.html** - different internal layout (no blog-content wrapper, no TL;DR). Needs visual confirmation before touching.
-2. **pages/visas.html** - TL;DR figure sits after article-sidebar. pages/ uses page-template so rule may not apply. Left alone.
-3. **Substituted images** needing human eyes: finding-pet-friendly-home cards, internet/TV/mobile-phones cards use generic fallback images.
-4. **Re-run Lighthouse** after Cloudflare propagation.
-5. **Nav rollout** - new journey-based nav is on index.html only. Needs approval before rolling to all other pages.
+**Key features:**
+- Hamburger click toggles mobile menu open/close
+- Mobile search bar created dynamically at top of menu
+- Guard clause prevents duplicate search bars
+- Menu closes on: link click, outside click, Escape key
+- NO auto-focus on search input (prevents keyboard opening)
+- Desktop dropdowns still work on hover
 
 ---
 
-## Content Research Tasks (investigate before writing)
+## Key Features to Verify After Restoration
 
-1. **Bangkok Bank 4-month seasoning** - Verify current policy. Is KBank/SCB/Krungsri now the correct recommendation for new arrivals on 90-day Non-O? Update retirement visa and banking pages.
-2. **CoR originals vs copies** - Confirm each use requires a separate original. Update residency certificate guide.
-3. **Driving licence** - Car and moto are separate licences with separate CoR. Verify current DLT process for foreign licence + IDP holders. Update guide.
-4. **Pet travel guide** - Add: microchipping mandatory, AQS off-airport collection, 3-month prep timeline, morning arrival for heat, cage bedding welfare, agent vs DIY section.
-5. **Smoky season** - Add warning inline on planning and moving checklist pages. Flag lease timing risk.
-6. **Wise transfer timing** - Now 2-3 days, not instant. Update retirement visa and banking content. Add cash backup advice.
-7. **TM.30 framing** - Filed BY the landlord, not obtained by the foreigner. Audit all pages mentioning TM.30.
+1. **Hamburger visible on mobile** - Toggle appears when screen < 640px
+2. **Menu opens/closes** - Click hamburger to toggle mobile menu
+3. **Search bar at top** - Input field appears inside menu (no auto-focus)
+4. **No duplicate search bars** - Only ONE search bar at top of menu
+5. **Menu closes on**:
+   - Clicking a link
+   - Clicking outside the menu
+   - Pressing Escape key
+6. **No keyboard auto-opening** - Search input does NOT auto-focus
+7. **Desktop dropdowns still work** - Hover to expand on desktop
 
 ---
 
-## Key Technical Notes
+## Troubleshooting
 
-- **CSS:** All styles in `css/styles.css`. Original 4 files still in `css/` but unlinked.
-- **Blog hero standard:** `<span class="eyebrow">Category</span>` before h1, key phrase in `<span class="gold-gradient-text">...</span>` inside h1.
-- **LOCKED TL;DR figure style** (blog template pages): before `<div class="article-sidebar">`, never inside it. Width: `calc(100% - 400px); max-width: 280px;` with `margin-top: -30px`.
-- **PowerShell:** `[System.IO.File]::ReadAllText()/WriteAllText()` only, never Set-Content.
-- **Two-template system:** pages/ uses page-template.html; all other folders use template.html.
-- **No buttons for links:** inline text only. Never btn-primary for related content links.
-- **Old migration pages** (traveling-alone, traveling-with-friends, etc.) had raw div content blobs with unclosed article tags. Check structure if editing these.
-- **Footer nav standard:** Explore / Visas / About (3 groups). Any page showing Guides / Tools / Community is using the old wrong footer.
-- **Cloudflare analytics token:** `38ebf6cb1000449b961756de0ca25576`
-- **Repo:** `C:\ZZZWebsites\chiangmaiambassador`, GitHub `0xShaynegit/chiangmaiambassador`, live chiangmaiambassador.com
-- **handover.md is in .gitignore:** use `git add -f handover.md` to commit it.
+**Issue:** Hamburger not showing
+- Check window size (< 640px = mobile view)
+- Verify button added to all three HTML files
+- Check CSS for `.nav-hamburger` display rules
+
+**Issue:** Menu doesn't open when clicked
+- Check browser console for JavaScript errors
+- Verify `getElementById('nav-hamburger')` finds the button (F12 Inspector)
+- Confirm `initNavigation()` is called in DOMContentLoaded
+
+**Issue:** Duplicate search bar appearing
+- Guard clause prevents duplicates: `if (!navLinks.querySelector('.mobile-search-bar'))`
+- If still appearing, check for hardcoded search bars in HTML
+
+**Issue:** Keyboard opens when menu opens
+- The `setTimeout(() => searchInput.focus(), 80)` line must be REMOVED from openMenu()
+- Do NOT add it back - it causes unwanted keyboard opening
+
+---
+
+## Git Reference
+
+Previous working versions:
+- **Commit 7cc881a:** Mobile menu with duplicate search bar fix
+- **Commit f7d7cda:** Mobile menu with hamburger button added
+- **Commit c4b3eee:** CURRENT - All mobile menu code removed
+
+---
+
+**Last Updated:** 16 June 2026
+**By:** Claude
+**Status:** REMOVED - Ready for restoration when debugging complete
