@@ -200,7 +200,6 @@ function initNavigation() {
             hamburger.classList.add('open')
             document.body.style.overflow = 'hidden'
             loadPagefind()
-            setTimeout(() => searchInput.focus(), 80)
         }
 
         function closeMenu() {
