@@ -1,23 +1,24 @@
 # Chiang Mai Ambassador - Handover
 
-**Last updated:** 14/06/2026 (end of session)
-**Session:** Structural audit, rebuilds, PDF compression, TL;DR image work
+**Last updated:** 15/06/2026 (end of session)
+**Session:** Nav restructure, dying-in-thailand improvements, broken image fix, content research
 
 ---
 
 ## Current Position
 
-Site is clean. 112 pages. Full structural audit completed and all issues resolved. Zero placeholder links, zero double footers, consistent hero treatment across all blog pages.
+Site is clean. Last commit `4eda329`. Nav fully restructured on index.html only   other pages retain old nav until next session approves rollout.
 
-| `33acdeb` | Fixed TL;DR image float on dying-in-thailand.html - float:right inline on figure. |
 | Commit | What |
 |--------|------|
+| `4eda329` | Nav restructured to journey model (1.Planning / 2.Arriving / 3.Living Here / Explore / Visas). dying-in-thailand executor/POA section rewritten, two location-based death process sections added. live-in-chiang-mai broken Women's Prison Massage image fixed. |
+| `33acdeb` | Fixed TL;DR image float on dying-in-thailand.html. |
 | `25ab57d` | Site-wide hero standardisation: eyebrow + gold-gradient-text on all blog pages. |
-| `971067b` | Rebuilt lifestyle/traveling-alone.html - removed double footer, structured content, proper FAQ + Guru Tip. |
-| `c12df47` | Fixed double footer (stray footer mid-content) on 16 pages: best-chiang-mai, motorbike-registration, thai-eating-etiquette, understanding-thai-culture, womens-prison-massage, butter-is-better, siripanna-lunch, flat-tire, work-permit-medical-certificate, alcohol-observations, currency-in-and-out, learning-languages, life-budget, songkran, traveling-with-friends, vientiane-visa-run. |
-| `a68ca16` | Full audit fixes: placeholder footer nav (Guides/Tools/Community) replaced with correct Explore/Visas/About on 17 pages. Analytics added to traveling-alone. |
-| `0eab3ee` | Button links fixed: planning-a-move -> just-arriving, just-arriving -> living-better. |
-| `69e9fcd` | Orphaned content links fixed: nomad groups -> getting-social, Digital Nomads -> facebook.com/groups/chiangmainomads. |
+| `971067b` | Rebuilt lifestyle/traveling-alone.html. |
+| `c12df47` | Fixed double footer on 16 pages. |
+| `a68ca16` | Full audit fixes: placeholder footer nav replaced on 17 pages. |
+| `0eab3ee` | Button links fixed. |
+| `69e9fcd` | Orphaned content links fixed. |
 
 ---
 
@@ -60,6 +61,19 @@ Work from this list when there is nothing else pressing.
 2. **pages/visas.html** - TL;DR figure sits after article-sidebar. pages/ uses page-template so rule may not apply. Left alone.
 3. **Substituted images** needing human eyes: finding-pet-friendly-home cards, internet/TV/mobile-phones cards use generic fallback images.
 4. **Re-run Lighthouse** after Cloudflare propagation.
+5. **Nav rollout** - new journey-based nav is on index.html only. Needs approval before rolling to all other pages.
+
+---
+
+## Content Research Tasks (investigate before writing)
+
+1. **Bangkok Bank 4-month seasoning** - Verify current policy. Is KBank/SCB/Krungsri now the correct recommendation for new arrivals on 90-day Non-O? Update retirement visa and banking pages.
+2. **CoR originals vs copies** - Confirm each use requires a separate original. Update residency certificate guide.
+3. **Driving licence** - Car and moto are separate licences with separate CoR. Verify current DLT process for foreign licence + IDP holders. Update guide.
+4. **Pet travel guide** - Add: microchipping mandatory, AQS off-airport collection, 3-month prep timeline, morning arrival for heat, cage bedding welfare, agent vs DIY section.
+5. **Smoky season** - Add warning inline on planning and moving checklist pages. Flag lease timing risk.
+6. **Wise transfer timing** - Now 2-3 days, not instant. Update retirement visa and banking content. Add cash backup advice.
+7. **TM.30 framing** - Filed BY the landlord, not obtained by the foreigner. Audit all pages mentioning TM.30.
 
 ---
 

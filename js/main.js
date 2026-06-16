@@ -113,6 +113,7 @@ function initNavigation() {
     // Hamburger is already in the HTML to avoid CLS   just grab it
     if (nav && navLinks) {
         const hamburger = document.getElementById('nav-hamburger')
+        if (!hamburger) return
 
         // Inject inline mobile search bar at top of drawer
         const searchBar = document.createElement('div')
