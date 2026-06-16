@@ -1,112 +1,109 @@
-# CMA Handover: Hamburger Menu Restoration
+# CMA Handover: Hamburger Menu Rebuilt
 
 **Date:** 16 June 2026
-**Status:** Hamburger menu REMOVED - Desktop dropdowns only
-**Next Step:** Restore mobile hamburger menu when issues are resolved
+**Status:** Hamburger menu REBUILT and ready for testing
+**Implementation:** Single icon, single search bar, no keyboard auto-opening
+**Next Step:** Test on mobile to verify no extras/duplicates appear
 
 ---
 
-## What Was Removed
+## What Was Rebuilt
 
-On 16 June 2026, the entire hamburger mobile menu system was removed due to non-functioning click handlers. This included:
+On 16 June 2026 (evening), the hamburger mobile menu system was fully rebuilt using the working code from commit f7d7cda. The implementation includes:
 
-1. Hamburger button element from HTML templates
-2. Mobile menu open/close handlers
-3. Mobile search bar (was appearing as duplicate at bottom of menu)
-4. Auto-focus prevention on search input
-5. Menu close triggers (click outside, Escape key)
+**JavaScript (js/main.js):**
+- Complete initNavigation() function with working hamburger logic
+- Single search bar injected at top of mobile menu drawer
+- Guard clause prevents duplicate search bar creation
+- NO auto-focus on search input (prevents keyboard auto-opening)
+- Menu close handlers: click outside, Escape key, nav link click
+- Mobile accordion: only one dropdown open at a time
+- Desktop dropdowns continue working on hover (>640px)
 
-**Files affected:**
-- `index.html` - hamburger button removed
-- `blog-template.html` - hamburger button removed  
-- `pages/page-template.html` - hamburger button removed
-- `js/main.js` - 150+ lines of mobile menu code removed
-
-**Desktop navigation still works:** Dropdown menus function on desktop/tablet (>640px).
-
----
-
-## To Restore: Step-by-Step
-
-### 1. Add Hamburger Button to HTML Templates
-
-Add this button **inside `<nav class="nav-wrapper">` AFTER the closing `</div>` of nav-links, BEFORE the closing `</nav>`:**
-
-```html
-<button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
-    <span></span>
-    <span></span>
-    <span></span>
-</button>
-```
-
-**Add to all three files:**
-- `index.html` (around line 327, before `</nav>`)
-- `blog-template.html` (around line 591, before `</nav>`)
-- `pages/page-template.html` (around line 258, before `</nav>`)
-
----
-
-### 2. Restore Mobile Menu JavaScript
-
-Replace the `initNavigation()` function in `js/main.js` with the complete version from the git history (commit 7cc881a or earlier).
+**HTML templates:**
+- Hamburger button added to: index.html, blog-template.html, pages/page-template.html
+- Button placed before closing `</nav>` tag
+- Button includes three span elements for animation
 
 **Key features:**
-- Hamburger click toggles mobile menu open/close
-- Mobile search bar created dynamically at top of menu
-- Guard clause prevents duplicate search bars
-- Menu closes on: link click, outside click, Escape key
-- NO auto-focus on search input (prevents keyboard opening)
-- Desktop dropdowns still work on hover
+1. Single hamburger icon (shows on mobile only)
+2. Single search bar in mobile menu (no duplicates)
+3. No auto-focus keyboard opening
+4. Proper close handling
+5. Desktop dropdowns still work
 
 ---
 
-## Key Features to Verify After Restoration
+## What Was Done
 
-1. **Hamburger visible on mobile** - Toggle appears when screen < 640px
-2. **Menu opens/closes** - Click hamburger to toggle mobile menu
-3. **Search bar at top** - Input field appears inside menu (no auto-focus)
-4. **No duplicate search bars** - Only ONE search bar at top of menu
-5. **Menu closes on**:
-   - Clicking a link
-   - Clicking outside the menu
-   - Pressing Escape key
-6. **No keyboard auto-opening** - Search input does NOT auto-focus
-7. **Desktop dropdowns still work** - Hover to expand on desktop
+✅ **COMPLETED:** Rebuild is complete and committed (commit e638a37)
+
+### Changes made:
+
+1. **js/main.js** - Updated initNavigation() with full working hamburger logic
+   - Injected single search bar with guard clause
+   - No auto-focus on search input
+   - All close handlers in place
+   - Mobile accordion for dropdowns
+
+2. **index.html** - Added hamburger button before `</nav>`
+
+3. **blog-template.html** - Added hamburger button before `</nav>`
+
+4. **pages/page-template.html** - Added hamburger button before `</nav>`
 
 ---
 
-## Troubleshooting
+## Testing Checklist
 
-**Issue:** Hamburger not showing
-- Check window size (< 640px = mobile view)
-- Verify button added to all three HTML files
-- Check CSS for `.nav-hamburger` display rules
+Test on mobile (< 640px) to verify:
 
-**Issue:** Menu doesn't open when clicked
+✅ Required:
+- [ ] Hamburger icon visible on mobile only
+- [ ] ONE hamburger icon (no duplicates)
+- [ ] Menu opens when hamburger clicked
+- [ ] Menu closes when hamburger clicked again
+- [ ] Menu closes when link clicked
+- [ ] Menu closes when outside clicked
+- [ ] Menu closes when Escape pressed
+- [ ] ONE search bar in menu (no duplicates at bottom)
+- [ ] Search input does NOT auto-focus (keyboard doesn't open)
+- [ ] Search works in menu
+- [ ] Mobile accordion: only one dropdown open at a time
+- [ ] Desktop: dropdowns work on hover (test at >640px)
+
+---
+
+## If Issues Appear During Testing
+
+**If extras (duplicate hamburger or search bar) appear:**
+- User instruction was: "DO NOT ADD THE HAMBURGER TO THE TEMPLATE FILES" if extras appear
+- Solution: Remove hamburger button from HTML templates and use JS injection instead
+- Keep the JavaScript logic in main.js (it already has the guard clause)
+
+**If hamburger not showing:**
+- Verify button exists in all three template files before `</nav>`
+- Check CSS: `.nav-hamburger { display: none }` in base styles, then `display: flex` at `@media (max-width: 640px)`
+
+**If menu doesn't open/close:**
 - Check browser console for JavaScript errors
-- Verify `getElementById('nav-hamburger')` finds the button (F12 Inspector)
-- Confirm `initNavigation()` is called in DOMContentLoaded
+- Verify hamburger button has `id="nav-hamburger"`
+- Confirm initNavigation() runs (check DOMContentLoaded in console)
 
-**Issue:** Duplicate search bar appearing
-- Guard clause prevents duplicates: `if (!navLinks.querySelector('.mobile-search-bar'))`
-- If still appearing, check for hardcoded search bars in HTML
-
-**Issue:** Keyboard opens when menu opens
-- The `setTimeout(() => searchInput.focus(), 80)` line must be REMOVED from openMenu()
-- Do NOT add it back - it causes unwanted keyboard opening
+**If search auto-focuses and keyboard opens:**
+- This is INTENTIONALLY REMOVED - never add back
+- No `focus()` or `setTimeout()` calls on search input in openMenu()
 
 ---
 
-## Git Reference
+## Git History
 
-Previous working versions:
-- **Commit 7cc881a:** Mobile menu with duplicate search bar fix
-- **Commit f7d7cda:** Mobile menu with hamburger button added
-- **Commit c4b3eee:** CURRENT - All mobile menu code removed
+- **Commit f7d7cda:** Working version with hamburger + no auto-focus (used as source)
+- **Commit 7cc881a:** Duplicate search bar fix (extra guard clause)
+- **Commit e638a37:** Current rebuild with all features combined
 
 ---
 
-**Last Updated:** 16 June 2026
-**By:** Claude
-**Status:** REMOVED - Ready for restoration when debugging complete
+**Last Updated:** 16 June 2026 (evening)
+**By:** Claude  
+**Status:** REBUILT - Ready for mobile testing
