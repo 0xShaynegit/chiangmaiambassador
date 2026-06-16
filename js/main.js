@@ -104,9 +104,139 @@ function initMagneticElements() {
     })
 }
 
-// NAVIGATION: Desktop dropdown menus only
+// NAVIGATION: Mobile hamburger menu + Desktop dropdown menus
 function initNavigation() {
+    const nav = document.querySelector('.nav-wrapper')
+    const navLinks = document.querySelector('.nav-links')
     const dropdowns = document.querySelectorAll('.nav-dropdown')
+
+    // Hamburger menu and mobile search
+    if (nav && navLinks) {
+        const hamburger = document.getElementById('nav-hamburger')
+        if (hamburger) {
+            // Inject ONE mobile search bar at top of menu drawer (if not already present)
+            if (!navLinks.querySelector('.mobile-search-bar')) {
+                const searchBar = document.createElement('div')
+                searchBar.className = 'mobile-search-bar'
+                searchBar.innerHTML = `
+                    <form class="mobile-search-form" role="search">
+                        <input class="mobile-search-input" type="search" placeholder="Search guides, visas, neighbourhoods..." autocomplete="off" aria-label="Search site">
+                        <button class="mobile-search-btn" type="submit" aria-label="Search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                        </button>
+                    </form>
+                    <div class="mobile-search-results" aria-live="polite"></div>
+                `
+                navLinks.insertBefore(searchBar, navLinks.firstChild)
+            }
+
+            const searchInput = navLinks.querySelector('.mobile-search-input')
+            const searchResults = navLinks.querySelector('.mobile-search-results')
+            const searchForm = navLinks.querySelector('.mobile-search-form')
+
+            function getPagefindRoot() {
+                return '/pagefind/pagefind.js'
+            }
+
+            let pagefindLoaded = false
+            let pagefindModule = null
+
+            async function loadPagefind() {
+                if (pagefindLoaded) return pagefindModule
+                try {
+                    pagefindModule = await import(getPagefindRoot())
+                    await pagefindModule.options({ excerptLength: 12 })
+                    pagefindLoaded = true
+                    return pagefindModule
+                } catch (e) {
+                    return null
+                }
+            }
+
+            let searchTimeout = null
+
+            searchInput.addEventListener('input', () => {
+                clearTimeout(searchTimeout)
+                const q = searchInput.value.trim()
+                if (!q) { searchResults.innerHTML = ''; return }
+                searchTimeout = setTimeout(() => runSearch(q), 220)
+            })
+
+            searchForm.addEventListener('submit', (e) => {
+                e.preventDefault()
+                const q = searchInput.value.trim()
+                if (q) runSearch(q)
+            })
+
+            async function runSearch(q) {
+                const pf = await loadPagefind()
+                if (!pf) { searchResults.innerHTML = '<p class="mobile-search-empty">Search unavailable</p>'; return }
+                const result = await pf.search(q)
+                if (!result.results.length) {
+                    searchResults.innerHTML = '<p class="mobile-search-empty">No results found</p>'
+                    return
+                }
+                const top = await Promise.all(result.results.slice(0, 6).map(r => r.data()))
+                searchResults.innerHTML = top.map(r => `
+                    <a href="${r.url}" class="mobile-search-result">
+                        <span class="mobile-search-result-title">${r.meta.title || 'Page'}</span>
+                        <span class="mobile-search-result-excerpt">${r.excerpt.replace(/<[^>]+>/g, '')}</span>
+                    </a>
+                `).join('')
+            }
+
+            // Pre-load pagefind on first interaction
+            let prefetchDone = false
+            function prefetchPagefind() {
+                if (prefetchDone) return
+                prefetchDone = true
+                loadPagefind()
+            }
+            hamburger.addEventListener('mouseover', prefetchPagefind, { once: true })
+            hamburger.addEventListener('touchstart', prefetchPagefind, { once: true, passive: true })
+            window.addEventListener('scroll', prefetchPagefind, { once: true, passive: true })
+
+            function openMenu() {
+                navLinks.classList.add('mobile-open')
+                hamburger.classList.add('open')
+                document.body.style.overflow = 'hidden'
+                loadPagefind()
+            }
+
+            function closeMenu() {
+                navLinks.classList.remove('mobile-open')
+                hamburger.classList.remove('open')
+                document.body.style.overflow = ''
+            }
+
+            hamburger.addEventListener('click', () => {
+                if (navLinks.classList.contains('mobile-open')) {
+                    closeMenu()
+                } else {
+                    openMenu()
+                }
+            })
+
+            // Close menu when a nav link is clicked (but not dropdown toggles)
+            navLinks.querySelectorAll('a:not(.nav-dropdown-toggle)').forEach(link => {
+                link.addEventListener('click', closeMenu)
+            })
+
+            // Close on outside click
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.nav-wrapper') && navLinks.classList.contains('mobile-open')) {
+                    closeMenu()
+                }
+            })
+
+            // Close on escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && navLinks.classList.contains('mobile-open')) {
+                    closeMenu()
+                }
+            })
+        }
+    }
 
     // Desktop dropdown hover
     dropdowns.forEach(dropdown => {
@@ -125,6 +255,25 @@ function initNavigation() {
                 closeTimer = setTimeout(() => dropdown.classList.remove('open'), 120)
             }
         })
+
+        // Mobile: accordion - only one dropdown open at a time
+        const toggle = dropdown.querySelector('.nav-dropdown-toggle')
+        if (toggle) {
+            toggle.addEventListener('click', (e) => {
+                if (window.innerWidth <= 640) {
+                    e.preventDefault()
+                    const isOpen = dropdown.classList.contains('open')
+
+                    // Close all dropdowns
+                    dropdowns.forEach(d => d.classList.remove('open'))
+
+                    // Open this one if it wasn't already open
+                    if (!isOpen) {
+                        dropdown.classList.add('open')
+                    }
+                }
+            })
+        }
     })
 
     document.addEventListener('click', (e) => {
