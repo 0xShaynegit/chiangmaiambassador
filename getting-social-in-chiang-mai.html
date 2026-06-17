@@ -100,23 +100,23 @@
             position: fixed;
             right: 20px;
             top: 100px;
-            width: 200px;
-            background: rgba(15, 23, 42, 0.95);
-            border: 1px solid rgba(234, 179, 8, 0.3);
+            width: 280px;
+            background: #EAB308;
+            border: 2px solid #D4A100;
             border-radius: 8px;
-            padding: 1.5rem;
+            padding: 2rem;
             z-index: 100;
-            backdrop-filter: blur(10px);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
         }
         .sticky-nav-content h4 {
             font-family: 'Outfit', sans-serif;
-            color: #EAB308;
-            font-size: 0.9rem;
+            color: #000;
+            font-size: 1.2rem;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             margin-top: 0;
+            font-weight: 800;
         }
         .sticky-nav-content ul {
             list-style: none;
@@ -124,17 +124,17 @@
             margin: 0;
         }
         .sticky-nav-content li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
         }
         .sticky-nav-content a {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.85rem;
-            border-bottom: 1px solid rgba(234, 179, 8, 0.2);
+            color: #0066cc;
+            font-size: 1.25rem;
+            border-bottom: none;
             transition: color 0.2s ease;
+            font-weight: 600;
         }
         .sticky-nav-content a:hover {
-            color: #EAB308;
-            border-bottom-color: #EAB308;
+            color: #000;
         }
         @media (max-width: 1400px) {
             .sticky-nav {
@@ -150,6 +150,17 @@
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+        h2[id^="every-day"],
+        h2[id^="monday"],
+        h2[id^="tuesday"],
+        h2[id^="wednesday"],
+        h2[id^="thursday"],
+        h2[id^="friday"],
+        h2[id^="saturday"],
+        h2[id^="sunday"],
+        h2[id="social-groups"] {
+            scroll-margin-top: 100px;
         }
         .blog-metadata {
             display: flex;
@@ -705,7 +716,7 @@
                     <h3>Language Groups</h3>
                     <p><a href="https://www.facebook.com/groups/thai.and.western.culture/" rel="noopener" target="_blank">Farang &amp; Thai Culture</a> | <a href="https://www.facebook.com/groups/faranglearnthai" rel="noopener" target="_blank">Farang Learn Thai</a> | <a href="https://www.facebook.com/groups/DynamicFanClub/" rel="noopener" target="_blank">Dynamic Language Centre Fan Club</a> | <a href="https://www.facebook.com/groups/456476087805075/" rel="noopener" target="_blank">Language Exchange</a></p>
 
-                    <p id="weekly-activities-marker" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);"><strong>Here is a list of weekly social activities in Chiang Mai that generally don't change. Confirm with the contact before heading out.</strong></p>
+                    <h2 id="weekly-activities-marker" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">Here is a list of weekly social activities in Chiang Mai that generally don't change. Confirm with the contact before heading out.</h2>
 
                     <h2 id="every-day">Every Day: Court Sports & Combat Training</h2>
 
