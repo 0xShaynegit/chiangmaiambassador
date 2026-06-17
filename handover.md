@@ -218,6 +218,26 @@ Each page needs:
 - Pagefind index pre-built and committed to git (no rebuild needed on deploy)
 - Reconnected GitHub repository with updated build settings
 
+---
+
+## Session 18 June 2026 - Search Icon Implementation
+
+**Search Icon Complete (DEPLOYED):**
+- Positioned at end of nav-links (after Visas dropdown, "visa side")
+- Styled to break free from menu item styling (no gold underline, subtle white hover)
+- Added to all 109 real content pages (one per page, no duplicates)
+- Fixed relative paths: root uses `href="search.html"`, subdirectories use `href="../search.html"`
+- Batch fixed 96 subdirectory files via PowerShell regex
+- Removed 1 duplicate from search.html
+- Fixed breaking news section to be full-width
+
+**Technical Learnings:**
+- Menu item CSS (.nav-links a) was being applied to search icon   needed explicit overrides
+- Relative paths from index.html copy to subdirs fail without `../` adjustment
+- Border-bottom specificity trap: setting `border-bottom:none` removed the box border instead of just the underline
+
+**Status:** ✓ All changes deployed to Cloudflare Workers
+
 **Last Updated:** 18 June 2026  
 **By:** Claude  
 **Status:** Ready for Cloudflare Workers deployment - all changes committed
