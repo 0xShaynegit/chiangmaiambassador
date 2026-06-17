@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json.schemastore.org/wrangler.json",
+  "name": "chiangmaiambassador",
+  "type": "javascript",
+  "compatibility_date": "2026-06-17",
+  "account_id": "",
+  "workers_dev": false
+}
