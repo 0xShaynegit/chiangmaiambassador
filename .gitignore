@@ -1,14 +1,40 @@
+# Dependencies
 node_modules/
+package-lock.json
+
+# Environment
 .env
 .env.local
+.env.*.local
+
+# Logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
 .DS_Store
 Thumbs.db
 .wranglerignore
+
+# Build output
 dist/
 build/
 .next/
 out/
 coverage/
+
+# Development
 .deployment-marker
 search-index.json
+.wrangler/
+.claude/
+.md/
+.github/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
