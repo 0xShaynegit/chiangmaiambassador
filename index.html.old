@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real guidance from 16+ years in Chiang Mai. Visas, cost of living, neighbourhoods, community, and practical advice for expats settling in.">
+    <meta name="robots" content="index, follow">
+
+    <title>Chiang Mai Ambassador | Living in Chiang Mai for 16+ Years</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Critical CSS inlined; full stylesheet loads async -->
+    <style>@font-face{font-family:'Outfit';src:url('fonts/outfit-600.woff2') format('woff2');font-weight:600;font-style:normal;font-display:optional}@font-face{font-family:'Outfit';src:url('fonts/outfit-800.woff2') format('woff2');font-weight:800;font-style:normal;font-display:optional}@font-face{font-family:'Plus Jakarta Sans';src:url('fonts/plus-jakarta-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:optional}@font-face{font-family:'Plus Jakarta Sans';src:url('fonts/plus-jakarta-500.woff2') format('woff2');font-weight:500;font-style:normal;font-display:optional}:root{--color-bg:#0F172A;--color-surface:#1E293B;--color-ink:#FFFFFF;--color-primary:#EAB308;--color-secondary:#7E22CE;--color-accent:#10B981;--color-text-main:#F1F5F9;--color-border:#334155;--font-heading:'Outfit',sans-serif;--font-body:'Plus Jakarta Sans',sans-serif;--ease-out-expo:cubic-bezier(0.16,1,0.3,1);--transition-fast:0.3s var(--ease-out-expo);--transition-slow:0.8s var(--ease-out-expo);--container-max:1280px;--radius-sm:0.5rem;--radius-md:0.75rem;--color-text-muted:#94A3B8;--link-gold:#EAB308;--link-blue:#0066cc;--hover-green:#10B981;--card-dark-bg:#1a1a1a;--card-dark-hover:#222222;--text-light-grey:#e0e0e0;--text-white:#ffffff}[data-theme="dark"]{--color-bg:#0F172A;--color-surface:#1E293B;--color-text-main:#F1F5F9;--color-ink:#FFFFFF;--color-border:#334155}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{background:linear-gradient(135deg,#0F172A 0%,#1a2a4a 100%);color:var(--color-text-main);font-family:var(--font-body);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;min-height:100vh}main{position:relative}h1,h2,h3,h4{font-family:var(--font-heading);color:var(--color-ink);line-height:1.1;font-weight:800}a{text-decoration:none;color:var(--link-gold);border-bottom:1px solid rgba(234,179,8,0.3);transition:color var(--transition-fast),border-bottom-color var(--transition-fast)}a:visited{color:var(--link-gold)}a:hover,a:visited:hover{color:var(--hover-green);border-bottom-color:var(--hover-green)}.dark-section a,footer a,.site-footer a{color:var(--link-gold);border-bottom-color:rgba(234,179,8,0.3)}.dark-section a:hover,footer a:hover,.site-footer a:hover,a:visited:hover{color:var(--hover-green);border-bottom-color:var(--hover-green)}.container{max-width:var(--container-max);margin:0 auto;padding:0 40px}.text-highlight{color:var(--color-primary);position:relative;display:inline-block}.badge{display:inline-block;padding:6px 12px;background:var(--color-ink);color:#fff;font-size:0.75rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:1.5rem;border-radius:var(--radius-sm)}img{max-width:100%;height:auto}html{overflow-x:hidden}@media (max-width:768px){.container{padding:0 20px}table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}}.nav-wrapper a,.site-footer a,.btn-primary,.btn-large-primary,.btn-large-outline,a.btn-primary,a.btn-large-primary,a.btn-large-outline{border-bottom:none}.nav-wrapper{display:flex;justify-content:space-between;align-items:center;padding:0 40px;height:70px;background:linear-gradient(180deg,#1a2a4a 0%,#0F172A 100%);position:fixed;top:0;left:0;right:0;z-index:9999;width:100%;max-width:100%;margin-left:0;margin-right:0;overflow:visible}.logo-link{display:flex;align-items:center;text-decoration:none;transition:opacity var(--transition-fast);align-self:flex-end;margin-bottom:-14px}.logo-link:hover{opacity:0.8}.logo{font-family:var(--font-heading);font-size:1.1rem;font-weight:800;color:#fff;display:flex;align-items:center;gap:0.5rem;line-height:1.2}.logo-icon{width:60px;height:80px;flex-shrink:0}.logo-text-wrapper{display:flex;flex-direction:column;align-items:flex-start;height:80px;transform:translateY(-5px);justify-content:center}.logo-text-wrapper.nav-mode{flex-direction:column;align-items:flex-start;justify-content:center;gap:0.25rem}.logo-text{font-size:1.1rem;font-weight:800}.logo-accent{color:var(--color-primary);margin-right:2px}.logo-tagline{font-size:0.55rem;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:rgba(255,255,255,0.8);line-height:1}.nav-links{display:flex;gap:3rem;align-items:center;flex:1;justify-content:center;padding:0 2rem}.nav-links a{color:#fff;font-weight:500;font-size:1.1rem;transition:color var(--transition-fast);white-space:nowrap}.nav-links>a{position:relative}.nav-links>a::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:2px;background:var(--color-primary);transform:scaleX(0);transform-origin:center;transition:transform 0.2s ease}.nav-links>a:hover::after{transform:scaleX(1)}.nav-links a:hover{color:var(--color-primary)}.nav-dropdown{position:relative;height:70px;display:flex;align-items:center}.nav-dropdown-toggle{background:none;border:none;color:#fff;font-weight:500;font-size:1.1rem;cursor:pointer;padding:0;display:flex;align-items:center;gap:0.5rem;transition:color var(--transition-fast);font-family:var(--font-body);position:relative}.nav-dropdown-toggle::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:2px;background:var(--color-primary);transform:scaleX(0);transform-origin:center;transition:transform 0.2s ease}.nav-dropdown:hover .nav-dropdown-toggle::after,.nav-dropdown.open .nav-dropdown-toggle::after{transform:scaleX(1)}.nav-dropdown-toggle:hover{color:var(--color-primary)}.nav-dropdown-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(-6px);background:linear-gradient(180deg,#1a2a4a 0%,#0F172A 100%);border:1px solid rgba(234,179,8,0.2);border-radius:8px;min-width:500px;opacity:0;visibility:hidden;pointer-events:none;contain:layout style;transition:opacity 0.18s ease,transform 0.18s ease,visibility 0.18s;z-index:1000;box-shadow:0 10px 30px rgba(0,0,0,0.3);column-count:2;column-gap:1.5rem;padding:0.75rem 1.5rem}.nav-dropdown.open .nav-dropdown-menu{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0)}.nav-dropdown-menu a{display:block;padding:0.5rem 0;color:#fff;text-decoration:none;font-size:0.95rem;font-weight:400;font-family:var(--font-body);transition:background-color var(--transition-fast),color var(--transition-fast);border-left:3px solid transparent;border-bottom:1px solid rgba(234,179,8,0.2);padding-left:0}.nav-dropdown-menu a:last-child{border-bottom:none}.nav-dropdown-menu a:hover{background-color:rgba(234,179,8,0.1);color:var(--color-primary);border-left-color:var(--color-primary)}.eyebrow{display:block;font-size:0.875rem;text-transform:uppercase;color:var(--color-primary);letter-spacing:0.1em;margin-bottom:1rem;font-weight:600}.hero-content .eyebrow{color:rgba(234,179,8,0.9)}.hero-split{display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:30px;padding:120px 0;padding-top:100px;min-height:80vh;position:relative;background:linear-gradient(135deg,#0F172A 0%,#1a2a4a 100%);width:100%;max-width:100%;margin-left:0;margin-right:0}.hero-content{position:relative;z-index:10;color:white;padding-left:40px}.hero-content h1{font-size:clamp(3rem,5vw,4.5rem);margin-bottom:2rem;color:white}.hero-content p{font-size:1.25rem;color:rgba(255,255,255,0.9);max-width:500px;margin-bottom:2.5rem;line-height:1.7}.hero-visual-frame{position:relative;border-radius:var(--radius-md);overflow:visible;z-index:10;padding-right:40px}.hero-visual-frame img{width:100%;height:600px;object-fit:cover;border-radius:var(--radius-md);display:block}.floating-stat{position:absolute;bottom:40px;right:40px;background:var(--color-bg);padding:12px 16px;border-left:3px solid var(--color-primary);box-shadow:0 8px 20px rgba(0,0,0,0.15);z-index:10;border-radius:3px}.stat-label{display:block;font-size:0.65rem;text-transform:uppercase;color:var(--color-text-muted);letter-spacing:0.05em;margin-bottom:2px;line-height:1}.stat-value{font-family:var(--font-heading);font-size:1.1rem;color:var(--color-ink);font-weight:700;line-height:1}.stat-subtext{font-size:0.55rem;font-weight:600;margin-top:2px;text-transform:uppercase;letter-spacing:0.04em;line-height:1.2}.nav-hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;cursor:pointer;padding:8px;background:none;border:none;z-index:10000;flex-shrink:0}.nav-hamburger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:transform 0.25s ease,opacity 0.25s ease;transform-origin:center}.nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}.nav-hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}.nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}@media (max-width:1024px){.hero-split{grid-template-columns:1fr;gap:40px;min-height:auto;padding:100px 0 80px}.hero-content{padding-left:24px;padding-right:24px;transform:none}.hero-visual-frame{min-height:400px;padding-right:0;transform:none}.hero-visual-frame img{height:400px}.pathway-grid{grid-template-columns:repeat(2,1fr)}.neighbourhood-grid{grid-template-columns:repeat(2,1fr)}.neighbourhood-card:nth-child(1),.neighbourhood-card:nth-child(2),.neighbourhood-card:nth-child(n+3){grid-column:span 1}.price-spectrum{grid-template-columns:1fr;gap:30px}.tools-grid{grid-template-columns:repeat(2,1fr)}.community-inner{grid-template-columns:1fr;gap:40px}.footer-inner{grid-template-columns:1fr;gap:40px}.footer-nav{grid-template-columns:1fr}}@media (max-width:640px){.hero-content .eyebrow,.hero-content h1,.hero-content p,.hero-content .hero-actions{animation:none;opacity:1;transform:none;will-change:auto}.hero-split{grid-template-columns:1fr;gap:30px;padding:90px 0 40px}.hero-content{padding-left:20px;padding-right:20px}.hero-content h1{font-size:2rem}.hero-content p{font-size:1rem}.hero-visual-frame img{height:260px}.floating-stat{position:static;margin-top:20px}.pathway-grid{grid-template-columns:1fr}.pathway-section{padding:60px 0}.neighbourhood-grid{grid-template-columns:1fr}.neighbourhood-featured{grid-column:auto}.neighbourhood-card img,.neighbourhood-featured img{height:200px}.neighbourhood-content{padding:20px}.tools-grid{grid-template-columns:1fr}.mobile-search-bar{display:block;padding:12px 24px 4px;border-bottom:1px solid rgba(255,255,255,0.08)}.mobile-search-form{display:block;background:none;border:none;border-radius:0;overflow:visible;padding:0;margin:0}.mobile-search-input{width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);border-radius:4px;color:#fff;font-size:0.95rem;padding:10px 14px;font-family:inherit;outline:none;margin:12px 24px}.mobile-search-input::placeholder{color:rgba(255,255,255,0.35)}.nav-links{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:linear-gradient(180deg,#1a2a4a 0%,#0F172A 100%);flex-direction:column;align-items:stretch;padding:72px 0 40px;gap:0;z-index:9998;overflow-y:auto;-webkit-overflow-scrolling:touch}.nav-links.mobile-open{display:flex}.nav-links>a{display:block;width:100%;padding:15px 24px;font-size:1rem;font-weight:500;color:#fff;border-bottom:1px solid rgba(255,255,255,0.08)}.nav-dropdown{width:100%;height:auto;display:block;border-bottom:1px solid rgba(255,255,255,0.08)}.nav-dropdown-toggle{width:100%;display:flex;justify-content:space-between;align-items:center;padding:15px 24px;font-size:1rem;font-weight:500;color:#fff}.nav-dropdown-toggle::before{display:none}.nav-dropdown-toggle::after{content:'›';position:static;width:auto;height:auto;background:none;color:var(--color-primary);font-size:1.4rem;line-height:1;transform:rotate(0deg);transform-origin:center;transition:transform 0.2s ease;flex-shrink:0}.nav-dropdown.open .nav-dropdown-toggle::after{transform:rotate(90deg)}.nav-dropdown-menu{position:static !important;left:auto !important;transform:none !important;box-shadow:none;background:rgba(0,0,0,0.2);border-radius:0;border:none;padding:0;margin-top:0;display:none;opacity:1;visibility:visible;min-width:unset;width:100%;column-count:1;max-height:0;overflow:hidden;transition:max-height 0.3s ease}.nav-dropdown.open .nav-dropdown-menu{display:block;max-height:2000px;transform:none;left:auto}.nav-dropdown-menu a{display:block;padding:12px 24px 12px 36px;font-size:0.9rem;font-family:var(--font-body);color:rgba(255,255,255,0.7);border-left:none;border-bottom:1px solid rgba(234,179,8,0.2)}.nav-dropdown-menu a:hover{color:var(--color-primary);background-color:rgba(234,179,8,0.05)}.nav-wrapper>.btn-primary{display:none}.nav-hamburger{display:flex !important}}.btn-large-primary{padding:18px 36px;background:var(--color-ink);color:#0F172A;border:none;font-family:var(--font-body);font-weight:600;cursor:pointer;transition:var(--transition-fast);border-radius:var(--radius-sm)}.btn-large-primary:hover{background:var(--color-primary);color:var(--color-ink);transform:translateY(-3px)}.btn-large-outline{padding:18px 36px;background:transparent;color:var(--color-ink);border:2px solid var(--color-ink);font-family:var(--font-body);font-weight:600;cursor:pointer;transition:var(--transition-fast);border-radius:var(--radius-sm)}.btn-large-outline:hover{border-color:var(--color-primary);color:var(--color-primary)}a.btn-large-outline{border-bottom:2px solid var(--color-ink)}a.btn-large-outline:hover{border-bottom:2px solid var(--color-primary)}.hero-content .btn-large-primary{background:var(--color-primary);color:var(--color-ink)}.hero-content .btn-large-primary:hover{background:rgba(234,179,8,0.9);color:var(--color-ink)}.hero-content .btn-large-outline{color:white;border-color:white;border-bottom-color:white}.hero-content .btn-large-outline:hover{border-color:var(--color-primary);border-bottom-color:var(--color-primary);color:var(--color-primary)}.btn-primary{padding:10px 20px;background:var(--color-primary);color:#ffffff;border:none;font-family:var(--font-heading);font-weight:600;font-size:0.875rem;cursor:pointer;transition:var(--transition-fast);border-radius:var(--radius-sm);text-decoration:none;display:inline-block}.btn-primary:hover{background:#F5C430;color:#000000;transform:translateY(-2px)}a.btn-primary,a.btn-primary:visited{color:#ffffff;border-bottom:none}a.btn-primary:hover,a.btn-primary:visited:hover{background:#000000;color:#ffffff;border-bottom:none}.hero-content .eyebrow,.hero-content h1,.hero-content p,.hero-content .hero-actions{opacity:0;transform:translate3d(0,30px,0);animation:fadeInUp 0.7s ease forwards;animation-fill-mode:both}.hero-content .eyebrow{animation-delay:0s}.hero-content h1{animation-delay:0.125s}.hero-content p{animation-delay:0.25s}.hero-content .hero-actions{animation-delay:0.375s}@keyframes fadeInUp{0%{opacity:0;transform:translate3d(0,30px,0)}100%{opacity:1;transform:translate3d(0,0,0)}}.magnetic-item{position:relative}.magnetic-item::after{content:'';position:absolute;top:-5px;left:-5px;right:-5px;bottom:-5px;border-radius:var(--radius-sm);background:rgba(234,179,8,0.1);z-index:-1;transition:var(--transition-fast)}.magnetic-item:hover::after{background:rgba(234,179,8,0.2);transform:scale(1.1)}.float-element{position:absolute;bottom:0;opacity:0.6;animation:float-up linear infinite;will-change:transform,opacity}.float-element::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(234,179,8,0.2) 0%,rgba(234,179,8,0.7) 25%,rgba(234,179,8,0.8) 50%,rgba(234,179,8,0.7) 75%,rgba(234,179,8,0.2) 100%);border-radius:50%;box-shadow:inset -2px 0 8px rgba(0,0,0,0.3),0 0 20px var(--glow,rgba(234,179,8,0.5)),0 0 40px rgba(234,179,8,0.2)}@keyframes float-rise-1{0%{transform:translate(0px,60px);opacity:0}5%{opacity:0.6}25%{transform:translate(8px,-25vh)}50%{transform:translate(0px,-50vh)}75%{transform:translate(-8px,-75vh)}95%{opacity:0.6}100%{transform:translate(0px,-100vh);opacity:0}}@keyframes float-rise-2{0%{transform:translate(0px,60px);opacity:0}5%{opacity:0.6}25%{transform:translate(-12px,-25vh)}50%{transform:translate(0px,-50vh)}75%{transform:translate(12px,-75vh)}95%{opacity:0.6}100%{transform:translate(0px,-100vh);opacity:0}}@keyframes float-rise-3{0%{transform:translate(0px,60px);opacity:0}5%{opacity:0.6}25%{transform:translate(15px,-25vh)}50%{transform:translate(0px,-50vh)}75%{transform:translate(-15px,-75vh)}95%{opacity:0.6}100%{transform:translate(0px,-100vh);opacity:0}}@keyframes float-rise-4{0%{transform:translate(0px,60px);opacity:0}5%{opacity:0.6}25%{transform:translate(-18px,-25vh)}50%{transform:translate(0px,-50vh)}75%{transform:translate(18px,-75vh)}95%{opacity:0.6}100%{transform:translate(0px,-100vh);opacity:0}}@keyframes float-rise-5{0%{transform:translate(0px,60px);opacity:0}5%{opacity:0.6}25%{transform:translate(12px,-25vh)}50%{transform:translate(0px,-50vh)}75%{transform:translate(-12px,-75vh)}95%{opacity:0.6}100%{transform:translate(0px,-100vh);opacity:0}}.float-1{width:31px;height:43px;left:8%;animation:float-rise-1 linear 17s infinite both;animation-delay:0s;--glow:rgba(234,179,8,0.45)}.float-2{width:35px;height:40px;left:22%;animation:float-rise-2 linear 18s infinite both;animation-delay:3s;--glow:rgba(234,179,8,0.52)}.float-3{width:39px;height:37px;left:42%;animation:float-rise-3 linear 16s infinite both;animation-delay:6s;--glow:rgba(234,179,8,0.58)}.float-4{width:43px;height:35px;left:64%;animation:float-rise-4 linear 17.5s infinite both;animation-delay:9s;--glow:rgba(234,179,8,0.55)}.float-5{width:46px;height:34px;left:80%;animation:float-rise-5 linear 18.5s infinite both;animation-delay:12s;--glow:rgba(234,179,8,0.60)}.float-6{width:33px;height:41px;left:35%;animation:float-rise-2 linear 19s infinite both;animation-delay:5s;--glow:rgba(234,179,8,0.48)}.float-7{width:38px;height:36px;left:57%;animation:float-rise-4 linear 17s infinite both;animation-delay:8s;--glow:rgba(234,179,8,0.54)}.float-8{width:42px;height:38px;left:15%;animation:float-rise-1 linear 20s infinite both;animation-delay:15s;--glow:rgba(234,179,8,0.50)}.gold-gradient-text{background:linear-gradient(135deg,#F1F5F9 0%,#EAB308 60%,#f0d080 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.about-inner{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:center}.about-stats{display:flex;gap:2.5rem;border-top:1px solid var(--color-border);padding-top:2rem}.about-stat{display:flex;flex-direction:column;gap:0.25rem}.about-stat-value{font-family:var(--font-heading);font-size:2rem;font-weight:800;color:var(--color-primary);line-height:1}.about-stat-label{font-size:0.8rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--color-text-muted);font-weight:600}.services-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem}.service-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:2.5rem;display:flex;flex-direction:column;gap:1.25rem}@media(max-width:1024px){.about-inner{grid-template-columns:1fr;gap:40px}}@media(max-width:768px){.services-grid{grid-template-columns:1fr}}.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;justify-content:flex-end}@media (max-width:640px){.hero-actions{flex-direction:column}.btn-large-primary,.btn-large-outline{width:100%}}.nav-dropdown-menu--grouped{column-count:1!important;contain:none!important;min-width:680px!important;display:grid!important;grid-template-columns:1fr 1fr;padding:0.75rem 1rem}.nav-dropdown-menu--wide{min-width:860px!important;grid-template-columns:1fr 1fr 1fr 1fr!important}.nav-group{padding:0.5rem 0.75rem}.nav-group-label{display:block;font-family:var(--font-body);font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-primary);padding:0.5rem 0 0.35rem;margin-bottom:0.2rem;border-bottom:1px solid rgba(234,179,8,0.25)}.nav-group-links a{display:block;font-family:var(--font-body);font-size:0.95rem;font-weight:400;padding:0.3rem 0;color:#fff;border-bottom:none!important;border-left:3px solid transparent!important}.nav-group-links a:hover{color:var(--color-primary);background:rgba(234,179,8,0.05);border-left-color:var(--color-primary)!important}@media (max-width:640px){.nav-dropdown-menu--grouped{display:block!important;min-width:unset!important}.nav-group{padding:0}.nav-group-label{padding:10px 0 6px;margin:0 0 0 12px}.nav-group-links a{padding:10px 24px 10px 36px}}</style>
+    <link rel="stylesheet" href="css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+
+    <!-- LCP image preload -->
+    <link rel="preload" href="images/chiang-mai-hero-mobile.webp" as="image" fetchpriority="high" media="(max-width: 767px)">
+    <link rel="preload" href="images/chiang-mai-hero.webp" as="image" fetchpriority="high" media="(min-width: 768px)">
+
+    <!-- Font preloads (local files) -->
+    <link rel="preload" href="fonts/outfit-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/outfit-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/plus-jakarta-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/plus-jakarta-500.woff2" as="font" type="font/woff2" crossorigin>
+
+    <script>
+        function randomizeLanterns() {
+            const ranges = [
+                { min: 5, max: 30 },
+                { min: 25, max: 50 },
+                { min: 45, max: 70 },
+                { min: 65, max: 90 }
+            ];
+
+            ranges.forEach((range, index) => {
+                const el = document.querySelector(`.page-float-${index + 1}`);
+                if (el) {
+                    const random = Math.random() * (range.max - range.min) + range.min;
+                    el.style.left = random + '%';
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', randomizeLanterns);
+    </script>
+    <link rel="canonical" href="https://chiangmaiambassador.com/">
+
+    <meta property="og:title" content="Chiang Mai Ambassador | Living in Chiang Mai for 16+ Years">
+    <meta property="og:description" content="Real guidance from 16+ years in Chiang Mai. Visas, cost of living, neighbourhoods, community, and practical advice for expats settling in.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chiangmaiambassador.com/">
+    <meta property="og:image" content="https://chiangmaiambassador.com/images/og-image.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Chiang Mai Ambassador | Living in Chiang Mai for 16+ Years">
+    <meta name="twitter:description" content="Real guidance from 16+ years in Chiang Mai. Visas, cost of living, neighbourhoods, community, and practical advice for expats settling in.">
+    <meta name="twitter:image" content="https://chiangmaiambassador.com/images/og-image.webp">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Chiang Mai Ambassador",
+        "url": "https://chiangmaiambassador.com",
+        "description": "Real guidance from 16+ years in Chiang Mai. Visas, cost of living, neighbourhoods, community, and practical advice for expats settling in.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Chiang Mai Ambassador",
+            "url": "https://chiangmaiambassador.com"
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <div class="progress-bar" id="progress-bar" aria-label="Reading progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+    <nav class="nav-wrapper" role="navigation" aria-label="Main navigation">
+        <a href="./" class="logo-link">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="-175 -178 350 500" xmlns="http://www.w3.org/2000/svg" width="60" height="80">
+                <defs>
+                    <linearGradient id="g2gold" x1="20%" y1="0%" x2="80%" y2="100%">
+                        <stop offset="0%" stop-color="#F2D980" />
+                        <stop offset="40%" stop-color="#C49010" />
+                        <stop offset="100%" stop-color="#9A7008" />
+                    </linearGradient>
+                    <linearGradient id="g2ring" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#E4BC50" />
+                        <stop offset="100%" stop-color="#9A7008" />
+                    </linearGradient>
+                </defs>
+                <circle cx="0" cy="0" r="164" fill="none" stroke="url(#g2ring)" stroke-width="2.5" />
+                <circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65" />
+                <circle cx="164" cy="0" r="3.2" fill="#C49010" />
+                <circle cx="0" cy="-164" r="3.2" fill="#C49010" />
+                <circle cx="-164" cy="0" r="3.2" fill="#C49010" />
+                <circle cx="0" cy="164" r="3.2" fill="#C49010" />
+                <g transform="translate(0, -149.201) scale(1.94980)">
+                    <polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980" />
+                    <rect x="-2" y="4" width="4" height="38" fill="url(#g2gold)" />
+                    <polygon points="0,42 -16,78 16,78" fill="url(#g2gold)" />
+                    <rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008" />
+                    <rect x="-22" y="84" width="44" height="9" fill="url(#g2gold)" />
+                    <rect x="-25" y="93" width="50" height="4" fill="#9A7008" />
+                    <rect x="-30" y="97" width="60" height="9" fill="url(#g2gold)" />
+                    <rect x="-33" y="106" width="66" height="4" fill="#9A7008" />
+                    <rect x="-38" y="110" width="76" height="9" fill="url(#g2gold)" />
+                    <rect x="-44" y="119" width="88" height="11" fill="url(#g2gold)" />
+                    <rect x="-52" y="130" width="104" height="8" fill="#9A7008" />
+                </g>
+            </svg>
+                <div class="logo-text-wrapper nav-mode">
+                    <div>
+                        <span class="logo-accent">CM</span><span class="logo-text">Ambassador</span>
+                    </div>
+                    <span class="logo-tagline">Connector · Helper · Guru</span>
+                </div>
+            </div>
+        </a>
+        <div class="nav-links" id="nav-links">
+
+                                                <a href="search.html" class="nav-search-icon" aria-label="Search">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </a>
+
+<div class="mobile-search-bar">
+                <form class="mobile-search-form" onsubmit="event.preventDefault();">
+                    <input type="text" class="mobile-search-input" placeholder="Search...">
+                    <button type="submit" class="mobile-search-btn" aria-label="Search">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    </button>
+                </form>
+            </div>
+
+            <!-- 1. Planning -->
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">1. Planning</button>
+                <div class="nav-dropdown-menu nav-dropdown-menu--grouped">
+                    <div class="nav-group">
+                        <span class="nav-group-label">Is Chiang Mai right for you?</span>
+                        <div class="nav-group-links">
+                            <a href="lifestyle/live-in-chiang-mai.html">Why Live Here</a>
+                            <a href="guides/chiang-mai-vs-da-nang.html">CM vs Da Nang</a>
+                            <a href="pages/cost-of-living.html">Cost of Living</a>
+                            <a href="pages/planning-a-move-to-thailand.html">Planning Your Move</a>
+                            <a href="chiang-mai-scams.html">Scams &amp; Safety</a>
+                            <a href="best-chiang-mai.html">Best of Chiang Mai</a>
+                            <a href="guides/chiang-mai-insurance.html">Insurance</a>
+                            <a href="getting-social-in-chiang-mai.html">Getting Social</a>
+                            <a href="pages/about.html">About Shayne</a>
+                        </div>
+                    </div>
+                    <div class="nav-group">
+                        <span class="nav-group-label">Where to Live</span>
+                        <div class="nav-group-links">
+                            <a href="pages/neighbourhoods.html">All Neighbourhoods</a>
+                            <a href="lifestyle/neighborhoods/nimman.html">Nimman</a>
+                            <a href="lifestyle/neighborhoods/old-city.html">Old City</a>
+                            <a href="lifestyle/neighborhoods/santitham.html">Santitham</a>
+                            <a href="lifestyle/neighborhoods/hang-dong.html">Hang Dong</a>
+                            <a href="lifestyle/neighborhoods/riverside.html">Riverside</a>
+                            <a href="lifestyle/neighborhoods/jed-yod.html">Jed Yod</a>
+                            <a href="lifestyle/neighborhoods/wat-ket-riverside.html">Wat Ket</a>
+                            <a href="where-to-stay-in-chiang-mai.html">Where to Stay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Arriving -->
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">2. Arriving</button>
+                <div class="nav-dropdown-menu nav-dropdown-menu--grouped">
+                    <div class="nav-group">
+                        <span class="nav-group-label">First Month</span>
+                        <div class="nav-group-links">
+                            <a href="lifestyle/chiang-mai-arrival.html">Just Arrived</a>
+                            <a href="pages/just-arriving-in-thailand.html">First Week Guide</a>
+                            <a href="guides/tdac-thailand-digital-arrival-card.html">TDAC Arrival Card</a>
+                            <a href="lifestyle/moving-checklist.html">Moving Checklist</a>
+                            <a href="lifestyle/expat-breakfast-club.html">Expat Breakfast Club</a>
+                            <a href="understanding-thai-culture.html">Thai Culture</a>
+                        </div>
+                    </div>
+                    <div class="nav-group">
+                        <span class="nav-group-label">Getting Established</span>
+                        <div class="nav-group-links">
+                            <a href="guides/90-day-reporting-tm30-chiang-mai.html">90-Day Reporting</a>
+                            <a href="guides/language-schools-ed-visa-chiang-mai.html">Language Schools</a>
+                            <a href="pages/embassies-consulates.html">Embassies &amp; Consulates</a>
+                            <a href="lifestyle/traveling-alone.html">Traveling Alone</a>
+                            <a href="lifestyle/traveling-with-friends.html">Traveling with Friends</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Living Here -->
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">3. Living Here</button>
+                <div class="nav-dropdown-menu nav-dropdown-menu--grouped">
+                    <div class="nav-group">
+                        <span class="nav-group-label">Daily Life</span>
+                        <div class="nav-group-links">
+                            <a href="pages/living-better-in-thailand.html">Living Better</a>
+                            <a href="lifestyle/internet.html">Internet</a>
+                            <a href="lifestyle/mobile-phones.html">Mobile Phones</a>
+                            <a href="lifestyle/currency-in-and-out-of-thailand.html">Currency</a>
+                            <a href="guides/lazada-shopee-foreigners-chiang-mai.html">Lazada &amp; Shopee</a>
+                            <a href="lifestyle/television.html">Television</a>
+                            <a href="lifestyle/life-budget-chiang-mai.html">Life on a Budget</a>
+                            <a href="lifestyle/smoky-season-chiang-mai.html">Smoky Season</a>
+                            <a href="lifestyle/songkran.html">Songkran</a>
+                            <a href="lifestyle/alcohol-observations-of-a-non-drinker.html">Alcohol in Thailand</a>
+                        </div>
+                    </div>
+                    <div class="nav-group">
+                        <span class="nav-group-label">Admin &amp; Legal</span>
+                        <div class="nav-group-links">
+                            <a href="guides/work-permit-medical-certificate.html">Work Permit</a>
+                            <a href="guides/residency-certificate-chiang-mai.html">Residency Certificate</a>
+                            <a href="guides/wing-41-pass.html">Wing 41 Pass</a>
+                            <a href="lifestyle/us-expat-tax-guide.html">US Expat Tax Guide</a>
+                            <a href="lifestyle/learning-languages.html">Learning Languages</a>
+                            <a href="lifestyle/vip-concierge-chiang-mai.html">VIP Concierge</a>
+                            <a href="lifestyle/top-tips.html">Top Tips</a>
+                            <a href="dying-in-thailand.html">Dying in Thailand</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Explore -->
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Explore</button>
+                <div class="nav-dropdown-menu nav-dropdown-menu--grouped nav-dropdown-menu--wide">
+                    <div class="nav-group">
+                        <span class="nav-group-label">Food &amp; Drink</span>
+                        <div class="nav-group-links">
+                            <a href="food/auf-der-au-best-buffet-chiang-mai.html">Best Buffet</a>
+                            <a href="food/late-night-eating-chiang-mai.html">Late Night Eating</a>
+                            <a href="food/food-delivery-apps-chiang-mai.html">Food Delivery Apps</a>
+                            <a href="food/the-dukes.html">The Dukes</a>
+                            <a href="food/butter-is-better.html">Butter is Better</a>
+                            <a href="thai-eating-etiquette.html">Thai Eating Etiquette</a>
+                            <a href="yunnan-farmers-market.html">Yunnan Farmers Market</a>
+                            <a href="food/meela-peanut-butter.html">Meela Peanut Butter</a>
+                            <a href="food/chiang-mai-marriott-hotel-dining.html">Marriott Hotel Dining</a>
+                            <a href="food/siripanna-lunch.html">Siripanna Lunch</a>
+                            <a href="food/food-delivery-services.html">Delivery Services</a>
+                        </div>
+                    </div>
+                    <div class="nav-group">
+                        <span class="nav-group-label">Things to Do</span>
+                        <div class="nav-group-links">
+                            <a href="guides/chiang-mai-festivals.html">Festivals</a>
+                            <a href="guides/yi-peng-lantern-festival.html">Yi Peng</a>
+                            <a href="guides/walking-street-markets.html">Markets</a>
+                            <a href="guides/bua-tong-waterfalls.html">Bua Tong Waterfalls</a>
+                            <a href="khun-joe-school.html">Khun Joe School</a>
+                            <a href="womens-prison-massage.html">Women's Prison Massage</a>
+                            <a href="chiang-mai/index.html">Chiang Mai Hub</a>
+                            <a href="best-chiang-mai.html">Best of Chiang Mai</a>
+                            <a href="guides/thailand-media.html">Thailand Media</a>
+                        </div>
+                    </div>
+                    <div class="nav-group">
+                        <span class="nav-group-label">Getting Around</span>
+                        <div class="nav-group-links">
+                            <a href="modern-transport-guide.html">Transport Guide</a>
+                            <a href="guides/chiang-mai-driving.html">Driving in CM</a>
+                            <a href="guides/chiang-mai-driving-licence.html">Driving Licence</a>
+                            <a href="guides/chiang-mai-road-rules.html">Road Rules</a>
+                            <a href="guides/motorcycle-rentals.html">Motorbike Rentals</a>
+                            <a href="guides/renting-a-motorbike-in-chiang-mai.html">Renting a Motorbike</a>
+                            <a href="motorbike-registration-chiang-mai.html">Motorbike Registration</a>
+                            <a href="guides/motorcycle-registration-transfer.html">Reg Transfer</a>
+                            <a href="guides/flat-tire.html">Flat Tyre</a>
+                            <a href="guides/what-to-do-after-a-vehicle-accident.html">Vehicle Accident</a>
+                            <a href="guides/license-plates.html">Licence Plates</a>
+                        </div>
+                    </div>
+                    <div class="nav-group">
+                        <span class="nav-group-label">Health &amp; Wellbeing</span>
+                        <div class="nav-group-links">
+                            <a href="guides/budget-chiang-mai-medical-services.html">Medical Services</a>
+                            <a href="guides/red-cross-blood-bank-chiang-mai.html">Blood Bank</a>
+                            <a href="guides/blood-donation-donor-eligibility-red-cross-blood-bank-chiang-mai.html">Blood Donation Eligibility</a>
+                            <a href="guides/blood-donation-procedure.html">Blood Donation Procedure</a>
+                            <a href="dental-care-chiang-mai.html">Dental Care</a>
+                            <a href="guides/travelling-to-thailand-with-pets.html">Travelling with Pets</a>
+                            <a href="guides/vets-pet-care-chiang-mai.html">Vets &amp; Pet Care</a>
+                            <a href="guides/finding-pet-friendly-home-chiang-mai.html">Pet-Friendly Homes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visas -->
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Visas</button>
+                <div class="nav-dropdown-menu nav-dropdown-menu--grouped">
+                    <div class="nav-group">
+                        <span class="nav-group-label">General Advice</span>
+                        <div class="nav-group-links">
+                            <a href="pages/visas.html">Visa Overview</a>
+                            <a href="lifestyle/thai-visa-advice.html">Thai Visa Advice</a>
+                            <a href="visa-exempt-status-2026-returning-to-30-days.html">Visa Exempt 2026</a>
+                            <a href="visa/visa-exempt-vs-voa.html">Exempt vs VOA</a>
+                            <a href="visa/border-run-strategy.html">Border Run Strategy</a>
+                            <a href="cheapest-border-run-chiang-mai.html">Cheapest Border Run</a>
+                            <a href="lifestyle/vientiane-visa-run.html">Vientiane Visa Run</a>
+                        </div>
+                    </div>
+                    <div class="nav-group">
+                        <span class="nav-group-label">Visa Types</span>
+                        <div class="nav-group-links">
+                            <a href="visa/dtv-visa.html">DTV Visa</a>
+                            <a href="visa/retirement-visa.html">Retirement Visa</a>
+                            <a href="visa/ltr-visa.html">LTR Visa</a>
+                            <a href="visa/marriage-visa.html">Marriage Visa</a>
+                            <a href="visa/business-visa.html">Business Visa</a>
+                            <a href="visa/tourist-visa.html">Tourist Visa</a>
+                            <a href="visa/ed-visa.html">Education Visa</a>
+                            <a href="visa/volunteer-visa.html">Volunteer Visa</a>
+                            <a href="visa/ed-visa-muay-thai.html">ED Visa: Muay Thai</a>
+                            <a href="visa/ed-visa-thai-language.html">ED Visa: Thai Language</a>
+                            <a href="visa/ed-visa-combat-training.html">ED Visa: Combat Training</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </nav>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero-split" aria-labelledby="hero-heading">
+            <!-- Floating Lanterns -->
+            <div class="float-element float-1"></div>
+            <div class="float-element float-2"></div>
+            <div class="float-element float-3"></div>
+            <div class="float-element float-4"></div>
+            <div class="float-element float-5"></div>
+
+            <div class="hero-content">
+                <span class="eyebrow reveal">16+ years in Chiang Mai. Real, lived experience.</span>
+                <h1 id="hero-heading" class="reveal">Navigate Chiang Mai from someone<br><span class="gold-gradient-text">who's actually done it.</span></h1>
+                <p class="reveal">Get honest guidance on visas, settling in, cost of living, and building real community. No generic travel blog nonsense. Just what works from someone who's been here since 2010 and helped 1,000+ expats figure out their path.</p>
+
+                <div class="hero-actions reveal">
+                    <a href="#start" class="btn-large-primary">Start your journey</a>
+                    <a href="#neighbourhoods" class="btn-large-outline">Explore neighbourhoods</a>
+                </div>
+            </div>
+
+            <div class="hero-visual-frame reveal">
+                <picture>
+                    <source srcset="images/chiang-mai-hero-mobile.webp" media="(max-width: 767px)">
+                    <img src="images/chiang-mai-hero.webp" alt="Chiang Mai premium expat living" width="560" height="700" fetchpriority="high">
+                </picture>
+                <div class="floating-stat">
+                    <span class="stat-label">Experience</span>
+                    <div class="stat-value">
+                        <div>16+</div>
+                        <div class="stat-subtext">Years in Chiang Mai</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BREAKING NEWS SECTION -->
+        <section class="breaking-news-section container" aria-labelledby="breaking-news-heading">
+            <div class="breaking-news-inner reveal">
+                <div class="breaking-news-badge">Breaking News</div>
+                <h2 id="breaking-news-heading">Thailand Visa Exempt: Back to 30 Days</h2>
+                <p>Thailand's visa exempt entry has changed. Single entry visitors now receive <strong>30 days</strong>, not 60. This affects your planning if you're arriving without a formal visa. Extension available: 30 days for 1,900 THB at immigration.</p>
+                <p>*** <strong>Effective:</strong> 2026. <strong>Applies to:</strong> Qualifying passport holders arriving by air or land. <strong>Extension:</strong> Get 30 more days at any immigration office. ***</p>
+                <a href="visa-exempt-status-2026-returning-to-30-days.html" class="btn-breaking-news">Read the full update →</a>
+            </div>
+        </section>
+
+        <!-- PATHWAY SECTION -->
+        <section id="start" class="pathway-section container" aria-labelledby="pathway-heading">
+            <div class="pathway-header reveal">
+                <span class="eyebrow">Your path to Chiang Mai</span>
+                <h2 id="pathway-heading">What are you figuring out right now?</h2>
+                <p>Whether you're researching from your home country, just landed, or already here trying to make sense of it all, there's a clear path forward.</p>
+            </div>
+
+            <div class="pathway-grid">
+                <a href="pages/planning-a-move-to-thailand.html" class="path-card reveal">
+                    <div class="path-card-image">
+                        <img src="images/chiang-mai-ambassador-planning-home.webp" alt="Planning your move to Chiang Mai" width="480" height="270" loading="lazy">
+                    </div>
+                    <span class="step-num">01</span>
+                    <h3>Planning the move</h3>
+                    <p>Visa options, realistic costs, healthcare choices, tax implications, and the exact steps to get you ready. Stop guessing. Get a roadmap.</p>
+                    <span class="arrow-link">Explore →</span>
+                </a>
+
+                <a href="pages/just-arriving-in-thailand.html" class="path-card reveal">
+                    <div class="path-card-image">
+                        <img src="images/chiang-mai-ambassador-arrival-home.webp" alt="First days settling into Chiang Mai" width="350" height="263" loading="lazy">
+                    </div>
+                    <span class="step-num">02</span>
+                    <h3>Just arrived</h3>
+                    <p>Airport logistics, finding your first place, SIM cards, Thai banking, getting around, and what actually matters in week one. We've done this 16+ times.</p>
+                    <span class="arrow-link">Explore →</span>
+                </a>
+
+                <a href="pages/living-better-in-thailand.html" class="path-card reveal">
+                    <div class="path-card-image">
+                        <img src="images/chiang-mai-ambassador-living-home.webp" alt="Living better in Chiang Mai" width="480" height="270" loading="lazy">
+                    </div>
+                    <span class="step-num">03</span>
+                    <h3>Settling in</h3>
+                    <p>Making real friends, understanding neighbourhoods, building roots, navigating healthcare, managing costs long-term, and figuring out what 'home' actually means here.</p>
+                    <span class="arrow-link">Explore →</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- NEIGHBOURHOODS SECTION -->
+        <section id="neighbourhoods" class="neighbourhood-section container" aria-labelledby="neighbourhood-heading">
+            <div class="pathway-header reveal">
+                <span class="eyebrow">Find your neighbourhood</span>
+                <h2 id="neighbourhood-heading">Where you settle matters</h2>
+                <p>Each neighbourhood has its own vibe, community, and cost. Here's where people like you actually end up, and why.</p>
+            </div>
+
+            <div class="neighbourhood-grid">
+                <a href="pages/neighbourhoods.html#nimman" class="neighbourhood-card reveal">
+                    <img src="images/chiang-mai-ambassador-chiangmaiambassador-maya-mall-nimman-exterior-chiang-mai-home.webp" alt="Nimman Road. Chiang Mai's cosmopolitan quarter" width="560" height="280" loading="lazy">
+                    <div class="neighbourhood-content">
+                        <span class="neighbourhood-tag">Digital nomads and socialities</span>
+                        <h3>Nimman</h3>
+                        <p class="neighbourhood-vibe">Cosmopolitan. Cafes. Walkable.</p>
+                        <p>The closest Chiang Mai gets to a European quarter. Specialty coffee, co-working spaces, and a Sunday market you'll visit every week.</p>
+                        <span class="arrow-link">Read the area guide →</span>
+                    </div>
+                </a>
+
+                <a href="pages/neighbourhoods.html#oldcity" class="neighbourhood-card reveal">
+                    <img src="images/chiang-mai-ambassador-chiangmaiambassador-monks-praying-temple-interior-chiang-mai-home.webp" alt="The Old City moat and temples" width="280" height="280" loading="lazy">
+                    <div class="neighbourhood-content">
+                        <span class="neighbourhood-tag">First-timers and backpackers</span>
+                        <h3>Old City</h3>
+                        <p class="neighbourhood-vibe">Cultural. Temples. Vibrant.</p>
+                        <p>Surrounded by a 700-year-old moat. The right place to land first and understand the city's pulse.</p>
+                        <span class="arrow-link">Read the area guide →</span>
+                    </div>
+                </a>
+
+                <a href="pages/neighbourhoods.html#santitham" class="neighbourhood-card reveal">
+                    <img src="images/chiang-mai-ambassador-chiangmaiambassador-bicycle-garden-cafe-chiang-mai-home.webp" alt="Santitham local street life" width="380" height="280" loading="lazy">
+                    <div class="neighbourhood-content">
+                        <span class="neighbourhood-tag">Long-stayers and foodies</span>
+                        <h3>Santitham</h3>
+                        <p class="neighbourhood-vibe">Local. Authentic. Affordable.</p>
+                        <p>Where expats who've been here two years tend to drift. Fewer tourists, better food, real community.</p>
+                        <span class="arrow-link">Read the area guide →</span>
+                    </div>
+                </a>
+
+                <a href="pages/neighbourhoods.html#hangdong" class="neighbourhood-card reveal">
+                    <img src="images/chiang-mai-ambassador-chiangmaiambassador-royal-flora-ratchaphruek-pavilion-reflection-pool-home.webp" alt="Hang Dong. Spacious and green" width="380" height="280" loading="lazy">
+                    <div class="neighbourhood-content">
+                        <span class="neighbourhood-tag">Families and retirees</span>
+                        <h3>Hang Dong</h3>
+                        <p class="neighbourhood-vibe">Spacious. Green. Quiet.</p>
+                        <p>Larger homes, lower density, international schools nearby. The area that makes sense once you stay long-term.</p>
+                        <span class="arrow-link">Read the area guide →</span>
+                    </div>
+                </a>
+
+                <a href="pages/neighbourhoods.html#maerim" class="neighbourhood-card reveal">
+                    <img src="images/chiang-mai-ambassador-chiangmaiambassador-riverside-bamboo-huts-lake-chiang-mai-home.webp" alt="Mae Rim. Green, mountain-adjacent, cool" width="380" height="280" loading="lazy">
+                    <div class="neighbourhood-content">
+                        <span class="neighbourhood-tag">Nature lovers and remote workers</span>
+                        <h3>Mae Rim</h3>
+                        <p class="neighbourhood-vibe">Green. Mountain-adjacent. Cool.</p>
+                        <p>Higher elevation brings cooler climate and lush surroundings. Perfect for those seeking quieter mountain living close enough to the city.</p>
+                        <span class="arrow-link">Read the area guide →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- COST OF LIVING SECTION -->
+        <section id="costs" class="cost-section container" aria-labelledby="cost-heading">
+            <div class="pathway-header reveal">
+                <span class="eyebrow">The real numbers</span>
+                <h2 id="cost-heading">What does life in Chiang Mai actually cost?</h2>
+                <p>We skip the "Chiang Mai is so cheap" nonsense. Here's what real people actually spend, by lifestyle choice.</p>
+            </div>
+
+            <div class="price-spectrum">
+                <div class="price-card reveal">
+                    <div class="price-card-header">
+                        <span class="price-tier-label">Local essentials</span>
+                        <div class="price-amount">
+                            <span class="price-currency">USD</span>
+                            <span class="price-figure">$800</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="price-breakdown" role="list">
+                        <li><span class="price-line-item">1BR apartment, good area</span><span class="price-line-cost">$300-450</span></li>
+                        <li><span class="price-line-item">Food - markets and some dining</span><span class="price-line-cost">$150-200</span></li>
+                        <li><span class="price-line-item">Transport - scooter and Grab</span><span class="price-line-cost">$60-80</span></li>
+                        <li><span class="price-line-item">Utilities and internet</span><span class="price-line-cost">$50-70</span></li>
+                        <li><span class="price-line-item">Health insurance, basic</span><span class="price-line-cost">$80-120</span></li>
+                    </ul>
+                    <p class="price-note">A comfortable, dignified life. You live like a well-traveled local.</p>
+                </div>
+
+                <div class="price-card price-card--premium reveal">
+                    <div class="price-card-header">
+                        <span class="price-tier-label">Premium expat</span>
+                        <div class="price-amount">
+                            <span class="price-currency">USD</span>
+                            <span class="price-figure">$2500</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="price-breakdown" role="list">
+                        <li><span class="price-line-item">Serviced apartment or villa</span><span class="price-line-cost">$900-1,400</span></li>
+                        <li><span class="price-line-item">Dining out and international groceries</span><span class="price-line-cost">$400-600</span></li>
+                        <li><span class="price-line-item">Car hire or private driver</span><span class="price-line-cost">$200-300</span></li>
+                        <li><span class="price-line-item">Utilities, fast internet, streaming</span><span class="price-line-cost">$100-150</span></li>
+                        <li><span class="price-line-item">Comprehensive health cover</span><span class="price-line-cost">$200-350</span></li>
+                    </ul>
+                    <p class="price-note">A Bangkok-quality life at half the Bangkok cost. You want for nothing.</p>
+                </div>
+            </div>
+
+            <div class="cost-cta reveal">
+        <a href="pages/cost-of-living.html" class="btn-primary magnetic-item">See the full cost breakdown →</a>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-inner">
+                    <div class="about-image reveal">
+                        <img src="images/chiang-mai-ambassador-shayne.webp" alt="Shayne   Chiang Mai Ambassador" width="480" height="560" loading="lazy" onerror="this.style.display='none'">
+                        <img src="images/chiang-mai-ambassador-clean-city-shayne.webp" alt="Shayne in his Chiang Mai Clean City shirt out on the streets" width="640" height="958" loading="lazy" style="margin-top: 1.5rem;" onerror="this.style.display='none'">
+                        <p style="font-size:16px;color:var(--color-text-muted);margin-top:0.5rem;">Helping distribute food during COVID in April 2020</p>
+                        <p style="font-size:0.75rem;color:var(--color-text-muted);margin-top:0.25rem;">Photo: <a href="https://www.facebook.com/jonky.dawson" target="_blank" rel="noopener" style="color:var(--color-text-muted);border-bottom-color:rgba(148,163,184,0.3);">Jonky Dawson</a></p>
+                    </div>
+                    <div class="about-content reveal">
+                        <span class="eyebrow">The Person Behind the Site</span>
+                        <h2 id="about-heading">Why Expats Trust Shayne</h2>
+                        <p>I am a Chiang Mai Ambassador. I love this city and I love helping people love it too. I have been connecting people here for over 16 years. Not as a tourist, not as a blogger passing through. As someone who lives here, knows the streets, knows the systems, and genuinely enjoys being the person who makes things easier for others.</p>
+                        <p>I have worked for three foundations in Thailand: teaching English, helping up to 170 volunteers get their visas, and now coordinating Hope Connections Foundation, supporting schools and community development across Chiang Mai. I started Chiang Mai Clean City and Chiang Mai Safe City. I admin ten or so Chiang Mai Facebook groups, promote the Red Cross Blood Bank, help small businesses and community groups, and have lectured at CMU. Most of what I do never gets counted: answering questions, connecting people, picking up trash, telling a friend in a higher place about a problem they can solve. I said yes, and I keep saying yes.</p>
+                        <p>My life has never been about money, which is handy, because I do not have much. I have what I need, and in Thailand I need a lot less. This site exists because the questions never stop. Where to live, which visa, how to get a licence plate sorted, where the best buffet is on a Tuesday. The guides here are the answers I kept giving. Every price is real, every warning is earned, every recommendation comes from actually being here.</p>
+                            <div class="about-stats">
+                                <div class="about-stat">
+                                    <span class="about-stat-value">16+</span>
+                                    <span class="about-stat-label">Years in Chiang Mai</span>
+                                </div>
+                                <div class="about-stat">
+                                    <span class="about-stat-value">100k+</span>
+                                    <span class="about-stat-label">Expats Helped</span>
+                                </div>
+                                <div class="about-stat">
+                                    <span class="about-stat-value">89</span>
+                                    <span class="about-stat-label">Guides Published</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="pathway-header reveal">
+                    <span class="eyebrow">Premium Concierge</span>
+                    <h2 id="services-heading">Expert Help, When You Need It Most</h2>
+                    <p>Chiang Mai is easy to love and surprisingly hard to navigate without the right person in your corner. These services exist for people who want to get it right the first time.</p>
+                </div>
+                <div class="services-grid">
+                    <a href="lifestyle/vip-concierge-chiang-mai.html" class="service-card reveal">
+                        <div class="service-card-label">Full Service</div>
+                        <h3>VIP Relocation Concierge</h3>
+                        <p>End-to-end support for your move to Chiang Mai. Every detail handled before you land and after you're settled. Visa strategy, accommodation, bank account, SIM, driving licence, medical registration. You focus on the move.</p>
+                        <ul class="service-list">
+                            <li>Pre-arrival strategy and planning</li>
+                            <li>Curated accommodation shortlist</li>
+                            <li>Visa pathway, fully personalised</li>
+                            <li>First-day orientation and setup</li>
+                            <li>Introductions to vetted lawyers, doctors, accountants</li>
+                            <li>30-day follow-up support</li>
+                        </ul>
+                    </a>
+                    <a href="lifestyle/vip-concierge-chiang-mai.html" class="service-card reveal">
+                        <div class="service-card-label">Flexible</div>
+                        <h3>Bespoke Concierge Requests</h3>
+                        <p>Not every situation fits a package. If you need one specific thing done properly. A business registered, a property found, a specialist located, a lease negotiated. No retainer required.</p>
+                        <ul class="service-list">
+                            <li>Company registration and BOI advice</li>
+                            <li>Medical specialist referrals</li>
+                            <li>Property sourcing and lease negotiation</li>
+                            <li>School enrolment and family setup</li>
+                            <li>Research packages for relocation decisions</li>
+                            <li>Luxury travel and long-stay arrangements</li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="./" class="logo-link" style="display: inline-flex;">
+                        <div class="logo" style="margin-bottom: 1rem;">
+                            <svg class="logo-icon" viewBox="-175 -178 350 500" xmlns="http://www.w3.org/2000/svg" width="60" height="80">
+                            <defs>
+                                <linearGradient id="g2gold-footer" x1="20%" y1="0%" x2="80%" y2="100%">
+                                    <stop offset="0%" stop-color="#F2D980" />
+                                    <stop offset="40%" stop-color="#C49010" />
+                                    <stop offset="100%" stop-color="#9A7008" />
+                                </linearGradient>
+                                <linearGradient id="g2ring-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#E4BC50" />
+                                    <stop offset="100%" stop-color="#9A7008" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="0" cy="0" r="164" fill="none" stroke="url(#g2ring-footer)" stroke-width="2.5" />
+                            <circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65" />
+                            <circle cx="164" cy="0" r="3.2" fill="#C49010" />
+                            <circle cx="0" cy="-164" r="3.2" fill="#C49010" />
+                            <circle cx="-164" cy="0" r="3.2" fill="#C49010" />
+                            <circle cx="0" cy="164" r="3.2" fill="#C49010" />
+                            <g transform="translate(0, -149.201) scale(1.94980)">
+                                <polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980" />
+                                <rect x="-2" y="4" width="4" height="38" fill="url(#g2gold-footer)" />
+                                <polygon points="0,42 -16,78 16,78" fill="url(#g2gold-footer)" />
+                                <rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008" />
+                                <rect x="-22" y="84" width="44" height="9" fill="url(#g2gold-footer)" />
+                                <rect x="-25" y="93" width="50" height="4" fill="#9A7008" />
+                                <rect x="-30" y="97" width="60" height="9" fill="url(#g2gold-footer)" />
+                                <rect x="-33" y="106" width="66" height="4" fill="#9A7008" />
+                                <rect x="-38" y="110" width="76" height="9" fill="url(#g2gold-footer)" />
+                                <rect x="-44" y="119" width="88" height="11" fill="url(#g2gold-footer)" />
+                                <rect x="-52" y="130" width="104" height="8" fill="#9A7008" />
+                            </g>
+                        </svg>
+                            <div class="logo-text-wrapper">
+                                <div>
+                                    <span class="logo-accent">CM</span><span class="logo-text">Ambassador</span>
+                                </div>
+                                <span class="logo-tagline">Connector · Helper · Guru</span>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="footer-tagline">16+ years of real experience. Honest guidance for settling into Chiang Mai or simply where to get random stuff.</p>
+                </div>
+
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <div class="footer-nav-group">
+                        <h3>Explore</h3>
+                        <ul role="list">
+                            <li><a href="getting-social-in-chiang-mai.html">Getting Social</a></li>
+                            <li><a href="best-chiang-mai.html">Best of Chiang Mai</a></li>
+                            <li><a href="lifestyle/top-tips.html">Top Tips</a></li>
+                            <li><a href="pages/cost-of-living.html">Cost of Living</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h3>Visas</h3>
+                        <ul role="list">
+                            <li><a href="pages/visas.html">Visa Overview</a></li>
+                            <li><a href="visa/dtv-visa.html">DTV Visa</a></li>
+                            <li><a href="visa/retirement-visa.html">Retirement Visa</a></li>
+                            <li><a href="cheapest-border-run-chiang-mai.html">Border Run</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h3>About</h3>
+                        <ul role="list">
+                            <li><a href="pages/about.html">About Shayne</a></li>
+                            <li><a href="lifestyle/vip-concierge-chiang-mai.html">VIP Concierge</a></li>
+                            <li><a href="pages/neighbourhoods.html">Neighbourhoods</a></li>
+                        </ul>
+                    </div>
+            </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-legal">Copyright 2026 Chiang Mai Ambassador. Published with care in Chiang Mai, Thailand.</p>
+                <p class="footer-disclaimer">Information is provided in good faith. Always verify visa and legal information with official Thai government sources before making decisions. <a href="pages/privacy.html">Privacy</a> · <a href="pages/terms.html">Terms</a> · <a href="pages/disclaimer.html">Disclaimer</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vanilla JS only -->
+    <script src="js/main.js" defer></script>
+
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "38ebf6cb1000449b961756de0ca25576"}'></script><!-- End Cloudflare Web Analytics -->
+
+<!-- CHAT WIDGET -->
+<script>
+window.addEventListener('load', function() {
+    var css = '#cma-zone{position:fixed;bottom:0;left:0;width:40vw;height:30vh;z-index:9998;pointer-events:all}#cma-widget{position:fixed;bottom:20px;left:20px;z-index:9999;display:flex;flex-direction:column;align-items:flex-start;gap:8px;pointer-events:none}#cma-widget.active{pointer-events:all}#cma-channels{display:flex;flex-direction:column;gap:7px;opacity:0;transform:translateY(8px);pointer-events:none;transition:opacity .22s ease,transform .22s ease}#cma-channels.show{opacity:1;transform:translateY(0);pointer-events:all}.cma-ch{display:flex;align-items:center;gap:10px;text-decoration:none;background:#fff;border-radius:50px;padding:7px 15px 7px 7px;box-shadow:0 2px 14px rgba(0,0,0,.16);transition:transform .14s ease,box-shadow .14s ease;white-space:nowrap}.cma-ch:hover{transform:translateX(4px);box-shadow:0 4px 18px rgba(0,0,0,.22)}.cma-ch svg{width:28px;height:28px;flex-shrink:0}.cma-ch span{font-size:13px;font-weight:600;color:#1a1a1a}#cma-foot{display:flex;align-items:center;gap:0}#cma-btn{width:54px;height:54px;border-radius:50%;border:none;background:#0F172A;box-shadow:0 3px 16px rgba(0,0,0,.22);cursor:pointer;padding:4px;flex-shrink:0;transition:transform .14s ease,box-shadow .14s ease;display:flex;align-items:center;justify-content:center}#cma-btn:hover{transform:scale(1.08);box-shadow:0 5px 22px rgba(0,0,0,.28)}#cma-btn svg{width:44px;height:44px}#cma-label{background:#0F172A;color:#fff;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:5px 13px;border-radius:50px;margin-left:9px;white-space:nowrap;opacity:0;transform:translateX(-6px);transition:opacity .18s ease,transform .18s ease;pointer-events:none}#cma-widget.active #cma-label{opacity:1;transform:translateX(0)}';
+    var st = document.createElement('style');
+    st.textContent = css;
+    document.head.appendChild(st);
+
+    document.body.insertAdjacentHTML('beforeend', '<div id="cma-widget"><div id="cma-channels"><a class="cma-ch" id="cma-wa" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#25D366"/><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="#fff"/></svg><span>WhatsApp</span></a><a class="cma-ch" href="https://m.me/chiangmaiambassador" target="_blank" rel="noopener" aria-label="Messenger"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#0084FF"/><path d="M12 4C7.582 4 4 7.292 4 11.333c0 2.126 1.01 4.03 2.6 5.337V19l2.453-1.348A8.548 8.548 0 0012 17.667c4.418 0 8-3.293 8-7.334C20 7.292 16.418 4 12 4zm.8 9.867l-2.036-2.174-3.972 2.174 4.37-4.64 2.085 2.173 3.923-2.173-4.37 4.64z" fill="#fff"/></svg><span>Messenger</span></a><a class="cma-ch" href="mailto:info@chiangmaiambassador.com" aria-label="Email"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#EA4335"/><path d="M6 8.5A1.5 1.5 0 017.5 7h9A1.5 1.5 0 0118 8.5v7a1.5 1.5 0 01-1.5 1.5h-9A1.5 1.5 0 016 15.5v-7zm1.5 0L12 11.75 16.5 8.5h-9zM7.5 15.5h9v-5.75L12 13l-4.5-3.25v5.75z" fill="#fff"/></svg><span>Email</span></a><a class="cma-ch" href="https://www.linkedin.com/in/shayneinthailand/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#0A66C2"/><path d="M8.5 10H7v7h1.5v-7zM7.75 9a.875.875 0 100-1.75A.875.875 0 007.75 9zM17 12.5c0-1.5-.75-2.5-2.25-2.5-.75 0-1.5.5-1.75 1V10H11.5v7H13v-3.75c0-.75.375-1.5 1.25-1.5.875 0 1.25.625 1.25 1.5V17H17v-4.5z" fill="#fff"/></svg><span>LinkedIn</span></a></div><div id="cma-foot"><button id="cma-btn" aria-label="Chat options"><svg viewBox="-175 -178 350 390" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="cw-gold" x1="20%" y1="0%" x2="80%" y2="100%"><stop offset="0%" stop-color="#F2D980"/><stop offset="40%" stop-color="#C49010"/><stop offset="100%" stop-color="#9A7008"/></linearGradient><linearGradient id="cw-ring" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#E4BC50"/><stop offset="100%" stop-color="#9A7008"/></linearGradient></defs><circle cx="0" cy="0" r="164" fill="none" stroke="url(#cw-ring)" stroke-width="2.5"/><circle cx="0" cy="0" r="157" fill="none" stroke="#E4BC50" stroke-width="1" opacity="0.65"/><circle cx="164" cy="0" r="3.2" fill="#C49010"/><circle cx="0" cy="-164" r="3.2" fill="#C49010"/><circle cx="-164" cy="0" r="3.2" fill="#C49010"/><circle cx="0" cy="164" r="3.2" fill="#C49010"/><g transform="translate(0,-149.201) scale(1.94980)"><polygon points="0,-4 -3,0 0,4 3,0" fill="#F2D980"/><rect x="-2" y="4" width="4" height="38" fill="url(#cw-gold)"/><polygon points="0,42 -16,78 16,78" fill="url(#cw-gold)"/><rect x="-18" y="78" width="36" height="6" rx="1" fill="#9A7008"/><rect x="-22" y="84" width="44" height="9" fill="url(#cw-gold)"/><rect x="-25" y="93" width="50" height="4" fill="#9A7008"/><rect x="-30" y="97" width="60" height="9" fill="url(#cw-gold)"/><rect x="-33" y="106" width="66" height="4" fill="#9A7008"/><rect x="-38" y="110" width="76" height="9" fill="url(#cw-gold)"/><rect x="-44" y="119" width="88" height="11" fill="url(#cw-gold)"/><rect x="-52" y="130" width="104" height="8" fill="#9A7008"/></g></svg></button><span id="cma-label">Chat now</span></div></div>');
+
+    var zone = null;
+    var zoneReady = false;
+    var widget = document.getElementById('cma-widget');
+    var channels = document.getElementById('cma-channels');
+    var btn = document.getElementById('cma-btn');
+    var scrollTimer = null;
+    var inZone = false;
+
+    document.getElementById('cma-wa').style.cursor = 'pointer';
+    document.getElementById('cma-wa').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.open(['https://wa', '.me/', '668', '012', '020', '74'].join(''), '_blank', 'noopener');
+    });
+
+    function clearScrollTimer() { if (scrollTimer) { clearTimeout(scrollTimer); scrollTimer = null; } }
+
+    function showLabel() { inZone = true; widget.classList.add('active'); clearScrollTimer(); }
+
+    function hideAll() { inZone = false; widget.classList.remove('active'); channels.classList.remove('show'); clearScrollTimer(); }
+
+    function setupZone() {
+        if (zoneReady) return;
+        zoneReady = true;
+        var z = document.createElement('div');
+        z.id = 'cma-zone';
+        document.body.appendChild(z);
+        zone = z;
+        zone.addEventListener('mouseenter', showLabel);
+        zone.addEventListener('mouseleave', function(e) { if (!widget.contains(e.relatedTarget)) hideAll(); });
+    }
+
+    widget.addEventListener('mouseenter', showLabel);
+    widget.addEventListener('mouseleave', function(e) { if (!zone || !zone.contains(e.relatedTarget)) hideAll(); });
+    btn.addEventListener('mouseenter', function() { channels.classList.add('show'); });
+
+    window.addEventListener('scroll', function() {
+        setupZone();
+        if (inZone) { clearScrollTimer(); scrollTimer = setTimeout(hideAll, 10000); }
+    }, { passive: true });
+});
+</script>
+<!-- END CHAT WIDGET -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
