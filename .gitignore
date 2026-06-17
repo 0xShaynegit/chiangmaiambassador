@@ -11,3 +11,4 @@ build/
 out/
 coverage/
 .deployment-marker
+search-index.json
