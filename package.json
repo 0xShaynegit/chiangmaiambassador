@@ -4,6 +4,6 @@
   "private": true,
   "scripts": {
     "build": "echo 'Static site ready'",
-    "deploy": "echo 'Deployed by Cloudflare Pages action'"
+    "deploy": "npx wrangler deploy"
   }
 }
