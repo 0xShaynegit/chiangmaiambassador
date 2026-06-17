@@ -114,6 +114,17 @@ function initNavigation() {
     if (nav && navLinks) {
         const hamburger = document.getElementById('nav-hamburger')
         if (hamburger) {
+            // Inject search input only (no results, no button) - simple text search
+            if (!navLinks.querySelector('.mobile-search-bar')) {
+                const searchBar = document.createElement('div')
+                searchBar.className = 'mobile-search-bar'
+                searchBar.innerHTML = `
+                    <form class="mobile-search-form" role="search" onsubmit="return false;">
+                        <input class="mobile-search-input" type="search" placeholder="Search guides, visas, neighbourhoods..." autocomplete="off" aria-label="Search site">
+                    </form>
+                `
+                navLinks.insertBefore(searchBar, navLinks.firstChild)
+            }
 
             function openMenu() {
                 navLinks.classList.add('mobile-open')
