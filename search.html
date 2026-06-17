@@ -19,7 +19,6 @@
     <link rel="preload" href="fonts/plus-jakarta-400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/plus-jakarta-500.woff2" as="font" type="font/woff2" crossorigin>
 
-    <link href="pagefind/pagefind-ui.css" rel="stylesheet">
 
     <style>
         .search-page {
@@ -48,83 +47,83 @@
             margin: 0 auto;
         }
 
-        /* Pagefind UI overrides to match CMA design */
-        .pagefind-ui {
-            --pagefind-ui-scale: 1;
-            --pagefind-ui-primary: #EAB308;
-            --pagefind-ui-text: #fff;
-            --pagefind-ui-background: rgba(255,255,255,0.05);
-            --pagefind-ui-border: rgba(255,255,255,0.15);
-            --pagefind-ui-tag: rgba(234,179,8,0.15);
-            --pagefind-ui-border-width: 1px;
-            --pagefind-ui-border-radius: 4px;
-            --pagefind-ui-image-border-radius: 4px;
-            --pagefind-ui-image-box-ratio: 3/2;
-            --pagefind-ui-font: 'Plus Jakarta Sans', sans-serif;
+        /* Search UI styles */
+        .search-input {
+            width: 100%;
+            background: rgba(255,255,255,0.08);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 4px;
+            font-size: 1.1rem;
+            padding: 1rem 1.5rem;
+            font-family: var(--font-body);
+            outline: none;
+            transition: border-color 0.2s;
         }
 
-        .pagefind-ui__search-input {
-            background: rgba(255,255,255,0.08) !important;
-            color: #fff !important;
-            border-color: rgba(255,255,255,0.2) !important;
-            font-size: 1.1rem !important;
-            padding: 1rem 6rem 1rem 3rem !important;
+        .search-input:focus {
+            border-color: #EAB308;
         }
 
-        .pagefind-ui__search-clear {
-            right: 0.5rem !important;
-            padding: 0.4rem 0.75rem !important;
-            background: rgba(255,255,255,0.1) !important;
-            border: 1px solid rgba(255,255,255,0.15) !important;
-            border-radius: 4px !important;
-            color: rgba(255,255,255,0.7) !important;
-            font-size: 0.85rem !important;
-            cursor: pointer !important;
+        .search-input::placeholder {
+            color: rgba(255,255,255,0.4);
         }
 
-        .pagefind-ui__search-clear:hover {
-            background: rgba(234,179,8,0.15) !important;
-            border-color: #EAB308 !important;
-            color: #EAB308 !important;
+        .search-results {
+            margin-top: 2rem;
         }
 
-        .pagefind-ui__search-input::placeholder {
-            color: rgba(255,255,255,0.4) !important;
+        .search-result {
+            display: block;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            color: inherit;
+            text-decoration: none;
+            transition: opacity 0.2s;
         }
 
-        .pagefind-ui__search-input:focus {
-            border-color: #EAB308 !important;
-            outline: none !important;
+        .search-result:last-child {
+            border-bottom: none;
         }
 
-        .pagefind-ui__result {
-            border-bottom: 1px solid rgba(255,255,255,0.08) !important;
-            padding: 1.5rem 0 !important;
+        .search-result:hover {
+            opacity: 0.8;
         }
 
-        .pagefind-ui__result-title {
-            color: #EAB308 !important;
-            font-family: 'Outfit', sans-serif !important;
-            font-weight: 700 !important;
+        .search-result-title {
+            color: #EAB308;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
         }
 
-        .pagefind-ui__result-excerpt {
-            color: rgba(255,255,255,0.7) !important;
+        .search-result-title mark {
+            background: rgba(234,179,8,0.2);
+            color: #EAB308;
         }
 
-        .pagefind-ui__button {
-            background: #EAB308 !important;
-            color: #0F172A !important;
-            border: none !important;
-            font-weight: 600 !important;
+        .search-result-excerpt {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
         }
 
-        .pagefind-ui__button:hover {
-            background: #F5C430 !important;
+        .search-result-excerpt mark {
+            background: rgba(234,179,8,0.2);
+            color: #EAB308;
         }
 
-        .pagefind-ui__message {
-            color: rgba(255,255,255,0.5) !important;
+        .search-result-url {
+            color: rgba(255,255,255,0.4);
+            font-size: 0.85rem;
+        }
+
+        .search-empty {
+            color: rgba(255,255,255,0.5);
+            padding: 2rem 0;
+            text-align: center;
         }
 
         .search-tips {
@@ -439,7 +438,10 @@
                     <h1>Search <span class="gold-gradient-text">Chiang Mai Ambassador</span></h1>
                 </div>
 
-                <div id="search-box"></div>
+                        <div id="search-box">
+                    <input type="text" id="search-input" placeholder="Search guides, visas, neighbourhoods..." class="search-input">
+                    <div id="search-results" class="search-results"></div>
+                </div>
 
                 <div class="search-tips">
                     <h3>Popular starting points</h3>
@@ -460,18 +462,7 @@
         </section>
     </main>
 
-    <script src="pagefind/pagefind-ui.js"></script>
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            new PagefindUI({
-                element: '#search-box',
-                showSubResults: false,
-                showImages: false,
-                excerptLength: 30,
-                resetStyles: false
-            });
-        });
-    </script>
+    <script src="js/search.js" defer></script>
     <script src="js/main.js" defer></script>
 
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "38ebf6cb1000449b961756de0ca25576"}'></script><!-- End Cloudflare Web Analytics -->
