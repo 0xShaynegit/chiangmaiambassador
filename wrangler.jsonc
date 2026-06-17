@@ -1,8 +1,4 @@
 {
   "name": "chiangmaiambassador",
-  "compatibility_date": "2026-06-17",
-  "assets": {
-    "directory": ".",
-    "exclude": [".git", ".github", "node_modules", ".claude", ".md", ".deployment-marker"]
-  }
+  "compatibility_date": "2026-06-17"
 }
