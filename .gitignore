@@ -29,9 +29,11 @@ coverage/
 .deployment-marker
 search-index.json
 .wrangler/
+
+# Local only (NEVER commit to public)
 .claude/
 .md/
-.github/
+_archive/
 
 # IDE
 .vscode/
