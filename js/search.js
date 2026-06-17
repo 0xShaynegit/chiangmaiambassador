@@ -38,12 +38,26 @@ function performSearch() {
         return;
     }
 
+    const queryTerms = query.split(/\s+/).filter(t => t.length > 0);
+    const isMultiWord = queryTerms.length > 1;
+
     const results = searchIndex
         .filter(page => {
-            const titleMatch = page.title.toLowerCase().includes(query);
-            const descMatch = page.description.toLowerCase().includes(query);
-            const wordMatch = page.words.some(word => word.includes(query));
-            return titleMatch || descMatch || wordMatch;
+            const titleLower = page.title.toLowerCase();
+            const descLower = page.description.toLowerCase();
+
+            if (isMultiWord) {
+                return queryTerms.every(term =>
+                    titleLower.includes(term) ||
+                    descLower.includes(term) ||
+                    page.words.some(word => word.includes(term))
+                );
+            } else {
+                const singleTerm = queryTerms[0];
+                return titleLower.includes(singleTerm) ||
+                       descLower.includes(singleTerm) ||
+                       page.words.some(word => word.includes(singleTerm));
+            }
         })
         .slice(0, 20);
 
