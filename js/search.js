@@ -40,9 +40,10 @@ function performSearch() {
 
     const results = searchIndex
         .filter(page => {
-            return page.title.toLowerCase().includes(query) ||
-                   page.description.toLowerCase().includes(query) ||
-                   page.words.includes(query);
+            const titleMatch = page.title.toLowerCase().includes(query);
+            const descMatch = page.description.toLowerCase().includes(query);
+            const wordMatch = page.words.some(word => word.includes(query));
+            return titleMatch || descMatch || wordMatch;
         })
         .slice(0, 20);
 
