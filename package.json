@@ -4,6 +4,6 @@
   "private": true,
   "scripts": {
     "build": "echo 'Static site ready'",
-    "deploy": "echo 'Ready for deployment'"
+    "deploy": "npx wrangler deploy"
   }
 }
