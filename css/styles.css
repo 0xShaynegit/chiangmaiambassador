@@ -70,4 +70,4 @@
 .page-float-1,.page-float-2,.page-float-3,.page-float-4,.floating-lantern-1,.floating-lantern-2,.floating-lantern-3,.floating-lantern-4,.floating-lantern-5,.floating-lantern-6,.floating-lantern-7,.floating-lantern-8{animation:none !important;opacity:0 !important;pointer-events:none;}
 
 /* Sway animations for floating elements */
-@keyframes sway-page-1{0%,100%{transform:translateX(0px);}50%{transform:translateX(20px);}}@keyframes sway-page-2{0%,100%{transform:translateX(0px);}50%{transform:translateX(-25px);}}@keyframes sway-page-3{0%,100%{transform:translateX(0px);}50%{transform:translateX(18px);}}@keyframes sway-page-4{0%,100%{transform:translateX(0px);}50%{transform:translateX(-22px);}}
+@keyframes sway-page-1{0%,100%{transform:translateX(0px);}50%{transform:translateX(20px);}}@keyframes sway-page-2{0%,100%{transform:translateX(0px);}50%{transform:translateX(-25px);}}@keyframes sway-page-3{0%,100%{transform:translateX(0px);}50%{transform:translateX(18px);}}@keyframes sway-page-4{0%,100%{transform:translateX(0px);}50%{transform:translateX(-22px);}}@media(max-width:640px){.nav-search-icon{display:none!important;}}
