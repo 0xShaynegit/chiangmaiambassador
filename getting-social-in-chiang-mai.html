@@ -96,6 +96,61 @@
         .article-sidebar li:last-child {
             margin-bottom: 0;
         }
+        .sticky-nav {
+            position: fixed;
+            right: 20px;
+            top: 100px;
+            width: 200px;
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid rgba(234, 179, 8, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        .sticky-nav-content h4 {
+            font-family: 'Outfit', sans-serif;
+            color: #EAB308;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            margin-top: 0;
+        }
+        .sticky-nav-content ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sticky-nav-content li {
+            margin-bottom: 0.5rem;
+        }
+        .sticky-nav-content a {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.85rem;
+            border-bottom: 1px solid rgba(234, 179, 8, 0.2);
+            transition: color 0.2s ease;
+        }
+        .sticky-nav-content a:hover {
+            color: #EAB308;
+            border-bottom-color: #EAB308;
+        }
+        @media (max-width: 1400px) {
+            .sticky-nav {
+                display: none !important;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
         .blog-metadata {
             display: flex;
             align-items: center;
@@ -590,6 +645,23 @@
                         </ul>
                     </div>
 
+                    <nav class="sticky-nav" id="sticky-nav" style="display: none;">
+                        <div class="sticky-nav-content">
+                            <h4>Jump To</h4>
+                            <ul>
+                                <li><a href="#social-groups">Social Groups</a></li>
+                                <li><a href="#every-day">Every Day</a></li>
+                                <li><a href="#monday">Monday</a></li>
+                                <li><a href="#tuesday">Tuesday</a></li>
+                                <li><a href="#wednesday">Wednesday</a></li>
+                                <li><a href="#thursday">Thursday</a></li>
+                                <li><a href="#friday">Friday</a></li>
+                                <li><a href="#saturday">Saturday</a></li>
+                                <li><a href="#sunday">Sunday</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
                     <p>Chiang Mai has one of the most active expat social scenes in Southeast Asia. Whatever you are here for, however long you are staying, and whatever you are into, there is a weekly event for you. The list below is updated and verified. If something is wrong or no longer running, let us know.</p>
 
                     <p>For the best weekly email roundup of events: <a href="http://tiny.cc/stevesemail" rel="noopener" target="_blank">subscribe to Steve's Newsletter</a>. General community discussion: <a href="https://www.facebook.com/groups/ChiangMaiEvents/" rel="noopener noreferrer" target="_blank">Chiang Mai Events Facebook Group</a>.</p>
@@ -632,6 +704,8 @@
 
                     <h3>Language Groups</h3>
                     <p><a href="https://www.facebook.com/groups/thai.and.western.culture/" rel="noopener" target="_blank">Farang &amp; Thai Culture</a> | <a href="https://www.facebook.com/groups/faranglearnthai" rel="noopener" target="_blank">Farang Learn Thai</a> | <a href="https://www.facebook.com/groups/DynamicFanClub/" rel="noopener" target="_blank">Dynamic Language Centre Fan Club</a> | <a href="https://www.facebook.com/groups/456476087805075/" rel="noopener" target="_blank">Language Exchange</a></p>
+
+                    <p id="weekly-activities-marker" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);"><strong>Here is a list of weekly social activities in Chiang Mai that generally don't change. Confirm with the contact before heading out.</strong></p>
 
                     <h2 id="every-day">Every Day: Court Sports & Combat Training</h2>
 
@@ -1288,6 +1362,30 @@ window.addEventListener('load', function() {
 });
 </script>
 <!-- END CHAT WIDGET -->
+
+<script>
+(function() {
+    const stickyNav = document.getElementById('sticky-nav');
+    const marker = document.getElementById('weekly-activities-marker');
+
+    if (!stickyNav || !marker) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                stickyNav.style.display = 'block';
+                stickyNav.style.animation = 'fadeIn 0.3s ease-in';
+            } else if (entry.boundingClientRect.top < 0) {
+                stickyNav.style.display = 'block';
+            } else {
+                stickyNav.style.display = 'none';
+            }
+        });
+    }, { threshold: 0 });
+
+    observer.observe(marker);
+})();
+</script>
 
 </body>
 </html>
