@@ -187,6 +187,37 @@ Each page needs:
 - Search: ✓ Properly configured and indexed
 - Blog structure: ✓ All identified issues resolved
 
-**Last Updated:** 17 June 2026  
+---
+
+## Session 18 June 2026 - Getting Social & Search Index Update
+
+**Getting Social in Chiang Mai (UPDATED):**
+- Removed Monday Munch event (no longer running)
+- Added Hash House Harriers events:
+  - CGH3 (Monday, every second Monday, 5:00pm, male only)
+  - CH4 (Thursday, 5:00pm)
+  - CSH3 (Saturday, 5:00pm)
+- Added new "Every Day" section for daily court sports:
+  - Padel Courts: 30-250 THB/hour, ReClub app for booking
+  - Pickleball: 30-250 THB/hour (Chiang Mai Pickleball is cheapest at 30 THB)
+  - Combat Training: Core Combat Chiang Mai (Muay Thai, Boxing, MMA, JKD, Filipino Martial Arts)
+  - Added links to ReClub app, Core Combat website, and CMLocals ED visa guide
+- Fixed FAQ and Guru Tips container width for proper layout
+- Updated sidebar navigation with "Every Day Sports" quick link
+- Corrected pickleball pricing: 30-250 THB/hour (was 200-400)
+
+**Search Index (REBUILT):**
+- Ran `npm run build` locally to rebuild Pagefind index
+- Index now includes all updated content
+- 117 pages indexed across English language
+
+**Cloudflare Workers Deployment:**
+- Fixed build configuration: Changed from `npm run build` to `echo deploying`
+- This prevents hanging builds that were taking 12+ minutes
+- Deploy command: `npx wrangler deploy`
+- Pagefind index pre-built and committed to git (no rebuild needed on deploy)
+- Reconnected GitHub repository with updated build settings
+
+**Last Updated:** 18 June 2026  
 **By:** Claude  
-**Status:** COMPLETE - Site ready for review/testing
+**Status:** Ready for Cloudflare Workers deployment - all changes committed
