@@ -1,65 +1,13 @@
-# OS files
-.DS_Store
-Thumbs.db
-*.swp
-*.swo
-
-# IDE/Editor
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# Environment
+node_modules/
 .env
 .env.local
-.env.*.local
-
-# Dependencies
-node_modules/
-package-lock.json
-yarn.lock
-
-# Pagefind index is committed (no CI build step)
-# Re-run: npx pagefind --site . --output-path pagefind
-
-# Build outputs
+*.log
+.DS_Store
+Thumbs.db
+.wranglerignore
 dist/
 build/
 .next/
-
-# Logs
-*.log
-npm-debug.log*
-
-# Temporary files
-*.tmp
-*.temp
-
-# Markdown documentation
-*.md
-MD/
-.md/
-
-# Python and config files
-*.py
-_scripts/
-
-# OS cache
-.cache/
-__pycache__/
-
-# Claude Code project files
-claude.*
-
-# Template files in any directory
-**/template.html
-template.html
-
-_archive/
-
-# Build/inject scripts (one-off tooling, not part of site)
-_faq_snippets/
-
-# Reference templates (used locally, not deployed)
-blog-template.html
+out/
+coverage/
+.deployment-marker
