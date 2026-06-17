@@ -2,7 +2,6 @@
   "name": "chiangmaiambassador",
   "compatibility_date": "2026-06-17",
   "assets": {
-    "directory": ".",
-    "include": ["**/*.html", "**/*.css", "**/*.js", "**/*.json", "**/*.xml", "**/*.webp", "**/*.jpg", "**/*.png", "**/*.ico", "**/*.svg", "**/*.woff2", "_headers"]
+    "directory": "."
   }
 }
