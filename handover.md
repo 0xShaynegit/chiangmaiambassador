@@ -325,3 +325,28 @@ Note: subdir files (guides/, lifestyle/, etc.) have hamburger BEFORE nav-links. 
 **Last Updated:** 18 June 2026 (night session)
 **By:** Claude
 **Status:** All deployed. Mobile nav working. Desktop icon untouched and locked.
+
+---
+
+## Session 28 June 2026
+
+**Duplicate desktop search icon (FIXED):**
+- `.mobile-nav-search-box` had no `display:none` outside mobile media query, so it rendered on desktop
+- Fix: prepended `.mobile-nav-search-box{display:none;}` to top of `styles.css`
+- The `@media(max-width:640px)` block's `display:flex` already overrides it on mobile — no mobile change needed
+
+**CNX Cigars blog added to nav (COMPLETE):**
+- New page: `lifestyle/cigar-lounge-chiang-mai.html` (added in previous session)
+- Added "Cigar Lounge" link after "Alcohol in Thailand" in the Living Here nav group
+- Propagated to all 107 pages (root pages: `lifestyle/cigar-lounge-chiang-mai.html`, subdirs: `../lifestyle/cigar-lounge-chiang-mai.html`)
+- Note: manually edited index.html first, then batch ran over it — caused duplicate. Fixed same session.
+
+**GitHub Actions workflow removed:**
+- Deleted `.github/workflows/deploy.yml`
+- Workflow was failing in 7 seconds (bad/missing secrets) and sending failure emails
+- Cloudflare Pages deploys via direct Git integration (Cloudflare dashboard) — no Actions needed
+- No impact on deployments
+
+**Last Updated:** 28 June 2026
+**By:** Claude
+**Status:** All deployed. No pending issues.
