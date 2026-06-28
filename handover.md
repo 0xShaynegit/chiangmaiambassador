@@ -350,3 +350,24 @@ Note: subdir files (guides/, lifestyle/, etc.) have hamburger BEFORE nav-links. 
 **Last Updated:** 28 June 2026
 **By:** Claude
 **Status:** All deployed. No pending issues.
+
+---
+
+## Session 28 June 2026 — Part 2: One Nimman Photos
+
+**Source:** `C:\Users\Shayne\Downloads\One Nimman -20260628T110929Z-3-001\One Nimman` (13 JPGs)
+
+**4 images processed and kept** (WebP, all under 150KB, in `/images/`):
+- `one-nimman-landmark-tower-night-chiang-mai.webp` (102KB) — brick tower at night from below
+- `one-nimman-night-market-crowd-dome-aerial.webp` (143KB) — overhead view, transparent dome event, fairy lights
+- `one-nimman-indoor-arcade-shoppers-vaulted-ceiling.webp` (143KB) — indoor arcade, iron lanterns, vaulted ceiling
+- `one-nimman-live-music-event-crowd-night.webp` (115KB) — ground level, live music, large crowd
+
+**Placed on:**
+- `index.html` — Nimman neighbourhood card (replaced grey Maya Mall exterior)
+- `lifestyle/neighborhoods/nimman.html` — tower added above TL;DR, live music crowd added before Expat Community section
+- `pages/neighbourhoods.html` — Nimman card (replaced Doi Suthep temple photo)
+- `dental-care-chiang-mai.html` — two Nimman images replaced (Maya Mall + Doi Suthep both gone)
+- `lifestyle/cigar-lounge-chiang-mai.html` — Nimman related card (replaced Doi Suthep)
+
+**Note:** `chiang-mai-ambassador-nimman.webp` was Doi Suthep temple — nothing to do with Nimman. Now retired from all Nimman contexts. Maya Mall exterior also retired. All Nimman representations now show actual One Nimman imagery.
