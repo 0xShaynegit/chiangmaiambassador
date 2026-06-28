@@ -238,6 +238,90 @@ Each page needs:
 
 **Status:** ✓ All changes deployed to Cloudflare Workers
 
-**Last Updated:** 18 June 2026  
-**By:** Claude  
-**Status:** Ready for Cloudflare Workers deployment - all changes committed
+---
+
+## Session 18 June 2026 (Night) - Mobile Nav + Search Icon Overhaul
+
+**Last commit:** `b1d66e3` (mobile search box 100px icon)
+**Branch:** master
+**Deployed:** Cloudflare Pages (auto-deploy on push)
+
+### What Was Done
+
+**TL;DR image fix (getting-social-in-chiang-mai.html):**
+- Removed broken `<figure>` with missing `social-events.jpg` from inside `.article-sidebar`
+- Removed extra figure with Expat Breakfast Club image that was sitting over TL;DR
+- Standard is zero images inside `.article-sidebar`
+
+**Homepage cost section fix:**
+- HTML used new class names (price-figure, price-breakdown, price-line-item) but CSS only had old names (price-value, price-items, price-item)
+- Added alias selectors in styles.css for all new class names
+- Added `?v=2` cache-busting query string to stylesheet link on index.html
+
+**Guru Tip boxes (site-wide):**
+- Updated all `.tips-box` background from `#f0d080` to `#EAB308` on all 94+ pages
+- Removed border from `.tips-box`
+- Changed `.tips-box p` color to `#1a1a1a`
+
+**Mobile search removal:**
+- Removed JS injection of `.mobile-search-bar` from `js/main.js` lines 117-127
+- This was the root cause of the "two search boxes" problem - HTML removal had no effect because JS recreated it on every hamburger open
+
+**Desktop search icon (nav-search-icon) - LOCKED:**
+- Class name: `nav-search-icon` - DO NOT TOUCH, DO NOT RENAME, DO NOT MOVE, DO NOT INCLUDE IN BATCH OPS
+- Sits inside nav-links on all pages
+- Hidden on mobile via: `@media(max-width:640px){.nav-search-icon{display:none!important;}}`
+- Links to search.html with depth-relative paths
+
+**Mobile nav menu position:**
+- Added `justify-content:flex-start` to mobile `.nav-links` override (was inheriting `justify-content:center` from desktop style and vertically centering items)
+- Set `padding:100px 0 40px` to clear the 70px nav bar + logo
+- Both the external `styles.css` AND the inline `<style>` tag in every HTML file must be updated together - inline style takes precedence
+
+**Mobile search box (new element, separate from desktop):**
+- Class: `mobile-nav-search-box` (wrapper) + `mobile-nav-search-link` (the link)
+- Inserted inside nav-links, after nav-search-icon, before closing `</div>`
+- 140px box, 100px SVG magnifying glass, 4-sided border
+- Centred in remaining space below menu items via `flex:1` on wrapper
+- Links to search.html with correct depth-relative paths (root: `search.html`, 1-deep: `../search.html`, 2-deep: `../../search.html`)
+- Hidden on desktop, only shown at max-width:640px
+- CSS in `styles.css` only (not in inline style tags)
+
+### Current Nav Structure (all pages)
+
+```
+<nav class="nav-wrapper">
+  <a class="logo-link">...</a>
+  <div class="nav-links" id="nav-links">
+    <!-- dropdowns: 1. Planning, 2. Arriving, 3. Living Here, Explore, Visas -->
+    <a class="nav-search-icon">...</a>           <!-- DESKTOP ONLY - LOCKED -->
+    <div class="mobile-nav-search-box">          <!-- MOBILE ONLY -->
+      <a class="mobile-nav-search-link">...</a>
+    </div>
+  </div>
+  <button class="nav-hamburger">...</button>     <!-- root/pages files only -->
+</nav>
+```
+
+Note: subdir files (guides/, lifestyle/, etc.) have hamburger BEFORE nav-links. Root pages have it AFTER.
+
+### What Was Broken Tonight (Lessons)
+
+1. **Always read main.js before touching mobile nav HTML.** JS was injecting search bar on every hamburger open - HTML removal did nothing.
+2. **Inline `<style>` tags override external CSS.** Every page has critical CSS baked in. Change both or change neither.
+3. **Root pages and subdir pages have different nav HTML structure.** Check a file from each type before writing any batch.
+4. **Verify batch actually landed before committing.** Grep a sample file after every batch. "Updated 113 files" means nothing until verified.
+5. **Never rename existing elements.** Add new ones. The nav-search-icon rename cost 3 hours.
+6. **Factor in known values.** Nav bar = 70px. Padding needed = 80px minimum. Don't iterate blindly.
+7. **git checkout on directories deletes untracked gitignored files from disk.** The .md/ and .claude/ folders were deleted this way. Always check .gitignore before any git checkout targeting directories.
+8. **Border-bottom override trap.** Global `a` rule removes border-bottom. Need explicit `border-bottom:none` on the nav link element AND set all four sides via `border` shorthand.
+
+### Pending / Next Session
+
+- Blog structure audit (150+ pages) - was the planned task before search icon took over
+- Pages with missing .key-takeaways or .article-intro sections
+- Reference: `visa/dtv-visa.html` and `guides/yi-peng-lantern-festival.html` are the gold standard page structures
+
+**Last Updated:** 18 June 2026 (night session)
+**By:** Claude
+**Status:** All deployed. Mobile nav working. Desktop icon untouched and locked.
