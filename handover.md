@@ -371,3 +371,40 @@ Note: subdir files (guides/, lifestyle/, etc.) have hamburger BEFORE nav-links. 
 - `lifestyle/cigar-lounge-chiang-mai.html` — Nimman related card (replaced Doi Suthep)
 
 **Note:** `chiang-mai-ambassador-nimman.webp` was Doi Suthep temple — nothing to do with Nimman. Now retired from all Nimman contexts. Maya Mall exterior also retired. All Nimman representations now show actual One Nimman imagery.
+
+---
+
+## Session 28 June 2026 — Part 3: Image Standards + Nav + tips-box colour
+
+**FAQ/tips container fix (18 pages COMPLETE):**
+- All faq-section and tips-box elements must sit INSIDE a `<div class="container" style="max-width:960px;...">` wrapper
+- Pages outside this: full-viewport-width layout. Detection: grep for `<section class="faq-section">` after container close
+- Fixed: all 7 neighbourhood pages + 11 other pages (cheapest-border-run, chiang-mai-scams, dental-care, khun-joe-school, motorbike-registration, thai-eating-etiquette, understanding-thai-culture, visa-exempt, womens-prison, food/food-delivery-apps, food/late-night-eating, lifestyle/cigar-lounge, yunnan)
+
+**Blog image audit (COMPLETE):**
+- Locked standards: max 300px height, max 80% container width (max ~768px wide for 960px container)
+- Exception: document/table images that need legibility can go 140% container width (1344px), centred with `position:relative;left:50%;transform:translateX(-50%)`
+- Thai months image on motorbike-registration is this exception
+- 16 image files resized, 17 HTML attribute updates across 10 pages
+
+**Nav standardisation (COMPLETE):**
+- 4 subdirectory index pages had wrong nav (Neighbourhoods/Lifestyle/Guides/Food/Visas)
+- Standard is "1. Planning / 2. Arriving / 3. Living Here / Explore / Visas"
+- Fixed: chiang-mai/index.html, guides/index.html, lifestyle/index.html, visa/index.html
+
+**Motorbike registration page (COMPLETE):**
+- NAT MOTORS: fully removed. Never promote them. Business rule from Shayne.
+- Removed Facebook link to Nat Motors
+- Renamed section "Motorbike Registration Process at a Non-DLT Location"
+- Removed 3 duplicate images (same green book photo appearing 3 times)
+- Thai months image: restored from git, set to 1344px centred
+- Added ตรอ. cog wheel logo as float-right (Registration-16.webp, 130px)
+- Process section: generic non-DLT instructions, no shop named
+
+**tips-box colour (COMPLETE):**
+- Was: #f0d080 in styles.css
+- Correct: #EAB308 (matches site primary, matches motorcycle-registration-transfer.html inline style)
+- Fixed in styles.css only — no inline overrides found on any page
+
+**Status:** All deployed to master. No pending issues.
+**Last Updated:** 28 June 2026 (evening)
