@@ -1,6 +1,9 @@
 # Cloudflare Pages Redirects for CMA Restructure
 # Format: /old-url /new-url 301
 
+# www → non-www canonical redirect
+https://www.chiangmaiambassador.com/* https://chiangmaiambassador.com/:splat 301
+
 # Block kb-image loop (Facebook crawler compound-path loop from old WordPress URL)
 /kb-image-45-jpg/* / 301
 /kb-image-45-jpg / 301
