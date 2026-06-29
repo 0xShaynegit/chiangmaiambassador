@@ -447,3 +447,45 @@ Note: subdir files (guides/, lifestyle/, etc.) have hamburger BEFORE nav-links. 
 
 **Status:** All deployed to master. No pending issues.
 **Last Updated:** 29 June 2026
+
+---
+
+## Session 29 June 2026 — Part 2: SEO Fixes, Crawler Loop, GSC Duplicates
+
+### meta-webindexer infinite loop (FIXED)
+
+Facebook's crawler had an old URL `/kb-image-45-jpg/` in its queue (from a previous WordPress install on this domain). It hit that 404 and followed relative links from index.html (which had no leading slashes), building compound paths like `/kb-image-45-jpg/pages/visa/food/food/guides/...` indefinitely. This ran from ~4am until afternoon, generating ~110k requests.
+
+**Root causes fixed:**
+1. `_redirects`: `/kb-image-45-jpg/*` and `/kb-image-45-jpg` both 301 → `/` (commit `6f06cdb`)
+2. `404.html` created — minimal page with no navigation, absolute link only, `noindex` meta (commit `6f06cdb`)
+3. `index.html` — all 140+ bare relative `href` values (e.g. `href="visa/dtv-visa.html"`) prefixed with `/` (e.g. `href="/visa/dtv-visa.html"`) (commit `6d95acd`)
+
+**Note:** The file-clearing incident. The `fix-canonicals.ps1` script cleared all working tree HTML files to 0 bytes (encoding mismatch reading files). Recovered with `git restore .`. The script was rewritten to use `ReadAllBytes`/`WriteAllBytes` to avoid encoding issues.
+
+### GSC "Alternate page with proper canonical tag" — 60 pages (FIXED)
+
+Two causes:
+1. **www vs non-www** — Cloudflare was serving both independently. Canonical says non-www. `_redirects` now 301s `https://www.chiangmaiambassador.com/*` → `https://chiangmaiambassador.com/:splat` (commit `0d963e9`)
+2. **Trailing slash mismatch** — Canonical tags used `/path/` format but Cloudflare serves pages at `/path` (no trailing slash). Google treated `/path` as alternate pointing to `/path/`. Batch fix removed trailing slash from canonical tags across 92 pages (commit `a0d719f`)
+
+**Shayne to do in GSC:**
+- Remove old duplicate sitemaps if any remain, resubmit `https://chiangmaiambassador.com/sitemap.xml`
+- GSC "Alternate page with proper canonical" count should drop over 2-4 weeks as Google re-crawls
+
+### www → non-www redirect (ACTIVE)
+All www traffic now 301s to non-www. Cloudflare deploys from master — this is live.
+
+### All commits this session:
+- `ca9ff14` — dying-in-thailand SEO overhaul
+- `fe1a4d5` — robots.txt, sitemap updates
+- `76168b1` — sitemap consolidation
+- `e28985b` — _redirects dead URLs
+- `7d728a9` — sitemap lastmod + missing pages
+- `6f06cdb` — kb-image-45-jpg redirect + 404.html
+- `6d95acd` — index.html bare relative href fix (140+ links)
+- `0d963e9` — www → non-www redirect
+- `a0d719f` — canonical trailing slash removed from 92 files
+
+**Status:** All deployed to master. No pending issues.
+**Last Updated:** 29 June 2026 (afternoon)
