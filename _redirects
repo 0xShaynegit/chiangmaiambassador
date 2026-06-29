@@ -40,6 +40,9 @@
 # Food redirects (12 pages)
 /le-meridien-dinner-buffet/ /food/chiang-mai-marriott-hotel-dining/ 301
 /food/le-meridien-dinner-buffet/ /food/chiang-mai-marriott-hotel-dining/ 301
+/food/dukes/ /food/the-dukes/ 301
+/food/chiang-mai-grandview-lunch/ /food/ 301
+/food/real-thai-restaurant/ /food/ 301
 /the-dukes/ /food/the-dukes/ 301
 /butter-is-better/ /food/butter-is-better/ 301
 /meela-peanut-butter/ /food/meela-peanut-butter/ 301
@@ -49,6 +52,7 @@
 /auf-der-au-best-buffet-chiang-mai/ /food/auf-der-au-best-buffet-chiang-mai/ 301
 /ibis-styles-buffet-lunch/ / 301
 /chiang-mai-grandview-lunch/ / 301
+/guides/chiang-mai-football-club/ /guides/ 301
 # Root pages (14) - NO REDIRECTS NEEDED
 # These stay at root level and keep existing URLs:
 # /dental-care-chiang-mai/
