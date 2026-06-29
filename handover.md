@@ -408,3 +408,42 @@ Note: subdir files (guides/, lifestyle/, etc.) have hamburger BEFORE nav-links. 
 
 **Status:** All deployed to master. No pending issues.
 **Last Updated:** 28 June 2026 (evening)
+
+---
+
+## Session 29 June 2026 - dying-in-thailand SEO + Sitemap Overhaul
+
+**dying-in-thailand.html (SEO COMPLETE):**
+- Title: "Dying in Thailand: What Happens When a Foreigner Passes Away | Chiang Mai Guide"
+- Meta description updated with geographic terms and cost range (150,000-415,000 THB)
+- OG/Twitter tags aligned
+- Article JSON-LD: added datePublished, dateModified, author, keywords fields
+- FAQPage JSON-LD added (7 questions — enables Google rich result)
+- Eyebrow changed to "Dying in Thailand | Chiang Mai Expat Guide"
+- H2 headings updated with Chiang Mai/Thailand/foreigner keywords
+- Body paragraphs seeded with "in Chiang Mai", "foreigner dies", "from Thailand" references
+- Cremation section: added Wat Suan Dok and Wat Lok Molee as specific Chiang Mai venues
+- New .key-takeaways section added (6 keyword-rich bullets)
+- 3 FAQ questions updated to include geographic terms
+- Commit: ca9ff14
+
+**robots.txt (NEW):**
+- Created at root with User-agent: * / Allow: / + Sitemap directive
+- Without this Googlebot had no sitemap pointer (only GSC submission)
+- Commit: fe1a4d5
+
+**Sitemap cleanup (COMPLETE):**
+- sitemapv2.xml removed from repo (old incomplete copy, was confusing crawlers)
+- sitemap.xml is now the single canonical sitemap
+- dying-in-thailand lastmod updated to 2026-06-29
+- lifestyle/cigar-lounge-chiang-mai/ added (was missing)
+- pages/embassies-consulates/ added (was missing)
+- All 112 content pages now accounted for
+- Commits: fe1a4d5, 76168b1
+
+**Next step for Shayne:**
+- Google Search Console: submit sitemap.xml if not already done
+- Use URL Inspection on dying-in-thailand/ and hit "Request Indexing"
+
+**Status:** All deployed to master. No pending issues.
+**Last Updated:** 29 June 2026
