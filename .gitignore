@@ -40,3 +40,7 @@ _archive/
 .idea/
 *.swp
 *.swo
+
+# Chatbot build artifacts (regenerate with chatbot/build-chunks.js + upload-vectors.js)
+chatbot/content-chunks.json
+chatbot/vectors.ndjson
