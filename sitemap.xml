@@ -550,5 +550,20 @@
     <lastmod>2026-06-14</lastmod>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/pages/privacy</loc>
+    <lastmod>2026-07-28</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/pages/terms</loc>
+    <lastmod>2026-07-28</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://chiangmaiambassador.com/pages/disclaimer</loc>
+    <lastmod>2026-07-28</lastmod>
+    <priority>0.3</priority>
+  </url>
 </urlset>
 

@@ -4,9 +4,18 @@
 # www → non-www canonical redirect
 https://www.chiangmaiambassador.com/* https://chiangmaiambassador.com/:splat 301
 
+# .html → extensionless canonical redirect
+/search.html /search 301
+
 # Block kb-image loop (Facebook crawler compound-path loop from old WordPress URL)
 /kb-image-45-jpg/* / 301
 /kb-image-45-jpg / 301
+
+# Block compound-path crawler-trap URLs (stale WP alt-text/slug artifacts, not real pages)
+/tag/* / 301
+/blood-donation-procedure/chiang-mai-ambassador-chiangmaiambassador-red-cross-blood-bank-chiang-mai-4/* / 301
+/chiang-mai-ambassador-268/* / 301
+/police-state-cctv-network-warning-signage-helmet-1/* / 301
 
 # Guides redirects (16 pages)
 /flat-tire/ /guides/flat-tire/ 301
