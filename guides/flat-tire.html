@@ -608,7 +608,21 @@
                     <div class="faq-item"><h3>How much does a tyre repair cost in Chiang Mai?</h3><p>50 to 100 THB for a standard puncture repair at a roadside shop. A full tyre replacement for a standard motorbike is typically 300-600 THB depending on tyre type. Labour is cheap. Always agree on the price before the work starts.</p></div>
                     <div class="faq-item"><h3>Are tyre repair shops easy to find in Chiang Mai?</h3><p>Yes. Roadside tyre repair shops (raan aerd yang) are common across the city. They are usually identifiable by stacks of tyres outside and an air pump. If you cannot find one, push your bike in the direction of the nearest petrol station, which usually has a repair service or can direct you to one.</p></div>
                     <div class="faq-item"><h3>Can I call roadside assistance in Thailand?</h3><p>Some insurance policies include roadside assistance. Check your policy. Thai motorbike rentals rarely include roadside assistance. For emergencies, the Thai highway police can be reached on 1193 for highway breakdowns. In the city, push to the nearest repair shop.</p></div>
-                    <div class="tips-box"><h2>Guru Tip</h2><p>Keep a photo of your rental agreement and insurance policy on your phone. If you have a flat in a remote area, the key information a local helper needs is your location and whether the bike is rented or owned. Knowing the rental company's name helps when calling for assistance. A simple Thai phrase: "Yaang baen" (tyre flat) and pointing to the wheel gets the message across at any roadside shop.</p></div>                </div>
+                    <div class="tips-box"><h2>Guru Tip</h2><p>Keep a photo of your rental agreement and insurance policy on your phone. If you have a flat in a remote area, the key information a local helper needs is your location and whether the bike is rented or owned. Knowing the rental company's name helps when calling for assistance. A simple Thai phrase: "Yaang baen" (tyre flat) and pointing to the wheel gets the message across at any roadside shop.</p></div>
+
+                    <h2>Photo Gallery</h2>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin: 3rem 0; cursor: pointer;">
+                        <img src="../images/chiang-mai-ambassador-chiangmaiambassador-flat-tire-repair-1.webp" alt="Motorbike loaded with spare tyres for roadside repair" style="width: 100%; height: 280px; object-fit: cover; border-radius: 4px;" class="gallery-img" loading="lazy">
+                        <img src="../images/chiang-mai-ambassador-chiangmaiambassador-flat-tire-repair-2.webp" alt="Close-up of a worn motorbike tyre showing damage" style="width: 100%; height: 280px; object-fit: cover; border-radius: 4px;" class="gallery-img" loading="lazy">
+                        <img src="../images/chiang-mai-ambassador-chiangmaiambassador-flat-tire-repair-3.webp" alt="Ba yarng roadside tyre repair sign on a power pole" style="width: 100%; height: 280px; object-fit: cover; border-radius: 4px;" class="gallery-img" loading="lazy">
+                        <img src="../images/chiang-mai-ambassador-chiangmaiambassador-flat-tire-repair-5.webp" alt="Ba yarng recap tyre repair sign with phone number" style="width: 100%; height: 280px; object-fit: cover; border-radius: 4px;" class="gallery-img" loading="lazy">
+                        <img src="../images/chiang-mai-ambassador-chiangmaiambassador-flat-tire-repair-6.webp" alt="Motorised tuk-tuk style repair cart used by a ba yarng" style="width: 100%; height: 280px; object-fit: cover; border-radius: 4px;" class="gallery-img" loading="lazy">
+                        <img src="../images/chiang-mai-ambassador-chiangmaiambassador-flat-tire-repair-7.webp" alt="Spare motorbike tyres loaded on a crate for mobile repairs" style="width: 100%; height: 280px; object-fit: cover; border-radius: 4px;" class="gallery-img" loading="lazy">
+                        <img src="../images/chiang-mai-ambassador-chiangmaiambassador-flat-tire-repair-9.webp" alt="Motorbike rear wheel and exhaust close-up" style="width: 100%; height: 280px; object-fit: cover; border-radius: 4px;" class="gallery-img" loading="lazy">
+                        <img src="../images/chiang-mai-ambassador-chiangmaiambassador-flat-tire-repair-11.webp" alt="Roadside tyre repair shop with mechanic resting" style="width: 100%; height: 280px; object-fit: cover; border-radius: 4px;" class="gallery-img" loading="lazy">
+                        <img src="../images/chiang-mai-ambassador-chiangmaiambassador-flat-tire-repair-13.webp" alt="Sidecar motorbike used for mobile tyre repair services" style="width: 100%; height: 280px; object-fit: cover; border-radius: 4px;" class="gallery-img" loading="lazy">
+                    </div>
+                </div>
             </div>
         </article>
 
@@ -721,6 +735,53 @@
     </footer>
 
     <script src="../js/main.js" defer></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const galleryImgs = document.querySelectorAll('.gallery-img');
+        galleryImgs.forEach((img, index) => {
+            img.addEventListener('click', function() {
+                const modal = document.createElement('div');
+                modal.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.95);z-index:10000;display:flex;align-items:center;justify-content:center;';
+
+                const content = document.createElement('div');
+                content.style.cssText = 'position:relative;max-width:90vw;max-height:90vh;';
+
+                const imgClone = img.cloneNode();
+                imgClone.style.cssText = 'max-width:100%; height:auto; cursor:default;';
+                content.appendChild(imgClone);
+
+                const closeBtn = document.createElement('button');
+                closeBtn.innerHTML = '&times;';
+                closeBtn.style.cssText = 'position:absolute;top:-40px;right:0;background:none;border:none;color:white;font-size:40px;cursor:pointer;z-index:10001;';
+                closeBtn.onclick = () => modal.remove();
+                content.appendChild(closeBtn);
+
+                if (index > 0) {
+                    const prevBtn = document.createElement('button');
+                    prevBtn.innerHTML = '❮';
+                    prevBtn.style.cssText = 'position:absolute;left:-50px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.3);border:none;color:white;font-size:30px;padding:10px 15px;cursor:pointer;border-radius:4px;';
+                    prevBtn.onclick = () => {galleryImgs[index-1].click(); modal.remove();};
+                    content.appendChild(prevBtn);
+                }
+
+                if (index < galleryImgs.length - 1) {
+                    const nextBtn = document.createElement('button');
+                    nextBtn.innerHTML = '❯';
+                    nextBtn.style.cssText = 'position:absolute;right:-50px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.3);border:none;color:white;font-size:30px;padding:10px 15px;cursor:pointer;border-radius:4px;';
+                    nextBtn.onclick = () => {galleryImgs[index+1].click(); modal.remove();};
+                    content.appendChild(nextBtn);
+                }
+
+                modal.appendChild(content);
+                modal.onclick = (e) => e.target === modal && modal.remove();
+                document.body.appendChild(modal);
+            });
+            img.style.cursor = 'pointer';
+            img.addEventListener('mouseenter', () => img.style.transform = 'scale(1.03)');
+            img.addEventListener('mouseleave', () => img.style.transform = 'scale(1)');
+        });
+    });
+    </script>
 
 
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "38ebf6cb1000449b961756de0ca25576"}'></script><!-- End Cloudflare Web Analytics -->
