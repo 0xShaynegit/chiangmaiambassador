@@ -1,0 +1,896 @@
+{
+  "scriptCompleted": true,
+  "projectRoot": "C:\\ZZZWebsites\\chiangmaiambassador",
+  "contentDigest": "4818e018b881143dee771c5b3142f36957333443b91918927214986340e059e5",
+  "files": [
+    {
+      "path": ".deployment-marker",
+      "language": "unknown",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".github/workflows/update-chatbot-index.yml",
+      "language": "yaml",
+      "sizeLines": 102,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".ua/.understandignore",
+      "language": "unknown",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".wranglerignore",
+      "language": "unknown",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "404.html",
+      "language": "html",
+      "sizeLines": 37,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 218,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "_archive/sitemapv2.xml",
+      "language": "xml",
+      "sizeLines": 528,
+      "fileCategory": "config"
+    },
+    {
+      "path": "_headers",
+      "language": "unknown",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "_redirects",
+      "language": "unknown",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "_scripts/chat-widget.html",
+      "language": "html",
+      "sizeLines": 52,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "best-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 783,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "blog-backlog.md",
+      "language": "markdown",
+      "sizeLines": 73,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "blog-template.html",
+      "language": "html",
+      "sizeLines": 753,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "chatbot/build-chunks.js",
+      "language": "javascript",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "chatbot/inject-widget.js",
+      "language": "javascript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "chatbot/prune-stale-vectors.js",
+      "language": "javascript",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "chatbot/upload-vectors.js",
+      "language": "javascript",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "cheapest-border-run-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 1182,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "chiang-mai-scams.html",
+      "language": "html",
+      "sizeLines": 791,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "chiang-mai/index.html",
+      "language": "html",
+      "sizeLines": 460,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "dental-care-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 806,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "dying-in-thailand.html",
+      "language": "html",
+      "sizeLines": 1112,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "food/auf-der-au-best-buffet-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 821,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "food/butter-is-better.html",
+      "language": "html",
+      "sizeLines": 798,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "food/chiang-mai-marriott-hotel-dining.html",
+      "language": "html",
+      "sizeLines": 826,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "food/food-delivery-apps-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 853,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "food/food-delivery-services.html",
+      "language": "html",
+      "sizeLines": 819,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "food/late-night-eating-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 758,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "food/le-meridien-dinner-buffet.html",
+      "language": "html",
+      "sizeLines": 27,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "food/meela-peanut-butter.html",
+      "language": "html",
+      "sizeLines": 819,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "food/siripanna-lunch.html",
+      "language": "html",
+      "sizeLines": 800,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "food/the-dukes.html",
+      "language": "html",
+      "sizeLines": 839,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "functions/api/chat.js",
+      "language": "javascript",
+      "sizeLines": 122,
+      "fileCategory": "code"
+    },
+    {
+      "path": "getting-social-in-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 1405,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/90-day-reporting-tm30-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 1013,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/blood-donation-donor-eligibility-red-cross-blood-bank-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 869,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/blood-donation-procedure.html",
+      "language": "html",
+      "sizeLines": 867,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/bua-tong-waterfalls.html",
+      "language": "html",
+      "sizeLines": 840,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/budget-chiang-mai-medical-services.html",
+      "language": "html",
+      "sizeLines": 855,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/chiang-mai-driving-licence.html",
+      "language": "html",
+      "sizeLines": 1132,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/chiang-mai-driving.html",
+      "language": "html",
+      "sizeLines": 859,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/chiang-mai-festivals.html",
+      "language": "html",
+      "sizeLines": 666,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/chiang-mai-insurance.html",
+      "language": "html",
+      "sizeLines": 845,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/chiang-mai-road-rules.html",
+      "language": "html",
+      "sizeLines": 875,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/chiang-mai-vs-da-nang.html",
+      "language": "html",
+      "sizeLines": 1130,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/finding-pet-friendly-home-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 643,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/flat-tire.html",
+      "language": "html",
+      "sizeLines": 790,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/index.html",
+      "language": "html",
+      "sizeLines": 486,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/language-schools-ed-visa-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 773,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/lazada-shopee-foreigners-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 866,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/license-plates.html",
+      "language": "html",
+      "sizeLines": 855,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/motorcycle-registration-transfer.html",
+      "language": "html",
+      "sizeLines": 848,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/motorcycle-rentals.html",
+      "language": "html",
+      "sizeLines": 855,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/red-cross-blood-bank-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 843,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/renting-a-motorbike-in-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 865,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/residency-certificate-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 814,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/tdac-thailand-digital-arrival-card.html",
+      "language": "html",
+      "sizeLines": 849,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/thailand-media.html",
+      "language": "html",
+      "sizeLines": 862,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/travelling-to-thailand-with-pets.html",
+      "language": "html",
+      "sizeLines": 653,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/vets-pet-care-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 658,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/walking-street-markets.html",
+      "language": "html",
+      "sizeLines": 891,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/what-to-do-after-a-vehicle-accident.html",
+      "language": "html",
+      "sizeLines": 646,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/wing-41-pass.html",
+      "language": "html",
+      "sizeLines": 850,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/work-permit-medical-certificate.html",
+      "language": "html",
+      "sizeLines": 814,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "guides/yi-peng-lantern-festival.html",
+      "language": "html",
+      "sizeLines": 991,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "handover-khun-joe-school.md",
+      "language": "markdown",
+      "sizeLines": 31,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "handover.md",
+      "language": "markdown",
+      "sizeLines": 491,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "index.html",
+      "language": "html",
+      "sizeLines": 789,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "index.html.old",
+      "language": "old",
+      "sizeLines": 786,
+      "fileCategory": "code"
+    },
+    {
+      "path": "js/main.js",
+      "language": "javascript",
+      "sizeLines": 411,
+      "fileCategory": "code"
+    },
+    {
+      "path": "js/search.js",
+      "language": "javascript",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "khun-joe-school.html",
+      "language": "html",
+      "sizeLines": 885,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/alcohol-observations-of-a-non-drinker.html",
+      "language": "html",
+      "sizeLines": 803,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/chiang-mai-arrival.html",
+      "language": "html",
+      "sizeLines": 899,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/cigar-lounge-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 866,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/currency-in-and-out-of-thailand.html",
+      "language": "html",
+      "sizeLines": 801,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/expat-breakfast-club.html",
+      "language": "html",
+      "sizeLines": 841,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/index.html",
+      "language": "html",
+      "sizeLines": 619,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/internet.html",
+      "language": "html",
+      "sizeLines": 669,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/learning-languages.html",
+      "language": "html",
+      "sizeLines": 803,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/life-budget-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 804,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/life-on-a-budget-in-chiang-mai-covid-2022-update.html",
+      "language": "html",
+      "sizeLines": 877,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/live-in-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 902,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/mobile-phones.html",
+      "language": "html",
+      "sizeLines": 667,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/moving-checklist.html",
+      "language": "html",
+      "sizeLines": 915,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/neighborhoods/hang-dong.html",
+      "language": "html",
+      "sizeLines": 591,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/neighborhoods/jed-yod.html",
+      "language": "html",
+      "sizeLines": 646,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/neighborhoods/nimman.html",
+      "language": "html",
+      "sizeLines": 824,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/neighborhoods/old-city.html",
+      "language": "html",
+      "sizeLines": 864,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/neighborhoods/riverside.html",
+      "language": "html",
+      "sizeLines": 859,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/neighborhoods/santitham.html",
+      "language": "html",
+      "sizeLines": 653,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/neighborhoods/wat-ket-riverside.html",
+      "language": "html",
+      "sizeLines": 580,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/smoky-season-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 927,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/songkran.html",
+      "language": "html",
+      "sizeLines": 806,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/television.html",
+      "language": "html",
+      "sizeLines": 750,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/thai-visa-advice.html",
+      "language": "html",
+      "sizeLines": 886,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/top-tips.html",
+      "language": "html",
+      "sizeLines": 873,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/traveling-alone.html",
+      "language": "html",
+      "sizeLines": 777,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/traveling-with-friends.html",
+      "language": "html",
+      "sizeLines": 840,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/us-expat-tax-guide.html",
+      "language": "html",
+      "sizeLines": 862,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/vientiane-visa-run.html",
+      "language": "html",
+      "sizeLines": 803,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "lifestyle/vip-concierge-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 918,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "modern-transport-guide.html",
+      "language": "html",
+      "sizeLines": 1080,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "motorbike-registration-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 785,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "pages/about.html",
+      "language": "html",
+      "sizeLines": 745,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "pages/cost-of-living.html",
+      "language": "html",
+      "sizeLines": 684,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "pages/disclaimer.html",
+      "language": "html",
+      "sizeLines": 680,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "pages/embassies-consulates.html",
+      "language": "html",
+      "sizeLines": 1369,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "pages/just-arriving-in-thailand.html",
+      "language": "html",
+      "sizeLines": 727,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "pages/living-better-in-thailand.html",
+      "language": "html",
+      "sizeLines": 787,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "pages/neighbourhoods.html",
+      "language": "html",
+      "sizeLines": 1022,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "pages/page-template.html",
+      "language": "html",
+      "sizeLines": 640,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "pages/planning-a-move-to-thailand.html",
+      "language": "html",
+      "sizeLines": 737,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "pages/privacy.html",
+      "language": "html",
+      "sizeLines": 665,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "pages/terms.html",
+      "language": "html",
+      "sizeLines": 677,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "pages/visas.html",
+      "language": "html",
+      "sizeLines": 632,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "robots.txt",
+      "language": "txt",
+      "sizeLines": 4,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "rules.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "search-index.json",
+      "language": "json",
+      "sizeLines": 1,
+      "fileCategory": "config"
+    },
+    {
+      "path": "search.html",
+      "language": "html",
+      "sizeLines": 542,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "shared/chat-widget.js",
+      "language": "javascript",
+      "sizeLines": 145,
+      "fileCategory": "code"
+    },
+    {
+      "path": "sitemap.xml",
+      "language": "xml",
+      "sizeLines": 569,
+      "fileCategory": "config"
+    },
+    {
+      "path": "thai-eating-etiquette.html",
+      "language": "html",
+      "sizeLines": 786,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "understanding-thai-culture.html",
+      "language": "html",
+      "sizeLines": 786,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "visa-exempt-status-2026-returning-to-30-days.html",
+      "language": "html",
+      "sizeLines": 919,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "visa/border-run-strategy.html",
+      "language": "html",
+      "sizeLines": 964,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "visa/business-visa.html",
+      "language": "html",
+      "sizeLines": 1017,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "visa/dtv-visa.html",
+      "language": "html",
+      "sizeLines": 979,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "visa/ed-visa-combat-training.html",
+      "language": "html",
+      "sizeLines": 985,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "visa/ed-visa-muay-thai.html",
+      "language": "html",
+      "sizeLines": 986,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "visa/ed-visa-thai-language.html",
+      "language": "html",
+      "sizeLines": 981,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "visa/ed-visa.html",
+      "language": "html",
+      "sizeLines": 990,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "visa/index.html",
+      "language": "html",
+      "sizeLines": 414,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "visa/ltr-visa.html",
+      "language": "html",
+      "sizeLines": 971,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "visa/marriage-visa.html",
+      "language": "html",
+      "sizeLines": 990,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "visa/retirement-visa.html",
+      "language": "html",
+      "sizeLines": 988,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "visa/tourist-visa.html",
+      "language": "html",
+      "sizeLines": 968,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "visa/visa-exempt-vs-voa.html",
+      "language": "html",
+      "sizeLines": 965,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "visa/volunteer-visa.html",
+      "language": "html",
+      "sizeLines": 778,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "where-to-stay-in-chiang-mai.html",
+      "language": "html",
+      "sizeLines": 1229,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "womens-prison-massage.html",
+      "language": "html",
+      "sizeLines": 810,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "wrangler.jsonc",
+      "language": "jsonc",
+      "sizeLines": 18,
+      "fileCategory": "config"
+    },
+    {
+      "path": "yunnan-farmers-market.html",
+      "language": "html",
+      "sizeLines": 885,
+      "fileCategory": "markup"
+    }
+  ],
+  "totalFiles": 144,
+  "filteredByIgnore": 158,
+  "estimatedComplexity": "moderate",
+  "stats": {
+    "filesScanned": 144,
+    "byCategory": {
+      "code": 14,
+      "infra": 1,
+      "markup": 118,
+      "docs": 6,
+      "config": 5
+    },
+    "byLanguage": {
+      "unknown": 5,
+      "yaml": 1,
+      "html": 118,
+      "markdown": 5,
+      "xml": 2,
+      "javascript": 8,
+      "old": 1,
+      "json": 2,
+      "txt": 1,
+      "jsonc": 1
+    }
+  }
+}
