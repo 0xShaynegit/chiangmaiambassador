@@ -1,3 +1,21 @@
+# CMA Handover
+
+## Session 2026-08-05 - New content: floods, Garden Fair, holidays
+
+**Completed:** Built and pushed 3 new pages + 1 expanded page (commit 2279a96):
+- `lifestyle/chiang-mai-floods-2024.html` - first-hand Sept-Oct 2024 flood account, sandbagging/cleanup, 2 YouTube embeds
+- `guides/citylife-garden-fair.html` - fair history (started 2005), fundraising, 2026 date (Sat 21 Nov)
+- `guides/thailand-public-holidays-2026.html` - new, full 2026 holiday list + 5 Buddhist alcohol-ban days
+- `guides/chiang-mai-festivals.html` - expanded with Garden Fair, Bo Sang Umbrella Festival, National Children's Day sections
+
+**Next Step:** Verify Garden Fair page's founder/venue-history details independently (sourced from a mix of user-supplied text and chiangmaicitylife.com search results, not fully cross-checked). Nav menus not yet updated to link the 3 new pages.
+
+**Blockers:** None
+
+**Lessons:** User's pasted "here's a good base" research text for Garden Fair had inaccurate stats (stall counts, hours, date ranges) - verify against chiangmaicitylife.com directly before publishing historical claims, don't trust pasted research as-is.
+
+---
+
 # CMA Handover: Consolidation Complete, Blog Structure Fixes Pending
 
 **Date:** 17 June 2026
