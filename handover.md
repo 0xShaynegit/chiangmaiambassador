@@ -1,5 +1,25 @@
 # CMA Handover
 
+## Session 2026-08-06 - Mattress + pest control pages, sitemap audit, FAQPage schema rollout
+
+**Completed:**
+- Built `chiang-mai-mattress-guide.html` and `pest-control-chiang-mai.html` (commits badcbd7, 09812bf, 062aa75, bea0fd1), pushing Chiang Mai Mattress and Green Nano Thai respectively. Both had photos converted/renamed via the standard pipeline. Green Nano Thai copy leads with the professional over DIY, and the 12-month guarantee is framed correctly as ongoing regular treatments, not a single-visit warranty (per Shayne's correction).
+- Added both pages to the Health & Wellbeing nav dropdown (mattress guide also in Daily Life) across all pages, renamed the mattress nav label to "Chiang Mai Mattress Guide" (commits 83ed706, 09812bf).
+- Ran a full-site SEO audit (121 pages / 119 indexable). Found and fixed:
+  - Sitemap gaps: the 2 new pages plus 3 pages from the prior session (floods/Garden Fair/holidays) were missing; 2 noindex pages (search, an old Le Meridien stub) were wrongly listed. Now exact 119/119, confirmed live in Search Console.
+  - Dead Le Meridien→Marriott redirect: a stale stub file at `food/le-meridien-dinner-buffet.html` was shadowing the `_redirects` rule, serving a live 200 instead of a 301. Deleted the file, added non-trailing-slash redirect variants (commit 7050db3).
+  - **FAQPage schema was missing on 105 pages** (not 26 as the first pass found — that search only matched a `faq-section` wrapper class most pages don't use). Rolled out FAQPage JSON-LD to all 105 by extracting Q&A straight from each page's existing `.faq-item` markup, so schema can't drift from visible content. Validated: every block parses, every mainEntity count matches the visible count exactly, zero mismatches (commit 933f53c).
+
+**Next Step:** None blocking. Two things flagged but not touched, need a decision:
+1. **Keyword cannibalization**: `pages/cost-of-living.html`, `lifestyle/life-budget-chiang-mai.html`, and `lifestyle/life-on-a-budget-in-chiang-mai-covid-2022-update.html` all target "cost of living / budget in Chiang Mai." The covid-2022 one is stale-branded and orphaned from nav (only 1 inbound link) — candidate to fold into one of the other two with a 301, or clearly differentiate and cross-link all three.
+2. Consider enriching homepage `Organization`/`WebSite` schema with `logo` and `sameAs` (social profiles) — currently minimal.
+
+**Blockers:** None, but a process note: this site auto-deploys on `git push` (Cloudflare's GitHub integration, not an in-repo Action), but serves assets with a 1-year edge cache. Any fix involving a deleted/renamed file or changed URL behavior (not just new content) needs a manual Cloudflare cache purge after deploy to actually go live — verify against the deployment's own `*.pages.dev` URL first to confirm the code itself is correct before concluding a purge is needed. See `feedback_cma_deploy_cache_purge_needed` in Claude's memory.
+
+**Lessons:** My own audit script had a regex bug (non-greedy `["\']` alternation breaking on apostrophes like "women's") that produced false "suspiciously short meta description" findings — always sanity-check outlier findings against the raw source before reporting them as bugs.
+
+---
+
 ## Session 2026-08-05 - New content: floods, Garden Fair, holidays
 
 **Completed:** Built and pushed 3 new pages + 1 expanded page (commit 2279a96):
