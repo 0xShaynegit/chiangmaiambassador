@@ -54,7 +54,9 @@ https://www.chiangmaiambassador.com/* https://chiangmaiambassador.com/:splat 301
 /top-tips/ /lifestyle/top-tips/ 301
 
 # Food redirects (12 pages)
+/le-meridien-dinner-buffet /food/chiang-mai-marriott-hotel-dining/ 301
 /le-meridien-dinner-buffet/ /food/chiang-mai-marriott-hotel-dining/ 301
+/food/le-meridien-dinner-buffet /food/chiang-mai-marriott-hotel-dining/ 301
 /food/le-meridien-dinner-buffet/ /food/chiang-mai-marriott-hotel-dining/ 301
 /food/dukes/ /food/the-dukes/ 301
 /food/chiang-mai-grandview-lunch/ /food/ 301
