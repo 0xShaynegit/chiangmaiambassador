@@ -32,23 +32,24 @@
   #cma-chat-form button:hover{background:#F5C430}
   @media(max-width:480px){#cma-chat-btn{right:16px;bottom:16px}#cma-chat-panel{right:8px;bottom:80px}}
 
-  /* Light-background variant: blue accent, used on article/blog pages with a white body */
-  body.cma-chat-light #cma-chat-btn{background:#0066cc;color:#fff}
-  body.cma-chat-light #cma-chat-btn:hover{background:#0052a3}
+  /* Light-background variant: blue drawn from CMA's own navy hue (--color-bg:#0F172A),
+     brightened for use as a button/accent on white article pages, not a generic link blue */
+  body.cma-chat-light #cma-chat-btn{background:#2A5CDB;color:#fff}
+  body.cma-chat-light #cma-chat-btn:hover{background:#1F45AF}
   body.cma-chat-light #cma-chat-panel{background:#fff;border:1px solid #dbe4f2;box-shadow:0 10px 40px rgba(0,0,0,.18)}
-  body.cma-chat-light #cma-chat-head{background:#0066cc;color:#fff;border-bottom:1px solid #0052a3}
+  body.cma-chat-light #cma-chat-head{background:#0F172A;color:#fff;border-bottom:1px solid #2A5CDB}
   body.cma-chat-light #cma-chat-reset{color:rgba(255,255,255,0.75)}
   body.cma-chat-light #cma-chat-log{color:#1a1a1a}
-  body.cma-chat-light .cma-chat-msg.user{background:#e8f0fb}
+  body.cma-chat-light .cma-chat-msg.user{background:#e8edfb}
   body.cma-chat-light .cma-chat-msg.bot{background:#f2f4f7}
-  body.cma-chat-light .cma-chat-msg a{color:#0066cc}
-  body.cma-chat-light .cma-chat-chip{background:rgba(0,102,204,0.08);border:1px solid rgba(0,102,204,0.3);color:#0066cc}
-  body.cma-chat-light .cma-chat-chip:hover{background:rgba(0,102,204,0.16)}
+  body.cma-chat-light .cma-chat-msg a{color:#2A5CDB}
+  body.cma-chat-light .cma-chat-chip{background:rgba(42,92,219,0.08);border:1px solid rgba(42,92,219,0.3);color:#2A5CDB}
+  body.cma-chat-light .cma-chat-chip:hover{background:rgba(42,92,219,0.16)}
   body.cma-chat-light #cma-chat-form{border-top:1px solid #dbe4f2}
   body.cma-chat-light #cma-chat-input{background:#fff;color:#1a1a1a}
   body.cma-chat-light #cma-chat-input::placeholder{color:#8a8f98}
-  body.cma-chat-light #cma-chat-form button{background:#0066cc;color:#fff}
-  body.cma-chat-light #cma-chat-form button:hover{background:#0052a3}
+  body.cma-chat-light #cma-chat-form button{background:#2A5CDB;color:#fff}
+  body.cma-chat-light #cma-chat-form button:hover{background:#1F45AF}
   `;
 
   const style = document.createElement("style");
