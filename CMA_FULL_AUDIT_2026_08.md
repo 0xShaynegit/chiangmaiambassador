@@ -128,20 +128,20 @@ Status key: ☐ not started · 🔍 in progress · ✅ checked/clean · ✏️ f
 - ✅ visas.html — clean, dateModified 2026-05-25, no FAQ. Checked 60/90-day Tourist Visa mention is unrelated to pending visa-exempt change, correct as-is.
 
 ## visa/ (12)
-- ☐ border-run-strategy.html
-- ☐ business-visa.html
-- ☐ dtv-visa.html
-- ☐ ed-visa.html
-- ☐ ed-visa-combat-training.html
-- ☐ ed-visa-muay-thai.html
-- ☐ ed-visa-thai-language.html
-- ☐ index.html
-- ☐ ltr-visa.html
-- ☐ marriage-visa.html
-- ☐ retirement-visa.html
-- ☐ tourist-visa.html
-- ☐ visa-exempt-vs-voa.html
-- ☐ volunteer-visa.html
+- ✏️ border-run-strategy.html — fixed: multiple spots stated the pending 30-day and 2-land-border-cap changes as already in effect (TL;DR, body, key takeaways, FAQ). Corrected throughout to "currently 60 days / unlimited land borders, change proposed but pending Royal Gazette publication." dateModified refreshed.
+- ✅ business-visa.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ dtv-visa.html — clean, FAQ relevant, dateModified 2026-05-25. Confirmed 180 days per entry / 360 total is correct (per user).
+- ✅ ed-visa.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ ed-visa-combat-training.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ ed-visa-muay-thai.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ ed-visa-thai-language.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✏️ index.html (visa hub) — fixed: FAQ answer (JSON-LD + visible) had the 30/60-day claim backwards, said 30 was standard and 60 was the exception. Corrected to reflect 60 currently, 30 proposed/pending.
+- ✅ ltr-visa.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ marriage-visa.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ retirement-visa.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ tourist-visa.html — clean, FAQ relevant, dateModified 2026-05-25, correctly distinguishes tourist visa from visa-exempt entry
+- ✏️ visa-exempt-vs-voa.html — fixed extensively: page assumed the 30-day Visa Exempt reduction was already active vs VOA's 60 (comparison table, guru tip, use-cases, key takeaways, FAQ). Reality: Visa Exempt is currently 60 days, 30-day change pending. Also corrected two deeper errors caught by user: country count (65→~90), and the page wrongly stated VOA is open to "all nationalities" — VOA is actually a separate, select list of eligible countries from Visa Exempt, expected to expand once Visa Exempt reverts to 30 days. Rewrote all affected sections to keep the two schemes distinct rather than implying interchangeability. dateModified refreshed.
+- ✅ volunteer-visa.html — clean, FAQ relevant, dateModified 2026-05-25
 
 ---
 
