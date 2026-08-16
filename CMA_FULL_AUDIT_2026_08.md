@@ -63,23 +63,23 @@ Status key: ☐ not started · 🔍 in progress · ✅ checked/clean · ✏️ f
 - ✅ flat-tire.html — clean, FAQ relevant, dateModified 2026-05-25
 - ✅ index.html (guides hub) — clean, no FAQ needed on hub page
 - ✅ language-schools-ed-visa-chiang-mai.html — clean, FAQ relevant, dateModified 2026-05-28
-- ☐ lazada-shopee-foreigners-chiang-mai.html
-- ☐ license-plates.html
-- ☐ motorcycle-registration-transfer.html
-- ☐ motorcycle-rentals.html
-- ☐ red-cross-blood-bank-chiang-mai.html
-- ☐ renting-a-motorbike-in-chiang-mai.html
-- ☐ residency-certificate-chiang-mai.html
-- ☐ tdac-thailand-digital-arrival-card.html
-- ☐ thailand-media.html
-- ☐ thailand-public-holidays-2026.html
-- ☐ travelling-to-thailand-with-pets.html
-- ☐ vets-pet-care-chiang-mai.html
-- ☐ walking-street-markets.html
-- ☐ what-to-do-after-a-vehicle-accident.html
-- ☐ wing-41-pass.html
-- ☐ work-permit-medical-certificate.html
-- ☐ yi-peng-lantern-festival.html
+- ✅ lazada-shopee-foreigners-chiang-mai.html — clean, FAQ relevant, dateModified 2026-05-28
+- ✅ license-plates.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ motorcycle-registration-transfer.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ motorcycle-rentals.html — clean, FAQ relevant, dateModified 2026-05-25. Note: overlaps with renting-a-motorbike-in-chiang-mai.html, see open issues log.
+- ✅ red-cross-blood-bank-chiang-mai.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ renting-a-motorbike-in-chiang-mai.html — clean, FAQ relevant, dateModified 2026-05-25. Note: overlaps with motorcycle-rentals.html, see open issues log.
+- ✅ residency-certificate-chiang-mai.html — clean, FAQ relevant, dateModified 2026-05-28
+- ✅ tdac-thailand-digital-arrival-card.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ thailand-media.html — clean, FAQ relevant, dateModified 2026-06-08
+- ✅ thailand-public-holidays-2026.html — clean, FAQ relevant, dateModified 2026-08-05
+- ✅ travelling-to-thailand-with-pets.html — clean, FAQ relevant, dateModified 2026-05-28
+- ✅ vets-pet-care-chiang-mai.html — clean, FAQ relevant, dateModified 2026-05-28
+- ✅ walking-street-markets.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ what-to-do-after-a-vehicle-accident.html — clean, FAQ relevant, dateModified 2026-06-08
+- ✅ wing-41-pass.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ work-permit-medical-certificate.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ yi-peng-lantern-festival.html — clean, FAQ relevant, dateModified 2026-05-25
 
 ## lifestyle/ (27, incl. neighborhoods/)
 - ☐ alcohol-observations-of-a-non-drinker.html
@@ -146,6 +146,7 @@ Status key: ☐ not started · 🔍 in progress · ✅ checked/clean · ✏️ f
 ---
 
 ## Open issues log (carried from prior handover, verify still relevant)
+- New: guides/motorcycle-rentals.html and guides/renting-a-motorbike-in-chiang-mai.html appear to cover the same topic (motorbike rental) as separate pages — potential cannibalization, not fixed.
 - Keyword cannibalization: pages/cost-of-living.html, lifestyle/life-budget-chiang-mai.html, lifestyle/life-on-a-budget-in-chiang-mai-covid-2022-update.html all target cost-of-living/budget. Covid-2022 page is stale-branded, orphaned from nav.
 - Homepage Organization/WebSite schema could use logo + sameAs (social profiles).
 
