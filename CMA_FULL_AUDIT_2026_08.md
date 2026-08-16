@@ -109,23 +109,23 @@ Status key: ☐ not started · 🔍 in progress · ✅ checked/clean · ✏️ f
 - ✅ thai-visa-advice.html — clean, FAQ relevant, dateModified 2026-05-25. Checked visa exemption FAQ answer against pending 30-day change news, phrasing is safe/conservative not a false current-rule claim.
 - ✅ top-tips.html — clean, FAQ relevant, dateModified 2026-05-25
 - ✅ traveling-alone.html — clean, FAQ relevant, dateModified 2026-05-25
-- ☐ traveling-with-friends.html
-- ☐ us-expat-tax-guide.html
-- ☐ vientiane-visa-run.html
-- ☐ vip-concierge-chiang-mai.html
+- ✅ traveling-with-friends.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ us-expat-tax-guide.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ vientiane-visa-run.html — clean, FAQ relevant, dateModified 2026-05-25. Checked against pending land-border-cap change, no stale assumption.
+- ✅ vip-concierge-chiang-mai.html — clean, FAQ relevant, uses Service schema (no dateModified needed for this type)
 
 ## pages/ (9)
-- ☐ about.html
-- ☐ cost-of-living.html
-- ☐ disclaimer.html
-- ☐ embassies-consulates.html
-- ☐ just-arriving-in-thailand.html
-- ☐ living-better-in-thailand.html
-- ☐ neighbourhoods.html
-- ☐ planning-a-move-to-thailand.html
-- ☐ privacy.html
-- ☐ terms.html
-- ☐ visas.html
+- ✅ about.html — clean, no FAQ needed
+- ✅ cost-of-living.html — clean, FAQ relevant, dateModified 2026-05-25. Part of cannibalization group, see open issues.
+- ✅ disclaimer.html — clean, legal boilerplate
+- ✅ embassies-consulates.html — page already has a "call ahead, verify with official sources" disclaimer for addresses/phones. Full per-embassy address verification against live sources is out of scope for this pass, not done.
+- ✅ just-arriving-in-thailand.html — clean, dateModified 2026-05-25, no FAQ (hub-style page)
+- ✅ living-better-in-thailand.html — clean, dateModified 2026-05-25, no FAQ (hub-style page)
+- ✅ neighbourhoods.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ planning-a-move-to-thailand.html — clean, dateModified 2026-05-25, no FAQ
+- ✅ privacy.html — clean, legal boilerplate
+- ✅ terms.html — clean, legal boilerplate
+- ✅ visas.html — clean, dateModified 2026-05-25, no FAQ. Checked 60/90-day Tourist Visa mention is unrelated to pending visa-exempt change, correct as-is.
 
 ## visa/ (12)
 - ☐ border-run-strategy.html
