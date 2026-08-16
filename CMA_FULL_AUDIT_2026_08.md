@@ -98,17 +98,17 @@ Status key: ☐ not started · 🔍 in progress · ✅ checked/clean · ✏️ f
 - ✅ moving-checklist.html — clean, FAQ relevant, dateModified 2026-05-25
 - ✅ neighborhoods/hang-dong.html — clean, FAQ relevant, dateModified 2026-05-28
 - ✅ neighborhoods/jed-yod.html — clean, FAQ relevant, dateModified 2026-05-28
-- ☐ neighborhoods/nimman.html
-- ☐ neighborhoods/old-city.html
-- ☐ neighborhoods/riverside.html
-- ☐ neighborhoods/santitham.html
-- ☐ neighborhoods/wat-ket-riverside.html
-- ☐ smoky-season-chiang-mai.html
-- ☐ songkran.html
-- ☐ television.html
-- ☐ thai-visa-advice.html
-- ☐ top-tips.html
-- ☐ traveling-alone.html
+- ✅ neighborhoods/nimman.html — clean, FAQ relevant, dateModified 2026-05-24
+- ✏️ neighborhoods/old-city.html — fixed: Article schema missing dateModified+publisher, added. FAQ relevant otherwise clean.
+- ✏️ neighborhoods/riverside.html — fixed: Article schema missing dateModified+publisher, added. FAQ relevant otherwise clean.
+- ✅ neighborhoods/santitham.html — clean, FAQ relevant, dateModified 2026-05-28
+- ✅ neighborhoods/wat-ket-riverside.html — clean, FAQ relevant, dateModified 2026-05-28
+- ✅ smoky-season-chiang-mai.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ songkran.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ television.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ thai-visa-advice.html — clean, FAQ relevant, dateModified 2026-05-25. Checked visa exemption FAQ answer against pending 30-day change news, phrasing is safe/conservative not a false current-rule claim.
+- ✅ top-tips.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ traveling-alone.html — clean, FAQ relevant, dateModified 2026-05-25
 - ☐ traveling-with-friends.html
 - ☐ us-expat-tax-guide.html
 - ☐ vientiane-visa-run.html
