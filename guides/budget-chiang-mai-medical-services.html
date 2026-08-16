@@ -108,6 +108,150 @@
         .article-sidebar li:last-child {
             margin-bottom: 0;
         }
+        .info-bento {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 1.25rem;
+            margin: 2.5rem 0 3rem 0;
+            align-items: stretch;
+        }
+        .info-bento .article-sidebar {
+            margin: 0;
+        }
+        .bento-tldr {
+            background: #0F172A;
+            border-left: 4px solid #EAB308;
+            padding: 2rem;
+            border-radius: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .bento-tldr h4 {
+            font-size: 0.75rem;
+            color: #EAB308;
+            margin: 0 0 1.25rem 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+        }
+        .bento-tldr ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .bento-tldr li {
+            color: #F1F5F9;
+            font-size: 0.95rem;
+            line-height: 1.65;
+            margin-bottom: 0.9rem;
+            padding-left: 1.1rem;
+            position: relative;
+        }
+        .bento-tldr li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.55em;
+            width: 6px;
+            height: 6px;
+            background: #EAB308;
+        }
+        .bento-tldr li:last-child {
+            margin-bottom: 0;
+        }
+        .bento-tldr li a {
+            color: #EAB308;
+        }
+        .bento-facts {
+            background: #EAB308;
+            padding: 1.75rem;
+            border-radius: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .bento-facts h4 {
+            font-size: 0.75rem;
+            color: #0F172A;
+            margin: 0 0 1.1rem 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            border-bottom: 2px solid rgba(15,23,42,0.25);
+            padding-bottom: 0.75rem;
+        }
+        .bento-facts dl {
+            margin: 0;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 0.65rem;
+        }
+        .bento-facts .fact-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 0.75rem;
+            border-bottom: 1px solid rgba(15,23,42,0.15);
+            padding-bottom: 0.5rem;
+        }
+        .bento-facts .fact-row:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .bento-facts dt {
+            font-size: 0.82rem;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+        .bento-facts dd {
+            margin: 0;
+            font-size: 0.85rem;
+            color: #1a1a1a;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+        }
+        .bento-facts ul.checklist {
+            margin: 0;
+            flex: 1;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 0.65rem;
+        }
+        .bento-facts ul.checklist li {
+            font-size: 0.85rem;
+            color: #1a1a1a;
+            font-weight: 600;
+            line-height: 1.4;
+            padding-left: 1.6rem;
+            position: relative;
+            border-bottom: 1px solid rgba(15,23,42,0.15);
+            padding-bottom: 0.5rem;
+        }
+        .bento-facts ul.checklist li:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .bento-facts ul.checklist li::before {
+            content: '\2713';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: 700;
+            color: #0F172A;
+        }
+        @media (max-width: 768px) {
+            .info-bento {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .blog-metadata {
             display: flex;
             align-items: center;
@@ -646,15 +790,29 @@
                     <figure class="img-right-small" style="float: right; margin-top: -30px; margin-bottom: 1rem; width: calc(100% - 400px); max-width: 280px;">
                         <img src="../images/chiang-mai-ambassador-chiangmaiambassador-chiangmaiambassador-sriphat-suan-dok20.webp" alt="Suan Dok Hospital Chiang Mai Sriphat Building entrance" width="280" height="210" loading="lazy">
                     </figure>
-                    <div class="article-sidebar">
-                        <h4>Quick Summary (TL;DR)</h4>
-                        <ul>
-                            <li>Government hospitals: Suan Dok and Nakornping charge 30 to 100 THB (~$1 to $4 AUD) per consultation. The wait is real. Expect 2 to 4 hours for non-emergencies. It is the price of cheap.</li>
-                            <li>The CMU Sriphat private wing inside Suan Dok is the best value in the city for anything complex: English-speaking doctors, shorter waits, 200 to 600 THB per visit. Use this before Bangkok Hospital.</li>
-                            <li>Private neighbourhood clinics in <a href="../lifestyle/neighborhoods/nimman.html">Nimman</a> and Santitham cost 150 to 500 THB. Walk in, 10 minutes, done. Fine for UTIs, skin issues, and minor infections.</li>
-                            <li>Bangkok Hospital Chiang Mai and Chiang Mai Ram run 400 to 1,200 THB for a consultation. International-standard care, international prices by Thai standards, still cheap versus home.</li>
-                            <li>Emergency: dial 1669 for an ambulance. Dental cleaning runs 500 to 1,000 THB at most private clinics in the city.</li>
-                        </ul>
+                    <div class="info-bento">
+                        <div class="bento-tldr">
+                            <h4>Quick Summary (TL;DR)</h4>
+                            <ul>
+                                <li>Government hospitals: Suan Dok and Nakornping charge 30 to 100 THB (~$1 to $4 AUD) per consultation. Expect 2 to 4 hours for non-emergencies. It is the price of cheap.</li>
+                                <li>The CMU Sriphat private wing inside Suan Dok is the best value in the city for anything complex: English-speaking doctors, shorter waits, 200 to 600 THB per visit.</li>
+                                <li>Private neighbourhood clinics in <a href="../lifestyle/neighborhoods/nimman.html">Nimman</a> and Santitham cost 150 to 500 THB. Walk in, 10 minutes, done.</li>
+                                <li>Bangkok Hospital Chiang Mai and Chiang Mai Ram run 400 to 1,200 THB for a consultation. International-standard care.</li>
+                                <li>Emergency: dial 1669 for an ambulance.</li>
+                            </ul>
+                        </div>
+                        <div class="bento-facts">
+                            <h4>Quick Price Reference</h4>
+                            <dl>
+                                <div class="fact-row"><dt>Government OPD</dt><dd>30-100 THB</dd></div>
+                                <div class="fact-row"><dt>Private clinic</dt><dd>150-500 THB</dd></div>
+                                <div class="fact-row"><dt>Sriphat (Suan Dok)</dt><dd>200-600 THB</dd></div>
+                                <div class="fact-row"><dt>Private hospital</dt><dd>400-1,200 THB</dd></div>
+                                <div class="fact-row"><dt>Dental cleaning</dt><dd>500-1,000 THB</dd></div>
+                                <div class="fact-row"><dt>Blood test panel</dt><dd>500-2,000 THB</dd></div>
+                                <div class="fact-row"><dt>Emergency</dt><dd>1669</dd></div>
+                            </dl>
+                        </div>
                     </div>
 
                     <p>Medical care in Chiang Mai is significantly cheaper than in Western countries at every level of the system, from government hospitals at near-zero cost to international-standard private hospitals at a fraction of what the same treatment would cost in Australia or the UK. Knowing which option to use for which situation saves money and avoids waiting unnecessarily in systems that handle high patient volumes.</p>
@@ -684,19 +842,6 @@
                     <p>Bangkok Hospital Chiang Mai and Chiang Mai Ram Hospital are the two main international-standard private hospitals in the city. Both have English-speaking staff across most departments, modern facilities, and the ability to handle complex cases including emergencies, surgery, and specialist referrals.</p>
 
                     <p>Outpatient consultations at private hospitals run 400 to 1,200 THB depending on the specialist and department. These hospitals accept international <a href="../guides/chiang-mai-insurance.html">health insurance</a> and can process cashless billing with most major international insurers. For emergency situations and complex medical care, private hospitals are the right choice.</p>
-
-                    <div class="article-sidebar">
-                        <h4>Quick Price Reference</h4>
-                        <ul>
-                            <li><strong>Government hospital OPD consult:</strong> 30 to 100 THB</li>
-                            <li><strong>Private clinic consult:</strong> 150 to 500 THB</li>
-                            <li><strong>Private hospital (Bangkok Hospital/CMR):</strong> 400 to 1,200 THB</li>
-                            <li><strong>CMU Suan Dok (Sriphat private wing):</strong> 200 to 600 THB</li>
-                            <li><strong>Dental cleaning:</strong> 500 to 1,000 THB</li>
-                            <li><strong>Blood test panel:</strong> 500 to 2,000 THB depending on tests</li>
-                            <li><strong>Emergency: 1669</strong> (national ambulance number)</li>
-                        </ul>
-                    </div>
 
                     <h2>Dental Care</h2>
                     <p>Dental treatment in Chiang Mai is genuinely affordable and quality is high at the better clinics. A standard cleaning (scaling and polishing) runs 500 to 1,000 THB. A filling is typically 500 to 1,500 THB. More complex work like crowns and implants can be a quarter of Western prices. Dental tourism to Chiang Mai from Australia and the UK is a real phenomenon. Several clinics on Nimmanhaemin and near the private hospitals specifically cater to foreign patients.</p>
