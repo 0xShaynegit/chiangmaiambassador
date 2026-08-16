@@ -47,22 +47,22 @@ Status key: ☐ not started · 🔍 in progress · ✅ checked/clean · ✏️ f
 - ✅ the-happy-frog-secret-buffet.html — clean, FAQ relevant, dateModified 2026-05-25
 
 ## guides/ (32)
-- ☐ 90-day-reporting-tm30-chiang-mai.html
-- ☐ blood-donation-donor-eligibility-red-cross-blood-bank-chiang-mai.html
-- ☐ blood-donation-procedure.html
-- ☐ bua-tong-waterfalls.html
-- ☐ budget-chiang-mai-medical-services.html
-- ☐ chiang-mai-driving.html
-- ☐ chiang-mai-driving-licence.html
-- ☐ chiang-mai-festivals.html
-- ☐ chiang-mai-insurance.html
-- ☐ chiang-mai-road-rules.html
-- ☐ chiang-mai-vs-da-nang.html
-- ☐ citylife-garden-fair.html
-- ☐ finding-pet-friendly-home-chiang-mai.html
-- ☐ flat-tire.html
-- ☐ index.html
-- ☐ language-schools-ed-visa-chiang-mai.html
+- ✅ 90-day-reporting-tm30-chiang-mai.html — clean, FAQ relevant, dateModified 2026-05-28
+- ✅ blood-donation-donor-eligibility-red-cross-blood-bank-chiang-mai.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ blood-donation-procedure.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ bua-tong-waterfalls.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ budget-chiang-mai-medical-services.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ chiang-mai-driving.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ chiang-mai-driving-licence.html — clean, FAQ relevant, dateModified 2026-05-28
+- ✅ chiang-mai-festivals.html — clean, FAQ relevant, dateModified 2026-06-08
+- ✅ chiang-mai-insurance.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ chiang-mai-road-rules.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✏️ chiang-mai-vs-da-nang.html — fixed: Article schema was missing dateModified and publisher (had only datePublished+author). Added both.
+- ✅ citylife-garden-fair.html — clean, FAQ relevant, dateModified 2026-08-05
+- ✅ finding-pet-friendly-home-chiang-mai.html — clean, FAQ relevant, dateModified 2026-05-28
+- ✅ flat-tire.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ index.html (guides hub) — clean, no FAQ needed on hub page
+- ✅ language-schools-ed-visa-chiang-mai.html — clean, FAQ relevant, dateModified 2026-05-28
 - ☐ lazada-shopee-foreigners-chiang-mai.html
 - ☐ license-plates.html
 - ☐ motorcycle-registration-transfer.html
