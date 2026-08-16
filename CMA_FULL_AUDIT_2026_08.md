@@ -147,7 +147,7 @@ Status key: ☐ not started · 🔍 in progress · ✅ checked/clean · ✏️ f
 
 ## Open issues log (carried from prior handover, verify still relevant)
 - New: guides/motorcycle-rentals.html and guides/renting-a-motorbike-in-chiang-mai.html appear to cover the same topic (motorbike rental) as separate pages — potential cannibalization, not fixed.
-- Keyword cannibalization: pages/cost-of-living.html, lifestyle/life-budget-chiang-mai.html, lifestyle/life-on-a-budget-in-chiang-mai-covid-2022-update.html all target cost-of-living/budget. Covid-2022 page is stale-branded, orphaned from nav.
+- RESOLVED 2026-08-16: cost-of-living cannibalization. pages/cost-of-living.html kept as-is (per decision). life-on-a-budget-in-chiang-mai-covid-2022-update.html retired: unique content (Comfortable Budget tier, Health Insurance section, What Destroys the Budget section) merged into lifestyle/life-budget-chiang-mai.html; old file deleted; 301 redirect added in _redirects; sitemap.xml entry removed; one inbound link (guides/chiang-mai-vs-da-nang.html) repointed. Site is now 2 cost-of-living pages, not 3.
 - Homepage Organization/WebSite schema could use logo + sameAs (social profiles).
 
 ## New findings this pass

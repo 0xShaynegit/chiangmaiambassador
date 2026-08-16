@@ -87,3 +87,8 @@ https://www.chiangmaiambassador.com/* https://chiangmaiambassador.com/:splat 301
 # /index.html
 # /hero-effects-test.html
 # /template.html
+
+# Retired: merged into life-budget-chiang-mai.html to resolve cost-of-living cannibalization
+/lifestyle/life-on-a-budget-in-chiang-mai-covid-2022-update/ /lifestyle/life-budget-chiang-mai/ 301
+/lifestyle/life-on-a-budget-in-chiang-mai-covid-2022-update /lifestyle/life-budget-chiang-mai/ 301
+/lifestyle/life-on-a-budget-in-chiang-mai-covid-2022-update.html /lifestyle/life-budget-chiang-mai/ 301
