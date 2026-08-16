@@ -108,117 +108,6 @@
         .article-sidebar li:last-child {
             margin-bottom: 0;
         }
-        .info-bento {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr;
-            gap: 1.25rem;
-            margin: 2.5rem 0 3rem 0;
-            align-items: stretch;
-        }
-        .info-bento .article-sidebar {
-            margin: 0;
-        }
-        .bento-tldr {
-            background: #0F172A;
-            border-left: 4px solid #EAB308;
-            padding: 2rem;
-            border-radius: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .bento-tldr h4 {
-            font-size: 0.75rem;
-            color: #EAB308;
-            margin: 0 0 1.25rem 0;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-        }
-        .bento-tldr ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .bento-tldr li {
-            color: #F1F5F9;
-            font-size: 0.95rem;
-            line-height: 1.65;
-            margin-bottom: 0.9rem;
-            padding-left: 1.1rem;
-            position: relative;
-        }
-        .bento-tldr li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0.55em;
-            width: 6px;
-            height: 6px;
-            background: #EAB308;
-        }
-        .bento-tldr li:last-child {
-            margin-bottom: 0;
-        }
-        .bento-tldr li a {
-            color: #EAB308;
-        }
-        .bento-facts {
-            background: #EAB308;
-            padding: 1.75rem;
-            border-radius: 0;
-            display: flex;
-            flex-direction: column;
-        }
-        .bento-facts h4 {
-            font-size: 0.75rem;
-            color: #0F172A;
-            margin: 0 0 1.1rem 0;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-            border-bottom: 2px solid rgba(15,23,42,0.25);
-            padding-bottom: 0.75rem;
-        }
-        .bento-facts dl {
-            margin: 0;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 0.65rem;
-        }
-        .bento-facts .fact-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            gap: 0.75rem;
-            border-bottom: 1px solid rgba(15,23,42,0.15);
-            padding-bottom: 0.5rem;
-        }
-        .bento-facts .fact-row:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-        .bento-facts dt {
-            font-size: 0.82rem;
-            color: #1a1a1a;
-            font-weight: 600;
-        }
-        .bento-facts dd {
-            margin: 0;
-            font-size: 0.85rem;
-            color: #1a1a1a;
-            font-family: 'Outfit', sans-serif;
-            font-weight: 700;
-            text-align: right;
-            font-variant-numeric: tabular-nums;
-        }
-        @media (max-width: 768px) {
-            .info-bento {
-                grid-template-columns: 1fr;
-            }
-        }
         .blog-metadata {
             display: flex;
             align-items: center;
@@ -766,28 +655,15 @@
                     <figure class="img-right-small" style="float: right; margin-top: -30px; margin-bottom: 1rem; width: calc(100% - 400px); max-width: 280px;">
                         <img src="../images/chiang-mai-ambassador-chiangmaiambassador-US-Expat-Tax-Guide-chiang-mai-ambassador-chiangmaiambassador-thai-visa-thaivisa-tax-advice-us-expats-30.webp" alt="US expat tax guide Thailand IRS obligations for Americans abroad" width="280" height="210" loading="lazy">
                     </figure>
-                    <div class="info-bento">
-                        <div class="bento-tldr">
-                            <h4>Quick Summary (TL;DR)</h4>
-                            <ul>
-                                <li>The US taxes citizens on worldwide income. Moving to Thailand changes nothing about your obligation to file US federal tax returns every year. Americans in Chiang Mai are not exempt.</li>
-                                <li>FBAR: if your Thai bank account exceeded $10,000 USD at any point during the calendar year, you must file. Missing it costs up to $10,000 USD per account per year in penalties.</li>
-                                <li>FATCA (Form 8938) applies if you hold over $200,000 USD in foreign financial assets at year end. Thai banks already report US account holders to the IRS. This is not optional for the bank either.</li>
-                                <li>Not filed US taxes while living abroad? The IRS Streamlined Filing Compliance Procedure may apply. Do not attempt this without a qualified US expat tax professional.</li>
-                                <li>This guide is orientation only. Verify all rules with a qualified US expat tax professional.</li>
-                            </ul>
-                        </div>
-                        <div class="bento-facts">
-                            <h4>Key Obligations</h4>
-                            <dl>
-                                <div class="fact-row"><dt>File US taxes</dt><dd>Always required</dd></div>
-                                <div class="fact-row"><dt>FBAR</dt><dd>Over $10,000</dd></div>
-                                <div class="fact-row"><dt>FATCA (Form 8938)</dt><dd>Over $200,000</dd></div>
-                                <div class="fact-row"><dt>Thai tax</dt><dd>Thai-sourced income</dd></div>
-                                <div class="fact-row"><dt>Tax treaty</dt><dd>Pensions, some income</dd></div>
-                                <div class="fact-row"><dt>FEIE 2024</dt><dd>Up to ~$126,500</dd></div>
-                            </dl>
-                        </div>
+                    <div class="article-sidebar">
+                        <h4>Quick Summary (TL;DR)</h4>
+                        <ul>
+                            <li>The US taxes citizens on worldwide income. Moving to Thailand changes nothing about your obligation to file US federal tax returns every year. Americans in Chiang Mai are not exempt.</li>
+                            <li>FBAR: if your Thai bank account exceeded $10,000 USD at any point during the calendar year, you must file. Missing it costs up to $10,000 USD per account per year in penalties.</li>
+                            <li>FATCA (Form 8938) applies if you hold over $200,000 USD in foreign financial assets at year end. Thai banks already report US account holders to the IRS. This is not optional for the bank either.</li>
+                            <li>Not filed US taxes while living abroad? The IRS Streamlined Filing Compliance Procedure may apply. Do not attempt this without a qualified US expat tax professional. The procedure is specific and getting it wrong creates bigger problems.</li>
+                            <li>This guide is orientation only. Verify all rules for your situation with a qualified US expat tax professional. Tax law changes and individual circumstances vary significantly.</li>
+                        </ul>
                     </div>
 
                     <p>Americans living in Chiang Mai have tax obligations that do not disappear when they leave the United States. The US taxes its citizens and permanent residents on worldwide income regardless of where they live. This guide covers the main filing obligations, the key reporting requirements, and the areas where a professional US expat tax adviser is essential rather than optional.</p>
@@ -816,6 +692,19 @@
                     <p>US citizens and resident aliens who live and work abroad can exclude a portion of their foreign-earned income from US tax using the Foreign Earned Income Exclusion (FEIE). For 2024, the exclusion is approximately $126,500 USD. To claim it, you must meet either the Physical Presence Test (330 days outside the US in a 12-month period) or the Bona Fide Residence Test (established resident in a foreign country for a full tax year).</p>
 
                     <p>The FEIE applies to earned income (wages and self-employment income). It does not apply to passive income such as dividends, rental income, or retirement distributions. A Foreign Housing Exclusion or Deduction may also be available for housing costs in excess of a base amount.</p>
+
+                    <div class="article-sidebar">
+                        <h4>Key Obligations for US Expats</h4>
+                        <ul>
+                            <li><strong>File US taxes:</strong> Required regardless of where you live</li>
+                            <li><strong>FBAR:</strong> Required if foreign accounts exceed $10,000 USD at any point</li>
+                            <li><strong>FATCA (Form 8938):</strong> Required above $200,000 USD in foreign assets</li>
+                            <li><strong>Thai tax:</strong> May apply on Thai-sourced income</li>
+                            <li><strong>US-Thailand tax treaty:</strong> Applies to pensions and some income types</li>
+                            <li><strong>Foreign Earned Income Exclusion:</strong> Up to ~$126,500 USD for 2024</li>
+                            <li><strong>Specialist required:</strong> This area is complex. Use a US expat tax professional.</li>
+                        </ul>
+                    </div>
 
                     <h2>Banking as a US Person in Thailand</h2>
                     <p>Opening and maintaining bank accounts and investment accounts outside Thailand as a US citizen has become progressively more difficult. Banks in Hong Kong, Singapore, and other financial centres have become reluctant to accept US account holders due to FATCA compliance costs. Many mainstream brokerage platforms also restrict or close accounts for US persons residing overseas.</p>

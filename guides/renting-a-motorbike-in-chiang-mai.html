@@ -108,150 +108,6 @@
         .article-sidebar li:last-child {
             margin-bottom: 0;
         }
-        .info-bento {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr;
-            gap: 1.25rem;
-            margin: 2.5rem 0 3rem 0;
-            align-items: stretch;
-        }
-        .info-bento .article-sidebar {
-            margin: 0;
-        }
-        .bento-tldr {
-            background: #0F172A;
-            border-left: 4px solid #EAB308;
-            padding: 2rem;
-            border-radius: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .bento-tldr h4 {
-            font-size: 0.75rem;
-            color: #EAB308;
-            margin: 0 0 1.25rem 0;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-        }
-        .bento-tldr ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .bento-tldr li {
-            color: #F1F5F9;
-            font-size: 0.95rem;
-            line-height: 1.65;
-            margin-bottom: 0.9rem;
-            padding-left: 1.1rem;
-            position: relative;
-        }
-        .bento-tldr li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0.55em;
-            width: 6px;
-            height: 6px;
-            background: #EAB308;
-        }
-        .bento-tldr li:last-child {
-            margin-bottom: 0;
-        }
-        .bento-tldr li a {
-            color: #EAB308;
-        }
-        .bento-facts {
-            background: #EAB308;
-            padding: 1.75rem;
-            border-radius: 0;
-            display: flex;
-            flex-direction: column;
-        }
-        .bento-facts h4 {
-            font-size: 0.75rem;
-            color: #0F172A;
-            margin: 0 0 1.1rem 0;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-            border-bottom: 2px solid rgba(15,23,42,0.25);
-            padding-bottom: 0.75rem;
-        }
-        .bento-facts dl {
-            margin: 0;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 0.65rem;
-        }
-        .bento-facts .fact-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            gap: 0.75rem;
-            border-bottom: 1px solid rgba(15,23,42,0.15);
-            padding-bottom: 0.5rem;
-        }
-        .bento-facts .fact-row:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-        .bento-facts dt {
-            font-size: 0.82rem;
-            color: #1a1a1a;
-            font-weight: 600;
-        }
-        .bento-facts dd {
-            margin: 0;
-            font-size: 0.85rem;
-            color: #1a1a1a;
-            font-family: 'Outfit', sans-serif;
-            font-weight: 700;
-            text-align: right;
-            font-variant-numeric: tabular-nums;
-        }
-        .bento-facts ul.checklist {
-            margin: 0;
-            flex: 1;
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 0.65rem;
-        }
-        .bento-facts ul.checklist li {
-            font-size: 0.85rem;
-            color: #1a1a1a;
-            font-weight: 600;
-            line-height: 1.4;
-            padding-left: 1.6rem;
-            position: relative;
-            border-bottom: 1px solid rgba(15,23,42,0.15);
-            padding-bottom: 0.5rem;
-        }
-        .bento-facts ul.checklist li:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-        .bento-facts ul.checklist li::before {
-            content: '\2713';
-            position: absolute;
-            left: 0;
-            top: 0;
-            font-weight: 700;
-            color: #0F172A;
-        }
-        @media (max-width: 768px) {
-            .info-bento {
-                grid-template-columns: 1fr;
-            }
-        }
-
         .blog-metadata {
             display: flex;
             align-items: center;
@@ -790,29 +646,15 @@
                     <figure class="img-right-small" style="float: right; margin-top: -30px; margin-bottom: 1rem; width: calc(100% - 400px); max-width: 280px;">
                         <img src="../images/chiang-mai-ambassador-chiangmaiambassador-chiangmaiambassador-motorbike-rental.webp" alt="Renting a motorbike in Chiang Mai scooter lined up at rental shop" width="280" height="210" loading="lazy">
                     </figure>
-                    <div class="info-bento">
-                        <div class="bento-tldr">
-                            <h4>Quick Summary (TL;DR)</h4>
-                            <ul>
-                                <li>The rental transaction itself takes 10 minutes on Nimmanhaemin or Moonmuang Road. The five minutes of prep before you ride away is what determines whether you get your deposit back.</li>
-                                <li>Photograph every existing scratch, dent, and scuff on the bike. Send the timestamped photos to the shop via LINE or WhatsApp right there at the shop.</li>
-                                <li>Do not hand over your passport as a deposit. Pay 2,000 to 5,000 THB (~$88 to $218 AUD) cash instead. Your passport should never leave your control.</li>
-                                <li>Your travel insurance almost certainly has a motorcycle exclusion clause. Read the exclusions section before riding.</li>
-                                <li>See the <a href="../guides/motorcycle-rentals.html">full motorcycle rentals guide</a> for pricing by bike size and what to look for choosing a shop.</li>
-                            </ul>
-                        </div>
-                        <div class="bento-facts">
-                            <h4>Before You Rent</h4>
-                            <ul class="checklist">
-                                <li>Photograph all existing damage, send timestamped to shop</li>
-                                <li>Do not leave your passport, pay cash deposit instead</li>
-                                <li>Check travel insurance covers motorbike riding</li>
-                                <li>Confirm insurance type: Por Ror Bor vs comprehensive</li>
-                                <li>Test brakes, lights, horn, tyres before leaving</li>
-                                <li>Agree in writing: return condition, refund terms</li>
-                                <li>Have a valid motorcycle licence before you ride</li>
-                            </ul>
-                        </div>
+                    <div class="article-sidebar">
+                        <h4>Quick Summary (TL;DR)</h4>
+                        <ul>
+                            <li>The rental transaction itself takes 10 minutes on Nimmanhaemin or Moonmuang Road. The five minutes of prep before you ride away is what determines whether you get your deposit back at the end.</li>
+                            <li>Photograph every existing scratch, dent, and scuff on the bike. Send the timestamped photos to the shop via LINE or WhatsApp right there at the shop. Do this before you leave the kerb.</li>
+                            <li>Do not hand over your passport as a deposit. Pay 2,000 to 5,000 THB (~$88 to $218 AUD) cash instead. If the shop insists on holding your passport, find another shop. Your passport should never leave your control.</li>
+                            <li>Your travel insurance almost certainly has a motorcycle exclusion clause. Read the exclusions section of your policy before riding. Assuming you are covered is how people end up paying 80,000 THB out of pocket.</li>
+                            <li>See the <a href="../guides/motorcycle-rentals.html">full motorcycle rentals guide</a> for pricing by bike size, monthly rates, and what to look for when choosing between rental shops.</li>
+                        </ul>
                     </div>
 
                     <p>Renting a motorbike in Chiang Mai is easy. Getting the rental process right so you are not stung at the end of it requires knowing a few things in advance. This guide covers the practical process of actually renting, what can go wrong, how to protect yourself, and what the experience of riding in Chiang Mai actually involves for someone new to Thai roads.</p>
@@ -842,6 +684,19 @@
                     <p>Comprehensive insurance on rental bikes is the exception rather than the rule. Most rental scooters are not comprehensively insured. If you have an accident, damage to the bike comes out of your deposit or your pocket.</p>
 
                     <p>Check your <a href="../guides/chiang-mai-insurance.html">travel insurance</a> policy before you rent. Some policies cover motorbike accidents in Thailand, some exclude them entirely, and some cover them only if you hold a valid motorcycle licence for the country you are in. Know your position before you ride, not after an accident.</p>
+
+                    <div class="article-sidebar">
+                        <h4>Before You Rent: Checklist</h4>
+                        <ul>
+                            <li>Photograph all existing damage and send timestamped to shop</li>
+                            <li>Do not leave your passport. Pay cash deposit instead</li>
+                            <li>Check travel insurance covers motorbike riding</li>
+                            <li>Confirm insurance type: Por Ror Bor vs comprehensive</li>
+                            <li>Test brakes, lights, horn, and tyre condition before leaving</li>
+                            <li>Agree in writing: return condition and deposit refund terms</li>
+                            <li>Have a valid motorcycle licence before you ride</li>
+                        </ul>
+                    </div>
 
                     <h2>What Thai Roads Are Actually Like for New Riders</h2>
                     <p>Chiang Mai is not Bangkok. The traffic moves more slowly, the roads are wider in most areas, and the street grid is more legible. For someone with basic motorbike experience, the city is manageable within a few days of adaptation.</p>

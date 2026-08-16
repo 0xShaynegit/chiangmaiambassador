@@ -108,150 +108,6 @@
         .article-sidebar li:last-child {
             margin-bottom: 0;
         }
-        .info-bento {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr;
-            gap: 1.25rem;
-            margin: 2.5rem 0 3rem 0;
-            align-items: stretch;
-        }
-        .info-bento .article-sidebar {
-            margin: 0;
-        }
-        .bento-tldr {
-            background: #0F172A;
-            border-left: 4px solid #EAB308;
-            padding: 2rem;
-            border-radius: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .bento-tldr h4 {
-            font-size: 0.75rem;
-            color: #EAB308;
-            margin: 0 0 1.25rem 0;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-        }
-        .bento-tldr ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .bento-tldr li {
-            color: #F1F5F9;
-            font-size: 0.95rem;
-            line-height: 1.65;
-            margin-bottom: 0.9rem;
-            padding-left: 1.1rem;
-            position: relative;
-        }
-        .bento-tldr li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0.55em;
-            width: 6px;
-            height: 6px;
-            background: #EAB308;
-        }
-        .bento-tldr li:last-child {
-            margin-bottom: 0;
-        }
-        .bento-tldr li a {
-            color: #EAB308;
-        }
-        .bento-facts {
-            background: #EAB308;
-            padding: 1.75rem;
-            border-radius: 0;
-            display: flex;
-            flex-direction: column;
-        }
-        .bento-facts h4 {
-            font-size: 0.75rem;
-            color: #0F172A;
-            margin: 0 0 1.1rem 0;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-            border-bottom: 2px solid rgba(15,23,42,0.25);
-            padding-bottom: 0.75rem;
-        }
-        .bento-facts dl {
-            margin: 0;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 0.65rem;
-        }
-        .bento-facts .fact-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            gap: 0.75rem;
-            border-bottom: 1px solid rgba(15,23,42,0.15);
-            padding-bottom: 0.5rem;
-        }
-        .bento-facts .fact-row:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-        .bento-facts dt {
-            font-size: 0.82rem;
-            color: #1a1a1a;
-            font-weight: 600;
-        }
-        .bento-facts dd {
-            margin: 0;
-            font-size: 0.85rem;
-            color: #1a1a1a;
-            font-family: 'Outfit', sans-serif;
-            font-weight: 700;
-            text-align: right;
-            font-variant-numeric: tabular-nums;
-        }
-        .bento-facts ul.checklist {
-            margin: 0;
-            flex: 1;
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 0.65rem;
-        }
-        .bento-facts ul.checklist li {
-            font-size: 0.85rem;
-            color: #1a1a1a;
-            font-weight: 600;
-            line-height: 1.4;
-            padding-left: 1.6rem;
-            position: relative;
-            border-bottom: 1px solid rgba(15,23,42,0.15);
-            padding-bottom: 0.5rem;
-        }
-        .bento-facts ul.checklist li:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-        .bento-facts ul.checklist li::before {
-            content: '\2713';
-            position: absolute;
-            left: 0;
-            top: 0;
-            font-weight: 700;
-            color: #0F172A;
-        }
-        @media (max-width: 768px) {
-            .info-bento {
-                grid-template-columns: 1fr;
-            }
-        }
-
         .blog-metadata {
             display: flex;
             align-items: center;
@@ -799,29 +655,15 @@
                     <figure class="img-right-small" style="float: right; margin-top: -30px; margin-bottom: 1rem; width: calc(100% - 400px); max-width: 280px;">
                         <img src="../images/chiang-mai-ambassador-chiangmaiambassador-yi-peng-lanterns-chiang-mai-top-tips-cover.webp" alt="Yi Peng lanterns rising over Chiang Mai at night" width="280" height="210" loading="lazy">
                     </figure>
-                    <div class="info-bento">
-                        <div class="bento-tldr">
-                            <h4>Quick Summary (TL;DR)</h4>
-                            <ul>
-                                <li>Green pedestrian lights do not stop traffic in Chiang Mai. Look at the actual vehicles. Make eye contact with drivers. Trust the gap, not the signal.</li>
-                                <li>Drugs: zero tolerance policy and it is enforced. Jail time, massive fines, permanent deportation, and a re-entry ban. Do not test it.</li>
-                                <li>Working without a Non-Immigrant B visa and a work permit is illegal. Fines exceed 100,000 THB and deportation is common.</li>
-                                <li>Buy <a href="../guides/chiang-mai-insurance.html">travel insurance</a> before you leave home, not on arrival. Confirm it explicitly covers motorcycle use.</li>
-                                <li>Feb to April is smoke season in Chiang Mai. PM2.5 levels can hit severe range.</li>
-                            </ul>
-                        </div>
-                        <div class="bento-facts">
-                            <h4>Top Tips Summary</h4>
-                            <ul class="checklist">
-                                <li>Road safety: look both ways, every time</li>
-                                <li>Travel insurance: confirm it covers motorbike use</li>
-                                <li>Never touch drugs, zero tolerance</li>
-                                <li>Walk more, find the best things on foot</li>
-                                <li>Work without a permit: huge fines + deportation</li>
-                                <li>Keep calm always, anger achieves nothing here</li>
-                                <li>Learn "Mai pen rai", use it constantly</li>
-                            </ul>
-                        </div>
+                    <div class="article-sidebar">
+                        <h4>Quick Summary (TL;DR)</h4>
+                        <ul>
+                            <li>Green pedestrian lights do not stop traffic in Chiang Mai. Look at the actual vehicles. Make eye contact with drivers. Check every lane including the kerb. Trust the gap, not the signal.</li>
+                            <li>Drugs: zero tolerance policy and it is enforced. Jail time, massive fines, permanent deportation, and a re-entry ban. The consequences are not proportionate to the offence by any Western standard. Do not test it.</li>
+                            <li>Working without a Non-Immigrant B visa and a work permit is illegal. Fines exceed 100,000 THB and deportation is common. Freelancing remotely for foreign clients is a legal grey area. Get proper advice before assuming you are fine.</li>
+                            <li>Buy <a href="../guides/chiang-mai-insurance.html">travel insurance</a> before you leave home, not on arrival. Confirm it explicitly covers motorcycle use. Most standard policies exclude it and most people only find out after an accident.</li>
+                            <li>Feb to April is smoke season in Chiang Mai. PM2.5 levels can hit severe range. If you have respiratory issues or are visiting during these months, factor this in. This is not a minor inconvenience for some people.</li>
+                        </ul>
                     </div>
 
                     <p>These are the practical tips that take most newcomers several months to learn on their own. Whether you are arriving for a two-week visit or setting up for the long term, the points below cover the things that genuinely matter: safety, money, culture, food, health, and how to not make the avoidable mistakes that cost time, money, or worse.</p>
@@ -850,6 +692,19 @@
                     <p>Find restaurants frequented by older Thai locals. Longevity of a restaurant in Thailand means consistent quality at honest prices. If the only customers are tourists, the prices have been adjusted accordingly.</p>
 
                     <p>For fresh produce at the lowest prices, Muang Mai Market near the US consulate is the wholesale fresh market for the city. It operates in the early morning and carries produce, fruit, and ingredients at local prices rather than tourist-market prices.</p>
+
+                    <div class="article-sidebar">
+                        <h4>Top Tips Summary</h4>
+                        <ul>
+                            <li>Road safety: look both ways, every time</li>
+                            <li>Travel insurance: confirm it covers motorbike use</li>
+                            <li>Never touch drugs. Zero tolerance.</li>
+                            <li>Walk more. You find the best things on foot.</li>
+                            <li>Work without a permit: huge fines + deportation</li>
+                            <li>Keep calm always. Anger achieves nothing here.</li>
+                            <li>Learn "Mai pen rai". Use it constantly.</li>
+                        </ul>
+                    </div>
 
                     <h2>Culture and Social Behaviour</h2>
                     <p><strong>Speak quietly.</strong> Northern Thai people are especially attuned to tone and volume. Loud, aggressive speech shuts conversations down. Calm and quiet speech opens doors.</p>

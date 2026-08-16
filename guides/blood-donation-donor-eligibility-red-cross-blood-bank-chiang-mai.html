@@ -108,150 +108,6 @@
         .article-sidebar li:last-child {
             margin-bottom: 0;
         }
-        .info-bento {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr;
-            gap: 1.25rem;
-            margin: 2.5rem 0 3rem 0;
-            align-items: stretch;
-        }
-        .info-bento .article-sidebar {
-            margin: 0;
-        }
-        .bento-tldr {
-            background: #0F172A;
-            border-left: 4px solid #EAB308;
-            padding: 2rem;
-            border-radius: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .bento-tldr h4 {
-            font-size: 0.75rem;
-            color: #EAB308;
-            margin: 0 0 1.25rem 0;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-        }
-        .bento-tldr ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .bento-tldr li {
-            color: #F1F5F9;
-            font-size: 0.95rem;
-            line-height: 1.65;
-            margin-bottom: 0.9rem;
-            padding-left: 1.1rem;
-            position: relative;
-        }
-        .bento-tldr li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0.55em;
-            width: 6px;
-            height: 6px;
-            background: #EAB308;
-        }
-        .bento-tldr li:last-child {
-            margin-bottom: 0;
-        }
-        .bento-tldr li a {
-            color: #EAB308;
-        }
-        .bento-facts {
-            background: #EAB308;
-            padding: 1.75rem;
-            border-radius: 0;
-            display: flex;
-            flex-direction: column;
-        }
-        .bento-facts h4 {
-            font-size: 0.75rem;
-            color: #0F172A;
-            margin: 0 0 1.1rem 0;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-            border-bottom: 2px solid rgba(15,23,42,0.25);
-            padding-bottom: 0.75rem;
-        }
-        .bento-facts dl {
-            margin: 0;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 0.65rem;
-        }
-        .bento-facts .fact-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            gap: 0.75rem;
-            border-bottom: 1px solid rgba(15,23,42,0.15);
-            padding-bottom: 0.5rem;
-        }
-        .bento-facts .fact-row:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-        .bento-facts dt {
-            font-size: 0.82rem;
-            color: #1a1a1a;
-            font-weight: 600;
-        }
-        .bento-facts dd {
-            margin: 0;
-            font-size: 0.85rem;
-            color: #1a1a1a;
-            font-family: 'Outfit', sans-serif;
-            font-weight: 700;
-            text-align: right;
-            font-variant-numeric: tabular-nums;
-        }
-        .bento-facts ul.checklist {
-            margin: 0;
-            flex: 1;
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 0.65rem;
-        }
-        .bento-facts ul.checklist li {
-            font-size: 0.85rem;
-            color: #1a1a1a;
-            font-weight: 600;
-            line-height: 1.4;
-            padding-left: 1.6rem;
-            position: relative;
-            border-bottom: 1px solid rgba(15,23,42,0.15);
-            padding-bottom: 0.5rem;
-        }
-        .bento-facts ul.checklist li:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-        .bento-facts ul.checklist li::before {
-            content: '\2713';
-            position: absolute;
-            left: 0;
-            top: 0;
-            font-weight: 700;
-            color: #0F172A;
-        }
-        @media (max-width: 768px) {
-            .info-bento {
-                grid-template-columns: 1fr;
-            }
-        }
-
         .blog-metadata {
             display: flex;
             align-items: center;
@@ -790,29 +646,15 @@
                     <figure class="img-right-small" style="float: right; margin-top: -30px; margin-bottom: 1rem; width: calc(100% - 400px); max-width: 280px;">
                         <img src="../images/chiang-mai-ambassador-chiangmaiambassador-Blood-Donation-1.webp" alt="Blood donor eligibility screening form at Chiang Mai Red Cross" width="280" height="210" loading="lazy">
                     </figure>
-                    <div class="info-bento">
-                        <div class="bento-tldr">
-                            <h4>Quick Summary (TL;DR)</h4>
-                            <ul>
-                                <li>Foreigners can donate at the <a href="../guides/red-cross-blood-bank-chiang-mai.html">Thai Red Cross Blood Bank</a> at Suan Dok, Suthep Road. Walk-in, no appointment. English assistance available on request.</li>
-                                <li>You must be aged 17 to 70, weigh at least 45 kg, and be in good health on the day. Low haemoglobin is the most common reason donors get turned away on arrival.</li>
-                                <li>Recent tattoo: 12-month deferral. Recent travel to a malaria zone: deferral may apply. Recent surgery: typically 6 months.</li>
-                                <li>Whole blood donors wait 90 days between donations. Eat a proper meal at least two hours before.</li>
-                                <li>Verify current eligibility rules directly with the blood bank. Rules reflect 2026 standards and can change.</li>
-                            </ul>
-                        </div>
-                        <div class="bento-facts">
-                            <h4>Eligibility at a Glance</h4>
-                            <dl>
-                                <div class="fact-row"><dt>Age</dt><dd>17 to 70 yrs</dd></div>
-                                <div class="fact-row"><dt>Weight</dt><dd>Min 45 kg</dd></div>
-                                <div class="fact-row"><dt>Frequency</dt><dd>Every 90 days</dd></div>
-                                <div class="fact-row"><dt>Travel</dt><dd>May defer</dd></div>
-                                <div class="fact-row"><dt>Tattoos</dt><dd>12-mo deferral</dd></div>
-                                <div class="fact-row"><dt>Surgery</dt><dd>6-mo deferral</dd></div>
-                                <div class="fact-row"><dt>Foreigners</dt><dd>Eligible</dd></div>
-                            </dl>
-                        </div>
+                    <div class="article-sidebar">
+                        <h4>Quick Summary (TL;DR)</h4>
+                        <ul>
+                            <li>Foreigners can donate at the <a href="../guides/red-cross-blood-bank-chiang-mai.html">Thai Red Cross Blood Bank</a> at Suan Dok, Suthep Road. Walk-in, no appointment. English assistance available on request.</li>
+                            <li>You must be aged 17 to 70, weigh at least 45 kg, and be in good health on the day. Low haemoglobin is the most common reason donors get turned away on arrival.</li>
+                            <li>Recent tattoo: 12-month deferral. Recent travel to a malaria zone: deferral may apply. Recent surgery: typically 6 months. Read the criteria page before making the trip.</li>
+                            <li>Whole blood donors wait 90 days between donations. Eat a proper meal at least two hours before. Do not arrive fasted or dehydrated.</li>
+                            <li>Verify current eligibility rules directly with the blood bank. Rules reflect 2026 standards and can change.</li>
+                        </ul>
                     </div>
 
                     <p>Donating blood in Chiang Mai as a foreigner is straightforward if you meet the eligibility criteria. The Thai Red Cross <a href="../guides/red-cross-blood-bank-chiang-mai.html">Blood Bank</a> at Suan Dok Hospital accepts foreign donors and conducts the standard screening process in English when requested. Understanding the criteria before you go saves time and avoids a wasted journey if you are temporarily deferred.</p>
@@ -859,6 +701,19 @@
                     </ul>
 
                     <p>Bring a list of your current medications to screening. The staff will advise on deferral periods for specific drugs.</p>
+
+                    <div class="article-sidebar">
+                        <h4>Eligibility at a Glance</h4>
+                        <ul>
+                            <li><strong>Age:</strong> 17 to 70 years</li>
+                            <li><strong>Weight:</strong> Minimum 45 kg</li>
+                            <li><strong>Frequency:</strong> Every 90 days for whole blood</li>
+                            <li><strong>Travel exclusion:</strong> Some high-risk regions require waiting period</li>
+                            <li><strong>Tattoos:</strong> 12-month deferral after new tattoo</li>
+                            <li><strong>Recent surgery:</strong> 6-month deferral typically</li>
+                            <li><strong>Foreigners:</strong> Eligible if meeting all criteria</li>
+                        </ul>
+                    </div>
 
                     <h2>Pregnancy and Recent Childbirth</h2>
                     <p>Donation is not permitted during pregnancy. After delivery, a deferral of 6 months is standard. After cessation of breastfeeding, a further deferral period applies. Discuss your specific situation with the blood bank staff if you are recently postpartum.</p>

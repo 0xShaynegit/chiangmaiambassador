@@ -108,150 +108,6 @@
         .article-sidebar li:last-child {
             margin-bottom: 0;
         }
-        .info-bento {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr;
-            gap: 1.25rem;
-            margin: 2.5rem 0 3rem 0;
-            align-items: stretch;
-        }
-        .info-bento .article-sidebar {
-            margin: 0;
-        }
-        .bento-tldr {
-            background: #0F172A;
-            border-left: 4px solid #EAB308;
-            padding: 2rem;
-            border-radius: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .bento-tldr h4 {
-            font-size: 0.75rem;
-            color: #EAB308;
-            margin: 0 0 1.25rem 0;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-        }
-        .bento-tldr ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .bento-tldr li {
-            color: #F1F5F9;
-            font-size: 0.95rem;
-            line-height: 1.65;
-            margin-bottom: 0.9rem;
-            padding-left: 1.1rem;
-            position: relative;
-        }
-        .bento-tldr li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0.55em;
-            width: 6px;
-            height: 6px;
-            background: #EAB308;
-        }
-        .bento-tldr li:last-child {
-            margin-bottom: 0;
-        }
-        .bento-tldr li a {
-            color: #EAB308;
-        }
-        .bento-facts {
-            background: #EAB308;
-            padding: 1.75rem;
-            border-radius: 0;
-            display: flex;
-            flex-direction: column;
-        }
-        .bento-facts h4 {
-            font-size: 0.75rem;
-            color: #0F172A;
-            margin: 0 0 1.1rem 0;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-            border-bottom: 2px solid rgba(15,23,42,0.25);
-            padding-bottom: 0.75rem;
-        }
-        .bento-facts dl {
-            margin: 0;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 0.65rem;
-        }
-        .bento-facts .fact-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            gap: 0.75rem;
-            border-bottom: 1px solid rgba(15,23,42,0.15);
-            padding-bottom: 0.5rem;
-        }
-        .bento-facts .fact-row:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-        .bento-facts dt {
-            font-size: 0.82rem;
-            color: #1a1a1a;
-            font-weight: 600;
-        }
-        .bento-facts dd {
-            margin: 0;
-            font-size: 0.85rem;
-            color: #1a1a1a;
-            font-family: 'Outfit', sans-serif;
-            font-weight: 700;
-            text-align: right;
-            font-variant-numeric: tabular-nums;
-        }
-        .bento-facts ul.checklist {
-            margin: 0;
-            flex: 1;
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 0.65rem;
-        }
-        .bento-facts ul.checklist li {
-            font-size: 0.85rem;
-            color: #1a1a1a;
-            font-weight: 600;
-            line-height: 1.4;
-            padding-left: 1.6rem;
-            position: relative;
-            border-bottom: 1px solid rgba(15,23,42,0.15);
-            padding-bottom: 0.5rem;
-        }
-        .bento-facts ul.checklist li:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-        .bento-facts ul.checklist li::before {
-            content: '\2713';
-            position: absolute;
-            left: 0;
-            top: 0;
-            font-weight: 700;
-            color: #0F172A;
-        }
-        @media (max-width: 768px) {
-            .info-bento {
-                grid-template-columns: 1fr;
-            }
-        }
-
         .blog-metadata {
             display: flex;
             align-items: center;
@@ -790,29 +646,15 @@
                     <figure class="img-right-small" style="float: right; margin-top: -30px; margin-bottom: 1rem; width: calc(100% - 400px); max-width: 280px;">
                         <img src="../images/chiang-mai-ambassador-chiangmaiambassador-chiangmaiambassador-motorbike-rental.webp" alt="Driving in Chiang Mai scooters and cars on moat road" width="280" height="210" loading="lazy">
                     </figure>
-                    <div class="info-bento">
-                        <div class="bento-tldr">
-                            <h4>Quick Summary (TL;DR)</h4>
-                            <ul>
-                                <li>Thailand drives on the left, wheel on the right. Takes two to three days of conscious effort before it stops feeling wrong.</li>
-                                <li>Never accelerate the moment a light goes green. Thai drivers run reds at the end of the cycle. Two-second pause, check both directions, then go.</li>
-                                <li>The <a href="../lifestyle/neighborhoods/old-city.html">Old City</a> moat road is one-way anticlockwise in sections. Follow a songthaew for a block if you are lost.</li>
-                                <li>You need a Thai driving licence or International Driving Permit. A <a href="../guides/chiang-mai-driving-licence.html">Thai licence</a> is 505 THB and half a day at the DLT.</li>
-                                <li>Motorbikes filter between lanes constantly, including at red lights. Check mirrors every time you stop.</li>
-                            </ul>
-                        </div>
-                        <div class="bento-facts">
-                            <h4>Key Driving Facts</h4>
-                            <dl>
-                                <div class="fact-row"><dt>Drive on</dt><dd>Left</dd></div>
-                                <div class="fact-row"><dt>Speed (city)</dt><dd>40-80 km/h</dd></div>
-                                <div class="fact-row"><dt>Speed (highway)</dt><dd>90-120 km/h</dd></div>
-                                <div class="fact-row"><dt>Licence</dt><dd>Thai or IDP</dd></div>
-                                <div class="fact-row"><dt>Helmet law</dt><dd>Mandatory</dd></div>
-                                <div class="fact-row"><dt>Right on red</dt><dd>Not permitted</dd></div>
-                                <div class="fact-row"><dt>Emergency</dt><dd>191 / 1669</dd></div>
-                            </dl>
-                        </div>
+                    <div class="article-sidebar">
+                        <h4>Quick Summary (TL;DR)</h4>
+                        <ul>
+                            <li>Thailand drives on the left, wheel on the right. Takes two to three days of conscious effort before it stops feeling wrong. Give yourself time in low-traffic sois before hitting the Superhighway.</li>
+                            <li>Never accelerate the moment a light goes green. Thai drivers run reds at the end of the cycle. Two-second pause, check both directions, then go. Every time.</li>
+                            <li>The <a href="../lifestyle/neighborhoods/old-city.html">Old City</a> moat road is one-way anticlockwise in sections. First time through it is confusing. Follow a songthaew for a block if you are lost.</li>
+                            <li>You need a Thai driving licence or International Driving Permit to legally drive here. A <a href="../guides/chiang-mai-driving-licence.html">Thai licence</a> is 505 THB and half a day at the DLT on Superhighway Road. Worth doing properly.</li>
+                            <li>Motorbikes filter between lanes constantly, including at red lights. Check mirrors every time you stop. The bike that hits you is usually the one beside you, not behind.</li>
+                        </ul>
                     </div>
 
                     <p>Driving in Chiang Mai is manageable once you understand the local conventions and stop trying to apply home-country driving logic to Thai roads. The city is slower-paced than Bangkok, the road network is readable, and most roads are in reasonable condition. What trips people up is not the infrastructure but the behavioural norms of Thai traffic, which differ significantly from what most Western drivers expect.</p>
@@ -840,6 +682,19 @@
 
                     <h2>Mountain Roads Around Chiang Mai</h2>
                     <p>Routes into the mountains (Doi Suthep, Doi Inthanon, Mae Hong Son direction, and Pai) involve significant elevation gain, hairpin corners, and road surfaces that change with rainfall and season. For motorbike riders especially, mountain roads require a higher skill level than city streets. Descending steep roads on a rented scooter in wet conditions is genuinely dangerous. Take mountain routes slowly, use both brakes smoothly, and assess road conditions before committing to a descent.</p>
+
+                    <div class="article-sidebar">
+                        <h4>Key Driving Facts for Chiang Mai</h4>
+                        <ul>
+                            <li><strong>Drive on:</strong> Left side of the road</li>
+                            <li><strong>Speed limit (city):</strong> 80 km/h max, typically 40 to 60 km/h</li>
+                            <li><strong>Speed limit (highway):</strong> 90 to 120 km/h depending on road type</li>
+                            <li><strong>Licence required:</strong> Thai or International Driving Permit</li>
+                            <li><strong>Helmet law:</strong> Mandatory for motorbike riders and passengers</li>
+                            <li><strong>Right turn on red:</strong> Not permitted unless signed</li>
+                            <li><strong>Emergency number:</strong> 191 (police), 1669 (ambulance)</li>
+                        </ul>
+                    </div>
 
                     <h2>Parking in Chiang Mai</h2>
                     <p>Parking in central Chiang Mai is manageable for motorbikes (which can park on pavements and at the edges of carparks at no cost in most areas) and more challenging for cars. Paid parking is available at malls (Maya, Central Festival, Central Airport), some hotel carparks, and at metered street spaces. Parking enforcement exists on the main roads. Motorbikes in most areas can be left at kerbs without issue.</p>
