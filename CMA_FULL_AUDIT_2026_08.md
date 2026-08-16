@@ -31,20 +31,20 @@ Status key: ☐ not started · 🔍 in progress · ✅ checked/clean · ✏️ f
 - ✅ where-to-stay-in-chiang-mai.html — clean, FAQ relevant, dateModified 2026-06-03
 - ✅ womens-prison-massage.html — clean, FAQ relevant, dateModified 2026-05-25
 - ✅ yunnan-farmers-market.html — clean, FAQ relevant, dateModified 2026-05-25
-- ☐ chiang-mai/index.html
+- ✅ chiang-mai/index.html — clean, hub page (no FAQ, none needed), meta/canonical present. Minor: OG title text differs slightly from <title> tag, cosmetic only, not fixed.
 
 ## food/ (10)
-- ☐ auf-der-au-best-buffet-chiang-mai.html
-- ☐ butter-is-better.html
-- ☐ chiang-mai-grandview-white-elephant-buffet.html
-- ☐ chiang-mai-marriott-hotel-dining.html
-- ☐ food-delivery-apps-chiang-mai.html
-- ☐ food-delivery-services.html
-- ☐ late-night-eating-chiang-mai.html
-- ☐ meela-peanut-butter.html
-- ☐ siripanna-lunch.html
-- ☐ the-dukes.html
-- ☐ the-happy-frog-secret-buffet.html
+- ✅ auf-der-au-best-buffet-chiang-mai.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ butter-is-better.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ chiang-mai-grandview-white-elephant-buffet.html — clean, FAQ relevant, dateModified 2026-08-03
+- ✏️ chiang-mai-marriott-hotel-dining.html — fixed: FAQ question+answer self-contradicted ("same as the old Marriott" comparing Marriott to Marriott). Corrected to Le Meridien per confirmed rebrand history, in both JSON-LD and visible FAQ.
+- ✅ food-delivery-apps-chiang-mai.html — clean, FAQ relevant, dateModified 2026-05-28
+- ✅ food-delivery-services.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ late-night-eating-chiang-mai.html — clean, FAQ relevant, dateModified 2026-05-28
+- ✅ meela-peanut-butter.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ siripanna-lunch.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ the-dukes.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ the-happy-frog-secret-buffet.html — clean, FAQ relevant, dateModified 2026-05-25
 
 ## guides/ (32)
 - ☐ 90-day-reporting-tm30-chiang-mai.html
