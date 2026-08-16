@@ -82,22 +82,22 @@ Status key: ☐ not started · 🔍 in progress · ✅ checked/clean · ✏️ f
 - ✅ yi-peng-lantern-festival.html — clean, FAQ relevant, dateModified 2026-05-25
 
 ## lifestyle/ (27, incl. neighborhoods/)
-- ☐ alcohol-observations-of-a-non-drinker.html
-- ☐ chiang-mai-arrival.html
-- ☐ chiang-mai-floods-2024.html
-- ☐ cigar-lounge-chiang-mai.html
-- ☐ currency-in-and-out-of-thailand.html
-- ☐ expat-breakfast-club.html
-- ☐ index.html
-- ☐ internet.html
-- ☐ learning-languages.html
-- ☐ life-budget-chiang-mai.html
-- ☐ life-on-a-budget-in-chiang-mai-covid-2022-update.html
-- ☐ live-in-chiang-mai.html
-- ☐ mobile-phones.html
-- ☐ moving-checklist.html
-- ☐ neighborhoods/hang-dong.html
-- ☐ neighborhoods/jed-yod.html
+- ✅ alcohol-observations-of-a-non-drinker.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ chiang-mai-arrival.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ chiang-mai-floods-2024.html — clean, FAQ relevant, dateModified 2026-08-05
+- ✅ cigar-lounge-chiang-mai.html — clean, FAQ relevant, dateModified 2026-06-28
+- ✅ currency-in-and-out-of-thailand.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ expat-breakfast-club.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ index.html (lifestyle hub) — clean, no FAQ needed on hub page
+- ✅ internet.html — clean, FAQ relevant, dateModified 2026-05-25, price recently refreshed (398 THB, per recent commit)
+- ✅ learning-languages.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ life-budget-chiang-mai.html — clean, FAQ relevant, dateModified 2026-05-25. Part of cannibalization group, see open issues.
+- ✅ life-on-a-budget-in-chiang-mai-covid-2022-update.html — content itself is current (2026 prices), but URL slug still says covid-2022. Part of cannibalization group, see open issues. Not renamed/redirected without decision.
+- ✅ live-in-chiang-mai.html — clean, FAQ relevant, dateModified 2026-06-08
+- ✅ mobile-phones.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ moving-checklist.html — clean, FAQ relevant, dateModified 2026-05-25
+- ✅ neighborhoods/hang-dong.html — clean, FAQ relevant, dateModified 2026-05-28
+- ✅ neighborhoods/jed-yod.html — clean, FAQ relevant, dateModified 2026-05-28
 - ☐ neighborhoods/nimman.html
 - ☐ neighborhoods/old-city.html
 - ☐ neighborhoods/riverside.html
