@@ -1,3 +1,17 @@
+## Session 2026-08-18 - Content/SEO
+
+**Accomplished:** Rewrote visa/border-run-strategy.html for factual accuracy: removed Cambodia/Malaysia/Bangkok-flight nonsense, fixed Myanmar Mae Sai/Tachilek closure, corrected DTV visa income figure, fixed one-way vs round-trip pricing, resolved contradictory risk thresholds, added TDAC/90-day-report links, moved CTA box, fixed cheapest-border-run-chiang-mai.html metadata and added local-bus tip.
+
+**Branch:** master
+
+**Blockers:** None
+
+**Lessons:** User caught nearly every factual error himself (Cambodia/Bangkok geography, Myanmar closure, pricing contradictions) - need a full contradiction/cross-instance-number pass before declaring content-accuracy work done, not just spot-fixes.
+
+**Next:** Review whether other visa-cluster pages (ed-visa, dtv-visa, marriage-visa, retirement-visa) have the same kind of unverified numeric claims and internal-linking gaps.
+
+---
+
 # CMA Handover
 
 ## Session 2026-08-06 - Mattress + pest control pages, sitemap audit, FAQPage schema rollout
