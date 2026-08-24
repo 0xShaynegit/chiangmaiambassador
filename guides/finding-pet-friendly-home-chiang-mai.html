@@ -676,8 +676,20 @@ window.addEventListener('load', function() {
     widget.addEventListener('mouseleave', function(e) { if (!zone || !zone.contains(e.relatedTarget)) hideAll(); });
     btn.addEventListener('mouseenter', function() { channels.classList.add('show'); });
 
+    var chatOpen = false;
+    btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (chatOpen) { hideAll(); chatOpen = false; }
+        else { showLabel(); channels.classList.add('show'); chatOpen = true; }
+    });
+
+    document.addEventListener('click', function(e) {
+        if (chatOpen && !widget.contains(e.target)) { hideAll(); chatOpen = false; }
+    });
+
+    setupZone();
+
     window.addEventListener('scroll', function() {
-        setupZone();
         if (inZone) { clearScrollTimer(); scrollTimer = setTimeout(hideAll, 10000); }
     }, { passive: true });
 });
