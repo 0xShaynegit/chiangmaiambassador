@@ -46,3 +46,4 @@ chatbot/content-chunks.json
 chatbot/vectors.ndjson
 .ua/
 .gstack/
+manifest.json
