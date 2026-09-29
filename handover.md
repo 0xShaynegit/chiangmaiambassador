@@ -70,7 +70,7 @@ After auditing pages across visa/, guides/, food/, lifestyle/, and lifestyle/nei
    - p with class="article-vibe"
 
 2. **`.article-sidebar`** (GOLD background - MUST BE VISIBLE)
-   - h4 "Quick Summary (TL;DR)"
+   - h4 "TL;DR: What You Need to Know"
    - Bulleted list (ul > li)
    - Creates scannable overview at top
 
